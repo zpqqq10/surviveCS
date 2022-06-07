@@ -1,2 +1,3 @@
-# surviveCS
-shame on zju
+# 从ZJU CS活下来！
+* 在浙大cs存活下来的一点痕迹
+* 大一没什么留文档留文件夹的习惯
