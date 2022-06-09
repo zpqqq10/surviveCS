@@ -1,0 +1,119 @@
+#!/bin/sh
+
+# Parse the arguments...
+
+INSTALL_DIR=`pwd`
+case $1 in 
+	--installdir) 
+	    INSTALL_DIR=$2 ;
+	    ;;
+	--help)
+	    echo "--installdir <directory in which to install>"
+	    echo "--help"
+	    exit
+	    ;;
+esac
+
+
+# Some binaries that we'll need, and the places that we might find them.
+
+binlist="uname flex gcc wish rm cp mkdir chmod sed"
+pathlist="/bin /usr/bin /usr/local/bin /sw/bin /usr/x116/bin /usr/X11R6/bin"
+libpathlist="/lib /usr/lib /usr/local/lib"
+incpathlist="/include /usr/include /usr/local/include"
+
+
+# Find the binaries (or die trying).
+
+for binary in $binlist ; do
+    for path in $pathlist ; do
+	if [ -r $path/$binary ] ; then
+	    eval "$binary=${path}/${binary}" ;
+	    break ;
+	fi ;
+    done ;
+    eval "if [ -z \"\$$binary\" ] ; then echo \"Cannot locate $binary binary.\" ; exit ; fi"
+done
+
+
+# These default values are overridden below for some operating systems.
+
+OS_SIM_LIBS=""
+EXE=""
+DYN="so"
+CODE_FONT="{{Lucida Console} 11 bold}"
+BUTTON_FONT="{{Lucida Console} 10 normal}"
+CONSOLE_FONT="{{Lucida Console} 10 bold}"
+
+
+# Tailor the variables based on OS.
+
+case `$uname -s` in
+	CYGWIN*) 
+		EXE=".exe"
+		DYN="dll"
+		echo "Configuring for Cygwin..."
+		;;
+	Linux*) echo "Configuring for Linux..."
+		OS_SIM_LIBS="-lcurses"
+		;;
+	SunOS*)  echo "Configuring for Solaris..."
+		OS_SIM_LIBS="-lcurses -lsocket -lnsl"
+		;;
+	Darwin*)
+		FONT="Fixed"
+		if [ "$wish" = "/sw/bin/wish" ] ; then
+		    echo "Configuring for MacOS-X (Darwin)/Fink Tcl/Tk."
+		    # Fink installation--override default fonts using
+		    # fonts suggested by Tevis Money.
+		    CODE_FONT="{LucidaTypewriter 11 normal}"
+		    BUTTON_FONT="{Fixed 10 normal}"
+		    CONSOLE_FONT="{Fixed 10 normal}"
+		else
+		    echo "Configuring for MacOS-X (Darwin)/Aqua Tcl/Tk."
+		fi
+esac
+echo "Installation directory is $INSTALL_DIR"
+
+
+# Look around for readline.
+
+USE_READLINE=-DUSE_READLINE=1
+
+for path in $libpathlist ; do
+    if [ -r $path/libreadline.a ] ; then
+    	RLLPATH="-L$path -lreadline" ;
+	break ;
+    fi ;
+    if [ -r $path/libreadline.${DYN}.a ] ; then
+    	RLLPATH="-L$path -lreadline" ;
+	break ;
+    fi ;
+done
+if [ -z "$RLLPATH" ] ; then
+    USE_READLINE= ;
+fi
+
+for path in $incpathlist ; do
+    if [ -d $path/readline ] ; then
+    	RLIPATH=-I$path ;
+	break ;
+    fi ;
+done
+if [ -z "$RLIPATH" ] ; then
+    USE_READLINE= ;
+fi
+
+
+# Splice it all in to Makefile.def to create the Makefile.
+
+rm -f Makefile
+sed -e "s __GCC__ $gcc g" -e "s __FLEX__ $flex g" -e "s __EXE__ $EXE g"     \
+    -e "s*__OS_SIM_LIBS__*$OS_SIM_LIBS*g" -e "s __RM__ $rm g"               \
+    -e "s __CP__ $cp g" -e "s __MKDIR__ $mkdir g" -e "s __CHMOD__ $chmod g" \
+    -e "s __USE_READLINE__ $USE_READLINE g" -e "s*__RLLPATH__*$RLLPATH*g"   \
+    -e "s __RLIPATH__ $RLIPATH g" -e "s*__INSTALL_DIR__*$INSTALL_DIR*g"     \
+    -e "s __WISH__ $wish g" -e "s __SED__ $sed g"                           \
+    -e "s!__CODE_FONT__!$CODE_FONT!g" -e "s!__BUTTON_FONT__!$BUTTON_FONT!g" \
+    -e "s!__CONSOLE_FONT__!$CONSOLE_FONT!g" Makefile.def > Makefile
+

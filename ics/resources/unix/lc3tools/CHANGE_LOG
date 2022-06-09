@@ -1,0 +1,203 @@
+1 October 2008 (version 0.12)
+	fixed lc3convert issues with unterminated (Windows-style) last 
+		line in input file (both binary and hex); added multiple 
+		hex values error as part of changes
+	fixed lc3sim-tk self-deadlock issues with some versions of wish 
+		through bindings on window Destroy events by removing 
+		such bindings before exiting; problem showed up primarily 
+		as hangs when the "Quit" button was pressed; this bug
+		had been around for quite a while, but I didn't understand
+		why until about Feb 2008
+
+22 October 2005
+	moved lc3_register declaration and macro into lc3sim.c (eliminated
+		duplicate/mis-matched declaration in lc3sim.h) 
+
+9 February 2005 (version 0.11)
+	made lc3as accept \" for quote marks as part of strings
+	changed both lc3as and lc3convert to reject values above
+		0x10000 as invalid rather than mapping them silently
+		into 16-bit values
+	changed lc3convert hex mode to work with both with and without
+		preceding 'x'
+	changed lc3as and lc3convert read value routines to work with
+		compilers for 64-bit ISAs (i.e., those for which long
+		gives a 64-bit number)
+
+10 March 2004
+	fixed minor bug in dump_memory to handle full memory dump
+		(all 65,536 addresses)
+	fixed similar bug in disassemble
+
+4 March 2004 (version 0.10)
+	changed lc3as lexer to accept multi-line strings
+	fixed lexer bug with handling bad operands after opcodes
+	allowed negative numbers (and labels) to be used in simulator
+	made error message for illegal instruction visible in GUI
+	added "finish" command and button in GUI
+	added keyboard shortcut 'f' for finish command in GUI
+	cleared stop message after printing once (was left on before)
+
+3 March 2004
+	checked lc3in rather than descriptor 0 for terminal nature
+		when starting execution of LC-3 instructions
+	added option to flush input from terminal when LC-3 stops to 
+		avoid interpreting input typed to LC-3 as commands to 
+		simulator
+	rewrote GUI options management, cleaning up some odd behavioral
+		aspects; still some oddity left, though, such as
+		need to close color selection window before quitting
+
+2 March 2004
+	used separate fdopen calls to create unidirectional FILE*
+		structures from the LC-3 console socket to the GUI
+		front end; using a single call led to odd behavior
+		with Solaris, and is potentially incompatible with
+		SysV semantics
+	improved error messages in cases where lc3os code or symbols 
+		are not found
+	initialized PC to x0000 and PSR to condition ZERO when
+		starting/resetting machine (becomes visible if OS 
+		code not available)
+	added lc3os.sym to lc3sim Makefile default target list
+	finished machine reset command implementation (started yesterday)
+	made file command change file to be loaded when machine is reset
+	added reset command to help
+	added reset button to GUI
+	added missing widget appearance controls (based on selected options)
+	made code scrollbar not extend past bottom of code window
+
+1 March 2004
+	changed extension check on file load to add extension when
+		either '.' does not appear, or '/' appears after the
+		last '.' in the filename
+	changed load message to read ".obj" instead of ".sym"
+	fixed option command response message for stdin option
+	checked for .END directive in assembler; added error messages
+		for various combinations of missing .ORIG and .END
+		directives
+	added warning for text after .END directive
+
+17 February 2004
+	changed to use valid quit command to close simulator from lc3sim-tk
+		(was using 'q' before, but had disallowed that abbreviation)
+
+12 February 2004 (version 0.9)
+	fixed processing of hex input without leading "x" in lc3convert
+	eliminated warnings for use of strlen as field width when
+		disassembling instructions; strlen returns size_t on
+		some systems
+	cleared system breakpoint when simulator stops for any reason
+		other than being interrupted by GUI, thus fixing bugs
+		with breakpoint associated with the "next" command 
+		surviving HALTs, user breakpoints, etc.
+
+10 February 2004 (version 0.8)
+	added missing quotes to MacOS-X Fink font overrides
+	eliminated system breakpoints in favor of single address associated 
+		with "next" command, thereby eliminating a couple of bugs: 
+		(1) if the simulator was interrupted through interaction 
+		with the GUI, such as setting/clearing breakpoints, during 
+		a "next" operation, it lost track of where it was supposed 
+		to stop; and
+		(2) if the "clear all breakpoints" command was issued,
+		the system breakpoint was erased (this bug was shadowed
+		by the first)
+	made the next and step commands correctly dump state after
+		execution; delayed memory updates were not handled
+		correctly for these commands
+	made "Apply" button in options window pull font point size values
+		from entry boxes before application of new options; the
+		sizes were previously reset unless <Return> had been pressed
+		in the entry box
+	changed default code font for MacOS-X Fink installation to
+		{LucidaTypewriter 11 normal}
+
+9 February 2004 (version 0.7)
+	set execution permission on lc3sim-tk during make
+	allowed omission of "x" prefix when converting hexadecimal files
+		with lc3convert
+	fixed problems with CR-LF sequences in lc3as and lc3convert;
+		both should now work (and were tested) with DOS-style
+		end of line sequences
+	added overrides for default fonts when installing for MacOS-X
+		with Fink project's version of Tcl/Tk; new fonts
+		suggested by Tevis Money, who also provided information
+		on necessary paths, etc.
+
+29 January 2004
+	started to add support for MacOS, but found that two possible
+		flavors exist (Fink and Aqua).  Fink needs some path
+		additions and possibly default font changes, whereas
+		Aqua apparently works with 0.6, and is available from 
+		www.apple.com/downloads/macosx/unix_open_source/tcltkaqua.html
+
+22 January 2004 (version 0.6)
+	fixed a minor bug involving use of scan command functionality
+		not available with Tk8.2 (but available with 8.3), thus
+		preventing use with older versions of wish
+
+18 December 2003 (version 0.5)
+	(just comments by SSL today)
+	I've heard no bug reports on Linux to date (2-3 installations?)
+	I don't think that GUI works properly on Solaris, but I haven't
+		had time to do a serious testing job at work yet.
+	I use Cygwin at home, so it should be reasonably stable 
+		(assuming that they don't insert bugs or expose any of mine)
+	so...I guess I'm going to release more broadly, but I'll keep the
+		0.5 as a warning for now
+	(send bug reports to lumetta@uiuc.edu with something clear in the
+		subject line)
+
+12 November 2003
+	added code to change BR to BRnzp in assembler
+	allowed colons after labels, in the style used in some examples
+		in the second edition of Patt and Patel; the colon form
+		also allows the opcode and pseudo-op names to be used
+		as labels (provided that they are followed by a colon
+		when defined)
+
+31 October 2003 (version 0.4)
+	fixed off-by-one error in scanf limits in simulator
+	fixed misunderstood argument in tcsetattr calls
+	set VMIN and VTIME appropriately (1 and 0, resp.) when LC-3 runs
+	finished writing and included new lc3convert tool for conversion 
+		from .bin and .hex files to .obj files
+
+30 October 2003
+	started development of lc3convert tool by paring down copy of lc3as
+		lexer
+
+29 October 2003 (version 0.3)
+	removed remaining dependencies on gmake (use of $@ and $<)
+	added delay watch cursor use when opening options window
+		(since it can take a long time when many fonts are
+		available)
+	added delay watch when starting up (takes a long time to
+		fill 64k lines on some older machines)
+	fixed ^C handling for Solaris
+	fixed bugs with use of readline (in both Makefile and lc3sim.c)
+
+21 October 2003
+	added option to read LC-3 console input from stdin (or GUI
+		console) during script execution; turned ON by default
+
+19 October 2003 (version 0.2: fixed some bugs, large and small)
+	re-disassembled code for GUI after writing memory
+	created option to delay updated code to GUI until LC-3 stops
+		(on by default)
+	added support to GUI to change delay option
+	fixed retagging PC and breakpoints when values change
+	made simulator indicate breakpoints and presence of PC in
+		disassembly; simulator also indicates breakpoints now
+	added display of '\a', '\b', and a few others
+	fixed display of '{' and '}' (Tcl can't parse braces as lists)
+	removed symbols from region of memory into which new code is loaded
+		in simulator
+	disallowed duplicate labels in assembler
+	KNOWN ISSUE: may want to translate \a, \b, etc. when sent to console
+		(console doesn't act like a VT-100)
+
+18 October 2003 (version 0.1)
+	software packaged for release to Austin
+	

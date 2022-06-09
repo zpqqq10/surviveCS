@@ -1,0 +1,849 @@
+#!/bin/sh
+# the next line restarts using wish \
+exec @@WISH@@ "$0" -- "$@"
+
+###############################################################################
+#
+# lc3sim-tk -- a Tcl/Tk graphical front end to the LC-3 simulator
+#
+#  "Copyright (c) 2003 by Steven S. Lumetta."
+# 
+#  Permission to use, copy, modify, and distribute this software and its
+#  documentation for any purpose, without fee, and without written 
+#  agreement is hereby granted, provided that the above copyright notice
+#  and the following two paragraphs appear in all copies of this software,
+#  that the files COPYING and NO_WARRANTY are included verbatim with
+#  any distribution, and that the contents of the file README are included
+#  verbatim as part of a file named README with any distribution.
+#  
+#  IN NO EVENT SHALL THE AUTHOR BE LIABLE TO ANY PARTY FOR DIRECT, 
+#  INDIRECT, SPECIAL, INCIDENTAL, OR CONSEQUENTIAL DAMAGES ARISING OUT 
+#  OF THE USE OF THIS SOFTWARE AND ITS DOCUMENTATION, EVEN IF THE AUTHOR 
+#  HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+#  
+#  THE AUTHOR SPECIFICALLY DISCLAIMS ANY WARRANTIES, INCLUDING, BUT NOT 
+#  LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR 
+#  A PARTICULAR PURPOSE.  THE SOFTWARE PROVIDED HEREUNDER IS ON AN "AS IS" 
+#  BASIS, AND THE AUTHOR NO OBLIGATION TO PROVIDE MAINTENANCE, SUPPORT, 
+#  UPDATES, ENHANCEMENTS, OR MODIFICATIONS."
+#
+#  Author:		Steve Lumetta
+#  Version:		1
+#  Creation Date:	18 October 2003
+#  Filename:		lc3sim-tk
+#  History:		
+# 	SSL	1	18 October 2003
+# 		Copyright notices and Gnu Public License marker added.
+#
+###############################################################################
+
+set path(lc3sim) @@LC3_SIM@@
+
+# If an error occurs, exit without showing the window.
+wm withdraw .
+proc set_default_options {} {
+    global option
+
+    set option(code_width)     60
+    set option(code_height)    40
+    set option(code_font)      @@CODE_FONT@@
+    set option(code_bg)        Blue4
+    set option(code_fg)        Yellow
+    set option(pc_bg)          $option(code_fg)
+    set option(pc_fg)          $option(code_bg)
+    set option(break_bg)       Red
+    set option(break_fg)       White
+    set option(button_font)    @@BUTTON_FONT@@
+
+    set option(console_width)  80
+    set option(console_height) 25
+    set option(console_font)   @@CONSOLE_FONT@@
+    set option(console_bg)     $option(code_bg)
+    set option(console_fg)     $option(code_fg)
+
+    set option(flush)          on
+    set option(device)         on
+    set option(delay)          on
+}
+
+
+# Fills variables and widgets in options window with values from 
+# option strings.  Used when options window is created and when values
+# are restored to default values (which are only known as strings).
+
+proc fill_option_window {} {
+    global opt_list option optval
+
+    foreach opt $opt_list {
+	set name  [lindex $opt 0]
+        set optval($name) $option($name)
+	switch -exact [lindex $opt 2] {
+	    font {
+		set optval($name,f) [lindex $option($name) 0]
+		set optval($name,p) [lindex $option($name) 1]
+		set optval($name,b) [lindex $option($name) 2]
+	    }
+	}
+    }
+}
+
+# Using data from the corresponding widget(s) in the options window,
+# apply a single option and create an appropriate option string for
+# that option.  Used when individual options are set and indirectly
+# whenever all options are saved or applied.
+
+proc apply_option {opt} {
+    global option optval
+
+    set name  [lindex $opt 0]
+    set plist [lindex $opt 3]
+    switch -exact [lindex $opt 2] {
+	font {
+	    set optval($name) \
+	    	[list $optval($name,f) $optval($name,p) $optval($name,b)]
+	}
+	color {
+	    catch {.options.$name.b config -bg $optval($name)}
+	}
+    }
+    foreach item $plist {
+	eval "[lindex $item 0] config [lindex $item 1] \"$optval($name)\""
+	set option($name) $optval($name)
+    }
+}
+
+# Applies all options as above, then writes simulator options to the
+# simulator.  Used when "Apply" or "Save" [options] are pressed, and
+# when default settings are restored.
+
+proc apply_all_options {} {
+    global opt_list
+
+    foreach opt $opt_list {apply_option $opt}
+    apply_sim_options
+}
+
+proc apply_sim_options {} {
+    global sim option
+
+    # Note that the "keep" option in lc3sim is only meaningful for 
+    # terminal input; since the GUI separates the input channels, there 
+    # is no chance of LC-3 input being used as simulator commands, and 
+    # thus no point in not keeping it.  Turning keep off and flush are 
+    # also equivalent in the GUI, so the functionality is still available.
+
+    foreach name {flush device delay} {
+	puts $sim "option $name $option($name)"
+    }
+}
+
+proc write_option_file {} {
+    global opt_list option
+
+    if {[catch {
+	set ofile [open "~/.lc3simrc" w]
+	apply_all_options
+	foreach opt $opt_list {
+	    set name [lindex $opt 0]
+	    puts $ofile "set option($name) \"$option($name)\""
+	}
+	foreach name {flush device delay} {
+	    puts $ofile "set option($name) \"$option($name)\""
+	}
+	close $ofile
+    } msg]} {
+        tk_messageBox -message $msg
+    } {
+        tk_messageBox -message "Options saved." -parent .options
+    }
+}
+
+proc fontmenu {oname mname opt} {
+    menu $mname -tearoff 0
+    foreach font [font families] {
+	if {[font metrics [list $font] -fixed]} {
+	    $mname add command -label "$font" -font [list $font] -command "
+		set optval($oname,f) \"$font\"
+		apply_option [list $opt]
+	    "
+	}
+    }
+    $mname add separator
+    foreach font [font families] {
+	if {![font metrics [list $font] -fixed]} {
+	    $mname add command -label "$font" -font [list $font] -command "
+		set optval($oname,f) \"$font\"
+		apply_option [list $opt]
+	    "
+	}
+    }
+}
+
+proc stylemenu {oname mname opt} {
+    menu $mname -tearoff 0
+    foreach style {normal bold italic} {
+	$mname add command -label $style -command "
+	    set optval($oname,b) $style
+	    apply_option [list $opt]
+	"
+    }
+}
+
+proc change_options {} {
+    global opt_list option optval
+
+    if {![winfo exists .options]} {
+	show_delay 1
+	update
+        toplevel .options
+	wm title .options "LC-3 Simulator Options"
+	set opt_list {
+	    {code_width     "Code Width"      int   {{.code -width}}}
+	    {code_height    "Code Height"     int   {{.code -height}}}
+	    {code_font      "Code Font"       font
+	     {{.code -font} {.regs.0.0.l -font} {.regs.0.0.e -font}
+	      {.regs.0.1.l -font} {.regs.0.1.e -font}
+	      {.regs.0.2.l -font} {.regs.0.2.e -font}
+	      {.regs.1.0.l -font} {.regs.1.0.e -font}
+	      {.regs.1.1.l -font} {.regs.1.1.e -font}
+	      {.regs.1.2.l -font} {.regs.1.2.e -font}
+	      {.regs.2.0.l -font} {.regs.2.0.e -font}
+	      {.regs.2.1.l -font} {.regs.2.1.e -font}
+	      {.regs.2.2.l -font} {.regs.2.2.e -font}
+	      {.regs.3.0.l -font} {.regs.3.0.e -font}
+	      {.regs.3.1.l -font} {.regs.3.1.e -font}
+	      {.regs.3.2.l -font} {.regs.3.2.e -font}
+	      {.mem.l -font} {.mem.addr -font}
+	      {.mem.value -font} {.mem.l2 -font}
+	      {.in.l -font} {.in.e -font}
+	     }}
+	    {code_bg        "Code Background" color {{.code -bg}}}
+	    {code_fg        "Code Foreground" color {{.code -fg}}}
+	    {pc_bg          "PC Background"   color   
+	     {{{.code tag} {pc_at -background}}}}
+	    {pc_fg          "PC Foreground"   color
+	     {{{.code tag} {pc_at -foreground}}}}
+	    {break_bg       "Breakpoint Background" color
+	     {{{.code tag} {break -background}}}}
+	    {break_fg       "Breakpoint Foreground" color
+	     {{{.code tag} {break -foreground}}}}
+	    {button_font    "Button Font"     font  
+	     {{.ctrl.n -font} {.ctrl.s -font} {.ctrl.x -font} {.ctrl.c -font}
+	      {.ctrl.f -font} {.ctrl.p -font} {.ctrl.bca -font} 
+	      {.in.browse -font} 
+	      {.misc.reset -font} {.misc.options -font} {.misc.quit -font}
+	     }}
+	    {console_width  "Console Width"   int   {{.console.t -width}}}
+	    {console_height "Console Height"  int   {{.console.t -height}}}
+	    {console_font   "Console Font"    font  {{.console.t -font}}}
+	    {console_bg     "Console Background" color
+	     {{.console.t -bg}}}
+	    {console_fg     "Console Foreground" color
+	     {{.console.t -fg}}}
+	}
+
+	frame .options.ctrltop
+	button .options.ctrltop.def -width 19 -text "Use Default Values" \
+	    -command {
+	    set_default_options
+	    fill_option_window
+	    apply_all_options
+	}
+	pack .options.ctrltop.def -side right -padx 5
+	pack .options.ctrltop -side top -expand t -fill x -pady 5
+	fill_option_window
+	foreach opt $opt_list {
+	    set name    [lindex $opt 0]
+	    set visname [lindex $opt 1]
+	    set type    [lindex $opt 2]
+	    set plist   [lindex $opt 3]
+	    frame .options.$name
+	    label .options.$name.l -width 25 -anchor e -text $visname 
+	    pack .options.$name.l -side left
+	    set optval($name) $option($name)
+	    switch -exact $type {
+	    	int {
+		    entry .options.$name.e -width 20 \
+		    	-textvariable optval($name)
+		    bind .options.$name.e <KeyPress-Return> "
+		    	apply_option [list $opt]
+		    "
+		    pack .options.$name.e -side left -expand t -fill x -padx 5
+		}
+		font {
+		    menubutton .options.$name.m -width 15 \
+		    	-menu .options.$name.m.m -textvariable optval($name,f)
+		    fontmenu $name .options.$name.m.m $opt
+		    entry .options.$name.p -width 2 \
+		    	-textvariable optval($name,p)
+		    set optval($name,p) [lindex $optval($name) 1]
+		    bind .options.$name.p <KeyPress-Return> "
+		        apply_option [list $opt]
+		    "
+		    menubutton .options.$name.b -width 8 \
+		    	-menu .options.$name.b.m -textvariable optval($name,b)
+		    stylemenu $name .options.$name.b.m $opt
+		    pack .options.$name.m -side left -padx 5
+		    pack .options.$name.b -side right -padx 5 
+		    pack .options.$name.p -expand t -fill x
+		}
+		color {
+		    button .options.$name.b -width 20 -bg $optval($name) \
+		    	-command "
+		        set acolor \
+			    \[tk_chooseColor -initialcolor \$optval($name) \
+			      -parent .options\]
+			if {\$acolor != {}} {
+			    set optval($name) \$acolor
+			    apply_option [list $opt]
+			    catch {.options.$name.b config -bg \$optval($name)}
+			}
+		    " 
+		    pack .options.$name.b -side left -expand t -fill x -padx 5
+		}
+	    }
+	    pack .options.$name -side top -expand t -fill x -pady 2
+	}
+
+	checkbutton .options.flush -variable option(flush) \
+	    -onvalue on -offvalue off \
+	    -text "Flush LC-3 console input when restarting"
+	pack .options.flush -side top -anchor w -pady 2 
+
+	checkbutton .options.device -variable option(device) \
+	    -onvalue on -offvalue off \
+	    -text "Simulate random timing for device registers"
+	pack .options.device -side top -anchor w -pady 2 
+
+	checkbutton .options.delay -variable option(delay) \
+	    -onvalue on -offvalue off \
+	    -text "Delay display of memory updates until LC-3 stops"
+	pack .options.delay -side top -anchor w -pady 2 
+
+	frame .options.ctrl
+	button .options.ctrl.save -width 5 -text Save -command {
+	    apply_all_options
+	    write_option_file
+	}
+	button .options.ctrl.apply -width 6 -text Apply \
+		-command apply_all_options
+	button .options.ctrl.close -width 6 -text Close \
+		-command {wm withdraw .options}
+	pack .options.ctrl.save -side left -padx 5
+	pack .options.ctrl.apply -side left -padx 5
+	pack .options.ctrl.close -side right -padx 5
+	pack .options.ctrl -side bottom -expand t -fill x -pady 5
+	show_delay 0
+    } {
+        wm deiconify .options
+    }
+}
+
+# set options
+set_default_options
+if {[file exists ~/.lc3simrc]} {
+    source ~/.lc3simrc
+}
+
+# set up names for register buttons and entries
+for {set i 0} {$i < 12} {incr i} {
+    set reg(name,$i) R$i
+    set reg(visname,$i) R$i
+}
+set reg(visname,8)  PC
+set reg(visname,9)  IR
+set reg(visname,10) PSR
+set reg(visname,11) CC
+
+# create array of buttons and entries...
+frame .regs
+for {set i 0} {$i < 4} {incr i} {
+    frame .regs.$i
+    for {set j 0} {$j < 3} {incr j} {
+	set f .regs.$i.$j
+	set n [expr {$i + $j * 4}]
+	frame $f
+	label $f.l -text $reg(visname,$n) -font $option(code_font) -width 3
+	entry $f.e -width 10 -font $option(code_font) \
+		-textvariable reg($reg(name,$n))
+	bind $f.e <KeyPress-Return> "
+	    puts \$sim \"r $reg(visname,$n) \$reg($reg(name,$n))\"
+	"
+	pack $f.l -side left
+	pack $f.e
+	pack $f -side top -pady 5
+    }
+    pack .regs.$i -side left -expand t -padx 10
+}
+pack .regs -side top -fill x -pady 5
+
+text .code -width $option(code_width) -height $option(code_height) \
+	-font $option(code_font) -takefocus 1 -cursor arrow \
+	-bg $option(code_bg) -fg $option(code_fg) -wrap none \
+	-yscrollcommand {.code_y set} -state disabled
+
+.code tag configure break -background $option(break_bg) \
+	-foreground $option(break_fg)
+.code tag configure pc_at -background $option(pc_bg) -foreground $option(pc_fg)
+scrollbar .code_y -command {.code yview} -orient vertical
+
+
+# ctrl is translate, jump, or set
+proc issue_trans_cmd {ctrl} {
+    global sim mem
+
+    set mem(ctrl) $ctrl
+    puts $sim "t $mem(addr)"
+}
+
+proc set_mem {} {
+    global sim mem
+
+    issue_trans_cmd set
+}
+
+frame .mem
+label .mem.l -width 15 -text "Memory Address" -font $option(code_font)
+entry .mem.addr -width 18 -font $option(code_font) -textvariable mem(addr)
+bind .mem.addr <KeyPress-Return> {issue_trans_cmd jump}
+frame .mem.pad -width 20
+entry .mem.value -width 18 -font $option(code_font) -textvariable mem(value)
+label .mem.l2 -width 6 -text "Value" -font $option(code_font)
+bind .mem.value <KeyPress-Return> set_mem
+pack .mem.l -side left
+pack .mem.addr -side left
+pack .mem.pad -side left
+pack .mem.l2 -side left
+pack .mem.value -side left
+pack .mem -side top -fill x -pady 5
+
+
+frame .ctrl
+button .ctrl.n -text Next -command {puts $sim n} -font $option(button_font)
+button .ctrl.s -text Step -command {puts $sim s} -font $option(button_font)
+button .ctrl.f -text Finish -command {puts $sim fin} -font $option(button_font)
+button .ctrl.c -text Continue -command {puts $sim c} -font $option(button_font)
+button .ctrl.x -text Stop -command {puts $sim x} -font $option(button_font) \
+	-state disabled
+button .ctrl.p -text "Update Registers" -command {puts $sim p} \
+	-font $option(button_font)
+button .ctrl.bca -text "Clear All Breakpoints" -command clear_all_breakpoints \
+	-font $option(button_font) -state disabled
+pack .ctrl.n -side left -padx 5
+pack .ctrl.s -side left -padx 5
+pack .ctrl.f -side left -padx 5
+pack .ctrl.c -side left -padx 5
+pack .ctrl.x -side left -padx 5
+pack .ctrl.p -side right -padx 5
+pack .ctrl.bca -side right -padx 5
+pack .ctrl -side top -fill x -pady 5
+
+frame .misc
+button .misc.reset -text "Reset LC-3" -font $option(button_font) \
+    -command reset_machine
+button .misc.options -text Options -font $option(button_font) \
+    -command change_options
+button .misc.quit -text Quit -font $option(button_font) -command {set halt 1}
+pack .misc.reset -side left -padx 5
+pack .misc.quit -side right -padx 5
+pack .misc.options -padx 5
+pack .misc -side bottom -fill x -pady 5
+
+frame .in
+label .in.l -width 13 -text "File to Load" -font $option(code_font)
+entry .in.e -width 25 -font $option(code_font) -textvariable file
+bind .in.e <KeyPress-Return> load_file
+button .in.browse -text Browse -font $option(button_font) -command pick_file
+pack .in.l -side left
+pack .in.browse -side right -padx 5
+pack .in.e -expand t -fill x -padx 5
+pack .in -side bottom -fill x -pady 5
+
+pack .code_y -side right -fill y
+pack .code -expand t -fill both
+
+set save_curs(saved) 0
+proc show_delay {yes} {
+    global save_curs
+
+    if {$yes} {
+	if {!$save_curs(saved)} {
+	    set save_curs(file)    [lindex [.in.e      config -cursor] 4]
+	    set save_curs(code)    [lindex [.code      config -cursor] 4]
+	    set save_curs(sim)     [lindex [.          config -cursor] 4]
+	    set save_curs(console) [lindex [.console   config -cursor] 4]
+	    set save_curs(con_txt) [lindex [.console.t config -cursor] 4]
+	    set save_curs(saved) 1
+	}
+	.in.e      config -cursor watch
+	.code      config -cursor watch
+	.          config -cursor watch
+	.console   config -cursor watch
+	.console.t config -cursor watch
+	return
+    }
+    if {$save_curs(saved)} {
+	.in.e      config -cursor $save_curs(file)
+	.code      config -cursor $save_curs(code)
+	.          config -cursor $save_curs(sim)
+	.console   config -cursor $save_curs(console)
+	.console.t config -cursor $save_curs(con_txt)
+	set save_curs(saved) 0
+    }
+}
+
+proc load_file {} {
+    global sim file
+
+    show_delay 1
+    puts $sim "f $file"
+}
+
+proc pick_file {} {
+    global file
+
+    set f [tk_getOpenFile -defaultextension .obj \
+	-filetypes {{"Object File" .obj}} -initialdir . \
+	-initialfile $file -title "Load which file?"]
+    if {$f != ""} {
+	set file $f
+	load_file
+    }
+}
+
+set bpoints {}
+
+proc set_mem_addr {index} {
+    global mem
+
+    scan $index "%d" line
+    set mem(addr) [format "x%x" [expr {$line - 1}]]
+    issue_trans_cmd translate
+}
+
+proc break_code_line {index} {
+    global sim bpoints
+
+    scan $index "%d" line
+    set addr [format "%x" [expr {$line - 1}]]
+    if {[lsearch -exact $bpoints ${line}.0] == -1} {
+        puts $sim "b s x$addr"
+    } {
+        puts $sim "b c x$addr"
+    }
+}
+
+# kind of lazy here...could pull value from line in .code ... --SSL
+bind .code <1> {
+    set_mem_addr [.code index @%x,%y]
+    focus .code
+}
+bind .code <Double-1> {break_code_line [.code index @%x,%y]}
+
+# should never be used
+set lc3_running 0  
+proc highlight_pc {running} {
+    global reg option lc3_running
+
+    # record state of last call to allow re-highlighting
+    set lc3_running $running
+
+    .code tag remove pc_at 1.0 end
+    if {$running} {
+        .ctrl.n configure -state disabled
+        .ctrl.s configure -state disabled
+        .ctrl.f configure -state disabled
+        .ctrl.c configure -state disabled
+        .ctrl.x configure -state normal
+	bind .code <KeyPress-n> {}
+	bind .code <KeyPress-s> {}
+	bind .code <KeyPress-f> {}
+	bind .code <KeyPress-c> {}
+    } {
+	scan $reg(R8) "x%x" pc
+	set pcline [expr {$pc + 1}].0
+	.code tag add pc_at $pcline "$pcline +1 line"
+	.code see $pcline
+        .ctrl.n configure -state normal
+        .ctrl.s configure -state normal
+        .ctrl.f configure -state normal
+        .ctrl.c configure -state normal
+        .ctrl.x configure -state disabled
+	bind .code <KeyPress-n> {puts $sim next}
+	bind .code <KeyPress-s> {puts $sim step}
+	bind .code <KeyPress-f> {puts $sim finish}
+	bind .code <KeyPress-c> {puts $sim continue}
+    }
+}
+
+proc lc3sim_died {} {
+    global sim lc3_console halt
+
+    fileevent $sim readable {}
+    fileevent $lc3_console readable {}
+    catch {close $sim}
+    catch {close $lc3_console}
+    set halt 1
+    error "The LC-3 simulator died."
+}
+
+proc clear_break {lnum} {
+    global bpoints
+
+    set pos [lsearch -exact $bpoints $lnum]
+    set bpoints [lreplace $bpoints $pos $pos]
+    if {$bpoints == ""} {
+        .ctrl.bca configure -state disabled
+    }
+    .code configure -state normal
+    .code tag remove break $lnum "$lnum +1 line"
+    .code insert "$lnum +1 char" " "
+    .code delete $lnum "$lnum +1 char"
+    .code configure -state disabled
+}
+
+proc clear_all_breakpoints {} {
+    global sim bpoints
+
+    puts $sim "b c all"
+    while {$bpoints != ""} {clear_break [lindex $bpoints 0]}
+}
+
+proc reset_machine {} {
+    global sim
+
+    # Easier to handle this way, although creates more work in simulator. 
+    clear_all_breakpoints
+
+    puts $sim reset
+    show_delay 1
+}
+
+proc insert_to_console {data} {
+    .console.t configure -state normal
+    .console.t insert end "$data"
+    .console.t configure -state disabled
+    .console.t see end
+}
+
+proc delayed_read_lc3 {} {
+    global lc3_console
+
+    set line [read $lc3_console]
+    if {$line == ""} {
+    	return
+    }
+
+    insert_to_console "$line"
+}
+
+proc read_lc3 {} {
+    global lc3_console
+
+    if {[gets $lc3_console line] == -1} {
+	if {[fblocked $lc3_console]} {
+	    # wait 1/4 second and read without waiting for newline
+	    after 250 delayed_read_lc3
+	    return
+	}
+	lc3sim_died
+    }
+
+    insert_to_console "${line}\n"
+}
+
+proc read_sim {} {
+    global sim reg option bpoints mem fail_focus lc3_running
+
+    if {[gets $sim line] == -1} {
+	if {[fblocked $sim]} {return}
+	lc3sim_died
+    }
+
+    # code disassembly may contain special characters, 
+    # so don't treat it as a list
+    if {[string range $line 0 3] == "CODE"} {
+	# format: 0-3 = CODE, 4 = P if PC, SPACE otherwise
+	# 5-9 = line number in decimal, 10+ = code including B for breakpoint
+        scan [string range $line 5 9] %d lnum
+        set lnum ${lnum}.0
+	.code configure -state normal
+	.code delete $lnum "$lnum +1 line"
+	.code insert $lnum [string range $line 10 end]\n
+	.code configure -state disabled
+	# pushed recognition duty onto the simulator...
+	if {[string range $line 4 4] == "P"} {
+	    if {!$lc3_running} {
+		.code tag add pc_at $lnum "$lnum +1 line"
+	    }
+	}
+	if {[string range $line 10 10] == "B"} {
+	    .code tag add break $lnum "$lnum +1 line"
+	}
+	return
+    }
+
+    set cmd [lindex $line 0]
+
+    if {$cmd == "REG"} {
+	set rnum [lindex $line 1]
+        set reg($rnum) [lindex $line 2]
+	if {$rnum == "R8"} {highlight_pc 0}
+	return
+    }
+
+    if {$cmd == "CONT"} {
+    	highlight_pc 1
+	return
+    }
+
+    if {$cmd == "BREAK"} {
+        set lnum [lindex $line 1].0
+	lappend bpoints $lnum
+        .ctrl.bca configure -state normal
+	.code configure -state normal
+	.code insert "$lnum +1 char" B
+	.code delete $lnum "$lnum +1 char"
+	.code tag add break $lnum "$lnum +1 line"
+	.code configure -state disabled
+	return
+    }
+
+    if {$cmd == "BCLEAR"} {
+        set lnum [lindex $line 1].0
+	clear_break $lnum
+	return
+    }
+
+    if {$cmd == "TRANS"} {
+	set arg1 [lindex $line 1]
+	set mem(addr) $arg1
+	if {$mem(ctrl) == "jump"} {
+	    scan $arg1 "x%x" lnum
+	    .code see [expr {$lnum + 1}].0
+	}
+	if {$mem(ctrl) == "set"} {
+	    # store result of data translation into entry box
+	    # memory set command also returns translation 
+	    # to allow us to replace data labels with real values in the
+	    # entry box
+	    set mem(ctrl) translate
+	    puts $sim "m $mem(addr) $mem(value)"
+	} {
+	    set mem(value) [lindex $line 2]
+	    focus .code
+	}
+	return
+    }
+
+    # successful command--refocus to code window
+    if {$cmd == "TOCODE"} {
+	show_delay 0
+        focus .code
+	return
+    }
+
+    if {$cmd == "ERR"} {
+	show_delay 0
+        tk_messageBox -message [lindex $line 1]
+	return
+    }
+
+    # FIXME -- get rid of this debug thing
+    #insert_to_console ":::${line}:::\n"
+}
+
+proc open_lc3channel {sock ip_addr port} {
+    global lc3_listen lc3_console
+
+    close $lc3_listen
+    unset lc3_listen
+    if {$ip_addr != "127.0.0.1"} {
+        error "contacted by bad IP address (not loopback)"
+    }
+    set lc3_console $sock
+    fconfigure $lc3_console -blocking 0 -buffering none
+    fileevent $lc3_console readable read_lc3
+}
+
+toplevel .console
+wm withdraw .console
+wm title .console "LC-3 Console"
+wm title . "LC-3 Simulator Interface"
+
+text .console.t -width $option(console_width) -height $option(console_height) \
+	-font $option(console_font) -state disabled -takefocus 0 \
+	-bg $option(console_bg) -fg $option(console_fg) -wrap char \
+	-yscrollcommand {.console.t_y set} -cursor arrow
+scrollbar .console.t_y -command {.console.t yview} -orient vertical
+pack .console.t_y -side right -fill y
+pack .console.t -expand t -fill both
+
+bind .console <KeyPress> {
+    if {"%A" != ""} {
+	puts -nonewline $lc3_console %A
+    }
+}
+
+# could be annoying...
+#bind . <KeyPress-Escape> {set halt 1}
+
+bind . <Destroy> {exit}
+bind .console <Destroy> {set halt 1}
+
+set sim [open "| $path(lc3sim) -gui $argv" r+]
+fconfigure $sim -blocking 0 -buffering none
+
+while {![info exists lc3_listen]} {
+    set port [expr {int (rand () * 1000 + 5000)}]
+    catch {set lc3_listen [socket -server open_lc3channel $port]}
+}
+
+puts $sim $port
+
+vwait lc3_listen
+if {![info exists lc3_console]} {
+    # show error message before exiting
+    update  
+    # avoid self-deadlock issues with some versions of WISH
+    bind . <Destroy> {}
+    bind .console <Destroy> {}
+    exit
+}
+
+# pass options to simulator
+if {[file exists ~/.lc3simrc]} {
+    apply_sim_options
+}
+
+# fill memory with 0's, displaying after the text box first fills
+.code configure -state normal
+for {set i 0} {$i < 236} {incr i} {
+    .code insert end [format "                   x%04X x0000 NOP\n" $i]
+}
+wm deiconify .
+wm deiconify .console
+show_delay 1
+update
+for {} {$i < 65536} {incr i} {
+    .code insert end [format "                   x%04X x0000 NOP\n" $i]
+}
+.code delete 65537.0 65538.0
+.code configure -state disabled
+update
+
+# now we're ready to pay attention to the simulator...
+fileevent $sim readable read_sim
+
+focus .code
+show_delay 0
+
+catch {vwait halt}
+update
+fileevent $sim readable {}
+puts $sim quit
+# avoid self-deadlock issues with some versions of WISH
+bind . <Destroy> {}
+bind .console <Destroy> {}
+exit
+
