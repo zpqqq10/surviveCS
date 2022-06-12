@@ -1,0 +1,1155 @@
+*PADS-LIBRARY-PART-TYPES-V9*
+
+1117-3.3  I UND 6 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Geometry.Height" 62.99mil
+"Value" 
+"Tolerance" 
+"Description" SOT-223
+"Manufacturer #1 PN" 1117-3.3
+"Manufacturer #1" SPX
+GATE 1 4 0
+1117-3.3
+1 0 U ADJ/GND
+2 0 U OUT
+3 0 U IN
+4 0 U OUT
+
+1X2PIN_SMD 1X2PIN_SMD I CON 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 2 0
+1X2PIN_SMD
+1 0 U
+2 0 U
+
+1_DIP 1_DIP I CON 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 1 0
+1_DIP
+1 0 U
+
+20PIN-JTAG FC20H I CON 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 20pin JTAG
+"Tolerance" 
+"Manufacturer #1 PN" 20pin JTAG
+"Manufacturer #1" 20pin JTAG
+"Description" 20pin JTAG
+GATE 1 20 0
+20PIN-JTAG
+1 0 U VTREF
+2 0 U VDD
+3 0 U NTRST
+4 0 U GND
+5 0 U TDI
+6 0 U GND
+7 0 U TMS
+8 0 U GND
+9 0 U TCK
+10 0 U GND
+11 0 U RTCK
+12 0 U GND
+13 0 U TDO
+14 0 U GND
+15 0 U NSRST
+16 0 U GND
+17 0 U DBGRQ
+18 0 U GND
+19 0 U DBGACK
+20 0 U GND
+
+3.0MM 3.0MM-5:3.0MM I CON 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 1 0
+3.0MM
+1 0 U 3.0MM
+
+6X2P_SMD 12PIN_2.54_SMD I CQF 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" I2C_6X2P
+"Tolerance" 
+"Manufacturer #1 PN" I2C_6X2P
+"Manufacturer #1" 
+"Description" I2C_6X2P
+GATE 1 12 0
+I2C_6X2P
+1 0 U IO1
+2 0 U IO2
+3 0 U IO3
+4 0 U IO4
+5 0 U IO5
+6 0 U IO6
+7 0 U IO7
+8 0 U IO8
+9 0 U IO9
+10 0 U IO10
+11 0 U IO11
+12 0 U IO12
+
+74HC1G66GW SOT-353 I TTL 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 5 0
+74HC1G66GW
+1 0 U Y
+2 0 U Z
+3 0 U GND
+4 0 U EN
+5 0 U VCC
+
+8050 SOT-23 I Q 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Description" NPN
+"Manufacturer #1" 
+"Manufacturer #2" 8050
+"Tolerance" 
+"Value" 
+GATE 1 3 1
+8050
+1 0 U B
+2 0 U E
+3 0 U C
+
+ANTENNA-2_0 WIFI_ANTENNA I TTL 2 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" ANTENNA-2
+"Source_Path" D:\FIRE_LAYOUT\ESP8266.DSN
+GATE 1 1 0
+ANTENNA-2_0
+1 0 L 1
+
+AT24C02  I UND 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 2k/2048bits
+"Tolerance" 
+"Description" 8 lead ssop,2k/2048bits
+"Manufacturer #1 PN" AT24C02
+"Manufacturer #1" ATMEL
+GATE 1 8 0
+AT24C02
+1 0 U A0
+2 0 U A1
+3 0 U A2
+4 0 U GND
+5 0 U SDA
+6 0 U SCL
+7 0 U WP
+8 0 U VCC
+
+BAT54C SOT-23 I UND 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" BAT54C
+GATE 1 3 0
+BAT54C
+3 0 U
+1 0 U
+2 0 U
+
+BEAD-220/100MHZ-0603 L0603 I IND 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" BEAD
+"Tolerance" 
+"Manufacturer #1 PN" BEAD
+"Manufacturer #1" 
+"Description" 0603,BEAD
+GATE 1 2 0
+BEAD-220/100MHZ-0603
+1 0 U
+2 0 U
+
+BEEP-9.5X5.5 BEEP-9.5X5.5 I UND 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 2 0
+BEEP-9.5X5.5
+1 0 U P
+2 0 U G
+
+CAMERA-PORT 20PIN_2.54_DIP_BOT I JP 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Manufacture 1 P/N" CAMERA-PORT
+"Manufacture 1" 
+"Description" 
+GATE 1 20 0
+CAMERA-PORT
+1 0 U VDD
+2 0 U DO0
+3 0 U OE
+4 0 U DO1
+5 0 U RRST
+6 0 U DO2
+7 0 U RCLK
+8 0 U DO3
+9 0 U XCLK
+10 0 U DO4
+11 0 U VSVNC
+12 0 U DO5
+13 0 U WRST
+14 0 U DO6
+15 0 U WEN
+16 0 U DO7
+17 0 U HREF
+18 0 U SIO_C
+19 0 U GND
+20 0 U SIO_D
+
+CAP+_47UF_FIRE CAP+_47UF_FIRE I CAP 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Cost" 
+"Assembly" 
+"Package" 
+"Value" 47UF
+"Tolerance" 
+"Serial Number" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Geometry.Height" 
+"Description" 
+GATE 1 2 0
+CAP+_47UF_FIRE
+1 1 U
+2 1 U
+
+CAP_0.1UF_0603_FIRE CAP_0603_FIRE I CAP 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" 
+"Value" 0.1UF
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" SURFACE MOUNT CAPACITOR 0.031 X 0.061 INCHES
+GATE 1 2 0
+CAP_FIRE
+1 1 U
+2 1 U
+
+CAP_10P_0603_FIRE RES_0603_FIRE:CAP_0603_FIRE I CAP 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" 
+"Value" 10P
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" 
+GATE 1 2 0
+CAP_FIRE
+1 1 U
+2 1 U
+
+CAP_20P_0603_FIRE CAP_0603_FIRE I CAP 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 20P
+"Tolerance" 
+"Serial Number" 
+"Package" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Geometry.Height" 
+"Description" 
+"Cost" 
+"Assembly" 
+GATE 1 2 0
+CAP_FIRE
+1 1 U
+2 1 U
+
+CAP_NP 0603 I CAP 16 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 5.6pF
+"Source_Path" D:\CADENCELIB\CAPTURELIB\LC_PASSIVE.OLB
+"Part_Number" CA100039-01
+"Description" 0603, X7R, 50V, 10%(K)
+"Voltage" 50V
+"Mfr_Part_Number" 0603B104K500NT
+"Mfr" Fenghua
+"Availability" 30
+"ICA_PARTNUM" 
+"ICA_MFR_NAME" 
+"Gtech_Number" 50306031003K50V01
+"Tolerance" ¡À10%
+"Datasheet" D:\CadenceLib\Partbase\Datasheet\Capacitor\Fenghua\LC503_Fenghua-X7R.pdf
+"Remarks" Checked
+"Partname" ÌùÆ¬µçÈÝ  0603
+"Spec" 100nF/50V 10%(K) X7R,0603B104K500NT(·ç»ª)
+GATE 1 2 0
+CAP_NP
+1 0 L 1
+2 0 L 2
+
+CH340G SOP16 I UND 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 16 0
+CH340G
+1 0 U GND
+2 0 U TXD
+3 0 U RXD
+4 0 U V3
+5 0 U UD+
+6 0 U UD-
+7 0 U XI
+8 0 U XO
+9 0 U CTS#
+10 0 U DSR#
+11 0 U RI#
+12 0 U DCD#
+13 0 U DTR#
+14 0 U RTS#
+15 0 U R232
+16 0 U VCC
+
+COAX UFL-3 I UND 2 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" COAX
+"Source_Path" C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CONNECTOR.OLB
+GATE 1 3 0
+COAX
+1 0 L CENTER_1
+3 0 L CENTER_2
+2 0 L SHIELD
+
+COVER COVER1 I UND 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 5 0
+COVER
+1 0 U GND
+2 0 U GND
+3 0 U GND
+4 0 U GND
+5 0 U GND
+
+CR1220 BATERY I BT 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 2 0
+CR1220
+1 0 U
+2 0 U
+
+CRYSTAL5032 NX3225SA I OSC 11 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 26MHz
+"Source_Path" D:\CADENCELIB\CAPTURELIB\LC_DISCRETE.OLB
+"Spec" 27.12MHz,E5SB27_1200F20G13(Hosonic)
+"Partname" ÌùÆ¬¾§Õñ
+"ICA_MFR_NAME" 
+"ICA_PARTNUM" 
+"Availability" 0
+"Mfr" Hosonic
+"Mfr_Part_Number" E5SB27_1200F20G13
+"Description" 27.12MHz,SMD5032,-30 to 85¡æ
+"Part_Number" OS200008-01
+GATE 1 4 0
+CRYSTAL5032
+1 0 L 1
+2 0 L 2
+3 0 L 3
+4 0 L 4
+
+C_0.1UF_0603 C_0603 I CAP 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 0.1U
+GATE 1 2 0
+C_0.1UF_0603
+1 1 U
+2 1 U
+
+C_104_0603 C_0603 I CAP 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 104
+GATE 1 2 0
+C_104_0603
+1 1 U
+2 1 U
+
+C_10UF_0603 CAP_0603_FIRE I CAP 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 10U
+GATE 1 2 0
+C_10UF_0603
+1 1 U
+2 1 U
+
+C_22P_0603 C_0603 I CAP 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 22P
+GATE 1 2 0
+C_22P_0603
+1 1 U
+2 1 U
+
+DHT11/DS18B20 HDR1X4 I UND 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Manufacture 1 P/N" DHT11/DS1302
+"Manufacture 1" 
+"Description" 
+GATE 1 4 0
+DHT11/DS18B20
+1 0 U VDD
+2 0 U DATA
+3 0 U NC/GND
+4 0 U GND
+
+ESP8266 QFN32_1 I TTL 2 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" ESP8266
+"Source_Path" C:\CADENCE\SPB_16.6\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB
+GATE 1 33 0
+ESP8266
+1 0 L VDDA
+2 0 L LNA
+3 0 L VDD3P3
+4 0 L VDD3P3
+5 0 L VDD_RTC
+6 0 L TOUT
+7 0 L CHIP_EN
+8 0 L XPD_DCDC
+9 0 L MTMS
+10 0 L MTDI
+11 0 L VDDPST
+12 0 L MTCK
+13 0 L MTDO
+14 0 L GPIO2
+15 0 L GPIO0
+16 0 L GPIO4
+17 0 L VDD-PST
+18 0 L SDIO_DATA2
+19 0 L SDIO_DATA3
+20 0 L SDIO_CMD
+21 0 L SDIO_CLK
+22 0 L SDIO_DATA0
+23 0 L SDIO_DATA1
+24 0 L GPIO5
+25 0 L U0RXD
+26 0 L U0TXD
+27 0 L XTAL_OUT
+28 0 L XTAL_IN
+29 0 L VDDD
+30 0 L VDDA
+31 0 L RES12K
+32 0 L EX_RSTB
+33 0 L GND
+
+EVM3ESX50B15 EVM3ESX50B14 I RES 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Tolerance" 
+"Value" EVM3ESX50B15-100K
+"Manufacturer #2" 
+"Manufacturer #1" 
+"Description" c
+GATE 1 3 1
+EVM3ESX50B15
+A 0 U
+B 0 U
+C 0 U
+
+FUSE500MA C1812 I FUS 11 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Protel.FootprintDescription" Chip Capacitor, 2-Leads, Body 4.6x3.2mm, IP
+"Value" FUSE500ma
+"Tolerance" 
+"Serial Number" 
+"Package" 
+"Manufacture 1 P/N" FUSE500ma
+"Manufacture 1" 
+"Geometry.Height" 
+"Description" FUSE500ma
+"Cost" 
+"Assembly" SMD
+GATE 1 2 0
+FUSE500MA
+1 1 U
+2 1 U
+
+HS0038B HDR1X3 I UND 7 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Protel.FootprintDescription" Connector; Header; 3 Position
+"Geometry.Height" 1.19990mm
+"Value" 
+"Tolerance" 
+"Manufacture 1 P/N" HS0038B
+"Manufacture 1" 
+"Description" 
+GATE 1 3 0
+HS0038B
+1 0 U DATA
+2 0 U GND
+3 0 U VCC
+
+IN4148 DIODE_SOP I DIO 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"VALUE" IN4148
+GATE 1 2 0
+IN4148
+1 1 U +
+2 1 U -
+
+IND 0603 I IND 14 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" NC
+"Source_Path" D:\CADENCELIB\CAPTURELIB\LC_PASSIVE.OLB
+"Part_Number" IN100085-01
+"Description" 1uH, 1.1R@245MHz, 245mA
+"Mfr_Part_Number" NLV25T-1R0J-PF
+"Mfr" TDK
+"Availability" 0
+"ICA_PARTNUM" 
+"ICA_MFR_NAME" 
+"Resistance" 1.1R
+"Current" 245mA
+"Tolerance" 5%
+"Partname" ÌùÆ¬µç¸Ð
+"Spec" 1uH,NLV25T-1R0J-PF(TDK)
+GATE 1 2 0
+IND
+1 0 L 1
+2 0 L 2
+
+KEY SW6.2/6.2-SMD I K 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Description" 
+"Manufacturer #1 PN" KEY
+"Manufacturer #1" 
+GATE 1 4 0
+KEY
+1 0 U
+2 0 U
+3 0 U
+4 0 U
+
+LED_BLUE_0603_FIRE LED_BLUE_0603_FIRE I DIO 8 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Cost" 
+"Geometry.Height" 
+"Serial Number" 
+"Value" BLUE
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" blue,0603
+GATE 1 2 0
+LED_BLUE_0603_FIRE
+A 0 U ANODE
+K 0 U CATHODE
+
+LED_RED_0603_FIRE LED_RED_0603_FIRE I DIO 8 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Cost" 
+"Geometry.Height" 
+"Value" RED
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" red,0805
+GATE 1 2 0
+LED_RED_0603_FIRE
+A 0 U ANODE
+K 0 U CATHODE
+
+LED_RGB_5MM LED_RGB_5MM I DIO 8 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" RGBLED_5MM
+"Tolerance" 
+"Serial Number" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Geometry.Height" 
+"Description" RGB
+"Cost" 
+GATE 1 4 0
+LED_RGB
+1 0 U G
+2 0 U G
+3 0 U R
+4 0 U R
+
+NC_FIDUCIALMARK_FIRE NC_FIDUCIALMARK_FIRE I NC 7 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Priority" 1
+"Geometry.Height" 
+"Value" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" FIDUCIAL MARK
+"Serial Number" NF
+GATE 1 1 0
+NC_FIDUCIALMARK_FIRE
+1 0 U
+
+NRF-PORT 8PIN_2.54_SMD I JP 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Manufacture 1 P/N" NRF-PORT
+"Manufacture 1" 
+"Description" 
+GATE 1 8 0
+NRF-PORT
+1 0 U GND
+2 0 U 3V3
+3 0 U CE
+4 0 U CSN
+5 0 U SCK
+6 0 U MOSI
+7 0 U MISO
+8 0 U IRQ
+
+RES-0603-0R 0603 I RES 14 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 0R
+"Source_Path" D:\CADENCELIB\CAPTURELIB\LC_PASSIVE.OLB
+"ICA_MFR_NAME" 
+"ICA_PARTNUM" 
+"Availability" 0
+"Mfr" Fenghua
+"Mfr_Part_Number" RS03K104JT
+"Power" 1/10W
+"Description" 0603, 50V, 1/10W, 5%
+"Part_Number" RE200045-01
+"Gtech_Number" 50106031003JR1001
+"Remarks" Checked
+"Partname" ÌùÆ¬µç×è 0603
+"Spec" 0R,1/10W,5%,RS03K104JT(·ç»ª)
+GATE 1 2 0
+RES-0603-0R
+1 0 L 1
+2 0 L 2
+
+RES_100R_0603_FIRE RES_0603_FIRE I RES 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" SMD
+"Value" 100R
+"Tolerance" +-5%
+"Manufacture 1 P/N" 
+"Manufacture 1" SUPEROHM
+"Description" 0402
+GATE 1 2 0
+RES_FIRE
+1 1 U
+2 1 U
+
+RES_10K_0603_FIRE RES_0603_FIRE I RES 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" SMD
+"Value" 10K
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" SURFACE MOUNT RESISTOR 0.031 X 0.061 INCHES, 1/10W
+GATE 1 2 0
+RES_FIRE
+1 1 U
+2 1 U
+
+RES_12K_1%_0603_FIRE RES_0603_FIRE I RES 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" SMD
+"Value" 12K_1%
+"Tolerance" +-1%
+"Manufacture 1 P/N" 
+"Manufacture 1" SUPEROHM
+"Description" 0402
+GATE 1 2 0
+RES_FIRE
+1 1 U
+2 1 U
+
+RES_1K_0603_FIRE RES_0603_FIRE I RES 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" SMD
+"Value" 1K
+"Tolerance" +-5%
+"Manufacture 1 P/N" 
+"Manufacture 1" SUPEROHM
+"Description" 0402
+GATE 1 2 0
+RES_FIRE
+1 1 U
+2 1 U
+
+RES_330R_0603_FIRE RES_0603_FIRE I RES 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" SMD
+"Value" 330R
+"Tolerance" +-5%
+"Manufacture 1 P/N" 
+"Manufacture 1" SUPEROHM
+"Description" 0402
+GATE 1 2 0
+RES_FIRE
+1 1 U
+2 1 U
+
+RES_470R_0603_FIRE RES_0603_FIRE I RES 10 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Serial Number" 
+"Package" 
+"Geometry.Height" 
+"Cost" 
+"Assembly" SMD
+"Value" 470R
+"Tolerance" +-5%
+"Manufacture 1 P/N" 
+"Manufacture 1" SUPEROHM
+"Description" 0402
+GATE 1 2 0
+RES_FIRE
+1 1 U
+2 1 U
+
+RES_4K7_0603_FIRE RES_0603_FIRE I RES 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 4.7K
+"Tolerance" +-5%
+"Manufacture 1 P/N" 
+"Manufacture 1" SUPEROHM
+"Description" 0402
+GATE 1 2 0
+RES_4.7K_0402_FIRE
+1 1 U
+2 1 U
+
+R_100K_0603 R_0603 I RES 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 100K
+GATE 1 2 0
+R_100K_0603
+1 1 U
+2 1 U
+
+R_10K_0603 R_0603 I RES 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 10K
+GATE 1 2 0
+R_1K_0603
+1 1 U
+2 1 U
+
+R_1K_0603 R_0603 I RES 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 1K
+GATE 1 2 0
+R_1K_0603
+1 1 U
+2 1 U
+
+R_2.7K_0603 R_0603 I RES 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 2.7K
+GATE 1 2 0
+R_2.7K_0603
+1 1 U
+2 1 U
+
+R_4.7K_0603 R_0603 I RES 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 4.7K
+GATE 1 2 0
+R_4.7K_0603
+1 1 U
+2 1 U
+
+R_5.1K_0603 R_0603 I RES 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 5.1K
+GATE 1 2 0
+R_5.1K_0603
+1 1 U
+2 1 U
+
+S8050 SOT-23 I Q 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Manufacturer #2" 8050
+"Manufacturer #1" 
+"Description" NPN
+GATE 1 3 1
+S8050
+1 0 U B
+3 0 U C
+2 0 U E
+
+S8550 SOT-23 I Q 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Manufacturer #2" 8050
+"Manufacturer #1" 
+"Description" NPN
+GATE 1 3 1
+S8550
+1 0 U B
+2 0 U E
+3 0 U C
+
+SDIO_6X2P 12PIN_2.54_SMD I CQF 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" I2C_6X2P
+"Tolerance" 
+"Manufacturer #1 PN" I2C_6X2P
+"Manufacturer #1" 
+"Description" I2C_6X2P
+GATE 1 12 0
+SDIO_6X2P
+1 0 U IO1
+2 0 U IO2
+3 0 U IO3
+4 0 U IO4
+5 0 U IO5
+6 0 U IO6
+7 0 U IO7
+8 0 U IO8
+9 0 U IO9
+10 0 U GND
+11 0 U 5V
+12 0 U 3V3
+
+SMAJ5.0CA DO-214 I DIO 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" SMAJ5.0CA
+GATE 1 2 0
+SMAJ5.0CA
+1 1 U +
+2 1 U -
+
+SPI_6X2P 12PIN_2.54_SMD I CQF 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" SPI_6X2P
+"Tolerance" 
+"Manufacturer #1 PN" SPI_6X2P
+"Manufacturer #1" 
+"Description" SPI_6X2P
+GATE 1 12 0
+SPI_6X2P
+1 0 U CS
+2 0 U CLK
+3 0 U MISO
+4 0 U MOSI
+5 0 U IO1
+6 0 U IO2
+7 0 U IO3
+8 0 U IO4
+9 0 U IO5
+10 0 U GND
+11 0 U 5V
+12 0 U 3V3
+
+STM32F103VET6 STM32F103VET6-LQFP I UND 3 2 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Protel.FootprintDescription" TSQFP, 100-Leads, Body 16.2x16.2mm (max), Pitch 0.50mm, IP
+"Geometry.Height" 62.99mil
+"Value" STM32F103VET6
+GATE 1 73 0
+STM32F103VET6-A
+7 0 U PC13
+15 0 U PC0
+16 0 U PC1
+17 0 U PC2
+18 0 U PC3
+23 0 U PA0
+24 0 U PA1
+25 0 U PA2
+26 0 U PA3
+29 0 U PA4
+30 0 U PA5
+31 0 U PA6
+32 0 U PA7
+33 0 U PC4
+34 0 U PC5
+35 0 U PB0
+36 0 U PB1
+47 0 U PB10
+48 0 U PB11
+51 0 U PB12
+52 0 U PB13
+53 0 U PB14
+54 0 U PB15
+63 0 U PC6
+64 0 U PC7
+65 0 U PC8
+66 0 U PC9
+67 0 U PA8
+68 0 U PA9
+69 0 U PA10
+70 0 U PA11
+71 0 U PA12
+73 0 U NC
+78 0 U PC10
+79 0 U PC11
+80 0 U PC12
+83 0 U PD2
+91 0 U PB5
+92 0 U PB6
+93 0 U PB7
+95 0 U PB8
+96 0 U PB9
+1 0 U PE2
+2 0 U PE3
+3 0 U PE4
+4 0 U PE5
+5 0 U PE6
+38 0 U PE7
+39 0 U PE8
+40 0 U PE9
+41 0 U PE10
+42 0 U PE11
+43 0 U PE12
+44 0 U PE13
+45 0 U PE14
+46 0 U PE15
+55 0 U PD8
+56 0 U PD9
+57 0 U PD10
+58 0 U PD11
+59 0 U PD12
+60 0 U PD13
+61 0 U PD14
+62 0 U PD15
+81 0 U PD0
+82 0 U PD1
+84 0 U PD3
+85 0 U PD4
+86 0 U PD5
+87 0 U PD6
+88 0 U PD7
+97 0 U PE0
+98 0 U PE1
+GATE 1 27 0
+STM32F103VET6-B
+8 0 U PC14
+9 0 U PC15
+12 0 U OSC_IN
+13 0 U OSC_OUT
+14 0 U NRST
+94 0 U BOOT0
+37 0 U PB2
+72 0 U PA13
+76 0 U PA14
+77 0 U PA15
+89 0 U PB3
+90 0 U PB4
+6 0 U VBAT
+10 0 U VSS_5
+19 0 U VSSA
+20 0 U VREF-
+21 0 U VREF+
+22 0 U VDDA
+27 0 U VSS_4
+28 0 U VDD_4
+49 0 U VSS_1
+50 0 U VDD_1
+74 0 U VSS_2
+75 0 U VDD_2
+99 0 U VSS_3
+100 0 U VDD_3
+11 0 U VDD_5
+
+SW-POWER SW13_6 I S 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Description" SW-5
+"Manufacturer #1 PN" SW-5
+"Manufacturer #1" 
+GATE 1 5 0
+SW-POWER
+2 0 U
+1 0 U
+3 0 U
+4 0 U
+5 0 U
+
+TF_CARD TF_CARD I CN 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 
+"Tolerance" 
+"Description" 
+"Manufacturer #1 PN" MicroSD×ù/ÊÖ»ú¿ ´æ´¢¿ ×ù
+"Manufacturer #1" 
+GATE 1 15 0
+TF_CARD
+1 0 U DATA2
+2 0 U CM/DATA3
+3 0 U CMD
+4 0 U VDD
+5 0 U CLK
+6 0 U VSS
+7 0 U DATA0
+8 0 U DATA1
+9 0 U
+10 0 U
+11 0 U
+12 0 U
+13 0 U
+14 0 U
+15 0 U
+
+USB-MINI USB-MINI I J 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 5 0
+USB-MINI
+1 0 U VBUS
+2 0 U D-
+3 0 U D+
+4 0 U ID
+5 0 U GND
+
+W25Q64 SO8WB I UND 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 8 0
+W25Q64
+1 0 U \CS\
+2 0 U DO
+3 0 U \WP\
+4 0 U GND
+5 0 U DIO
+6 0 U CLK
+7 0 U \HOLD\
+8 0 U VCC
+
+WF-PAD  I UND 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 1 0
+WF-PAD
+1 0 U
+
+WF3.2LCD 2X16X2.54MM I CN 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 32 0
+WF3.2LCD
+1 0 U GND
+2 0 U LCD_RESET
+3 0 U DB15
+4 0 U DB14
+5 0 U DB13
+6 0 U DB12
+7 0 U DB11
+8 0 U DB10
+9 0 U DB09
+10 0 U DB08
+11 0 U DB07
+12 0 U DB06
+13 0 U DB05
+14 0 U DB04
+15 0 U DB03
+16 0 U DB02
+17 0 U DB01
+18 0 U DB00
+19 0 U RD
+20 0 U WE
+21 0 U RS
+22 0 U LCD_CS
+23 0 U DCLK
+24 0 U CS#
+25 0 U DIN
+26 0 U DOUT
+27 0 U PENIRQ
+28 0 U LCD_BL
+29 0 U 5V
+30 0 U GND
+31 0 U 3V3
+32 0 U GND
+
+X76F640/SO_2 SOP8 I TTL 2 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 25Q80/SO
+"Source_Path" D:\FIRE_LAYOUT\ESP8266.DSN
+GATE 1 8 0
+X76F640/SO_2
+4 0 L GND
+1 0 L \CS
+3 0 B \WP
+6 0 L CLK
+8 0 L VCC
+2 0 L DIO
+5 0 L DIO
+7 0 L \HOLD
+
+XH2.54-5P XH2.54-5P I CON 0 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+GATE 1 5 0
+XH2.54-5P
+1 0 U
+2 0 U
+3 0 U
+4 0 U
+5 0 U
+
+XTAL_12M XTAL_SMD I OSC 1 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 12MHz
+GATE 1 2 0
+XTAL_12M
+1 1 U
+2 1 U
+
+XTAL_32.768KHZ_3215 3215 I OSC 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 32.768KHz
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" CRYSTAL
+GATE 1 2 0
+XTAL_32.768KHZ_3215
+1 1 U
+2 1 U
+
+XTAL_32.768KHZ_FIRE CRYS-3X8 I OSC 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 32.768KHz
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" CRYSTAL
+GATE 1 2 0
+XTAL_32.768KHZ_FIRE
+1 1 U
+2 1 U
+
+XTAL_8M_FIRE CRYSTAL_SMD_FIRE I OSC 5 1 0 0 0
+TIMESTAMP 2015.08.18.03.35.59
+"Value" 8MHz
+"Tolerance" 
+"Manufacture 1 P/N" 
+"Manufacture 1" 
+"Description" CRYSTAL
+GATE 1 2 0
+XTAL_8M_FIRE
+1 1 U
+2 1 U
+
+
+*END*
