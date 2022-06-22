@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/Framework/SSeg_map.v -lang verilog -prj Framework -o SSeg_map.spl -module SSeg_map -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 SSeg_map.spl D:/fundamentallogic/Framework/SSeg_map.sym 

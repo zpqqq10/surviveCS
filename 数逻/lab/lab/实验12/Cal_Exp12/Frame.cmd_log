@@ -1,0 +1,100 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Frame_drc.vf -w D:/fundamentallogic/Framework/Frame.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Frame D:/fundamentallogic/Framework/Frame.sch D:/fundamentallogic/Framework/Frame.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Frame.vf -w D:/fundamentallogic/Framework/Frame.sch 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+sch2hdl -intstyle ise -family kintex7 -verilog Frame_drc.vf -w D:/fundamentallogic/Framework/Frame.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym Frame D:/fundamentallogic/Framework/Frame.sch D:/fundamentallogic/Framework/Frame.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Frame.vf -w D:/fundamentallogic/Framework/Frame.sch 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Framework/Frame.xst" -ofn "D:/fundamentallogic/Framework/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Top-FSM/Frame.xst" -ofn "D:/fundamentallogic/Top-FSM/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/RTL/Frame.xst" -ofn "D:/fundamentallogic/RTL/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/Cal_Exp12/Frame.xst" -ofn "D:/fundamentallogic/Cal_Exp12/Frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/Cal_Exp12/Frame.xst" -ofn "D:/fundamentallogic/Cal_Exp12/Frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Frame.ngc Frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Frame_map.ncd Frame.ngd Frame.pcf 
+par -w -intstyle ise -ol high -mt off Frame_map.ncd Frame.ncd Frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Frame.twx Frame.ncd -o Frame.twr Frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Frame.ut Frame.ncd 

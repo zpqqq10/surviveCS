@@ -1,0 +1,6 @@
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit D:/fundamentallogic/FSM/Counter_4bit.sch D:/fundamentallogic/FSM/Counter_4bit.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Counter_4bit_drc.vf -w D:/fundamentallogic/FSM/Counter_4bit.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Counter_4bit.vf -w D:/fundamentallogic/FSM/Counter_4bit.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Counter_4bit_drc.vf -w D:/fundamentallogic/FSM/Counter_4bit.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Counter_4bit D:/fundamentallogic/FSM/Counter_4bit.sch D:/fundamentallogic/FSM/Counter_4bit.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym Counter_4bit D:/fundamentallogic/FSM/Counter_4bit.sch D:/fundamentallogic/FSM/Counter_4bit.sym 

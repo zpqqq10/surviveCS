@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync_sch_drc.vf -w D:/fundamentallogic/I2Disp/ScanSync_sch.sch 
+sch2sym -intstyle ise -family kintex7 -refsym ScanSync_sch D:/fundamentallogic/I2Disp/ScanSync_sch.sch D:/fundamentallogic/I2Disp/ScanSync_sch.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog ScanSync_sch.vf -w D:/fundamentallogic/I2Disp/ScanSync_sch.sch 

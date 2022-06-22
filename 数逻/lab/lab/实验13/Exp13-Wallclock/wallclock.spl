@@ -1,0 +1,13 @@
+[Inputs]
+clk
+reset
+inc
+=adj_push[2:0]=
+[Outputs]
+=Time_out[15:0]=
+=s_point[3:0]=
+=t_blink[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel wallclock
+

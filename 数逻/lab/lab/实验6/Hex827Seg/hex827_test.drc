@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Oct 27 15:30:14 2020
+
+drc -z Hex827_test.ncd Hex827_test.pcf
+
+DRC detected 0 errors and 0 warnings.

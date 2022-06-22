@@ -1,0 +1,4 @@
+verilog work "MC14495_ZJU.vf"
+verilog work "dispsync.v"
+verilog work "clkdiv.v"
+verilog work "Hex427Seg_sch.vf"

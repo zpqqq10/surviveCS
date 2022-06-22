@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/RTL/MUX2T1_32.v -lang verilog -prj RTL -o MUX2T1_32.spl -module MUX2T1_32 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w MUX2T1_32.spl D:/fundamentallogic/RTL/MUX2T1_32.sym 

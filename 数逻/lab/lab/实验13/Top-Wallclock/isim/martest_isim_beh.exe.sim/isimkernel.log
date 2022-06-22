@@ -1,0 +1,28 @@
+Command line:
+   martest_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52747
+
+Tue Jan 12 15:20:07 2021
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5167.58 Meg
+
+ Total Signals          : 17
+ Total Nets             : 82
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 233
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 5010.29 Meg
+
+Tue Jan 12 15:21:38 2021
+

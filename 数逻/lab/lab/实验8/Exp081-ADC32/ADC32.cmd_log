@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family kintex7 -verilog ADC32_drc.vf -w D:/fundamentallogic/Exp081-ADC32/ADC32.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym ADC32 D:/fundamentallogic/Exp081-ADC32/ADC32.sch D:/fundamentallogic/Exp081-ADC32/ADC32.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog ADC32.vf -w D:/fundamentallogic/Exp081-ADC32/ADC32.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog ADC32_drc.vf -w D:/fundamentallogic/Exp081-ADC32/ADC32.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym ADC32 D:/fundamentallogic/Exp081-ADC32/ADC32.sch D:/fundamentallogic/Exp081-ADC32/ADC32.sym 

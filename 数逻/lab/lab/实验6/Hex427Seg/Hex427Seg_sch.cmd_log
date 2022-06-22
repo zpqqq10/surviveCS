@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/Hex427Seg/Hex427Seg_sch.xst" -ofn "D:/Hex427Seg/Hex427Seg_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hex427Seg_con.ucf -p xc7k160t-ffg676-1 Hex427Seg_sch.ngc Hex427Seg_sch.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hex427Seg_con.ucf -p xc7k160t-ffg676-1 Hex427Seg_sch.ngc Hex427Seg_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex427Seg_sch_map.ncd Hex427Seg_sch.ngd Hex427Seg_sch.pcf 
+par -w -intstyle ise -ol high -mt off Hex427Seg_sch_map.ncd Hex427Seg_sch.ncd Hex427Seg_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Hex427Seg_sch.twx Hex427Seg_sch.ncd -o Hex427Seg_sch.twr Hex427Seg_sch.pcf -ucf Hex427Seg_con.ucf 
+bitgen -intstyle ise -f Hex427Seg_sch.ut Hex427Seg_sch.ncd 

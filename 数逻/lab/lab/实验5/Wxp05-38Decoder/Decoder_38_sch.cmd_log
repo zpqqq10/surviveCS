@@ -1,0 +1,5 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Decoder_38_sch_drc.vf -w D:/Wxp05-38Decoder/Decoder_38_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Decoder_38_sch.vf -w D:/Wxp05-38Decoder/Decoder_38_sch.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Decoder_38_sch D:/Wxp05-38Decoder/Decoder_38_sch.sch D:/Wxp05-38Decoder/Decoder_38_sch.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Decoder_38_sch_drc.vf -w D:/Wxp05-38Decoder/Decoder_38_sch.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Decoder_38_sch D:/Wxp05-38Decoder/Decoder_38_sch.sch D:/Wxp05-38Decoder/Decoder_38_sch.sym 

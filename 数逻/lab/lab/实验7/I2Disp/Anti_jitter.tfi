@@ -1,0 +1,18 @@
+
+
+
+// Instantiate the module
+Anti_jitter instance_name (
+    .clk(clk), 
+    .RSTN(RSTN), 
+    .K_COL(K_COL), 
+    .K_ROW(K_ROW), 
+    .SW(SW), 
+    .button_out(button_out), 
+    .button_pulse(button_pulse), 
+    .SW_OK(SW_OK), 
+    .CR(CR), 
+    .rst(rst)
+    );
+
+

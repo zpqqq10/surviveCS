@@ -1,0 +1,5 @@
+verilog work "Decoder_38_sch.vf"
+verilog work "LEDP2S_IO.v"
+verilog work "HCT138_sch.vf"
+verilog work "clkdiv.v"
+verilog work "Top_HTC138.v"

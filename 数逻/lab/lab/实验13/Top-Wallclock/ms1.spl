@@ -1,0 +1,9 @@
+[Inputs]
+clk
+rst
+[Outputs]
+ms1
+[BiDir]
+[ATTRIBUTES]
+VeriModel ms1
+

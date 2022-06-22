@@ -1,0 +1,4 @@
+verilog work "MUX4T1_4.vf"
+verilog work "MUX8T1_32.vf"
+verilog work "ADC32.vf"
+verilog work "ALU.v"

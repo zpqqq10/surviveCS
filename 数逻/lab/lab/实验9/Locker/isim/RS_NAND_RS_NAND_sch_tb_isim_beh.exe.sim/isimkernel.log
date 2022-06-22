@@ -1,0 +1,28 @@
+Command line:
+   RS_NAND_RS_NAND_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63584
+
+Wed Nov 25 13:25:46 2020
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5167.51 Meg
+
+ Total Signals          : 27
+ Total Nets             : 19
+ Total Signal Drivers   : 11
+ Total Blocks           : 5
+ Total Primitive Blocks : 3
+ Total Processes        : 13
+ Total Traceable Variables  : 20
+ Total Scalar Nets and Variables : 101
+
+ Total Simulation Time: 0.109375 sec
+
+ Current Memory Usage: 5010.23 Meg
+
+Wed Nov 25 13:27:20 2020
+

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/Framework/Anti_jitter.v -lang verilog -prj Framework -o Anti_jitter.spl -module Anti_jitter -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Anti_jitter.spl D:/fundamentallogic/Framework/Anti_jitter.sym 

@@ -1,0 +1,48 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_Tri.vf
+// /___/   /\     Timestamp : 11/21/2020 16:05:30
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/fundamentallogic/Trigger/D_Tri.vf -w D:/fundamentallogic/Trigger/D_Tri.sch
+//Design Name: D_Tri
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_Tri(C, 
+             D, 
+             Q, 
+             Qn);
+
+    input C;
+    input D;
+   output Q;
+   output Qn;
+   
+   wire XLXN_3;
+   wire Y;
+   wire Yn;
+   
+   D_EN  D1 (.C(C), 
+            .D(D), 
+            .Q(Y), 
+            .Qn(Yn));
+   RS_EN  RS4 (.C(XLXN_3), 
+              .R(Yn), 
+              .S(Y), 
+              .Q(Q), 
+              .Qn(Qn));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_3));
+endmodule

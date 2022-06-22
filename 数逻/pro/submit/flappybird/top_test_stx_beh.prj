@@ -1,0 +1,6 @@
+verilog isim_temp "vgac.v"
+verilog isim_temp "VGA_driver.v"
+verilog isim_temp "clkdiv.v"
+verilog isim_temp "Top.v"
+verilog isim_temp "top_test.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

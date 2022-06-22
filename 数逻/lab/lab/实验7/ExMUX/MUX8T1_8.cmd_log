@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_8_drc.vf -w D:/fundamentallogic/ExMUX/MUX8T1_8.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_8 D:/fundamentallogic/ExMUX/MUX8T1_8.sch D:/fundamentallogic/ExMUX/MUX8T1_8.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_8.vf -w D:/fundamentallogic/ExMUX/MUX8T1_8.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_8_drc.vf -w D:/fundamentallogic/ExMUX/MUX8T1_8.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_8 D:/fundamentallogic/ExMUX/MUX8T1_8.sch D:/fundamentallogic/ExMUX/MUX8T1_8.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_8_drc.vf -w D:/fundamentallogic/ExMUX/MUX8T1_8.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX8T1_8 D:/fundamentallogic/ExMUX/MUX8T1_8.sch D:/fundamentallogic/ExMUX/MUX8T1_8.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX8T1_8.vf -w D:/fundamentallogic/ExMUX/MUX8T1_8.sch 

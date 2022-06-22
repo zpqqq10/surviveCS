@@ -1,0 +1,5 @@
+verilog work "MB_DFF.vf"
+verilog work "DM74LS194.vf"
+verilog work "shift_32.v"
+verilog work "shift_32_test.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

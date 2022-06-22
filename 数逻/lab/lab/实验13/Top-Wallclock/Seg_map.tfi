@@ -1,0 +1,11 @@
+
+
+
+// Instantiate the module
+Seg_map instance_name (
+    .Hexs(Hexs), 
+    .Scan(Scan), 
+    .Seg_map(Seg_map)
+    );
+
+

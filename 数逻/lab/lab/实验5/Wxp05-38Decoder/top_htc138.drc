@@ -1,0 +1,8 @@
+Release 14.7 Drc P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Tue Oct 20 15:43:35 2020
+
+drc -z Top_HTC138.ncd Top_HTC138.pcf
+
+DRC detected 0 errors and 0 warnings.

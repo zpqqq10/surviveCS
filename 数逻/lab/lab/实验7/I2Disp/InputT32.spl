@@ -1,0 +1,13 @@
+[Inputs]
+clk
+=BTN[3:0]=
+=Dctr[4:0]=
+[Outputs]
+=Ai[31:0]=
+=Bi[31:0]=
+=state[2:0]=
+=blink[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel InputT32
+

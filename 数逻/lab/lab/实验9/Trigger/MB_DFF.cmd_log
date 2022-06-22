@@ -1,0 +1,2 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MB_DFF_drc.vf -w D:/fundamentallogic/Trigger/MB_DFF.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MB_DFF D:/fundamentallogic/Trigger/MB_DFF.sch D:/fundamentallogic/Trigger/MB_DFF.sym 

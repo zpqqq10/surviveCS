@@ -1,0 +1,18 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/fundamentallogic/FSM/counter_32_test_isim_beh.exe -prj D:/fundamentallogic/FSM/counter_32_test_beh.prj work.counter_32_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/fundamentallogic/FSM/counter_32_rev.v" into library work
+Analyzing Verilog file "D:/fundamentallogic/FSM/counter_32_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module counter_32_rev
+Compiling module counter_32_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 3 Verilog Units
+Built simulation executable D:/fundamentallogic/FSM/counter_32_test_isim_beh.exe
+Fuse Memory Usage: 27940 KB
+Fuse CPU Usage: 890 ms

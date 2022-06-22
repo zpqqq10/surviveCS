@@ -1,0 +1,19 @@
+Release 14.7 - netgen P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis
+-ofmt verilog -sim Top_HTC138.ngc Top_HTC138_synthesis.v  
+
+Reading design 'Top_HTC138.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing Verilog netlist file
+'D:\Wxp05-38Decoder\netgen\synthesis\Top_HTC138_synthesis.v' ...
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 4412812 kilobytes

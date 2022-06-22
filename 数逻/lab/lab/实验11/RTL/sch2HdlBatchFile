@@ -1,0 +1,6 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/RTL/Display.vf,-w,D:/fundamentallogic/RTL/Display.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/RTL/Frame.vf,-w,D:/fundamentallogic/RTL/Frame.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/RTL/Seg7_Dev.vf,-w,D:/fundamentallogic/RTL/Seg7_Dev.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/RTL/ScanSync.vf,-w,D:/fundamentallogic/RTL/ScanSync.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/RTL/Frame.vf,-w,D:/fundamentallogic/RTL/Frame.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/RTL/Seg7_Dev.vf,-w,D:/fundamentallogic/RTL/Seg7_Dev.sch

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="MB_DFF">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-3-17T15:28:6</timestamp>
+    <pin polarity="Input" x="0" y="-48" name="Cp" />
+    <pin polarity="Input" x="0" y="-160" name="D" />
+    <pin polarity="Output" x="256" y="-48" name="Qn" />
+    <pin polarity="Output" x="256" y="-160" name="Q" />
+    <pin polarity="Input" x="128" y="-224" name="Sn" />
+    <pin polarity="Input" x="128" y="0" name="Rn" />
+    <graph>
+        <rect width="192" x="32" y="-204" height="188" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-48" type="pin Cp" />
+        <line x2="0" y1="-48" y2="-48" x1="32" />
+        <line x2="128" y1="-16" y2="0" x1="128" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-160" type="pin D" />
+        <line x2="0" y1="-160" y2="-160" x1="32" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="216" y="-48" type="pin Qn" />
+        <line x2="256" y1="-48" y2="-48" x1="224" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="216" y="-160" type="pin Q" />
+        <line x2="256" y1="-160" y2="-160" x1="224" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="112" y="-188" type="pin Sn" />
+        <line x2="128" y1="-204" y2="-224" x1="128" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="112" y="-28" type="pin Rn" />
+        <attrtext style="alignment:BCENTER;fontsize:36;fontname:Arial;textcolor:rgb(255,0,0)" attrname="SymbolName" x="132" y="-52" type="symbol" />
+    </graph>
+</symbol>

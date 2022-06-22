@@ -1,0 +1,15 @@
+[Inputs]
+clk
+cr
+WE
+=Addr_W[2:0]=
+=Addr_A[2:0]=
+=Addr_B[2:0]=
+=Di[31:0]=
+[Outputs]
+=QA[31:0]=
+=QB[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Regs_8_32
+

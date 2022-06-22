@@ -1,0 +1,5 @@
+verilog work "ipcore_dir/bird_up.v"
+verilog work "ipcore_dir/bird_hor.v"
+verilog work "ipcore_dir/bird_down.v"
+verilog work "bird.v"
+verilog work "bird_con.v"

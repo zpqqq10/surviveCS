@@ -1,0 +1,7 @@
+verilog work "MB_DFF.vf"
+verilog work "Regs_8bit.v"
+verilog work "MUX4T1_4.vf"
+verilog work "Reg32.v"
+verilog work "MUX8T1_32.vf"
+verilog work "HCT138_sch.vf"
+verilog work "Regs_8_32.v"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/fundamentallogic/flappybird/random_test_isim_beh.exe" -prj "D:/fundamentallogic/flappybird/random_test_beh.prj" "work.random_test" "work.glbl" 

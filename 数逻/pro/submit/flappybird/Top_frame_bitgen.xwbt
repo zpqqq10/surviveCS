@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\fundamentallogic\flappybird\Top_frame.ncd
+OUTFILE=D:\fundamentallogic\flappybird\Top_frame.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=D:\fundamentallogic\flappybird
+LICENSE=WebPack
+USER_INFO=__0_0_0

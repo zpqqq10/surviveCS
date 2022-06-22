@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RS_Tri_drc.vf
+// /___/   /\     Timestamp : 11/21/2020 15:55:02
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog RS_Tri_drc.vf -w D:/fundamentallogic/Trigger/RS_Tri.sch
+//Design Name: RS_Tri
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RS_Tri(C, 
+              R, 
+              S, 
+              Q, 
+              Qn, 
+              Y);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   output Y;
+   
+   wire XLXN_10;
+   wire Yn;
+   wire Y_DUMMY;
+   
+   assign Y = Y_DUMMY;
+   RS_EN  RS3 (.C(C), 
+              .R(R), 
+              .S(S), 
+              .Q(Y_DUMMY), 
+              .Qn(Yn));
+   RS_EN  RS4 (.C(XLXN_10), 
+              .R(Yn), 
+              .S(Y_DUMMY), 
+              .Q(Q), 
+              .Qn(Qn));
+   INV  XLXI_3 (.I(C), 
+               .O(XLXN_10));
+endmodule

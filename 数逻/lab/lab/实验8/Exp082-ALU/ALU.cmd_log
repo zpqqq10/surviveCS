@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/Exp082-ALU/ALU.v -lang verilog -prj Exp082-ALU -o ALU.spl -module ALU -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 ALU.spl D:/fundamentallogic/Exp082-ALU/ALU.sym 

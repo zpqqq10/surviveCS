@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="D_Trig">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-3-17T15:27:49</timestamp>
+    <pin polarity="Output" x="208" y="-32" name="Qn" />
+    <pin polarity="Input" x="0" y="-112" name="D" />
+    <pin polarity="Input" x="0" y="-32" name="C" />
+    <pin polarity="Output" x="208" y="-112" name="Q" />
+    <graph>
+        <rect width="140" x="32" y="-140" height="140" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="168" y="-32" type="pin Qn" />
+        <line x2="208" y1="-32" y2="-32" x1="172" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-112" type="pin D" />
+        <line x2="0" y1="-112" y2="-112" x1="32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-32" type="pin C" />
+        <line x2="0" y1="-32" y2="-32" x1="32" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="168" y="-112" type="pin Q" />
+        <line x2="208" y1="-112" y2="-112" x1="172" />
+        <attrtext style="alignment:BCENTER;fontsize:30;fontname:Arial;textcolor:rgb(255,0,0)" attrname="SymbolName" x="104" y="-44" type="symbol" />
+    </graph>
+</symbol>

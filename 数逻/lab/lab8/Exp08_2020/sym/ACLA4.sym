@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="ACLA4">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-8-17T13:28:34</timestamp>
+    <pin polarity="Output" x="400" y="-176" name="s(3:0)" />
+    <pin polarity="Input" x="16" y="-240" name="ai(3:0)" />
+    <pin polarity="Input" x="16" y="-112" name="bi(3:0)" />
+    <pin polarity="Input" x="160" y="-368" name="C0" />
+    <pin polarity="Output" x="400" y="-64" name="GG" />
+    <pin polarity="Output" x="400" y="0" name="GP" />
+    <graph>
+        <line x2="368" y1="-352" y2="-272" x1="48" />
+        <line x2="368" y1="-80" y2="-272" x1="368" />
+        <line x2="48" y1="0" y2="-144" x1="48" />
+        <line x2="16" y1="-240" y2="-240" style="linewidth:W" x1="48" />
+        <line x2="16" y1="-112" y2="-112" style="linewidth:W" x1="48" />
+        <line x2="368" y1="-176" y2="-176" style="linewidth:W" x1="400" />
+        <line x2="48" y1="-176" y2="-208" x1="112" />
+        <line x2="112" y1="-144" y2="-176" x1="48" />
+        <line x2="48" y1="-208" y2="-352" x1="48" />
+        <line x2="48" y1="-80" y2="0" x1="368" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="360" y="-168" type="pin s(3:0)" />
+        <line x2="252" y1="-52" y2="0" x1="252" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="56" y="-236" type="pin ai(3:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="52" y="-108" type="pin bi(3:0)" />
+        <line x2="160" y1="-368" y2="-324" x1="160" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="148" y="-304" type="pin C0" />
+        <line x2="400" y1="-64" y2="-64" x1="308" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="316" y="-76" type="pin GG" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="264" y="-64" type="pin GP" />
+        <line x2="400" y1="0" y2="0" x1="252" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial;textcolor:rgb(255,0,0)" attrname="SymbolName" x="232" y="-92" type="symbol" />
+    </graph>
+</symbol>

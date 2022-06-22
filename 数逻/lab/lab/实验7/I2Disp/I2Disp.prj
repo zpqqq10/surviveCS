@@ -1,0 +1,8 @@
+verilog work "MUX4T1_4.vf"
+verilog work "ScanSync_sch.vf"
+verilog work "MC14495_ZJU.vf"
+verilog work "Seg7_Dev16.vf"
+verilog work "InputT32.v"
+verilog work "clkdiv.v"
+verilog work "Anti_jitter.v"
+verilog work "I2Disp.vf"

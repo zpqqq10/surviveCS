@@ -1,0 +1,9 @@
+[Inputs]
+=Hexs[31:0]=
+=Scan[2:0]=
+[Outputs]
+=Segg_map[7:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Seg_map
+

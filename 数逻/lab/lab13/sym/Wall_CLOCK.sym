@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="Wall_CLOCK">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2015-12-22T15:55:2</timestamp>
+    <attr value="Wall_CLOCK" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-288" name="clk" />
+    <pin polarity="Input" x="0" y="-160" name="reset" />
+    <pin polarity="Input" x="0" y="-96" name="inc" />
+    <pin polarity="Input" x="0" y="-32" name="adj_push(2:0)" />
+    <pin polarity="Output" x="384" y="-288" name="Time_out(15:0)" />
+    <pin polarity="Output" x="384" y="-160" name="s_point(3:0)" />
+    <pin polarity="Output" x="384" y="-32" name="t_blink(3:0)" />
+    <graph>
+        <rect style="linewidth:W;linecolor:rgb(0,0,255);fillcolor:rgb(255,170,255);fillstyle:Solid" width="320" x="32" y="-320" height="320" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-288" type="pin clk" />
+        <line x2="0" y1="-288" y2="-288" x1="32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-160" type="pin reset" />
+        <line x2="0" y1="-160" y2="-160" x1="32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-96" type="pin inc" />
+        <line x2="0" y1="-96" y2="-96" x1="32" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-32" type="pin adj_push(2:0)" />
+        <line x2="0" y1="-32" y2="-32" style="linewidth:W" x1="32" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-288" type="pin Time_out(15:0)" />
+        <line x2="384" y1="-288" y2="-288" style="linewidth:W" x1="352" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-160" type="pin s_point(3:0)" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="344" y="-32" type="pin t_blink(3:0)" />
+        <attrtext style="alignment:BCENTER;fontsize:38;fontname:Arial;textcolor:rgb(255,0,0)" attrname="SymbolName" x="216" y="-68" type="symbol" />
+        <line x2="384" y1="-160" y2="-160" style="linewidth:W" x1="352" />
+        <line x2="384" y1="-32" y2="-32" style="linewidth:W" x1="352" />
+    </graph>
+</symbol>

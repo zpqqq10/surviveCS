@@ -1,0 +1,28 @@
+Command line:
+   P2S_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50659
+
+Tue Dec 15 14:00:22 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5168.16 Meg
+
+ Total Signals          : 38
+ Total Nets             : 76
+ Total Signal Drivers   : 21
+ Total Blocks           : 4
+ Total Primitive Blocks : 2
+ Total Processes        : 26
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 357
+
+ Total Simulation Time: 0.265625 sec
+
+ Current Memory Usage: 4696.3 Meg
+
+Tue Dec 15 14:05:59 2020
+

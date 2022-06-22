@@ -1,0 +1,3 @@
+MODULE HCT138_sch
+	SUBMODULE Decoder_38_sch
+		INSTANCE M1

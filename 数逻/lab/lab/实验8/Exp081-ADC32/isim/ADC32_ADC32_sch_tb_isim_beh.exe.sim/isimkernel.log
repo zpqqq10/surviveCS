@@ -1,0 +1,28 @@
+Command line:
+   ADC32_ADC32_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  58754
+
+Tue Nov 17 17:34:10 2020
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5167.54 Meg
+
+ Total Signals          : 1787
+ Total Nets             : 446
+ Total Signal Drivers   : 376
+ Total Blocks           : 357
+ Total Primitive Blocks : 305
+ Total Processes        : 378
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 655
+
+ Total Simulation Time: 1.0625 sec
+
+ Current Memory Usage: 4695.68 Meg
+
+Tue Nov 17 17:51:06 2020
+

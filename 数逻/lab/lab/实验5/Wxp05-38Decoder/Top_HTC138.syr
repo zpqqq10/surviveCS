@@ -1,0 +1,473 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Top_HTC138.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_HTC138.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_HTC138"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : Top_HTC138
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Wxp05-38Decoder\Decoder_38_sch.vf" into library work
+Parsing module <Decoder_38_sch>.
+Analyzing Verilog file "D:\Wxp05-38Decoder\LEDP2S_IO.v" into library work
+Parsing module <LEDP2S>.
+Analyzing Verilog file "D:\Wxp05-38Decoder\HCT138_sch.vf" into library work
+Parsing module <Decoder_38_sch_MUSER_HCT138_sch>.
+Parsing module <HCT138_sch>.
+Analyzing Verilog file "D:\Wxp05-38Decoder\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\Wxp05-38Decoder\Top_HTC138.v" into library work
+Parsing module <Top_HTC138>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Top_HTC138>.
+
+Elaborating module <HCT138_sch>.
+
+Elaborating module <Decoder_38_sch_MUSER_HCT138_sch>.
+
+Elaborating module <INV>.
+
+Elaborating module <AND2>.
+
+Elaborating module <NAND2>.
+
+Elaborating module <AND3>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <LEDP2S(DATA_BITS=16,DATA_COUNT_BITS=4,DIR=0)>.
+WARNING:HDLCompiler:1499 - "D:\Wxp05-38Decoder\LEDP2S_IO.v" Line 21: Empty module <LEDP2S(DATA_BITS=16,DATA_COUNT_BITS=4,DIR=0)> remains a black box.
+WARNING:HDLCompiler:634 - "D:\Wxp05-38Decoder\Top_HTC138.v" Line 42: Net <rst> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_HTC138>.
+    Related source file is "D:\Wxp05-38Decoder\Top_HTC138.v".
+WARNING:Xst:653 - Signal <rst> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <Top_HTC138> synthesized.
+
+Synthesizing Unit <HCT138_sch>.
+    Related source file is "D:\Wxp05-38Decoder\HCT138_sch.vf".
+    Summary:
+	no macro.
+Unit <HCT138_sch> synthesized.
+
+Synthesizing Unit <Decoder_38_sch_MUSER_HCT138_sch>.
+    Related source file is "D:\Wxp05-38Decoder\HCT138_sch.vf".
+    Summary:
+	no macro.
+Unit <Decoder_38_sch_MUSER_HCT138_sch> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\Wxp05-38Decoder\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_8_o_add_1_OUT> created at line 26.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <LEDP2S.ngc>.
+Loading core <LEDP2S> for timing and area information for instance <U7>.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <U9/clkdiv_21> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_22> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_23> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_24> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_25> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_26> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_27> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_28> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_29> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_30> of sequential type is unconnected in block <Top_HTC138>.
+WARNING:Xst:2677 - Node <U9/clkdiv_31> of sequential type is unconnected in block <Top_HTC138>.
+
+Optimizing unit <HCT138_sch> ...
+
+Optimizing unit <Decoder_38_sch_MUSER_HCT138_sch> ...
+
+Optimizing unit <Top_HTC138> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_HTC138, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_HTC138.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 114
+#      AND2                        : 12
+#      AND3                        : 1
+#      GND                         : 1
+#      INV                         : 14
+#      LUT1                        : 19
+#      LUT2                        : 1
+#      LUT3                        : 2
+#      LUT4                        : 1
+#      LUT6                        : 20
+#      MUXCY                       : 20
+#      VCC                         : 2
+#      XORCY                       : 21
+# FlipFlops/Latches                : 40
+#      FD                          : 39
+#      FDE                         : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 18
+#      IBUF                        : 6
+#      OBUF                        : 12
+# Logical                          : 8
+#      NAND2                       : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              40  out of  202800     0%  
+ Number of Slice LUTs:                   57  out of  101400     0%  
+    Number used as Logic:                57  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     60
+   Number with an unused Flip Flop:      20  out of     60    33%  
+   Number with an unused LUT:             3  out of     60     5%  
+   Number of fully used LUT-FF pairs:    37  out of     60    61%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    400     4%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 40    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.231ns (Maximum Frequency: 448.230MHz)
+   Minimum input arrival time before clock: 4.469ns
+   Maximum output required time after clock: 2.805ns
+   Maximum combinational path delay: 4.065ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 2.231ns (frequency: 448.229MHz)
+  Total number of paths / destination ports: 590 / 41
+-------------------------------------------------------------------------
+Delay:               2.231ns (Levels of Logic = 2)
+  Source:            U7/Q_11 (FF)
+  Destination:       U7/Q_15 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: U7/Q_11 to U7/Q_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.753  Q_11 (Q<11>)
+     LUT6:I0->O            2   0.053   0.491  out1 (out)
+     LUT6:I4->O            1   0.053   0.399  S11 (S1)
+     FDE:CE                    0.200          Q_15
+    ----------------------------------------
+    Total                      2.231ns (0.588ns logic, 1.643ns route)
+                                       (26.4% logic, 73.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 48 / 8
+-------------------------------------------------------------------------
+Offset:              4.469ns (Levels of Logic = 8)
+  Source:            B (PAD)
+  Destination:       U7/Q_1 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: B to U7/Q_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.413  B_IBUF (B_IBUF)
+     INV:I->O              2   0.393   0.745  M5/M1/XLXI_7 (M5/M1/XLXN_4)
+     AND2:I0->O            2   0.053   0.731  M5/M1/XLXI_4 (M5/M1/XLXN_14)
+     AND2:I1->O            1   0.067   0.725  M5/M1/XLXI_13 (M5/XLXN_9)
+     NAND2:I1->O           1   0.067   0.399  M5/XLXI_7 (ny5)
+     INV:I->O              2   0.067   0.745  Y<5>1_INV_0 (Y_5_OBUF)
+     begin scope: 'U7:PData<5>'
+     LUT6:I0->O            1   0.053   0.000  Q_6_rstpot (Q_6_rstpot)
+     FD:D                      0.011          Q_6
+    ----------------------------------------
+    Total                      4.469ns (0.711ns logic, 3.758ns route)
+                                       (15.9% logic, 84.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 35 / 3
+-------------------------------------------------------------------------
+Offset:              2.805ns (Levels of Logic = 5)
+  Source:            U7/Q_5 (FF)
+  Destination:       LEDEN (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: U7/Q_5 to LEDEN
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.753  Q_5 (Q<5>)
+     LUT6:I0->O            2   0.053   0.491  out2 (out1)
+     LUT6:I4->O           19   0.053   0.721  out3 (finish)
+     LUT3:I0->O            1   0.053   0.399  Mmux_EN11 (EN)
+     end scope: 'U7:EN'
+     OBUF:I->O                 0.000          LEDEN_OBUF (LEDEN)
+    ----------------------------------------
+    Total                      2.805ns (0.441ns logic, 2.364ns route)
+                                       (15.7% logic, 84.3% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 49 / 9
+-------------------------------------------------------------------------
+Delay:               4.065ns (Levels of Logic = 7)
+  Source:            A (PAD)
+  Destination:       Y<6> (PAD)
+
+  Data Path: A to Y<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.413  A_IBUF (A_IBUF)
+     INV:I->O              2   0.393   0.731  M5/M1/XLXI_1 (M5/M1/XLXN_2)
+     AND2:I1->O            2   0.067   0.731  M5/M1/XLXI_5 (M5/M1/XLXN_16)
+     AND2:I1->O            1   0.067   0.725  M5/M1/XLXI_14 (M5/XLXN_10)
+     NAND2:I1->O           1   0.067   0.399  M5/XLXI_8 (ny6)
+     INV:I->O              2   0.067   0.405  Y<6>1_INV_0 (Y_6_OBUF)
+     OBUF:I->O                 0.000          Y_6_OBUF (Y<6>)
+    ----------------------------------------
+    Total                      4.065ns (0.661ns logic, 3.404ns route)
+                                       (16.3% logic, 83.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    2.231|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 14.00 secs
+Total CPU time to Xst completion: 13.92 secs
+ 
+--> 
+
+Total memory usage is 4627340 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   14 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,17 @@
+[Inputs]
+rst
+=DIV[31:0]=
+=SW[15:0]=
+=BTN_OK[3:0]=
+[Outputs]
+hs
+vs
+=R[3:0]=
+=G[3:0]=
+=B[3:0]=
+=score[31:0]=
+=maxscore[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Top
+

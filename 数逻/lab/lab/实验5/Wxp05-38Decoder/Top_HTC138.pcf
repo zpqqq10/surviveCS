@@ -1,0 +1,38 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 20 15:42:39 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Y<1>" LOCATE = SITE "AB26" LEVEL 1;
+COMP "G_2A" LOCATE = SITE "Y13" LEVEL 1;
+COMP "Y<2>" LOCATE = SITE "Y25" LEVEL 1;
+COMP "G_2B" LOCATE = SITE "AA12" LEVEL 1;
+COMP "Y<3>" LOCATE = SITE "AA23" LEVEL 1;
+COMP "Y<4>" LOCATE = SITE "Y23" LEVEL 1;
+COMP "Y<5>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "Y<6>" LOCATE = SITE "AE21" LEVEL 1;
+COMP "Y<7>" LOCATE = SITE "AF24" LEVEL 1;
+COMP "ledsout" LOCATE = SITE "M26" LEVEL 1;
+COMP "ledclk" LOCATE = SITE "N26" LEVEL 1;
+COMP "LEDEN" LOCATE = SITE "P18" LEVEL 1;
+COMP "A" LOCATE = SITE "AA10" LEVEL 1;
+COMP "B" LOCATE = SITE "AB10" LEVEL 1;
+COMP "C" LOCATE = SITE "AA13" LEVEL 1;
+COMP "G" LOCATE = SITE "Y12" LEVEL 1;
+COMP "ledclrn" LOCATE = SITE "N24" LEVEL 1;
+COMP "clk_100mhz" LOCATE = SITE "AC18" LEVEL 1;
+COMP "Y<0>" LOCATE = SITE "W23" LEVEL 1;
+TIMEGRP TM_CLK = BEL "U9/clkdiv_0" BEL "U9/clkdiv_1" BEL "U9/clkdiv_2" BEL
+        "U9/clkdiv_3" BEL "U9/clkdiv_4" BEL "U9/clkdiv_5" BEL "U9/clkdiv_6"
+        BEL "U9/clkdiv_7" BEL "U9/clkdiv_8" BEL "U9/clkdiv_9" BEL
+        "U9/clkdiv_10" BEL "U9/clkdiv_11" BEL "U9/clkdiv_12" BEL
+        "U9/clkdiv_13" BEL "U9/clkdiv_14" BEL "U9/clkdiv_15" BEL
+        "U9/clkdiv_16" BEL "U9/clkdiv_17" BEL "U9/clkdiv_18" BEL
+        "U9/clkdiv_19" BEL "U9/clkdiv_20" BEL "clk_100mhz_BUFGP/BUFG" BEL
+        "U7/Go_0" BEL "U7/Go_1" BEL "U7/Q_15" BEL "U7/Q_0" BEL "U7/Q_1" BEL
+        "U7/Q_2" BEL "U7/Q_3" BEL "U7/Q_4" BEL "U7/Q_5" BEL "U7/Q_6" BEL
+        "U7/Q_7" BEL "U7/Q_8" BEL "U7/Q_9" BEL "U7/Q_10" BEL "U7/Q_11" BEL
+        "U7/Q_12" BEL "U7/Q_13" BEL "U7/Q_14" BEL "U7/Q_16" BEL "ledclk";
+TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

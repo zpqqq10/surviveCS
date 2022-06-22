@@ -1,0 +1,77 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Hex427Seg_sch.vf
+// /___/   /\     Timestamp : 10/27/2020 14:19:33
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/Hex427Seg/Hex427Seg_sch.vf -w D:/Hex427Seg/Hex427Seg_sch.sch
+//Design Name: Hex427Seg_sch
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Hex427Seg_sch(clk_100mhz, 
+                     RSTN, 
+                     SW, 
+                     AN, 
+                     Buzzer, 
+                     SEGMENT);
+
+    input clk_100mhz;
+    input RSTN;
+    input [7:0] SW;
+   output [3:0] AN;
+   output Buzzer;
+   output [7:0] SEGMENT;
+   
+   wire [31:0] clkdiv;
+   wire G0;
+   wire [3:0] Hex;
+   wire V5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_12;
+   
+   clkdiv  M0 (.clk(clk_100mhz), 
+              .rst(XLXN_12), 
+              .clkdiv(clkdiv[31:0]));
+   MC14495_ZJU  M1 (.D0(Hex[0]), 
+                   .D1(Hex[1]), 
+                   .D2(Hex[2]), 
+                   .D3(Hex[3]), 
+                   .LE(XLXN_6), 
+                   .point(XLXN_7), 
+                   .a(SEGMENT[0]), 
+                   .b(SEGMENT[1]), 
+                   .c(SEGMENT[2]), 
+                   .d(SEGMENT[3]), 
+                   .e(SEGMENT[4]), 
+                   .f(SEGMENT[5]), 
+                   .g(SEGMENT[6]), 
+                   .p(SEGMENT[7]));
+   dispsync  M2 (.Hexs({G0, V5, G0, G0, G0, G0, V5, V5, G0, G0, V5, G0, G0, G0, 
+         G0, V5}), 
+                .LES(SW[7:4]), 
+                .point(SW[3:0]), 
+                .Scan(clkdiv[18:17]), 
+                .AN(AN[3:0]), 
+                .Hex(Hex[3:0]), 
+                .LE(XLXN_6), 
+                .p(XLXN_7));
+   INV  XLXI_4 (.I(RSTN), 
+               .O(XLXN_12));
+   VCC  XLXI_5 (.P(V5));
+   GND  XLXI_6 (.G(G0));
+   BUF  XLXI_7 (.I(V5), 
+               .O(Buzzer));
+endmodule

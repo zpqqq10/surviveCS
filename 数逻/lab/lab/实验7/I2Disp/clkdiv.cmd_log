@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/fundamentallogic/I2Disp/clkdiv.v -lang verilog -prj I2Disp -o clkdiv.spl -module clkdiv -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/fundamentallogic/I2Disp/clkdiv.sym 
+vhdtdtfi -lib work D:/fundamentallogic/I2Disp/clkdiv.v -lang verilog -prj I2Disp -o clkdiv.spl -module clkdiv -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/fundamentallogic/I2Disp/clkdiv.sym 

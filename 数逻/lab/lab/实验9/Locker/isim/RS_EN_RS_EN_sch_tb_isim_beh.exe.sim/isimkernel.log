@@ -1,0 +1,28 @@
+Command line:
+   RS_EN_RS_EN_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54319
+
+Wed Nov 25 13:58:33 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5167.52 Meg
+
+ Total Signals          : 40
+ Total Nets             : 22
+ Total Signal Drivers   : 14
+ Total Blocks           : 8
+ Total Primitive Blocks : 5
+ Total Processes        : 17
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 137
+
+ Total Simulation Time: 0.296875 sec
+
+ Current Memory Usage: 4695.66 Meg
+
+Wed Nov 25 14:08:53 2020
+

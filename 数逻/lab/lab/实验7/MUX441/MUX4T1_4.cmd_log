@@ -1,0 +1,10 @@
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w D:/fundamentallogic/MUX441/MUX4T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4 D:/fundamentallogic/MUX441/MUX4T1_4.sch D:/fundamentallogic/MUX441/MUX4T1_4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4.vf -w D:/fundamentallogic/MUX441/MUX4T1_4.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w D:/fundamentallogic/MUX441/MUX4T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4 D:/fundamentallogic/MUX441/MUX4T1_4.sch D:/fundamentallogic/MUX441/MUX4T1_4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w D:/fundamentallogic/MUX441/MUX4T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4 D:/fundamentallogic/MUX441/MUX4T1_4.sch D:/fundamentallogic/MUX441/MUX4T1_4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4_drc.vf -w D:/fundamentallogic/MUX441/MUX4T1_4.sch 
+sch2sym -intstyle ise -family kintex7 -refsym MUX4T1_4 D:/fundamentallogic/MUX441/MUX4T1_4.sch D:/fundamentallogic/MUX441/MUX4T1_4.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog MUX4T1_4.vf -w D:/fundamentallogic/MUX441/MUX4T1_4.sch 

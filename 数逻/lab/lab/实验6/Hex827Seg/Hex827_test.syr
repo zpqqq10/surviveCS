@@ -1,0 +1,480 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: Hex827_test.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Hex827_test.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Hex827_test"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : Hex827_test
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\Hex827Seg\MC14495_ZJU.vf" into library work
+Parsing module <MC14495_ZJU>.
+Analyzing Verilog file "D:\Hex827Seg\Hex2Seg.v" into library work
+Parsing module <Hex2Seg>.
+Analyzing Verilog file "D:\Hex827Seg\P2S_IO.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "D:\Hex827Seg\Hex827Seg.v" into library work
+Parsing module <Hex827Seg>.
+Analyzing Verilog file "D:\Hex827Seg\Hex827Seg_sch.vf" into library work
+Parsing module <Hex827Seg_sch>.
+Analyzing Verilog file "D:\Hex827Seg\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\Hex827Seg\Hex827_test.vf" into library work
+Parsing module <Hex827Seg_sch_MUSER_Hex827_test>.
+Parsing module <Hex827_test>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Hex827_test>.
+
+Elaborating module <Hex827Seg_sch_MUSER_Hex827_test>.
+
+Elaborating module <P2S>.
+WARNING:HDLCompiler:1499 - "D:\Hex827Seg\P2S_IO.v" Line 21: Empty module <P2S> remains a black box.
+
+Elaborating module <Hex827Seg>.
+
+Elaborating module <Hex2Seg>.
+
+Elaborating module <MC14495_ZJU>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR2>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <GND>.
+
+Elaborating module <VCC>.
+
+Elaborating module <BUF>.
+WARNING:HDLCompiler:552 - "D:\Hex827Seg\Hex827_test.vf" Line 90: Input port SW0 is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Hex827_test>.
+    Related source file is "D:\Hex827Seg\Hex827_test.vf".
+WARNING:Xst:2898 - Port 'SW0', unconnected in block instance 'XLXI_1', is tied to GND.
+    Summary:
+	no macro.
+Unit <Hex827_test> synthesized.
+
+Synthesizing Unit <Hex827Seg_sch_MUSER_Hex827_test>.
+    Related source file is "D:\Hex827Seg\Hex827_test.vf".
+WARNING:Xst:647 - Input <SW0> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <Hex827Seg_sch_MUSER_Hex827_test> synthesized.
+
+Synthesizing Unit <Hex827Seg>.
+    Related source file is "D:\Hex827Seg\Hex827Seg.v".
+    Summary:
+	no macro.
+Unit <Hex827Seg> synthesized.
+
+Synthesizing Unit <Hex2Seg>.
+    Related source file is "D:\Hex827Seg\Hex2Seg.v".
+    Summary:
+	no macro.
+Unit <Hex2Seg> synthesized.
+
+Synthesizing Unit <MC14495_ZJU>.
+    Related source file is "D:\Hex827Seg\MC14495_ZJU.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\Hex827Seg\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_14_o_add_0_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 1
+ 32-bit register                                       : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <P2S.ngc>.
+Loading core <P2S> for timing and area information for instance <M2>.
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <XLXI_2/clkdiv_26> of sequential type is unconnected in block <Hex827_test>.
+WARNING:Xst:2677 - Node <XLXI_2/clkdiv_27> of sequential type is unconnected in block <Hex827_test>.
+WARNING:Xst:2677 - Node <XLXI_2/clkdiv_28> of sequential type is unconnected in block <Hex827_test>.
+WARNING:Xst:2677 - Node <XLXI_2/clkdiv_29> of sequential type is unconnected in block <Hex827_test>.
+WARNING:Xst:2677 - Node <XLXI_2/clkdiv_30> of sequential type is unconnected in block <Hex827_test>.
+WARNING:Xst:2677 - Node <XLXI_2/clkdiv_31> of sequential type is unconnected in block <Hex827_test>.
+
+Optimizing unit <Hex827_test> ...
+
+Optimizing unit <MC14495_ZJU> ...
+
+Optimizing unit <Hex827Seg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Hex827_test, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Hex827_test.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 497
+#      AND2                        : 8
+#      AND3                        : 88
+#      AND4                        : 72
+#      BUF                         : 1
+#      GND                         : 1
+#      INV                         : 42
+#      LUT1                        : 25
+#      LUT2                        : 11
+#      LUT3                        : 5
+#      LUT4                        : 3
+#      LUT5                        : 3
+#      LUT6                        : 72
+#      MUXCY                       : 25
+#      MUXF7                       : 1
+#      OR2                         : 56
+#      OR3                         : 24
+#      OR4                         : 32
+#      VCC                         : 2
+#      XORCY                       : 26
+# FlipFlops/Latches                : 102
+#      FD                          : 66
+#      FDC                         : 36
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 22
+#      IBUF                        : 17
+#      OBUF                        : 5
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             102  out of  202800     0%  
+ Number of Slice LUTs:                  161  out of  101400     0%  
+    Number used as Logic:               161  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    163
+   Number with an unused Flip Flop:      61  out of    163    37%  
+   Number with an unused LUT:             2  out of    163     1%  
+   Number of fully used LUT-FF pairs:   100  out of    163    61%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          23
+ Number of bonded IOBs:                  23  out of    400     5%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 102   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.472ns (Maximum Frequency: 404.606MHz)
+   Minimum input arrival time before clock: 2.591ns
+   Maximum output required time after clock: 0.740ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 2.472ns (frequency: 404.606MHz)
+  Total number of paths / destination ports: 1608 / 102
+-------------------------------------------------------------------------
+Delay:               2.472ns (Levels of Logic = 4)
+  Source:            XLXI_1/M2/shift_count_2 (FF)
+  Destination:       XLXI_1/M2/buffer_0 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: XLXI_1/M2/shift_count_2 to XLXI_1/M2/buffer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.282   0.745  shift_count_2 (shift_count<2>)
+     LUT5:I0->O            1   0.053   0.485  _n0075_inv31 (_n0075_inv_bdd3)
+     LUT6:I4->O            1   0.053   0.000  _n0103_inv12_G (N26)
+     MUXF7:I1->O          64   0.217   0.573  _n0103_inv12 (_n0103_inv)
+     LUT6:I5->O            1   0.053   0.000  buffer_0_rstpot (buffer_0_rstpot)
+     FD:D                      0.011          buffer_0
+    ----------------------------------------
+    Total                      2.472ns (0.669ns logic, 1.803ns route)
+                                       (27.1% logic, 72.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 228 / 100
+-------------------------------------------------------------------------
+Offset:              2.591ns (Levels of Logic = 6)
+  Source:            RSTN (PAD)
+  Destination:       XLXI_1/M2/buffer_0 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: RSTN to XLXI_1/M2/buffer_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.000   0.399  RSTN_IBUF (RSTN_IBUF)
+     INV:I->O             38   0.393   0.893  XLXI_6 (XLXN_7)
+     begin scope: 'XLXI_1/M2:rst'
+     LUT6:I0->O            1   0.053   0.000  _n0103_inv12_G (N26)
+     MUXF7:I1->O          64   0.217   0.573  _n0103_inv12 (_n0103_inv)
+     LUT6:I5->O            1   0.053   0.000  buffer_0_rstpot (buffer_0_rstpot)
+     FD:D                      0.011          buffer_0
+    ----------------------------------------
+    Total                      2.591ns (0.727ns logic, 1.864ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              0.740ns (Levels of Logic = 2)
+  Source:            XLXI_1/M2/s_clk (FF)
+  Destination:       seg_clk (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: XLXI_1/M2/s_clk to seg_clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.282   0.458  s_clk (s_clk)
+     end scope: 'XLXI_1/M2:s_clk'
+     OBUF:I->O                 0.000          seg_clk_OBUF (seg_clk)
+    ----------------------------------------
+    Total                      0.740ns (0.282ns logic, 0.458ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    2.472|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.58 secs
+ 
+--> 
+
+Total memory usage is 4626252 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

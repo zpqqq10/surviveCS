@@ -1,0 +1,4 @@
+verilog work "SHIFT64.v"
+verilog work "P2S.v"
+verilog work "P2S_test.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

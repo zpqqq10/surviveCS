@@ -1,0 +1,430 @@
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 
+xst -intstyle ise -ifn "D:/fundamentallogic/flappybird/Top_frame.xst" -ofn "D:/fundamentallogic/flappybird/Top_frame.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_frame_map.ncd Top_frame.ngd Top_frame.pcf 
+par -w -intstyle ise -ol high -mt off Top_frame_map.ncd Top_frame.ncd Top_frame.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_frame.twx Top_frame.ncd -o Top_frame.twr Top_frame.pcf -ucf frame_con.ucf 
+bitgen -intstyle ise -f Top_frame.ut Top_frame.ncd 

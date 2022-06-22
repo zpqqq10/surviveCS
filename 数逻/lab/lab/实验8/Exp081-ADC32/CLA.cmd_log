@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog CLA_drc.vf -w D:/fundamentallogic/Exp081-ADC32/CLA.sch 
+sch2sym -intstyle ise -family kintex7 -refsym CLA D:/fundamentallogic/Exp081-ADC32/CLA.sch D:/fundamentallogic/Exp081-ADC32/CLA.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog CLA.vf -w D:/fundamentallogic/Exp081-ADC32/CLA.sch 

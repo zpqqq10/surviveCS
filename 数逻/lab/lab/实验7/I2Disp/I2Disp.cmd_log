@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family kintex7 -verilog I2Disp_drc.vf -w D:/fundamentallogic/I2Disp/I2Disp.sch 
+sch2sym -intstyle ise -family kintex7 -refsym I2Disp D:/fundamentallogic/I2Disp/I2Disp.sch D:/fundamentallogic/I2Disp/I2Disp.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog I2Disp.vf -w D:/fundamentallogic/I2Disp/I2Disp.sch 
+xst -intstyle ise -ifn "D:/fundamentallogic/I2Disp/I2Disp.xst" -ofn "D:/fundamentallogic/I2Disp/I2Disp.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc I2Disp.ucf -p xc7k160t-ffg676-1 I2Disp.ngc I2Disp.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o I2Disp_map.ncd I2Disp.ngd I2Disp.pcf 
+par -w -intstyle ise -ol high -mt off I2Disp_map.ncd I2Disp.ncd I2Disp.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml I2Disp.twx I2Disp.ncd -o I2Disp.twr I2Disp.pcf -ucf I2Disp.ucf 
+bitgen -intstyle ise -f I2Disp.ut I2Disp.ncd 

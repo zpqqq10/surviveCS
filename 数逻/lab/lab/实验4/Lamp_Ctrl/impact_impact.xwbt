@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=D:\Lamp_Ctrl\impact.xsl
+OUTFILE=D:\Lamp_Ctrl\impact.xsl
+FAMILY=Single
+PART=Single
+WORKINGDIR=D:\Lamp_Ctrl
+LICENSE=iMPACT
+USER_INFO=iMPACT

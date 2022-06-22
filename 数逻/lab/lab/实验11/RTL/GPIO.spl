@@ -1,0 +1,16 @@
+[Inputs]
+clk
+rst
+Start
+EN
+=P_Data[31:0]=
+[Outputs]
+led_clk
+led_sout
+led_clrn
+LED_PEN
+=GPIOf0[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel GPIO
+

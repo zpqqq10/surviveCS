@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+clk_1s
+[BiDir]
+[ATTRIBUTES]
+VeriModel counter_1s
+

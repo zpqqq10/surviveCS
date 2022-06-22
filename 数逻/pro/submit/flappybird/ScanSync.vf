@@ -1,0 +1,88 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : ScanSync.vf
+// /___/   /\     Timestamp : 12/22/2020 01:09:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/fundamentallogic/Top-Wallclock/ScanSync.vf -w D:/fundamentallogic/Top-Wallclock/ScanSync.sch
+//Design Name: ScanSync
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ScanSync(Hexs, 
+                LES, 
+                point, 
+                Scan, 
+                AN, 
+                Hexo, 
+                LE, 
+                p);
+
+    input [31:0] Hexs;
+    input [7:0] LES;
+    input [7:0] point;
+    input [2:0] Scan;
+   output [3:0] AN;
+   output [3:0] Hexo;
+   output LE;
+   output p;
+   
+   wire [7:0] COM;
+   wire G0;
+   wire [7:0] Hex;
+   wire V5;
+   
+   MUX8T1_8  XLXI_1 (.I0({Hexs[3:0], G0, G0, G0, G0}), 
+                    .I1({Hexs[7:4], G0, G0, G0, G0}), 
+                    .I2({Hexs[11:8], G0, G0, G0, G0}), 
+                    .I3({Hexs[15:12], G0, G0, G0, G0}), 
+                    .I4({Hexs[19:16], G0, G0, G0, G0}), 
+                    .I5({Hexs[23:20], G0, G0, G0, G0}), 
+                    .I6({Hexs[27:24], G0, G0, G0, G0}), 
+                    .I7({Hexs[31:28], G0, G0, G0, G0}), 
+                    .s(Scan[2:0]), 
+                    .o(Hex[7:0]));
+   MUX8T1_8  XLXI_2 (.I0({LES[0], point[0], G0, G0, V5, V5, V5, G0}), 
+                    .I1({LES[1], point[1], G0, G0, V5, V5, G0, V5}), 
+                    .I2({LES[2], point[2], G0, G0, V5, G0, V5, V5}), 
+                    .I3({LES[3], point[3], G0, G0, G0, V5, V5, V5}), 
+                    .I4({LES[4], point[4], G0, G0, V5, V5, V5, G0}), 
+                    .I5({LES[5], point[5], G0, G0, V5, V5, G0, V5}), 
+                    .I6({LES[6], point[6], G0, G0, V5, G0, V5, V5}), 
+                    .I7({LES[7], point[7], G0, G0, G0, V5, V5, V5}), 
+                    .s(Scan[2:0]), 
+                    .o(COM[7:0]));
+   VCC  XLXI_11 (.P(V5));
+   GND  XLXI_12 (.G(G0));
+   BUF  XLXI_13 (.I(Hex[4]), 
+                .O(Hexo[0]));
+   BUF  XLXI_14 (.I(Hex[5]), 
+                .O(Hexo[1]));
+   BUF  XLXI_15 (.I(Hex[6]), 
+                .O(Hexo[2]));
+   BUF  XLXI_16 (.I(Hex[7]), 
+                .O(Hexo[3]));
+   BUF  XLXI_17 (.I(COM[7]), 
+                .O(LE));
+   BUF  XLXI_18 (.I(COM[6]), 
+                .O(p));
+   BUF  XLXI_19 (.I(COM[3]), 
+                .O(AN[3]));
+   BUF  XLXI_20 (.I(COM[2]), 
+                .O(AN[2]));
+   BUF  XLXI_21 (.I(COM[1]), 
+                .O(AN[1]));
+   BUF  XLXI_22 (.I(COM[0]), 
+                .O(AN[0]));
+endmodule

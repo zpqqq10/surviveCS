@@ -1,0 +1,4 @@
+verilog work "ms1.v"
+verilog work "clk_1s.v"
+verilog work "clk_1s_test.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

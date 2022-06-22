@@ -1,0 +1,6 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/Top-FSM/Seg7_Dev.vf,-w,D:/fundamentallogic/Top-FSM/Seg7_Dev.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/Top-FSM/ScanSync.vf,-w,D:/fundamentallogic/Top-FSM/ScanSync.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/Top-FSM/Display.vf,-w,D:/fundamentallogic/Top-FSM/Display.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/Top-FSM/Frame.vf,-w,D:/fundamentallogic/Top-FSM/Frame.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/Top-FSM/Seg7_Dev.vf,-w,D:/fundamentallogic/Top-FSM/Seg7_Dev.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/Top-FSM/Frame.vf,-w,D:/fundamentallogic/Top-FSM/Frame.sch

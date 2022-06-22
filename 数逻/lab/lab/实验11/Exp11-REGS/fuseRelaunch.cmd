@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/fundamentallogic/Exp11-REGS/reg832_test_isim_beh.exe" -prj "D:/fundamentallogic/Exp11-REGS/reg832_test_beh.prj" "work.reg832_test" "work.glbl" 

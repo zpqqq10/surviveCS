@@ -1,0 +1,7 @@
+在 "Xilinx License Configuration Manager" 中找到 "Manage Xilinx Licenses"
+
+点击 "Copy License..."
+
+选择这个破解包里的"xilinx_ise.lic"
+
+然后就木有然后了。。。。(*^_^*)

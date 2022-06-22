@@ -1,0 +1,28 @@
+Command line:
+   MC14495_ZJU_MC14495_ZJU_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  54472
+
+Sat Oct 31 00:32:33 2020
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5167.53 Meg
+
+ Total Signals          : 222
+ Total Nets             : 59
+ Total Signal Drivers   : 51
+ Total Blocks           : 43
+ Total Primitive Blocks : 41
+ Total Processes        : 54
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 177
+
+ Total Simulation Time: 0.21875 sec
+
+ Current Memory Usage: 4695.67 Meg
+
+Sat Oct 31 00:43:43 2020
+

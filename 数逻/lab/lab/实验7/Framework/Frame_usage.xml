@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<DeviceUsageSummary rev="24">
+<DesignStatistics TimeStamp="Tue Nov 24 15:04:30 2020"><group name="NetStatistics">
+<item name="NumNets_Active" rev="24">
+<attrib name="value" value="1673"/></item>
+<item name="NumNets_Vcc" rev="24">
+<attrib name="value" value="1"/></item>
+<item name="NumNodesOfType_Active_BENTQUAD" rev="24">
+<attrib name="value" value="391"/></item>
+<item name="NumNodesOfType_Active_BOUNCEACROSS" rev="24">
+<attrib name="value" value="172"/></item>
+<item name="NumNodesOfType_Active_BOUNCEIN" rev="24">
+<attrib name="value" value="207"/></item>
+<item name="NumNodesOfType_Active_BUFGROUT" rev="24">
+<attrib name="value" value="2"/></item>
+<item name="NumNodesOfType_Active_BUFINP2OUT" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Active_CLKPIN" rev="24">
+<attrib name="value" value="187"/></item>
+<item name="NumNodesOfType_Active_DOUBLE" rev="24">
+<attrib name="value" value="1973"/></item>
+<item name="NumNodesOfType_Active_GENERIC" rev="24">
+<attrib name="value" value="23"/></item>
+<item name="NumNodesOfType_Active_GLOBAL" rev="24">
+<attrib name="value" value="215"/></item>
+<item name="NumNodesOfType_Active_HLONG" rev="24">
+<attrib name="value" value="48"/></item>
+<item name="NumNodesOfType_Active_HQUAD" rev="24">
+<attrib name="value" value="505"/></item>
+<item name="NumNodesOfType_Active_INPUT" rev="24">
+<attrib name="value" value="184"/></item>
+<item name="NumNodesOfType_Active_IOBIN2OUT" rev="24">
+<attrib name="value" value="52"/></item>
+<item name="NumNodesOfType_Active_IOBOUTPUT" rev="24">
+<attrib name="value" value="52"/></item>
+<item name="NumNodesOfType_Active_LUTINPUT" rev="24">
+<attrib name="value" value="5132"/></item>
+<item name="NumNodesOfType_Active_OUTBOUND" rev="24">
+<attrib name="value" value="1655"/></item>
+<item name="NumNodesOfType_Active_OUTPUT" rev="24">
+<attrib name="value" value="1686"/></item>
+<item name="NumNodesOfType_Active_PADINPUT" rev="24">
+<attrib name="value" value="30"/></item>
+<item name="NumNodesOfType_Active_PADOUTPUT" rev="24">
+<attrib name="value" value="22"/></item>
+<item name="NumNodesOfType_Active_PINBOUNCE" rev="24">
+<attrib name="value" value="474"/></item>
+<item name="NumNodesOfType_Active_PINFEED" rev="24">
+<attrib name="value" value="5505"/></item>
+<item name="NumNodesOfType_Active_SINGLE" rev="24">
+<attrib name="value" value="2881"/></item>
+<item name="NumNodesOfType_Active_VLONG" rev="24">
+<attrib name="value" value="19"/></item>
+<item name="NumNodesOfType_Active_VLONG12" rev="24">
+<attrib name="value" value="14"/></item>
+<item name="NumNodesOfType_Active_VQUAD" rev="24">
+<attrib name="value" value="234"/></item>
+<item name="NumNodesOfType_Vcc_HVCCGNDOUT" rev="24">
+<attrib name="value" value="79"/></item>
+<item name="NumNodesOfType_Vcc_INPUT" rev="24">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Vcc_IOBIN2OUT" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Vcc_IOBOUTPUT" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Vcc_LUTINPUT" rev="24">
+<attrib name="value" value="179"/></item>
+<item name="NumNodesOfType_Vcc_PADINPUT" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="NumNodesOfType_Vcc_PINBOUNCE" rev="24">
+<attrib name="value" value="5"/></item>
+<item name="NumNodesOfType_Vcc_PINFEED" rev="24">
+<attrib name="value" value="190"/></item>
+</group>
+<group name="SiteStatistics">
+<item name="BUFG-BUFGCTRL" rev="24">
+<attrib name="value" value="2"/></item>
+<item name="IOB-IOB18" rev="24">
+<attrib name="value" value="1"/></item>
+<item name="IOB-IOB18M" rev="24">
+<attrib name="value" value="14"/></item>
+<item name="IOB-IOB18S" rev="24">
+<attrib name="value" value="12"/></item>
+<item name="IOB33-IOB33M" rev="24">
+<attrib name="value" value="17"/></item>
+<item name="IOB33-IOB33S" rev="24">
+<attrib name="value" value="13"/></item>
+<item name="OLOGICE2-OLOGICE3" rev="24">
+<attrib name="value" value="4"/></item>
+<item name="SLICEL-SLICEM" rev="24">
+<attrib name="value" value="195"/></item>
+</group>
+<group name="MiscellaneousStatistics">
+<item name="AGG_BONDED_IO" rev="23">
+<attrib name="value" value="58"/></item>
+<item name="AGG_IO" rev="23">
+<attrib name="value" value="58"/></item>
+<item name="AGG_LOCED_IO" rev="23">
+<attrib name="value" value="58"/></item>
+<item name="AGG_SLICE" rev="23">
+<attrib name="value" value="607"/></item>
+<item name="NUM_BONDED_IOB" rev="23">
+<attrib name="value" value="27"/></item>
+<item name="NUM_BONDED_IOB33" rev="23">
+<attrib name="value" value="31"/></item>
+<item name="NUM_BSFULL" rev="23">
+<attrib name="value" value="353"/></item>
+<item name="NUM_BSLUTONLY" rev="23">
+<attrib name="value" value="1070"/></item>
+<item name="NUM_BSREGONLY" rev="23">
+<attrib name="value" value="27"/></item>
+<item name="NUM_BSUSED" rev="23">
+<attrib name="value" value="1450"/></item>
+<item name="NUM_BUFG" rev="23">
+<attrib name="value" value="2"/></item>
+<item name="NUM_LOCED_IOB" rev="23">
+<attrib name="value" value="27"/></item>
+<item name="NUM_LOCED_IOB33" rev="23">
+<attrib name="value" value="31"/></item>
+<item name="NUM_LOGIC_O5ANDO6" rev="23">
+<attrib name="value" value="86"/></item>
+<item name="NUM_LOGIC_O5ONLY" rev="23">
+<attrib name="value" value="93"/></item>
+<item name="NUM_LOGIC_O6ONLY" rev="23">
+<attrib name="value" value="1240"/></item>
+<item name="NUM_LUT_RT_DRIVES_CARRY4" rev="23">
+<attrib name="value" value="4"/></item>
+<item name="NUM_LUT_RT_EXO6" rev="23">
+<attrib name="value" value="4"/></item>
+<item name="NUM_LUT_RT_O6" rev="23">
+<attrib name="value" value="93"/></item>
+<item name="NUM_OLOGICE2" rev="23">
+<attrib name="value" value="4"/></item>
+<item name="NUM_SLICEL" rev="23">
+<attrib name="value" value="607"/></item>
+<item name="NUM_SLICE_CARRY4" rev="23">
+<attrib name="value" value="35"/></item>
+<item name="NUM_SLICE_CONTROLSET" rev="23">
+<attrib name="value" value="14"/></item>
+<item name="NUM_SLICE_CYINIT" rev="23">
+<attrib name="value" value="1610"/></item>
+<item name="NUM_SLICE_F7MUX" rev="23">
+<attrib name="value" value="6"/></item>
+<item name="NUM_SLICE_FF" rev="23">
+<attrib name="value" value="386"/></item>
+<item name="NUM_SLICE_UNUSEDCTRL" rev="23">
+<attrib name="value" value="422"/></item>
+<item name="NUM_UNUSABLE_FF_BELS" rev="23">
+<attrib name="value" value="38"/></item>
+</group>
+</DesignStatistics>
+<DeviceUsage TimeStamp="Tue Nov 24 15:04:30 2020"><group name="SiteSummary">
+<item name="BUFG" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="BUFG_BUFG" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="2"/></item>
+<item name="CARRY4" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="35"/></item>
+<item name="FF_INIT" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="6"/></item>
+<item name="HARD0" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="29"/></item>
+<item name="HARD1" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="1"/></item>
+<item name="IOB" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="27"/></item>
+<item name="IOB33" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="31"/></item>
+<item name="IOB33_OUTBUF" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="31"/></item>
+<item name="IOB_INBUF_EN" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="22"/></item>
+<item name="IOB_OUTBUF" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="5"/></item>
+<item name="LUT5" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="179"/></item>
+<item name="LUT6" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="1423"/></item>
+<item name="OLOGICE2" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+<item name="OLOGICE2_O1USED" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="4"/></item>
+<item name="PAD" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="58"/></item>
+<item name="REG_INIT" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="380"/></item>
+<item name="SELMUX2_1" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="6"/></item>
+<item name="SLICEL" rev="24">
+<attrib name="total" value="1000000"/><attrib name="used" value="607"/></item>
+</group>
+</DeviceUsage>
+<ReportConfigData TimeStamp="Tue Nov 24 15:04:30 2020"><group name="REG_INIT">
+<item name="CK" rev="24">
+<attrib name="CK" value="364"/><attrib name="CK_INV" value="16"/></item>
+<item name="FFINIT" rev="24">
+<attrib name="INIT0" value="329"/><attrib name="INIT1" value="51"/></item>
+<item name="FFSR" rev="24">
+<attrib name="SRLOW" value="380"/></item>
+<item name="LATCH_OR_FF" rev="24">
+<attrib name="FF" value="380"/></item>
+<item name="SYNC_ATTR" rev="24">
+<attrib name="ASYNC" value="351"/><attrib name="SYNC" value="29"/></item>
+</group>
+<group name="SLICEL">
+<item name="CLK" rev="24">
+<attrib name="CLK" value="181"/><attrib name="CLK_INV" value="4"/></item>
+</group>
+<group name="IOB_INBUF_EN">
+<item name="IBUF_LOW_PWR" rev="24">
+<attrib name="TRUE" value="22"/></item>
+</group>
+<group name="OLOGICE2">
+<item name="D1" rev="24">
+<attrib name="D1" value="0"/><attrib name="D1_INV" value="4"/></item>
+</group>
+<group name="SELMUX2_1">
+<item name="0" rev="24">
+<attrib name="0" value="6"/><attrib name="0_INV" value="0"/></item>
+</group>
+<group name="OLOGICE2_O1USED">
+<item name="0" rev="24">
+<attrib name="0" value="0"/><attrib name="0_INV" value="4"/></item>
+</group>
+<group name="FF_INIT">
+<item name="CK" rev="24">
+<attrib name="CK" value="6"/><attrib name="CK_INV" value="0"/></item>
+<item name="FFINIT" rev="24">
+<attrib name="INIT0" value="6"/></item>
+<item name="FFSR" rev="24">
+<attrib name="SRLOW" value="6"/></item>
+<item name="SYNC_ATTR" rev="24">
+<attrib name="ASYNC" value="6"/></item>
+</group>
+</ReportConfigData>
+<ReportPinData TimeStamp="Tue Nov 24 15:04:30 2020"><group name="IOB33_OUTBUF">
+<item name="IN" rev="24">
+<attrib name="value" value="31"/></item>
+<item name="OUT" rev="24">
+<attrib name="value" value="31"/></item>
+</group>
+<group name="REG_INIT">
+<item name="CE" rev="24">
+<attrib name="value" value="68"/></item>
+<item name="CK" rev="24">
+<attrib name="value" value="380"/></item>
+<item name="D" rev="24">
+<attrib name="value" value="380"/></item>
+<item name="Q" rev="24">
+<attrib name="value" value="380"/></item>
+<item name="SR" rev="24">
+<attrib name="value" value="89"/></item>
+</group>
+<group name="SLICEL">
+<item name="A" rev="24">
+<attrib name="value" value="377"/></item>
+<item name="A1" rev="24">
+<attrib name="value" value="121"/></item>
+<item name="A2" rev="24">
+<attrib name="value" value="178"/></item>
+<item name="A3" rev="24">
+<attrib name="value" value="229"/></item>
+<item name="A4" rev="24">
+<attrib name="value" value="288"/></item>
+<item name="A5" rev="24">
+<attrib name="value" value="453"/></item>
+<item name="A6" rev="24">
+<attrib name="value" value="490"/></item>
+<item name="AMUX" rev="24">
+<attrib name="value" value="25"/></item>
+<item name="AQ" rev="24">
+<attrib name="value" value="121"/></item>
+<item name="AX" rev="24">
+<attrib name="value" value="20"/></item>
+<item name="B" rev="24">
+<attrib name="value" value="282"/></item>
+<item name="B1" rev="24">
+<attrib name="value" value="138"/></item>
+<item name="B2" rev="24">
+<attrib name="value" value="176"/></item>
+<item name="B3" rev="24">
+<attrib name="value" value="195"/></item>
+<item name="B4" rev="24">
+<attrib name="value" value="247"/></item>
+<item name="B5" rev="24">
+<attrib name="value" value="342"/></item>
+<item name="B6" rev="24">
+<attrib name="value" value="368"/></item>
+<item name="BMUX" rev="24">
+<attrib name="value" value="28"/></item>
+<item name="BQ" rev="24">
+<attrib name="value" value="100"/></item>
+<item name="BX" rev="24">
+<attrib name="value" value="29"/></item>
+<item name="C" rev="24">
+<attrib name="value" value="176"/></item>
+<item name="C1" rev="24">
+<attrib name="value" value="74"/></item>
+<item name="C2" rev="24">
+<attrib name="value" value="123"/></item>
+<item name="C3" rev="24">
+<attrib name="value" value="152"/></item>
+<item name="C4" rev="24">
+<attrib name="value" value="201"/></item>
+<item name="C5" rev="24">
+<attrib name="value" value="241"/></item>
+<item name="C6" rev="24">
+<attrib name="value" value="267"/></item>
+<item name="CE" rev="24">
+<attrib name="value" value="40"/></item>
+<item name="CIN" rev="24">
+<attrib name="value" value="27"/></item>
+<item name="CLK" rev="24">
+<attrib name="value" value="185"/></item>
+<item name="CMUX" rev="24">
+<attrib name="value" value="37"/></item>
+<item name="COUT" rev="24">
+<attrib name="value" value="27"/></item>
+<item name="CQ" rev="24">
+<attrib name="value" value="91"/></item>
+<item name="CX" rev="24">
+<attrib name="value" value="21"/></item>
+<item name="D" rev="24">
+<attrib name="value" value="227"/></item>
+<item name="D1" rev="24">
+<attrib name="value" value="75"/></item>
+<item name="D2" rev="24">
+<attrib name="value" value="111"/></item>
+<item name="D3" rev="24">
+<attrib name="value" value="131"/></item>
+<item name="D4" rev="24">
+<attrib name="value" value="168"/></item>
+<item name="D5" rev="24">
+<attrib name="value" value="257"/></item>
+<item name="D6" rev="24">
+<attrib name="value" value="286"/></item>
+<item name="DMUX" rev="24">
+<attrib name="value" value="28"/></item>
+<item name="DQ" rev="24">
+<attrib name="value" value="68"/></item>
+<item name="DX" rev="24">
+<attrib name="value" value="23"/></item>
+<item name="SR" rev="24">
+<attrib name="value" value="29"/></item>
+</group>
+<group name="IOB_OUTBUF">
+<item name="IN" rev="24">
+<attrib name="value" value="5"/></item>
+<item name="OUT" rev="24">
+<attrib name="value" value="5"/></item>
+</group>
+<group name="BUFG_BUFG">
+<item name="I0" rev="24">
+<attrib name="value" value="2"/></item>
+<item name="O" rev="24">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="IOB_INBUF_EN">
+<item name="INTERMDISABLE" rev="24">
+<attrib name="value" value="22"/></item>
+<item name="OUT" rev="24">
+<attrib name="value" value="22"/></item>
+<item name="PAD" rev="24">
+<attrib name="value" value="22"/></item>
+</group>
+<group name="PAD">
+<item name="PAD" rev="24">
+<attrib name="value" value="58"/></item>
+</group>
+<group name="OLOGICE2">
+<item name="D1" rev="24">
+<attrib name="value" value="4"/></item>
+<item name="OQ" rev="24">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="CARRY4">
+<item name="CIN" rev="24">
+<attrib name="value" value="27"/></item>
+<item name="CO0" rev="24">
+<attrib name="value" value="3"/></item>
+<item name="CO1" rev="24">
+<attrib name="value" value="3"/></item>
+<item name="CO2" rev="24">
+<attrib name="value" value="1"/></item>
+<item name="CO3" rev="24">
+<attrib name="value" value="27"/></item>
+<item name="CYINIT" rev="24">
+<attrib name="value" value="8"/></item>
+<item name="DI0" rev="24">
+<attrib name="value" value="30"/></item>
+<item name="DI1" rev="24">
+<attrib name="value" value="30"/></item>
+<item name="DI2" rev="24">
+<attrib name="value" value="29"/></item>
+<item name="DI3" rev="24">
+<attrib name="value" value="25"/></item>
+<item name="O0" rev="24">
+<attrib name="value" value="27"/></item>
+<item name="O1" rev="24">
+<attrib name="value" value="25"/></item>
+<item name="O2" rev="24">
+<attrib name="value" value="25"/></item>
+<item name="O3" rev="24">
+<attrib name="value" value="24"/></item>
+<item name="S0" rev="24">
+<attrib name="value" value="35"/></item>
+<item name="S1" rev="24">
+<attrib name="value" value="32"/></item>
+<item name="S2" rev="24">
+<attrib name="value" value="30"/></item>
+<item name="S3" rev="24">
+<attrib name="value" value="28"/></item>
+</group>
+<group name="LUT5">
+<item name="A1" rev="24">
+<attrib name="value" value="14"/></item>
+<item name="A2" rev="24">
+<attrib name="value" value="62"/></item>
+<item name="A3" rev="24">
+<attrib name="value" value="75"/></item>
+<item name="A4" rev="24">
+<attrib name="value" value="63"/></item>
+<item name="A5" rev="24">
+<attrib name="value" value="53"/></item>
+<item name="O5" rev="24">
+<attrib name="value" value="179"/></item>
+</group>
+<group name="LUT6">
+<item name="A1" rev="24">
+<attrib name="value" value="400"/></item>
+<item name="A2" rev="24">
+<attrib name="value" value="532"/></item>
+<item name="A3" rev="24">
+<attrib name="value" value="698"/></item>
+<item name="A4" rev="24">
+<attrib name="value" value="904"/></item>
+<item name="A5" rev="24">
+<attrib name="value" value="1293"/></item>
+<item name="A6" rev="24">
+<attrib name="value" value="1411"/></item>
+<item name="O6" rev="24">
+<attrib name="value" value="1423"/></item>
+</group>
+<group name="IOB33">
+<item name="O" rev="24">
+<attrib name="value" value="31"/></item>
+<item name="PAD" rev="24">
+<attrib name="value" value="31"/></item>
+</group>
+<group name="SELMUX2_1">
+<item name="0" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="1" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="OUT" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="S0" rev="24">
+<attrib name="value" value="6"/></item>
+</group>
+<group name="IOB">
+<item name="I" rev="24">
+<attrib name="value" value="22"/></item>
+<item name="O" rev="24">
+<attrib name="value" value="5"/></item>
+<item name="PAD" rev="24">
+<attrib name="value" value="27"/></item>
+</group>
+<group name="OLOGICE2_O1USED">
+<item name="0" rev="24">
+<attrib name="value" value="4"/></item>
+<item name="OUT" rev="24">
+<attrib name="value" value="4"/></item>
+</group>
+<group name="FF_INIT">
+<item name="CE" rev="24">
+<attrib name="value" value="4"/></item>
+<item name="CK" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="D" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="Q" rev="24">
+<attrib name="value" value="6"/></item>
+<item name="SR" rev="24">
+<attrib name="value" value="2"/></item>
+</group>
+<group name="HARD0">
+<item name="0" rev="24">
+<attrib name="value" value="29"/></item>
+</group>
+<group name="HARD1">
+<item name="1" rev="24">
+<attrib name="value" value="1"/></item>
+</group>
+<group name="BUFG">
+<item name="I0" rev="24">
+<attrib name="value" value="2"/></item>
+<item name="O" rev="24">
+<attrib name="value" value="2"/></item>
+</group>
+</ReportPinData>
+<CmdHistory>
+</CmdHistory>
+</DeviceUsageSummary>

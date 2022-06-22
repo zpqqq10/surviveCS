@@ -1,0 +1,3 @@
+verilog work "MC14495_ZJU.vf"
+verilog work "Hex2Seg.v"
+verilog work "Hex827Seg.v"

@@ -1,0 +1,12 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev_drc.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Seg7_Dev D:/fundamentallogic/Framework/Seg7_Dev.sch D:/fundamentallogic/Framework/Seg7_Dev.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev_drc.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym Seg7_Dev D:/fundamentallogic/Framework/Seg7_Dev.sch D:/fundamentallogic/Framework/Seg7_Dev.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym Seg7_Dev D:/fundamentallogic/Framework/Seg7_Dev.sch D:/fundamentallogic/Framework/Seg7_Dev.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym Seg7_Dev D:/fundamentallogic/Framework/Seg7_Dev.sch D:/fundamentallogic/Framework/Seg7_Dev.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 
+sch2sym -intstyle ise -family kintex7 -w -refsym Seg7_Dev D:/fundamentallogic/Framework/Seg7_Dev.sch D:/fundamentallogic/Framework/Seg7_Dev.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Seg7_Dev.vf -w D:/fundamentallogic/Framework/Seg7_Dev.sch 

@@ -1,0 +1,6 @@
+verilog work "CLA.vf"
+verilog work "add.vf"
+verilog work "add4b.vf"
+verilog work "ADC32.vf"
+verilog work "ADC32_test.v"
+verilog work "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/fundamentallogic/Exp13-Wallclock/clk_1s_test_isim_beh.exe" -prj "D:/fundamentallogic/Exp13-Wallclock/clk_1s_test_beh.prj" "work.clk_1s_test" "work.glbl" 

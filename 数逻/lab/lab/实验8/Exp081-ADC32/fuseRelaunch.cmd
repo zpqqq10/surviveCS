@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/fundamentallogic/Exp081-ADC32/ADC32_ADC32_sch_tb_isim_beh.exe" -prj "D:/fundamentallogic/Exp081-ADC32/ADC32_ADC32_sch_tb_beh.prj" "work.ADC32_ADC32_sch_tb" "work.glbl" 

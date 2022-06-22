@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/fundamentallogic/Exp12-Shift/shift_32.v -lang verilog -prj Exp12-Shift -o shift_32.spl -module shift_32 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w shift_32.spl D:/fundamentallogic/Exp12-Shift/shift_32.sym 
+vhdtdtfi -lib work D:/fundamentallogic/Exp12-Shift/shift_32.v -lang verilog -prj Exp12-Shift -o shift_32.spl -module shift_32 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w shift_32.spl D:/fundamentallogic/Exp12-Shift/shift_32.sym 

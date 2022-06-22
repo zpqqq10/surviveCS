@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Hex827_test_drc.vf -w D:/Hex827Seg/Hex827_test.sch 
+xst -intstyle ise -ifn "D:/Hex827Seg/Hex827_test.xst" -ofn "D:/Hex827Seg/Hex827_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hex827_con.ucf -p xc7k160t-ffg676-1 Hex827_test.ngc Hex827_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex827_test_map.ncd Hex827_test.ngd Hex827_test.pcf 
+par -w -intstyle ise -ol high -mt off Hex827_test_map.ncd Hex827_test.ncd Hex827_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Hex827_test.twx Hex827_test.ncd -o Hex827_test.twr Hex827_test.pcf -ucf Hex827_con.ucf 
+bitgen -intstyle ise -f Hex827_test.ut Hex827_test.ncd 

@@ -1,0 +1,105 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : D_74LS138_drc.vf
+// /___/   /\     Timestamp : 10/20/2020 14:30:16
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\sch2hdl.exe -intstyle ise -family kintex7 -verilog D_74LS138_drc.vf -w D:/D_74LS138_SCH/D_74LS138.sch
+//Design Name: D_74LS138
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module D_74LS138(A, 
+                 B, 
+                 C, 
+                 G, 
+                 G2A, 
+                 G2B, 
+                 Y);
+
+    input A;
+    input B;
+    input C;
+    input G;
+    input G2A;
+    input G2B;
+   output [7:0] Y;
+   
+   wire EN;
+   wire NA;
+   wire NB;
+   wire NC;
+   wire NG;
+   wire XLXN_11;
+   wire XLXN_13;
+   wire XLXN_16;
+   wire XLXN_18;
+   
+   NAND3  XLXI_1 (.I0(EN), 
+                 .I1(NC), 
+                 .I2(XLXN_11), 
+                 .O(Y[0]));
+   NAND3  XLXI_2 (.I0(EN), 
+                 .I1(NC), 
+                 .I2(XLXN_13), 
+                 .O(Y[1]));
+   NAND3  XLXI_3 (.I0(EN), 
+                 .I1(NC), 
+                 .I2(XLXN_16), 
+                 .O(Y[2]));
+   NAND3  XLXI_4 (.I0(EN), 
+                 .I1(NC), 
+                 .I2(XLXN_18), 
+                 .O(Y[3]));
+   NAND3  XLXI_5 (.I0(EN), 
+                 .I1(C), 
+                 .I2(XLXN_11), 
+                 .O(Y[4]));
+   NAND3  XLXI_6 (.I0(EN), 
+                 .I1(C), 
+                 .I2(XLXN_13), 
+                 .O(Y[5]));
+   NAND3  XLXI_7 (.I0(EN), 
+                 .I1(C), 
+                 .I2(XLXN_16), 
+                 .O(Y[6]));
+   NAND3  XLXI_8 (.I0(EN), 
+                 .I1(C), 
+                 .I2(XLXN_18), 
+                 .O(Y[7]));
+   AND2  XLXI_9 (.I0(NB), 
+                .I1(NA), 
+                .O(XLXN_11));
+   AND2  XLXI_10 (.I0(NB), 
+                 .I1(A), 
+                 .O(XLXN_13));
+   AND2  XLXI_11 (.I0(B), 
+                 .I1(NA), 
+                 .O(XLXN_16));
+   AND2  XLXI_12 (.I0(B), 
+                 .I1(A), 
+                 .O(XLXN_18));
+   INV  XLXI_13 (.I(C), 
+                .O(NC));
+   INV  XLXI_14 (.I(A), 
+                .O(NA));
+   INV  XLXI_16 (.I(B), 
+                .O(NB));
+   INV  XLXI_17 (.I(G), 
+                .O(NG));
+   NOR3  XLXI_18 (.I0(G2B), 
+                 .I1(G2A), 
+                 .I2(NG), 
+                 .O(EN));
+endmodule

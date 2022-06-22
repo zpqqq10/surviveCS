@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/fundamentallogic/Exp13-Wallclock/wallclock.v -lang verilog -prj Exp13-Wallclock -o wallclock.spl -module wallclock -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 wallclock.spl D:/fundamentallogic/Exp13-Wallclock/wallclock.sym 
+vhdtdtfi -lib work D:/fundamentallogic/Exp13-Wallclock/wallclock.v -lang verilog -prj Exp13-Wallclock -o wallclock.spl -module wallclock -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 wallclock.spl D:/fundamentallogic/Exp13-Wallclock/wallclock.sym 

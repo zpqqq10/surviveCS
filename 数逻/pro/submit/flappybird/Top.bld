@@ -1,0 +1,226 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc K7.ucf -p
+xc7k160t-ffg676-1 Top.ngc Top.ngd
+
+Reading NGO file "D:/fundamentallogic/flappybird/Top.ngc" ...
+Loading design module "ipcore_dir/background.ngc"...
+Loading design module "ipcore_dir/button_play.ngc"...
+Loading design module "ipcore_dir/title.ngc"...
+Loading design module "ipcore_dir/text_game_over.ngc"...
+Loading design module "ipcore_dir/text_ready.ngc"...
+Loading design module "ipcore_dir/bird_up.ngc"...
+Loading design module "ipcore_dir/bird_hor.ngc"...
+Loading design module "ipcore_dir/bird_down.ngc"...
+Loading design module "ipcore_dir/pipe_down.ngc"...
+Loading design module "ipcore_dir/pipe_up.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "K7.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'BG/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'BG/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'BUTTON/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'TITLE/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'GAMEOVER/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'READY/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIHOR/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'BIRD/ANIDOWN/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN0/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARDOWN1/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP0/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'PILLARUP1/PILLARUP/dina<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 156
+
+Total memory usage is 4502948 kilobytes
+
+Writing NGD file "Top.ngd" ...
+Total REAL time to NGDBUILD completion:  17 sec
+Total CPU time to NGDBUILD completion:   17 sec
+
+Writing NGDBUILD log file "Top.bld"...

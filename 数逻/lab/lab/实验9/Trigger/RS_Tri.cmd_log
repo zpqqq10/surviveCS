@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family kintex7 -refsym RS_Tri D:/fundamentallogic/Trigger/RS_Tri.sch D:/fundamentallogic/Trigger/RS_Tri.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog RS_Tri_drc.vf -w D:/fundamentallogic/Trigger/RS_Tri.sch 

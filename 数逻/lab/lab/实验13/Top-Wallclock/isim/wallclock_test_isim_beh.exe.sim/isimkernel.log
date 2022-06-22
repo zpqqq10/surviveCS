@@ -1,0 +1,28 @@
+Command line:
+   wallclock_test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50103
+
+Tue Dec 22 14:22:21 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5167.59 Meg
+
+ Total Signals          : 42
+ Total Nets             : 88
+ Total Signal Drivers   : 25
+ Total Blocks           : 8
+ Total Primitive Blocks : 6
+ Total Processes        : 38
+ Total Traceable Variables  : 42
+ Total Scalar Nets and Variables : 295
+
+ Total Simulation Time: 0.890625 sec
+
+ Current Memory Usage: 5482.16 Meg
+
+Tue Dec 22 14:23:07 2020
+

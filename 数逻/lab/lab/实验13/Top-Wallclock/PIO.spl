@@ -1,0 +1,12 @@
+[Inputs]
+clk
+rst
+EN
+=PData_in[31:0]=
+[Outputs]
+=LED[7:0]=
+=GPIOf0[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel PIO
+

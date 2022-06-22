@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/Wxp05-38Decoder/HCT138_sch_HCT138_sch_sch_tb_isim_beh.exe" -prj "D:/Wxp05-38Decoder/HCT138_sch_HCT138_sch_sch_tb_beh.prj" "work.HCT138_sch_HCT138_sch_sch_tb" "work.glbl" 

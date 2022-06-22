@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/Hex827Seg/Hex827Seg.v -lang verilog -prj Hex827Seg -o Hex827Seg.spl -module Hex827Seg -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Hex827Seg.spl D:/Hex827Seg/Hex827Seg.sym 

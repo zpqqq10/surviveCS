@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/fundamentallogic/Top-Wallclock/martest_isim_beh.exe" -prj "D:/fundamentallogic/Top-Wallclock/martest_beh.prj" "work.martest" "work.glbl" 

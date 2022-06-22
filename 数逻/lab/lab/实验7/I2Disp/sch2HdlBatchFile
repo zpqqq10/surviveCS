@@ -1,0 +1,5 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/I2Disp/ScanSync_sch.vf,-w,D:/fundamentallogic/I2Disp/ScanSync_sch.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/I2Disp/I2Disp.vf,-w,D:/fundamentallogic/I2Disp/I2Disp.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/I2Disp/Seg7_Dev16.vf,-w,D:/fundamentallogic/I2Disp/Seg7_Dev16.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/I2Disp/I2Disp.vf,-w,D:/fundamentallogic/I2Disp/I2Disp.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/fundamentallogic/I2Disp/Seg7_Dev16.vf,-w,D:/fundamentallogic/I2Disp/Seg7_Dev16.sch

@@ -1,0 +1,181 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : I2Disp.vf
+// /___/   /\     Timestamp : 11/03/2020 14:26:21
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/fundamentallogic/I2Disp/I2Disp.vf -w D:/fundamentallogic/I2Disp/I2Disp.sch
+//Design Name: I2Disp
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module ScanSync_sch_MUSER_I2Disp(Hexs, 
+                                 LES, 
+                                 point, 
+                                 Scan, 
+                                 AN, 
+                                 Hex, 
+                                 LE, 
+                                 p);
+
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [3:0] Hex;
+   output LE;
+   output p;
+   
+   wire G0;
+   wire [3:0] o;
+   wire V5;
+   
+   MUX4T1_4  MUX1 (.I0({V5, V5, V5, G0}), 
+                  .I1({V5, V5, G0, V5}), 
+                  .I2({V5, G0, V5, V5}), 
+                  .I3({G0, V5, V5, V5}), 
+                  .s(Scan[1:0]), 
+                  .o(AN[3:0]));
+   MUX4T1_4  MUX2 (.I0(Hexs[3:0]), 
+                  .I1(Hexs[7:4]), 
+                  .I2(Hexs[11:8]), 
+                  .I3(Hexs[15:12]), 
+                  .s(Scan[1:0]), 
+                  .o(Hex[3:0]));
+   MUX4T1_4  MUX3 (.I0({LES[0], point[0], G0, G0}), 
+                  .I1({LES[1], point[1], G0, G0}), 
+                  .I2({LES[2], point[2], G0, G0}), 
+                  .I3({LES[3], point[3], G0, G0}), 
+                  .s(Scan[1:0]), 
+                  .o(o[3:0]));
+   VCC  XLXI_4 (.P(V5));
+   GND  XLXI_5 (.G(G0));
+   BUF  XLXI_6 (.I(o[3]), 
+               .O(LE));
+   BUF  XLXI_7 (.I(o[2]), 
+               .O(p));
+endmodule
+`timescale 1ns / 1ps
+
+module Seg7_Dev16_MUSER_I2Disp(flash_clk, 
+                               Hexs, 
+                               LES, 
+                               point, 
+                               Scan, 
+                               AN, 
+                               SEGMENT);
+
+    input flash_clk;
+    input [15:0] Hexs;
+    input [3:0] LES;
+    input [3:0] point;
+    input [1:0] Scan;
+   output [3:0] AN;
+   output [7:0] SEGMENT;
+   
+   wire [3:0] Hex;
+   wire XLXN_1;
+   wire XLXN_22;
+   wire XLXN_23;
+   
+   MC14495_ZJU  M1 (.D0(Hex[0]), 
+                   .D1(Hex[1]), 
+                   .D2(Hex[2]), 
+                   .D3(Hex[3]), 
+                   .LE(XLXN_23), 
+                   .point(XLXN_1), 
+                   .a(SEGMENT[0]), 
+                   .b(SEGMENT[1]), 
+                   .c(SEGMENT[2]), 
+                   .d(SEGMENT[3]), 
+                   .e(SEGMENT[4]), 
+                   .f(SEGMENT[5]), 
+                   .g(SEGMENT[6]), 
+                   .p(SEGMENT[7]));
+   ScanSync_sch_MUSER_I2Disp  M2 (.Hexs(Hexs[15:0]), 
+                                 .LES(LES[3:0]), 
+                                 .point(point[3:0]), 
+                                 .Scan(Scan[1:0]), 
+                                 .AN(AN[3:0]), 
+                                 .Hex(Hex[3:0]), 
+                                 .LE(XLXN_22), 
+                                 .p(XLXN_1));
+   AND2  XLXI_3 (.I0(XLXN_22), 
+                .I1(flash_clk), 
+                .O(XLXN_23));
+endmodule
+`timescale 1ns / 1ps
+
+module I2Disp(clk_100mhz, 
+              K_COL, 
+              RSTN, 
+              SW, 
+              AN, 
+              Buzzer, 
+              K_ROW, 
+              LED, 
+              SEGMENT);
+
+    input clk_100mhz;
+    input [3:0] K_COL;
+    input RSTN;
+    input [15:0] SW;
+   output [3:0] AN;
+   output Buzzer;
+   output [4:0] K_ROW;
+   output [2:0] LED;
+   output [7:0] SEGMENT;
+   
+   wire [31:0] Ai;
+   wire [7:0] blink;
+   wire [3:0] button_out;
+   wire [31:0] Div;
+   wire G0;
+   wire [15:0] SW_OK;
+   wire V5;
+   wire XLXN_6;
+   
+   clkdiv  M1 (.clk(clk_100mhz), 
+              .rst(XLXN_6), 
+              .clkdiv(Div[31:0]));
+   Anti_jitter  M2 (.clk(clk_100mhz), 
+                   .K_COL(K_COL[3:0]), 
+                   .RSTN(RSTN), 
+                   .SW(SW[15:0]), 
+                   .button_out(button_out[3:0]), 
+                   .button_pulse(), 
+                   .CR(), 
+                   .K_ROW(K_ROW[4:0]), 
+                   .rst(XLXN_6), 
+                   .SW_OK(SW_OK[15:0]));
+   InputT32  M4 (.BTN(button_out[3:0]), 
+                .clk(Div[0]), 
+                .Dctr({SW[7:5], SW[1:0]}), 
+                .Ai(Ai[31:0]), 
+                .Bi(), 
+                .blink(blink[7:0]), 
+                .state(LED[2:0]));
+   Seg7_Dev16_MUSER_I2Disp  XLXI_4 (.flash_clk(Div[25]), 
+                                   .Hexs(Ai[15:0]), 
+                                   .LES(blink[3:0]), 
+                                   .point(SW_OK[3:0]), 
+                                   .Scan(Div[18:17]), 
+                                   .AN(AN[3:0]), 
+                                   .SEGMENT(SEGMENT[7:0]));
+   VCC  XLXI_5 (.P(V5));
+   BUF  XLXI_6 (.I(V5), 
+               .O(Buzzer));
+   GND  XLXI_7 (.G(G0));
+endmodule

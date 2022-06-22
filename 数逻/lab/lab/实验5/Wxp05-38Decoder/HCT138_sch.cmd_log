@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/HCT138_sch.xst" -ofn "D:/Wxp05-38Decoder/HCT138_sch.syr" 
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/HCT138_sch.xst" -ofn "D:/Wxp05-38Decoder/HCT138_sch.syr" 
+sch2hdl -intstyle ise -family kintex7 -verilog HCT138_sch_drc.vf -w D:/Wxp05-38Decoder/HCT138_sch.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog HCT138_sch_drc.vf -w D:/Wxp05-38Decoder/HCT138_sch.sch 
+sch2sym -intstyle ise -family kintex7 -refsym HCT138_sch D:/Wxp05-38Decoder/HCT138_sch.sch D:/Wxp05-38Decoder/HCT138_sch.sym 

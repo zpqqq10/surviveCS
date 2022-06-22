@@ -1,0 +1,188 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Nov 24 15:02:59 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CR" LOCATE = SITE "V22" LEVEL 1;
+COMP "LEDCLK" LOCATE = SITE "N26" LEVEL 1;
+COMP "LEDCLR" LOCATE = SITE "N24" LEVEL 1;
+COMP "RDY" LOCATE = SITE "U22" LEVEL 1;
+COMP "AN<0>" LOCATE = SITE "AD21" LEVEL 1;
+COMP "K_ROW<0>" LOCATE = SITE "V17" LEVEL 1;
+COMP "AN<1>" LOCATE = SITE "AC21" LEVEL 1;
+COMP "AN<2>" LOCATE = SITE "AB21" LEVEL 1;
+COMP "K_ROW<2>" LOCATE = SITE "W19" LEVEL 1;
+COMP "AN<3>" LOCATE = SITE "AC22" LEVEL 1;
+COMP "K_ROW<1>" LOCATE = SITE "W18" LEVEL 1;
+COMP "K_ROW<4>" LOCATE = SITE "W16" LEVEL 1;
+COMP "K_ROW<3>" LOCATE = SITE "W15" LEVEL 1;
+COMP "clk_100mhz" LOCATE = SITE "AC18" LEVEL 1;
+COMP "readn" LOCATE = SITE "U21" LEVEL 1;
+COMP "SEGDT" LOCATE = SITE "L24" LEVEL 1;
+COMP "SEGEN" LOCATE = SITE "R18" LEVEL 1;
+COMP "SW<10>" LOCATE = SITE "AF12" LEVEL 1;
+COMP "SW<11>" LOCATE = SITE "AE8" LEVEL 1;
+COMP "SW<12>" LOCATE = SITE "AF8" LEVEL 1;
+COMP "SW<13>" LOCATE = SITE "AE13" LEVEL 1;
+COMP "SW<14>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "SW<15>" LOCATE = SITE "AF10" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "AA10" LEVEL 1;
+COMP "SW<1>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "SW<3>" LOCATE = SITE "AA12" LEVEL 1;
+COMP "SW<4>" LOCATE = SITE "Y13" LEVEL 1;
+COMP "SW<5>" LOCATE = SITE "Y12" LEVEL 1;
+COMP "SW<6>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "SW<7>" LOCATE = SITE "AD10" LEVEL 1;
+COMP "SW<8>" LOCATE = SITE "AE10" LEVEL 1;
+COMP "SW<9>" LOCATE = SITE "AE12" LEVEL 1;
+COMP "LEDDT" LOCATE = SITE "M26" LEVEL 1;
+COMP "LEDEN" LOCATE = SITE "P18" LEVEL 1;
+COMP "RSTN" LOCATE = SITE "W13" LEVEL 1;
+COMP "SEGMENT<5>" LOCATE = SITE "AC24" LEVEL 1;
+COMP "SEGMENT<6>" LOCATE = SITE "AC23" LEVEL 1;
+COMP "SEGMENT<7>" LOCATE = SITE "AA22" LEVEL 1;
+COMP "SEGMENT<1>" LOCATE = SITE "AD24" LEVEL 1;
+COMP "SEGMENT<2>" LOCATE = SITE "AD23" LEVEL 1;
+COMP "SEGMENT<3>" LOCATE = SITE "Y21" LEVEL 1;
+COMP "SEGMENT<4>" LOCATE = SITE "W20" LEVEL 1;
+COMP "SEGMENT<0>" LOCATE = SITE "AB22" LEVEL 1;
+COMP "SEGCLK" LOCATE = SITE "M24" LEVEL 1;
+COMP "SEGCLR" LOCATE = SITE "M20" LEVEL 1;
+COMP "LED<0>" LOCATE = SITE "W23" LEVEL 1;
+COMP "LED<1>" LOCATE = SITE "AB26" LEVEL 1;
+COMP "LED<2>" LOCATE = SITE "Y25" LEVEL 1;
+COMP "LED<3>" LOCATE = SITE "AA23" LEVEL 1;
+COMP "LED<4>" LOCATE = SITE "Y23" LEVEL 1;
+COMP "LED<5>" LOCATE = SITE "Y22" LEVEL 1;
+COMP "LED<6>" LOCATE = SITE "AE21" LEVEL 1;
+COMP "LED<7>" LOCATE = SITE "AF24" LEVEL 1;
+COMP "K_COL<0>" LOCATE = SITE "V18" LEVEL 1;
+COMP "K_COL<2>" LOCATE = SITE "V14" LEVEL 1;
+COMP "K_COL<1>" LOCATE = SITE "V19" LEVEL 1;
+COMP "K_COL<3>" LOCATE = SITE "W14" LEVEL 1;
+TIMEGRP TM_CLK = BEL "M1/clkdiv_0" BEL "M1/clkdiv_1" BEL "M1/clkdiv_2" BEL
+        "M1/clkdiv_3" BEL "M1/clkdiv_4" BEL "M1/clkdiv_5" BEL "M1/clkdiv_6"
+        BEL "M1/clkdiv_7" BEL "M1/clkdiv_8" BEL "M1/clkdiv_9" BEL
+        "M1/clkdiv_10" BEL "M1/clkdiv_11" BEL "M1/clkdiv_12" BEL
+        "M1/clkdiv_13" BEL "M1/clkdiv_14" BEL "M1/clkdiv_15" BEL
+        "M1/clkdiv_16" BEL "M1/clkdiv_17" BEL "M1/clkdiv_18" BEL
+        "M1/clkdiv_19" BEL "M1/clkdiv_20" BEL "M1/clkdiv_21" BEL
+        "M1/clkdiv_22" BEL "M1/clkdiv_23" BEL "M1/clkdiv_24" BEL
+        "M1/clkdiv_25" BEL "M1/clkdiv_26" BEL "M1/clkdiv_27" BEL
+        "M1/clkdiv_28" BEL "M1/clkdiv_29" BEL "M1/clkdiv_30" BEL
+        "M1/clkdiv_31" BEL "M5/cpu_blink_7" BEL "M5/cpu_blink_6" BEL
+        "M5/cpu_blink_5" BEL "M5/cpu_blink_4" BEL "M5/cpu_blink_3" BEL
+        "M5/cpu_blink_2" BEL "M5/cpu_blink_1" BEL "M5/cpu_blink_0" BEL
+        "M5/disp_data_31" BEL "M5/disp_data_30" BEL "M5/disp_data_29" BEL
+        "M5/disp_data_28" BEL "M5/disp_data_27" BEL "M5/disp_data_26" BEL
+        "M5/disp_data_25" BEL "M5/disp_data_24" BEL "M5/disp_data_23" BEL
+        "M5/disp_data_22" BEL "M5/disp_data_21" BEL "M5/disp_data_20" BEL
+        "M5/disp_data_19" BEL "M5/disp_data_18" BEL "M5/disp_data_17" BEL
+        "M5/disp_data_16" BEL "M5/disp_data_15" BEL "M5/disp_data_14" BEL
+        "M5/disp_data_13" BEL "M5/disp_data_12" BEL "M5/disp_data_11" BEL
+        "M5/disp_data_10" BEL "M5/disp_data_9" BEL "M5/disp_data_8" BEL
+        "M5/disp_data_7" BEL "M5/disp_data_6" BEL "M5/disp_data_5" BEL
+        "M5/disp_data_4" BEL "M5/disp_data_3" BEL "M5/disp_data_2" BEL
+        "M5/disp_data_1" BEL "M5/disp_data_0" BEL "M5/cpu_point_7" BEL
+        "M5/cpu_point_6" BEL "M5/cpu_point_5" BEL "M5/cpu_point_4" BEL
+        "M5/cpu_point_3" BEL "M5/cpu_point_2" BEL "M5/cpu_point_1" BEL
+        "M5/cpu_point_0" BEL "M6/GPIOf0_15" BEL "M6/GPIOf0_14" BEL
+        "M6/GPIOf0_13" BEL "M6/GPIOf0_12" BEL "M6/GPIOf0_11" BEL
+        "M6/GPIOf0_10" BEL "M6/GPIOf0_9" BEL "M6/GPIOf0_8" BEL "M6/GPIOf0_7"
+        BEL "M6/GPIOf0_6" BEL "M6/GPIOf0_5" BEL "M6/GPIOf0_0" BEL
+        "M8/GPIOf0_7" BEL "M8/GPIOf0_6" BEL "M8/GPIOf0_5" BEL "M8/GPIOf0_0"
+        BEL "clk_100mhz_BUFGP/BUFG" BEL "M2/SW_OK_0" BEL "M2/SW_OK_1" BEL
+        "M2/SW_OK_2" BEL "M2/SW_OK_3" BEL "M2/SW_OK_4" BEL "M2/SW_OK_5" BEL
+        "M2/SW_OK_6" BEL "M2/SW_OK_7" BEL "M2/SW_OK_15" BEL "M2/CR" BEL
+        "M2/counter1_13" BEL "M2/counter1_14" BEL "M2/counter1_15" BEL
+        "M2/counter1_16" BEL "M2/counter1_17" BEL "M2/counter1_18" BEL
+        "M2/counter1_19" BEL "M2/counter1_20" BEL "M2/clk1" BEL
+        "M2/counter1_0" BEL "M2/counter1_1" BEL "M2/counter1_2" BEL
+        "M2/counter1_3" BEL "M2/counter1_4" BEL "M2/counter1_5" BEL
+        "M2/counter1_6" BEL "M2/rst_counter_0" BEL "M2/rst_counter_1" BEL
+        "M2/counter1_7" BEL "M2/rst_counter_2" BEL "M2/counter1_8" BEL
+        "M2/rst_counter_3" BEL "M2/counter1_9" BEL "M2/rst_counter_4" BEL
+        "M2/counter1_10" BEL "M2/rst_counter_5" BEL "M2/counter1_11" BEL
+        "M2/rst_counter_6" BEL "M2/counter1_12" BEL "M2/rst_counter_7" BEL
+        "M2/rst_counter_8" BEL "M2/rst_counter_9" BEL "M2/rst_counter_10" BEL
+        "M2/rst_counter_11" BEL "M2/rst_counter_12" BEL "M2/rst_counter_13"
+        BEL "M2/rst_counter_14" BEL "M2/rst_counter_15" BEL
+        "M2/rst_counter_16" BEL "M2/rst_counter_17" BEL "M2/rst_counter_18"
+        BEL "M2/rst_counter_19" BEL "M2/rst_counter_20" BEL
+        "M2/rst_counter_21" BEL "M2/rst_counter_22" BEL "M2/rst_counter_23"
+        BEL "M2/rst_counter_24" BEL "M2/rst_counter_25" BEL
+        "M2/rst_counter_26" BEL "M2/rst" BEL "M4/get_B_0" BEL "M4/get_B_1" BEL
+        "M4/get_D_0" BEL "M4/get_D_1" BEL "M4/Ai_3" BEL "M4/Ai_7" BEL
+        "M4/Ai_11" BEL "M4/Ai_15" BEL "M4/Ai_19" BEL "M4/Ai_23" BEL "M4/Ai_27"
+        BEL "M4/Ai_31" BEL "M4/Bi_3" BEL "M4/Bi_7" BEL "M4/Bi_11" BEL
+        "M4/Bi_15" BEL "M4/Bi_19" BEL "M4/Bi_23" BEL "M4/Bi_27" BEL "M4/Bi_31"
+        BEL "M4/Ai_0" BEL "M4/Ai_4" BEL "M4/Ai_8" BEL "M4/Ai_12" BEL
+        "M4/Ai_16" BEL "M4/Ai_20" BEL "M4/Ai_24" BEL "M4/Ai_28" BEL "M4/Bi_0"
+        BEL "M4/Bi_4" BEL "M4/Bi_8" BEL "M4/Bi_12" BEL "M4/Bi_16" BEL
+        "M4/Bi_20" BEL "M4/Bi_24" BEL "M4/Bi_28" BEL "M4/Ai_1" BEL "M4/Ai_5"
+        BEL "M4/Ai_9" BEL "M4/Ai_13" BEL "M4/Ai_17" BEL "M4/Ai_21" BEL
+        "M4/Ai_25" BEL "M4/Ai_29" BEL "M4/Bi_1" BEL "M4/Bi_5" BEL "M4/Bi_9"
+        BEL "M4/Bi_13" BEL "M4/Bi_17" BEL "M4/Bi_21" BEL "M4/Bi_25" BEL
+        "M4/Bi_29" BEL "M4/Ai_2" BEL "M4/Ai_6" BEL "M4/Ai_10" BEL "M4/Ai_14"
+        BEL "M4/Ai_18" BEL "M4/Ai_22" BEL "M4/Ai_26" BEL "M4/Ai_30" BEL
+        "M4/Bi_2" BEL "M4/Bi_6" BEL "M4/Bi_10" BEL "M4/Bi_14" BEL "M4/Bi_18"
+        BEL "M4/Bi_22" BEL "M4/Bi_26" BEL "M4/Bi_30" BEL "M4/readn" BEL
+        "M3/XLXI_4/start_0" BEL "M3/XLXI_4/start_1" BEL
+        "M3/XLXI_4/state_FSM_FFd2" BEL "M3/XLXI_4/state_FSM_FFd1" BEL
+        "M3/XLXI_4/EN" BEL "M3/XLXI_4/s_clk" BEL "M3/XLXI_4/buffer_0" BEL
+        "M3/XLXI_4/buffer_1" BEL "M3/XLXI_4/buffer_2" BEL "M3/XLXI_4/buffer_3"
+        BEL "M3/XLXI_4/buffer_4" BEL "M3/XLXI_4/buffer_5" BEL
+        "M3/XLXI_4/buffer_6" BEL "M3/XLXI_4/buffer_7" BEL "M3/XLXI_4/buffer_8"
+        BEL "M3/XLXI_4/buffer_9" BEL "M3/XLXI_4/buffer_10" BEL
+        "M3/XLXI_4/buffer_11" BEL "M3/XLXI_4/buffer_12" BEL
+        "M3/XLXI_4/buffer_13" BEL "M3/XLXI_4/buffer_14" BEL
+        "M3/XLXI_4/buffer_15" BEL "M3/XLXI_4/buffer_16" BEL
+        "M3/XLXI_4/buffer_17" BEL "M3/XLXI_4/buffer_18" BEL
+        "M3/XLXI_4/buffer_19" BEL "M3/XLXI_4/buffer_20" BEL
+        "M3/XLXI_4/buffer_21" BEL "M3/XLXI_4/buffer_22" BEL
+        "M3/XLXI_4/buffer_23" BEL "M3/XLXI_4/buffer_24" BEL
+        "M3/XLXI_4/buffer_25" BEL "M3/XLXI_4/buffer_26" BEL
+        "M3/XLXI_4/buffer_27" BEL "M3/XLXI_4/buffer_28" BEL
+        "M3/XLXI_4/buffer_29" BEL "M3/XLXI_4/buffer_30" BEL
+        "M3/XLXI_4/buffer_31" BEL "M3/XLXI_4/buffer_32" BEL
+        "M3/XLXI_4/buffer_33" BEL "M3/XLXI_4/buffer_34" BEL
+        "M3/XLXI_4/buffer_35" BEL "M3/XLXI_4/buffer_36" BEL
+        "M3/XLXI_4/buffer_37" BEL "M3/XLXI_4/buffer_38" BEL
+        "M3/XLXI_4/buffer_39" BEL "M3/XLXI_4/buffer_40" BEL
+        "M3/XLXI_4/buffer_41" BEL "M3/XLXI_4/buffer_42" BEL
+        "M3/XLXI_4/buffer_43" BEL "M3/XLXI_4/buffer_44" BEL
+        "M3/XLXI_4/buffer_45" BEL "M3/XLXI_4/buffer_46" BEL
+        "M3/XLXI_4/buffer_47" BEL "M3/XLXI_4/buffer_48" BEL
+        "M3/XLXI_4/buffer_49" BEL "M3/XLXI_4/buffer_50" BEL
+        "M3/XLXI_4/buffer_51" BEL "M3/XLXI_4/buffer_52" BEL
+        "M3/XLXI_4/buffer_53" BEL "M3/XLXI_4/buffer_54" BEL
+        "M3/XLXI_4/buffer_55" BEL "M3/XLXI_4/buffer_56" BEL
+        "M3/XLXI_4/buffer_57" BEL "M3/XLXI_4/buffer_58" BEL
+        "M3/XLXI_4/buffer_59" BEL "M3/XLXI_4/buffer_60" BEL
+        "M3/XLXI_4/buffer_61" BEL "M3/XLXI_4/buffer_62" BEL
+        "M3/XLXI_4/buffer_63" BEL "M3/XLXI_4/shift_count_0" BEL
+        "M3/XLXI_4/shift_count_1" BEL "M3/XLXI_4/shift_count_2" BEL
+        "M3/XLXI_4/shift_count_3" BEL "M3/XLXI_4/shift_count_4" BEL
+        "M3/XLXI_4/shift_count_5" BEL "M6/LED_P2S/start_0" BEL
+        "M6/LED_P2S/start_1" BEL "M6/LED_P2S/state_FSM_FFd2" BEL
+        "M6/LED_P2S/state_FSM_FFd1" BEL "M6/LED_P2S/shift_count_0" BEL
+        "M6/LED_P2S/shift_count_1" BEL "M6/LED_P2S/shift_count_2" BEL
+        "M6/LED_P2S/shift_count_3" BEL "M6/LED_P2S/EN" BEL "M6/LED_P2S/s_clk"
+        BEL "M6/LED_P2S/buffer_0" BEL "M6/LED_P2S/buffer_1" BEL
+        "M6/LED_P2S/buffer_2" BEL "M6/LED_P2S/buffer_3" BEL
+        "M6/LED_P2S/buffer_4" BEL "M6/LED_P2S/buffer_5" BEL
+        "M6/LED_P2S/buffer_6" BEL "M6/LED_P2S/buffer_7" BEL
+        "M6/LED_P2S/buffer_8" BEL "M6/LED_P2S/buffer_9" BEL
+        "M6/LED_P2S/buffer_10" BEL "M6/LED_P2S/buffer_11" BEL
+        "M6/LED_P2S/buffer_12" BEL "M6/LED_P2S/buffer_13" BEL
+        "M6/LED_P2S/buffer_14" BEL "M6/LED_P2S/buffer_15" BEL "M2/RSTN_temp"
+        BEL "M2/sw_temp_0" BEL "M2/sw_temp_1" BEL "M2/sw_temp_10" BEL
+        "M2/sw_temp_11" BEL "M2/sw_temp_12" BEL "M2/sw_temp_13" BEL
+        "M2/sw_temp_14" BEL "M2/sw_temp_15" BEL "M2/sw_temp_2" BEL
+        "M2/sw_temp_3" BEL "M2/sw_temp_4" BEL "M2/sw_temp_5" BEL
+        "M2/sw_temp_6" BEL "M2/sw_temp_7" BEL "M2/sw_temp_8" BEL
+        "M2/sw_temp_9";
+TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

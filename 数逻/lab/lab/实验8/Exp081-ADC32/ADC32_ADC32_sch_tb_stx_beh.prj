@@ -1,0 +1,5 @@
+verilog isim_temp "CLA.vf"
+verilog isim_temp "add.vf"
+verilog isim_temp "add4b.vf"
+verilog isim_temp "ADC32_test.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

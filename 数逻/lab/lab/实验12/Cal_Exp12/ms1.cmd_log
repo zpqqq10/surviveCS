@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/RTL/ms1.v -lang verilog -prj RTL -o ms1.spl -module ms1 -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w ms1.spl D:/fundamentallogic/RTL/ms1.sym 

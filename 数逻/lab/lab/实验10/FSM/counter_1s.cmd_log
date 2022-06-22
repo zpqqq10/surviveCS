@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/FSM/counter_1s.v -lang verilog -prj FSM -o counter_1s.spl -module counter_1s -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w counter_1s.spl D:/fundamentallogic/FSM/counter_1s.sym 

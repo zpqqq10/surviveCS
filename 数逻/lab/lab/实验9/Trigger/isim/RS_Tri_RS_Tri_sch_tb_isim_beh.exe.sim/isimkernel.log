@@ -1,0 +1,28 @@
+Command line:
+   RS_Tri_RS_Tri_sch_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63203
+
+Wed Nov 25 14:32:04 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5167.55 Meg
+
+ Total Signals          : 77
+ Total Nets             : 30
+ Total Signal Drivers   : 22
+ Total Blocks           : 16
+ Total Primitive Blocks : 10
+ Total Processes        : 25
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 145
+
+ Total Simulation Time: 0.09375 sec
+
+ Current Memory Usage: 4695.7 Meg
+
+Wed Nov 25 15:03:03 2020
+

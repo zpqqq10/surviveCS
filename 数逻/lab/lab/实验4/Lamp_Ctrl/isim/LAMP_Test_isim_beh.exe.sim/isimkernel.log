@@ -1,0 +1,28 @@
+Command line:
+   LAMP_Test_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49191
+
+Sat Oct 17 11:34:48 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5167.52 Meg
+
+ Total Signals          : 21
+ Total Nets             : 27
+ Total Signal Drivers   : 12
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 17
+ Total Traceable Variables  : 25
+ Total Scalar Nets and Variables : 159
+
+ Total Simulation Time: 0.75 sec
+
+ Current Memory Usage: 4695.66 Meg
+
+Sat Oct 17 13:18:46 2020
+

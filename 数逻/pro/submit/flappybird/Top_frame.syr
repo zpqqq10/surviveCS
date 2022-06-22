@@ -1,0 +1,2173 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.29 secs
+ 
+--> Reading design: Top_frame.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_frame.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_frame"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : Top_frame
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\fundamentallogic\flappybird\MUX4T1_4.vf" into library work
+Parsing module <MUX4T1_4>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\MC14495_ZJU.vf" into library work
+Parsing module <MC14495_ZJU>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\pbdebounce.v" into library work
+Parsing module <pbdebounce_Once>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\MUX8T1_8.vf" into library work
+Parsing module <MUX8T1_8>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\pipe_up.v" into library work
+Parsing module <pipe_up>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\pipe_down.v" into library work
+Parsing module <pipe_down>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\bird_up.v" into library work
+Parsing module <bird_up>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\bird_hor.v" into library work
+Parsing module <bird_hor>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\bird_down.v" into library work
+Parsing module <bird_down>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Hex2Seg.v" into library work
+Parsing module <Hex2Seg>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\vgac.v" into library work
+Parsing module <vgac>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\SSeg_map.v" into library work
+Parsing module <SSeg_map>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\sp2_ver.v" into library work
+Parsing module <ps2_keyboard_driver>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Seg_map.v" into library work
+Parsing module <Seg_map>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ScanSync.vf" into library work
+Parsing module <ScanSync>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\pillar_up.v" into library work
+Parsing module <pillar_up>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\pillar_down.v" into library work
+Parsing module <pillar_down>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\P2S_IO.v" into library work
+Parsing module <P2S>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\MUX8T1_32.vf" into library work
+Parsing module <MUX8T1_8_MUSER_MUX8T1_32>.
+Parsing module <MUX8T1_32>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\MUX2T1_8.v" into library work
+Parsing module <MUX2T1_8>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\MUX2T1_64.v" into library work
+Parsing module <MUX2T1_64>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\LED_P2S_IO.v" into library work
+Parsing module <LED_P2S>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\title.v" into library work
+Parsing module <title>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\text_ready.v" into library work
+Parsing module <text_ready>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\text_game_over.v" into library work
+Parsing module <text_game_over>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\name.v" into library work
+Parsing module <name>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\button_play.v" into library work
+Parsing module <button_play>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\ipcore_dir\background.v" into library work
+Parsing module <background>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Hex827Seg.v" into library work
+Parsing module <Hex827Seg>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\bird_con.v" into library work
+Parsing module <bird_con>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Top.v" into library work
+Parsing module <Top>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\SEnter_2_32_IO.v" into library work
+Parsing module <SEnter_2_32>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Seg7_Dev.v" into library work
+Parsing module <Seg7_Dev>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\SAnti_jitter_IO.v" into library work
+Parsing module <SAnti_jitter>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\PIO.v" into library work
+Parsing module <PIO>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Multi_8CH32.v" into library work
+Parsing module <Multi_8CH32>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\GPIO.v" into library work
+Parsing module <GPIO>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Display.vf" into library work
+Parsing module <Display>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\fundamentallogic\flappybird\Top_frame.v" into library work
+Parsing module <Top_frame>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top_frame.v" Line 71: Port data4 is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top_frame.v" Line 76: Port GPIOf0 is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top_frame.v" Line 84: Port GPIOf0 is not connected to this instance
+
+Elaborating module <Top_frame>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <SAnti_jitter>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\SAnti_jitter_IO.v" Line 21: Empty module <SAnti_jitter> remains a black box.
+WARNING:HDLCompiler:1127 - "D:\fundamentallogic\flappybird\Top_frame.v" Line 57: Assignment to Pulse ignored, since the identifier is never used
+
+Elaborating module <Display>.
+
+Elaborating module <Hex827Seg>.
+
+Elaborating module <Hex2Seg>.
+
+Elaborating module <MC14495_ZJU>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR2>.
+
+Elaborating module <SSeg_map>.
+
+Elaborating module <MUX2T1_64>.
+
+Elaborating module <P2S>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\P2S_IO.v" Line 21: Empty module <P2S> remains a black box.
+
+Elaborating module <SEnter_2_32>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\SEnter_2_32_IO.v" Line 21: Empty module <SEnter_2_32> remains a black box.
+
+Elaborating module <Multi_8CH32>.
+
+Elaborating module <MUX8T1_32>.
+
+Elaborating module <MUX8T1_8_MUSER_MUX8T1_32>.
+
+Elaborating module <MUX4T1_4>.
+
+Elaborating module <MUX8T1_8>.
+
+Elaborating module <GPIO>.
+
+Elaborating module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\LED_P2S_IO.v" Line 21: Empty module <LED_P2S(DATA_BITS=16,DATA_COUNT_BITS=4)> remains a black box.
+
+Elaborating module <Seg7_Dev>.
+
+Elaborating module <ScanSync>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+
+Elaborating module <BUF>.
+
+Elaborating module <Seg_map>.
+
+Elaborating module <MUX2T1_8>.
+
+Elaborating module <PIO>.
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top.v" Line 93: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top.v" Line 94: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top.v" Line 95: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top.v" Line 96: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top.v" Line 146: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\Top.v" Line 147: Port wea is not connected to this instance
+
+Elaborating module <Top>.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 49: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:1127 - "D:\fundamentallogic\flappybird\Top.v" Line 67: Assignment to clk ignored, since the identifier is never used
+
+Elaborating module <vgac>.
+WARNING:HDLCompiler:1127 - "D:\fundamentallogic\flappybird\Top.v" Line 71: Assignment to cas ignored, since the identifier is never used
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 88: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 89: Result of 32-bit expression is truncated to fit in 13-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 90: Result of 32-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 91: Result of 32-bit expression is truncated to fit in 13-bit target.
+
+Elaborating module <background>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\background.v" Line 39: Empty module <background> remains a black box.
+
+Elaborating module <button_play>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\button_play.v" Line 39: Empty module <button_play> remains a black box.
+
+Elaborating module <title>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\title.v" Line 39: Empty module <title> remains a black box.
+
+Elaborating module <name>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\name.v" Line 39: Empty module <name> remains a black box.
+
+Elaborating module <ps2_keyboard_driver>.
+
+Elaborating module <pbdebounce_Once>.
+WARNING:HDLCompiler:91 - "D:\fundamentallogic\flappybird\sp2_ver.v" Line 137: Signal <judge> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\fundamentallogic\flappybird\sp2_ver.v" Line 138: Signal <ps2_byte_r> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\fundamentallogic\flappybird\sp2_ver.v" Line 193: Signal <ps2_byte_r> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 143: Result of 32-bit expression is truncated to fit in 14-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 144: Result of 32-bit expression is truncated to fit in 14-bit target.
+
+Elaborating module <text_game_over>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\text_game_over.v" Line 39: Empty module <text_game_over> remains a black box.
+
+Elaborating module <text_ready>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\text_ready.v" Line 39: Empty module <text_ready> remains a black box.
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\bird_con.v" Line 35: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\bird_con.v" Line 36: Port wea is not connected to this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\bird_con.v" Line 37: Port wea is not connected to this instance
+
+Elaborating module <bird_con>.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\bird_con.v" Line 33: Result of 16-bit expression is truncated to fit in 12-bit target.
+
+Elaborating module <bird_up>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\bird_up.v" Line 39: Empty module <bird_up> remains a black box.
+
+Elaborating module <bird_hor>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\bird_hor.v" Line 39: Empty module <bird_hor> remains a black box.
+
+Elaborating module <bird_down>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\bird_down.v" Line 39: Empty module <bird_down> remains a black box.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\bird_con.v" Line 47: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\bird_con.v" Line 48: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\bird_con.v" Line 51: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\bird_con.v" Line 35: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\bird_con.v" Line 36: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\bird_con.v" Line 37: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\pillar_down.v" Line 22: Port wea is not connected to this instance
+
+Elaborating module <pillar_down>.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\pillar_down.v" Line 18: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\pillar_down.v" Line 19: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\pillar_down.v" Line 20: Result of 16-bit expression is truncated to fit in 15-bit target.
+
+Elaborating module <pipe_down>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\pipe_down.v" Line 39: Empty module <pipe_down> remains a black box.
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\pillar_down.v" Line 22: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:1016 - "D:\fundamentallogic\flappybird\pillar_up.v" Line 22: Port wea is not connected to this instance
+
+Elaborating module <pillar_up>.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\pillar_up.v" Line 18: Result of 32-bit expression is truncated to fit in 10-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\pillar_up.v" Line 20: Result of 16-bit expression is truncated to fit in 15-bit target.
+
+Elaborating module <pipe_up>.
+WARNING:HDLCompiler:1499 - "D:\fundamentallogic\flappybird\ipcore_dir\pipe_up.v" Line 39: Empty module <pipe_up> remains a black box.
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\pillar_up.v" Line 22: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 191: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 192: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 196: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 201: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 208: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 209: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 213: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 219: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 226: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 227: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 231: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 236: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 243: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 244: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 248: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 254: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 261: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 262: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 266: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 272: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 279: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 280: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 284: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 290: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 297: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 298: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 302: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 308: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 315: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 316: Result of 32-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 320: Result of 10-bit expression is truncated to fit in 9-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 326: Result of 13-bit expression is truncated to fit in 12-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 377: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 399: Result of 19-bit expression is truncated to fit in 18-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 415: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 419: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 423: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 427: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 431: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 435: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 439: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\flappybird\Top.v" Line 443: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top.v" Line 93: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top.v" Line 94: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top.v" Line 95: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top.v" Line 96: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top.v" Line 146: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top.v" Line 147: Input port wea[0] is not connected on this instance
+WARNING:HDLCompiler:552 - "D:\fundamentallogic\flappybird\Top_frame.v" Line 71: Input port data4[31] is not connected on this instance
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Top_frame>.
+    Related source file is "D:\fundamentallogic\flappybird\Top_frame.v".
+WARNING:Xst:2898 - Port 'data4', unconnected in block instance 'M5', is tied to GND.
+WARNING:Xst:2898 - Port 'data5', unconnected in block instance 'M5', is tied to GND.
+WARNING:Xst:2898 - Port 'data6', unconnected in block instance 'M5', is tied to GND.
+WARNING:Xst:2898 - Port 'data7', unconnected in block instance 'M5', is tied to GND.
+INFO:Xst:3210 - "D:\fundamentallogic\flappybird\Top_frame.v" line 55: Output port <pulse_out> of the instance <M2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\fundamentallogic\flappybird\Top_frame.v" line 76: Output port <GPIOf0> of the instance <M6> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\fundamentallogic\flappybird\Top_frame.v" line 84: Output port <GPIOf0> of the instance <M8> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <Top_frame> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\fundamentallogic\flappybird\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 13.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <Display>.
+    Related source file is "D:\fundamentallogic\flappybird\Display.vf".
+    Summary:
+	no macro.
+Unit <Display> synthesized.
+
+Synthesizing Unit <Hex827Seg>.
+    Related source file is "D:\fundamentallogic\flappybird\Hex827Seg.v".
+    Summary:
+	no macro.
+Unit <Hex827Seg> synthesized.
+
+Synthesizing Unit <Hex2Seg>.
+    Related source file is "D:\fundamentallogic\flappybird\Hex2Seg.v".
+    Summary:
+	no macro.
+Unit <Hex2Seg> synthesized.
+
+Synthesizing Unit <MC14495_ZJU>.
+    Related source file is "D:\fundamentallogic\flappybird\MC14495_ZJU.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU> synthesized.
+
+Synthesizing Unit <SSeg_map>.
+    Related source file is "D:\fundamentallogic\flappybird\SSeg_map.v".
+WARNING:Xst:647 - Input <Disp_num<63:32>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	no macro.
+Unit <SSeg_map> synthesized.
+
+Synthesizing Unit <MUX2T1_64>.
+    Related source file is "D:\fundamentallogic\flappybird\MUX2T1_64.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_64> synthesized.
+
+Synthesizing Unit <Multi_8CH32>.
+    Related source file is "D:\fundamentallogic\flappybird\Multi_8CH32.v".
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit register for signal <cpu_blink>.
+    Found 8-bit register for signal <cpu_point>.
+    Found 32-bit register for signal <disp_data>.
+    Summary:
+	inferred  48 D-type flip-flop(s).
+Unit <Multi_8CH32> synthesized.
+
+Synthesizing Unit <MUX8T1_32>.
+    Related source file is "D:\fundamentallogic\flappybird\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX8T1_8_MUSER_MUX8T1_32>.
+    Related source file is "D:\fundamentallogic\flappybird\MUX8T1_32.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8_MUSER_MUX8T1_32> synthesized.
+
+Synthesizing Unit <MUX4T1_4>.
+    Related source file is "D:\fundamentallogic\flappybird\MUX4T1_4.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4> synthesized.
+
+Synthesizing Unit <MUX8T1_8>.
+    Related source file is "D:\fundamentallogic\flappybird\MUX8T1_8.vf".
+    Summary:
+	no macro.
+Unit <MUX8T1_8> synthesized.
+
+Synthesizing Unit <GPIO>.
+    Related source file is "D:\fundamentallogic\flappybird\GPIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <GPIO> synthesized.
+
+Synthesizing Unit <Seg7_Dev>.
+    Related source file is "D:\fundamentallogic\flappybird\Seg7_Dev.v".
+    Summary:
+	no macro.
+Unit <Seg7_Dev> synthesized.
+
+Synthesizing Unit <ScanSync>.
+    Related source file is "D:\fundamentallogic\flappybird\ScanSync.vf".
+    Summary:
+	no macro.
+Unit <ScanSync> synthesized.
+
+Synthesizing Unit <Seg_map>.
+    Related source file is "D:\fundamentallogic\flappybird\Seg_map.v".
+WARNING:Xst:647 - Input <Scan<2:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 8-bit 4-to-1 multiplexer for signal <Segg_map> created at line 28.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Seg_map> synthesized.
+
+Synthesizing Unit <MUX2T1_8>.
+    Related source file is "D:\fundamentallogic\flappybird\MUX2T1_8.v".
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <MUX2T1_8> synthesized.
+
+Synthesizing Unit <PIO>.
+    Related source file is "D:\fundamentallogic\flappybird\PIO.v".
+    Found 32-bit register for signal <GPIOf0>.
+    Summary:
+	inferred  32 D-type flip-flop(s).
+Unit <PIO> synthesized.
+
+Synthesizing Unit <Top>.
+    Related source file is "D:\fundamentallogic\flappybird\Top.v".
+WARNING:Xst:647 - Input <SW<14:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <BTN_OK<3:3>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <rst> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\fundamentallogic\flappybird\Top.v" line 70: Output port <rdn> of the instance <VGA_DRI> is unconnected or connected to loadless signal.
+WARNING:Xst:2935 - Signal 'LED<31:16>', unconnected in block 'Top', is tied to its initial value (1111111111111111).
+    Found 4-bit register for signal <speed>.
+    Found 16-bit register for signal <keyascii>.
+    Found 1-bit register for signal <clr>.
+    Found 1-bit register for signal <kspace>.
+    Found 1-bit register for signal <kenter>.
+    Found 12-bit register for signal <p0_x>.
+    Found 9-bit register for signal <p0_dy>.
+    Found 9-bit register for signal <p0_uy>.
+    Found 12-bit register for signal <p1_x>.
+    Found 9-bit register for signal <p1_dy>.
+    Found 9-bit register for signal <p1_uy>.
+    Found 12-bit register for signal <p2_x>.
+    Found 9-bit register for signal <p2_dy>.
+    Found 9-bit register for signal <p2_uy>.
+    Found 12-bit register for signal <p3_x>.
+    Found 9-bit register for signal <p3_dy>.
+    Found 9-bit register for signal <p3_uy>.
+    Found 12-bit register for signal <p4_x>.
+    Found 9-bit register for signal <p4_dy>.
+    Found 9-bit register for signal <p4_uy>.
+    Found 12-bit register for signal <p5_x>.
+    Found 9-bit register for signal <p5_dy>.
+    Found 9-bit register for signal <p5_uy>.
+    Found 12-bit register for signal <p6_x>.
+    Found 9-bit register for signal <p6_dy>.
+    Found 9-bit register for signal <p6_uy>.
+    Found 12-bit register for signal <p7_x>.
+    Found 9-bit register for signal <p7_dy>.
+    Found 9-bit register for signal <p7_uy>.
+    Found 18-bit register for signal <ledct>.
+    Found 1-bit register for signal <LED<15>>.
+    Found 1-bit register for signal <LED<14>>.
+    Found 1-bit register for signal <LED<13>>.
+    Found 1-bit register for signal <LED<12>>.
+    Found 1-bit register for signal <LED<11>>.
+    Found 1-bit register for signal <LED<10>>.
+    Found 1-bit register for signal <LED<9>>.
+    Found 1-bit register for signal <LED<8>>.
+    Found 1-bit register for signal <LED<7>>.
+    Found 1-bit register for signal <LED<6>>.
+    Found 1-bit register for signal <LED<5>>.
+    Found 1-bit register for signal <LED<4>>.
+    Found 1-bit register for signal <LED<3>>.
+    Found 1-bit register for signal <LED<2>>.
+    Found 1-bit register for signal <LED<1>>.
+    Found 1-bit register for signal <LED<0>>.
+    Found 1-bit register for signal <welcome>.
+    Found 1-bit register for signal <over>.
+    Found 1-bit register for signal <playing>.
+    Found 32-bit register for signal <maxscore>.
+    Found 32-bit register for signal <score>.
+    Found 1-bit register for signal <scorer>.
+    Found 12-bit register for signal <vgadata>.
+    Found 11-bit subtractor for signal <GND_34_o_GND_34_o_sub_11_OUT> created at line 89.
+    Found 10-bit subtractor for signal <GND_34_o_GND_34_o_sub_12_OUT> created at line 89.
+    Found 11-bit subtractor for signal <GND_34_o_GND_34_o_sub_15_OUT> created at line 90.
+    Found 10-bit subtractor for signal <GND_34_o_GND_34_o_sub_16_OUT> created at line 90.
+    Found 11-bit subtractor for signal <GND_34_o_GND_34_o_sub_19_OUT> created at line 91.
+    Found 10-bit subtractor for signal <GND_34_o_GND_34_o_sub_20_OUT> created at line 91.
+    Found 11-bit subtractor for signal <GND_34_o_GND_34_o_sub_30_OUT> created at line 143.
+    Found 10-bit subtractor for signal <GND_34_o_GND_34_o_sub_31_OUT> created at line 143.
+    Found 11-bit subtractor for signal <GND_34_o_GND_34_o_sub_34_OUT> created at line 144.
+    Found 12-bit subtractor for signal <p0_x[11]_GND_34_o_sub_40_OUT> created at line 188.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_43_OUT> created at line 191.
+    Found 12-bit subtractor for signal <p1_x[11]_GND_34_o_sub_56_OUT> created at line 205.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_58_OUT> created at line 208.
+    Found 12-bit subtractor for signal <p2_x[11]_GND_34_o_sub_71_OUT> created at line 223.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_73_OUT> created at line 226.
+    Found 12-bit subtractor for signal <p3_x[11]_GND_34_o_sub_86_OUT> created at line 240.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_88_OUT> created at line 243.
+    Found 12-bit subtractor for signal <p4_x[11]_GND_34_o_sub_101_OUT> created at line 258.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_103_OUT> created at line 261.
+    Found 12-bit subtractor for signal <p5_x[11]_GND_34_o_sub_116_OUT> created at line 276.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_118_OUT> created at line 279.
+    Found 12-bit subtractor for signal <p6_x[11]_GND_34_o_sub_131_OUT> created at line 294.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_133_OUT> created at line 297.
+    Found 12-bit subtractor for signal <p7_x[11]_GND_34_o_sub_146_OUT> created at line 312.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_148_OUT> created at line 315.
+    Found 4-bit adder for signal <speed[3]_GND_34_o_add_5_OUT> created at line 49.
+    Found 19-bit adder for signal <bg_addr> created at line 88.
+    Found 32-bit adder for signal <n1007> created at line 89.
+    Found 32-bit adder for signal <n1008> created at line 90.
+    Found 32-bit adder for signal <n1010> created at line 91.
+    Found 32-bit adder for signal <n1015> created at line 143.
+    Found 32-bit adder for signal <n1016> created at line 144.
+    Found 9-bit adder for signal <n1259> created at line 195.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_45_OUT> created at line 196.
+    Found 13-bit adder for signal <n1065> created at line 201.
+    Found 9-bit adder for signal <n1270> created at line 212.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_60_OUT> created at line 213.
+    Found 13-bit adder for signal <n1078> created at line 219.
+    Found 9-bit adder for signal <n1281> created at line 230.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_75_OUT> created at line 231.
+    Found 13-bit adder for signal <n1091> created at line 236.
+    Found 8-bit adder for signal <n1501[7:0]> created at line 247.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_90_OUT> created at line 248.
+    Found 13-bit adder for signal <n1104> created at line 254.
+    Found 9-bit adder for signal <n1303> created at line 265.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_105_OUT> created at line 266.
+    Found 13-bit adder for signal <n1117> created at line 272.
+    Found 9-bit adder for signal <n1314> created at line 283.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_120_OUT> created at line 284.
+    Found 13-bit adder for signal <n1130> created at line 290.
+    Found 9-bit adder for signal <n1325> created at line 301.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_135_OUT> created at line 302.
+    Found 13-bit adder for signal <n1143> created at line 308.
+    Found 9-bit adder for signal <n1336> created at line 319.
+    Found 9-bit adder for signal <PWR_34_o_GND_34_o_add_150_OUT> created at line 320.
+    Found 13-bit adder for signal <n1156> created at line 326.
+    Found 10-bit adder for signal <n1340> created at line 347.
+    Found 10-bit adder for signal <n1341> created at line 348.
+    Found 11-bit adder for signal <n1535[10:0]> created at line 364.
+    Found 13-bit adder for signal <n1375> created at line 364.
+    Found 13-bit adder for signal <n1378> created at line 365.
+    Found 13-bit adder for signal <n1381> created at line 366.
+    Found 13-bit adder for signal <n1384> created at line 367.
+    Found 13-bit adder for signal <n1387> created at line 368.
+    Found 13-bit adder for signal <n1390> created at line 369.
+    Found 13-bit adder for signal <n1393> created at line 370.
+    Found 13-bit adder for signal <n1396> created at line 371.
+    Found 18-bit adder for signal <ledct[17]_GND_34_o_add_329_OUT> created at line 377.
+    Found 4-bit adder for signal <score[31]_GND_34_o_add_340_OUT> created at line 415.
+    Found 4-bit adder for signal <score[27]_GND_34_o_add_342_OUT> created at line 419.
+    Found 4-bit adder for signal <score[23]_GND_34_o_add_344_OUT> created at line 423.
+    Found 4-bit adder for signal <score[19]_GND_34_o_add_346_OUT> created at line 427.
+    Found 4-bit adder for signal <score[15]_GND_34_o_add_348_OUT> created at line 431.
+    Found 4-bit adder for signal <score[11]_GND_34_o_add_350_OUT> created at line 435.
+    Found 4-bit adder for signal <score[7]_GND_34_o_add_352_OUT> created at line 439.
+    Found 4-bit adder for signal <score[3]_GND_34_o_add_353_OUT> created at line 443.
+    Found 11-bit adder for signal <n1406> created at line 460.
+    Found 10-bit adder for signal <n1408> created at line 460.
+    Found 11-bit adder for signal <n1414> created at line 467.
+    Found 11-bit adder for signal <n1420> created at line 468.
+    Found 11-bit adder for signal <n1426> created at line 469.
+    Found 11-bit adder for signal <n1432> created at line 470.
+    Found 11-bit adder for signal <n1438> created at line 471.
+    Found 11-bit adder for signal <n1444> created at line 472.
+    Found 11-bit adder for signal <n1450> created at line 473.
+    Found 11-bit adder for signal <n1456> created at line 474.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_44_OUT<8:0>> created at line 192.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_59_OUT<8:0>> created at line 209.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_74_OUT<8:0>> created at line 227.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_89_OUT<8:0>> created at line 244.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_104_OUT<8:0>> created at line 262.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_119_OUT<8:0>> created at line 280.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_134_OUT<8:0>> created at line 298.
+    Found 9-bit subtractor for signal <GND_34_o_GND_34_o_sub_149_OUT<8:0>> created at line 316.
+    Found 9x10-bit multiplier for signal <n1465> created at line 88.
+    Found 32x7-bit multiplier for signal <n1042> created at line 89.
+    Found 32x8-bit multiplier for signal <n1045> created at line 90.
+    Found 32x8-bit multiplier for signal <n1048> created at line 91.
+    Found 32x8-bit multiplier for signal <n1053> created at line 143.
+    Found 32x8-bit multiplier for signal <n1055> created at line 144.
+    Found 32-bit comparator greater for signal <n0046> created at line 187
+    Found 32-bit comparator lessequal for signal <n0049> created at line 189
+    Found 32-bit comparator greater for signal <GND_34_o_score[31]_LessThan_42_o> created at line 189
+    Found 32-bit comparator greater for signal <n0065> created at line 204
+    Found 32-bit comparator greater for signal <n0068> created at line 206
+    Found 32-bit comparator greater for signal <n0082> created at line 222
+    Found 32-bit comparator greater for signal <n0085> created at line 224
+    Found 32-bit comparator greater for signal <n0099> created at line 239
+    Found 32-bit comparator greater for signal <n0102> created at line 241
+    Found 32-bit comparator greater for signal <n0116> created at line 257
+    Found 32-bit comparator greater for signal <n0119> created at line 259
+    Found 32-bit comparator greater for signal <n0133> created at line 275
+    Found 32-bit comparator greater for signal <n0136> created at line 277
+    Found 32-bit comparator greater for signal <n0150> created at line 293
+    Found 32-bit comparator greater for signal <n0153> created at line 295
+    Found 32-bit comparator greater for signal <n0167> created at line 311
+    Found 32-bit comparator greater for signal <n0170> created at line 313
+    Found 10-bit comparator lessequal for signal <n0222> created at line 347
+    Found 10-bit comparator lessequal for signal <n0229> created at line 348
+    Found 10-bit comparator lessequal for signal <n0233> created at line 349
+    Found 10-bit comparator lessequal for signal <n0237> created at line 350
+    Found 10-bit comparator lessequal for signal <n0241> created at line 351
+    Found 10-bit comparator lessequal for signal <n0245> created at line 352
+    Found 10-bit comparator lessequal for signal <n0249> created at line 353
+    Found 10-bit comparator lessequal for signal <n0253> created at line 354
+    Found 10-bit comparator lessequal for signal <n0257> created at line 355
+    Found 10-bit comparator lessequal for signal <n0261> created at line 356
+    Found 10-bit comparator lessequal for signal <n0265> created at line 357
+    Found 10-bit comparator lessequal for signal <n0269> created at line 358
+    Found 10-bit comparator lessequal for signal <n0273> created at line 359
+    Found 10-bit comparator lessequal for signal <n0277> created at line 360
+    Found 10-bit comparator lessequal for signal <n0281> created at line 361
+    Found 10-bit comparator lessequal for signal <n0285> created at line 362
+    Found 10-bit comparator lessequal for signal <n0289> created at line 363
+    Found 12-bit comparator lessequal for signal <n0294> created at line 364
+    Found 13-bit comparator lessequal for signal <n0297> created at line 364
+    Found 12-bit comparator lessequal for signal <n0300> created at line 365
+    Found 13-bit comparator lessequal for signal <n0303> created at line 365
+    Found 12-bit comparator lessequal for signal <n0307> created at line 366
+    Found 13-bit comparator lessequal for signal <n0310> created at line 366
+    Found 12-bit comparator lessequal for signal <n0314> created at line 367
+    Found 13-bit comparator lessequal for signal <n0317> created at line 367
+    Found 12-bit comparator lessequal for signal <n0321> created at line 368
+    Found 13-bit comparator lessequal for signal <n0324> created at line 368
+    Found 12-bit comparator lessequal for signal <n0328> created at line 369
+    Found 13-bit comparator lessequal for signal <n0331> created at line 369
+    Found 12-bit comparator lessequal for signal <n0335> created at line 370
+    Found 13-bit comparator lessequal for signal <n0338> created at line 370
+    Found 12-bit comparator lessequal for signal <n0342> created at line 371
+    Found 13-bit comparator lessequal for signal <n0345> created at line 371
+    Found 32-bit comparator lessequal for signal <maxscore[31]_score[31]_LessThan_336_o> created at line 400
+    Found 10-bit comparator greater for signal <bird_x[9]_col[9]_LessThan_371_o> created at line 460
+    Found 11-bit comparator lessequal for signal <n0609> created at line 460
+    Found 9-bit comparator lessequal for signal <n0612> created at line 460
+    Found 10-bit comparator lessequal for signal <n0616> created at line 460
+    Found 10-bit comparator lessequal for signal <n0620> created at line 461
+    Found 10-bit comparator lessequal for signal <n0622> created at line 461
+    Found 9-bit comparator lessequal for signal <n0626> created at line 461
+    Found 10-bit comparator lessequal for signal <n0632> created at line 462
+    Found 10-bit comparator lessequal for signal <n0634> created at line 462
+    Found 9-bit comparator lessequal for signal <n0637> created at line 462
+    Found 10-bit comparator lessequal for signal <n0644> created at line 463
+    Found 10-bit comparator lessequal for signal <n0646> created at line 463
+    Found 9-bit comparator lessequal for signal <n0649> created at line 463
+    Found 9-bit comparator lessequal for signal <n0652> created at line 463
+    Found 10-bit comparator lessequal for signal <n0658> created at line 464
+    Found 10-bit comparator lessequal for signal <n0660> created at line 464
+    Found 9-bit comparator lessequal for signal <n0663> created at line 464
+    Found 9-bit comparator lessequal for signal <n0666> created at line 464
+    Found 10-bit comparator lessequal for signal <n0672> created at line 465
+    Found 10-bit comparator lessequal for signal <n0674> created at line 465
+    Found 9-bit comparator lessequal for signal <n0677> created at line 465
+    Found 9-bit comparator lessequal for signal <n0680> created at line 465
+    Found 32-bit comparator lessequal for signal <n0686> created at line 467
+    Found 32-bit comparator lessequal for signal <n0688> created at line 467
+    Found 10-bit comparator lessequal for signal <n0691> created at line 467
+    Found 11-bit comparator lessequal for signal <n0695> created at line 467
+    Found 9-bit comparator lessequal for signal <n0698> created at line 467
+    Found 32-bit comparator lessequal for signal <n0704> created at line 468
+    Found 32-bit comparator lessequal for signal <n0706> created at line 468
+    Found 10-bit comparator lessequal for signal <n0709> created at line 468
+    Found 11-bit comparator lessequal for signal <n0713> created at line 468
+    Found 9-bit comparator lessequal for signal <n0716> created at line 468
+    Found 32-bit comparator lessequal for signal <n0722> created at line 469
+    Found 32-bit comparator lessequal for signal <n0724> created at line 469
+    Found 10-bit comparator lessequal for signal <n0727> created at line 469
+    Found 11-bit comparator lessequal for signal <n0731> created at line 469
+    Found 9-bit comparator lessequal for signal <n0734> created at line 469
+    Found 32-bit comparator lessequal for signal <n0740> created at line 470
+    Found 32-bit comparator lessequal for signal <n0742> created at line 470
+    Found 10-bit comparator lessequal for signal <n0745> created at line 470
+    Found 11-bit comparator lessequal for signal <n0749> created at line 470
+    Found 9-bit comparator lessequal for signal <n0752> created at line 470
+    Found 32-bit comparator lessequal for signal <n0758> created at line 471
+    Found 32-bit comparator lessequal for signal <n0760> created at line 471
+    Found 10-bit comparator lessequal for signal <n0763> created at line 471
+    Found 11-bit comparator lessequal for signal <n0767> created at line 471
+    Found 9-bit comparator lessequal for signal <n0770> created at line 471
+    Found 32-bit comparator lessequal for signal <n0776> created at line 472
+    Found 32-bit comparator lessequal for signal <n0778> created at line 472
+    Found 10-bit comparator lessequal for signal <n0781> created at line 472
+    Found 11-bit comparator lessequal for signal <n0785> created at line 472
+    Found 9-bit comparator lessequal for signal <n0788> created at line 472
+    Found 32-bit comparator lessequal for signal <n0794> created at line 473
+    Found 32-bit comparator lessequal for signal <n0796> created at line 473
+    Found 10-bit comparator lessequal for signal <n0799> created at line 473
+    Found 11-bit comparator lessequal for signal <n0803> created at line 473
+    Found 9-bit comparator lessequal for signal <n0806> created at line 473
+    Found 32-bit comparator lessequal for signal <n0812> created at line 474
+    Found 32-bit comparator lessequal for signal <n0814> created at line 474
+    Found 10-bit comparator lessequal for signal <n0817> created at line 474
+    Found 11-bit comparator lessequal for signal <n0821> created at line 474
+    Found 9-bit comparator lessequal for signal <n0824> created at line 474
+    Found 9-bit comparator lessequal for signal <n0830> created at line 476
+    Found 9-bit comparator lessequal for signal <n0836> created at line 477
+    Found 9-bit comparator lessequal for signal <n0842> created at line 478
+    Found 9-bit comparator lessequal for signal <n0848> created at line 479
+    Found 9-bit comparator lessequal for signal <n0854> created at line 480
+    Found 9-bit comparator lessequal for signal <n0860> created at line 481
+    Found 9-bit comparator lessequal for signal <n0866> created at line 482
+    Found 9-bit comparator lessequal for signal <n0872> created at line 483
+    Summary:
+	inferred   6 Multiplier(s).
+	inferred  79 Adder/Subtractor(s).
+	inferred 377 D-type flip-flop(s).
+	inferred 121 Comparator(s).
+	inferred 158 Multiplexer(s).
+Unit <Top> synthesized.
+
+Synthesizing Unit <vgac>.
+    Related source file is "D:\fundamentallogic\flappybird\vgac.v".
+    Found 10-bit register for signal <v_count>.
+    Found 9-bit register for signal <row_addr>.
+    Found 10-bit register for signal <col_addr>.
+    Found 1-bit register for signal <rdn>.
+    Found 1-bit register for signal <hs>.
+    Found 1-bit register for signal <vs>.
+    Found 4-bit register for signal <r>.
+    Found 4-bit register for signal <g>.
+    Found 4-bit register for signal <b>.
+    Found 10-bit register for signal <h_count>.
+    Found 10-bit subtractor for signal <col> created at line 41.
+    Found 10-bit adder for signal <h_count[9]_GND_35_o_add_2_OUT> created at line 23.
+    Found 10-bit adder for signal <v_count[9]_GND_35_o_add_8_OUT> created at line 35.
+    Found 9-bit subtractor for signal <row<8:0>> created at line 40.
+    Found 10-bit comparator greater for signal <h_sync> created at line 42
+    Found 10-bit comparator greater for signal <v_sync> created at line 43
+    Found 10-bit comparator greater for signal <GND_35_o_h_count[9]_LessThan_17_o> created at line 44
+    Found 10-bit comparator greater for signal <h_count[9]_PWR_35_o_LessThan_18_o> created at line 45
+    Found 10-bit comparator greater for signal <GND_35_o_v_count[9]_LessThan_19_o> created at line 46
+    Found 10-bit comparator greater for signal <v_count[9]_PWR_35_o_LessThan_20_o> created at line 47
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred  54 D-type flip-flop(s).
+	inferred   6 Comparator(s).
+	inferred   1 Multiplexer(s).
+Unit <vgac> synthesized.
+
+Synthesizing Unit <ps2_keyboard_driver>.
+    Related source file is "D:\fundamentallogic\flappybird\sp2_ver.v".
+    Found 1-bit register for signal <ps2k_clk_r1>.
+    Found 1-bit register for signal <ps2k_clk_r2>.
+    Found 4-bit register for signal <num>.
+    Found 8-bit register for signal <temp_data>.
+    Found 1-bit register for signal <key_f0>.
+    Found 1-bit register for signal <record>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <judge>.
+    Found 8-bit register for signal <ps2_byte_r>.
+    Found 1-bit register for signal <ps2k_clk_r0>.
+    Found finite state machine <FSM_0> for signal <num>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 33                                             |
+    | Inputs             | 2                                              |
+    | Outputs            | 5                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Power Up State     | 0000                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred  23 D-type flip-flop(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <ps2_keyboard_driver> synthesized.
+
+Synthesizing Unit <pbdebounce_Once>.
+    Related source file is "D:\fundamentallogic\flappybird\pbdebounce.v".
+    Found 16-bit register for signal <pbshift>.
+    Found 1-bit register for signal <done>.
+    Found 1-bit register for signal <pbout>.
+    Found 1-bit register for signal <start>.
+    Summary:
+	inferred  19 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <pbdebounce_Once> synthesized.
+
+Synthesizing Unit <bird_con>.
+    Related source file is "D:\fundamentallogic\flappybird\bird_con.v".
+WARNING:Xst:647 - Input <div<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <div<19:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <div<23:21>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <div<31:26>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit register for signal <bird_y>.
+    Found 4-bit register for signal <flyct>.
+    Found 12-bit register for signal <bird_data>.
+    Found 10-bit register for signal <bird_x>.
+    Found 10-bit subtractor for signal <x> created at line 31.
+    Found 9-bit subtractor for signal <y> created at line 32.
+    Found 15-bit adder for signal <n0038> created at line 33.
+    Found 4-bit adder for signal <flyct[3]_GND_47_o_add_10_OUT> created at line 48.
+    Found 9-bit adder for signal <bird_y[8]_GND_47_o_add_11_OUT> created at line 51.
+    Found 9-bit subtractor for signal <GND_47_o_GND_47_o_sub_10_OUT<8:0>> created at line 47.
+    Found 9x6-bit multiplier for signal <n0063> created at line 33.
+    Found 12-bit 4-to-1 multiplexer for signal <bird_data[11]_bird_data_up[11]_mux_26_OUT> created at line 60.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred  35 D-type flip-flop(s).
+	inferred   5 Multiplexer(s).
+Unit <bird_con> synthesized.
+
+Synthesizing Unit <pillar_down>.
+    Related source file is "D:\fundamentallogic\flappybird\pillar_down.v".
+WARNING:Xst:647 - Input <div<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <div<31:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 10-bit subtractor for signal <GND_52_o_GND_52_o_sub_3_OUT> created at line 19.
+    Found 11-bit adder for signal <n0027> created at line 18.
+    Found 15-bit adder for signal <address> created at line 20.
+    Found 10-bit subtractor for signal <n0012[9:0]> created at line 20.
+    Found 9-bit subtractor for signal <y> created at line 15.
+    Found 9x6-bit multiplier for signal <n0029> created at line 20.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+Unit <pillar_down> synthesized.
+
+Synthesizing Unit <pillar_up>.
+    Related source file is "D:\fundamentallogic\flappybird\pillar_up.v".
+WARNING:Xst:647 - Input <div<0:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <div<31:2>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 9-bit subtractor for signal <y> created at line 19.
+    Found 11-bit adder for signal <n0022> created at line 18.
+    Found 15-bit adder for signal <address> created at line 20.
+    Found 10-bit subtractor for signal <n0011[9:0]> created at line 20.
+    Found 9x6-bit multiplier for signal <n0024> created at line 20.
+    Summary:
+	inferred   1 Multiplier(s).
+	inferred   4 Adder/Subtractor(s).
+Unit <pillar_up> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 23
+ 10x9-bit multiplier                                   : 1
+ 32x7-bit multiplier                                   : 1
+ 32x8-bit multiplier                                   : 4
+ 9x6-bit multiplier                                    : 17
+# Adders/Subtractors                                   : 161
+ 10-bit adder                                          : 5
+ 10-bit subtractor                                     : 30
+ 11-bit adder                                          : 26
+ 11-bit subtractor                                     : 5
+ 12-bit subtractor                                     : 8
+ 13-bit adder                                          : 16
+ 15-bit adder                                          : 17
+ 18-bit adder                                          : 1
+ 19-bit adder                                          : 1
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 10
+ 8-bit adder                                           : 1
+ 9-bit addsub                                          : 16
+ 9-bit subtractor                                      : 19
+# Registers                                            : 86
+ 1-bit register                                        : 36
+ 10-bit register                                       : 4
+ 12-bit register                                       : 10
+ 16-bit register                                       : 2
+ 18-bit register                                       : 1
+ 32-bit register                                       : 6
+ 4-bit register                                        : 5
+ 8-bit register                                        : 4
+ 9-bit register                                        : 18
+# Comparators                                          : 127
+ 10-bit comparator greater                             : 7
+ 10-bit comparator lessequal                           : 36
+ 11-bit comparator lessequal                           : 9
+ 12-bit comparator lessequal                           : 8
+ 13-bit comparator lessequal                           : 8
+ 32-bit comparator greater                             : 16
+ 32-bit comparator lessequal                           : 18
+ 9-bit comparator lessequal                            : 25
+# Multiplexers                                         : 177
+ 1-bit 2-to-1 multiplexer                              : 108
+ 10-bit 2-to-1 multiplexer                             : 1
+ 12-bit 2-to-1 multiplexer                             : 33
+ 12-bit 4-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 18-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 15
+# FSMs                                                 : 1
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <SAnti_jitter.ngc>.
+Reading core <SEnter_2_32.ngc>.
+Reading core <P2S.ngc>.
+Reading core <LED_P2S.ngc>.
+Reading core <ipcore_dir/background.ngc>.
+Reading core <ipcore_dir/button_play.ngc>.
+Reading core <ipcore_dir/title.ngc>.
+Reading core <ipcore_dir/name.ngc>.
+Reading core <ipcore_dir/text_game_over.ngc>.
+Reading core <ipcore_dir/text_ready.ngc>.
+Reading core <ipcore_dir/bird_up.ngc>.
+Reading core <ipcore_dir/bird_hor.ngc>.
+Reading core <ipcore_dir/bird_down.ngc>.
+Reading core <ipcore_dir/pipe_down.ngc>.
+Reading core <ipcore_dir/pipe_up.ngc>.
+Loading core <SAnti_jitter> for timing and area information for instance <M2>.
+Loading core <SEnter_2_32> for timing and area information for instance <M4>.
+Loading core <P2S> for timing and area information for instance <XLXI_4>.
+Loading core <LED_P2S> for timing and area information for instance <LED_P2S>.
+Loading core <background> for timing and area information for instance <BG>.
+Loading core <button_play> for timing and area information for instance <BUTTON>.
+Loading core <title> for timing and area information for instance <TITLE>.
+Loading core <name> for timing and area information for instance <NAME>.
+Loading core <text_game_over> for timing and area information for instance <GAMEOVER>.
+Loading core <text_ready> for timing and area information for instance <READY>.
+Loading core <bird_up> for timing and area information for instance <ANIUP>.
+Loading core <bird_hor> for timing and area information for instance <ANIHOR>.
+Loading core <bird_down> for timing and area information for instance <ANIDOWN>.
+Loading core <pipe_down> for timing and area information for instance <PILLARDOWN>.
+Loading core <pipe_up> for timing and area information for instance <PILLARUP>.
+INFO:Xst:2261 - The FF/Latch <bird_x_0> in Unit <BIRD> is equivalent to the following 2 FFs/Latches, which will be removed : <bird_x_1> <bird_x_5> 
+INFO:Xst:2261 - The FF/Latch <bird_x_2> in Unit <BIRD> is equivalent to the following 6 FFs/Latches, which will be removed : <bird_x_3> <bird_x_4> <bird_x_6> <bird_x_7> <bird_x_8> <bird_x_9> 
+INFO:Xst:2261 - The FF/Latch <LED_14> in Unit <M9> is equivalent to the following 14 FFs/Latches, which will be removed : <LED_13> <LED_12> <LED_9> <LED_11> <LED_10> <LED_6> <LED_8> <LED_7> <LED_3> <LED_5> <LED_4> <LED_2> <LED_1> <LED_0> 
+WARNING:Xst:1710 - FF/Latch <bird_x_0> (without init value) has a constant value of 1 in block <BIRD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <bird_x_2> (without init value) has a constant value of 0 in block <BIRD>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <M6>.
+WARNING:Xst:2677 - Node <GPIOf0_8> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_9> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_10> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_11> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_12> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_13> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_14> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_15> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_16> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_17> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_18> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_19> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_20> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_21> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_22> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_23> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_24> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_25> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_26> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_27> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_28> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_29> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_30> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2677 - Node <GPIOf0_31> of sequential type is unconnected in block <M8>.
+WARNING:Xst:2404 -  FFs/Latches <bird_x<9:6>> (without init value) have a constant value of 0 in block <bird_con>.
+
+Synthesizing (advanced) Unit <Top>.
+The following registers are absorbed into accumulator <p0_x>: 1 register on signal <p0_x>.
+The following registers are absorbed into accumulator <p1_x>: 1 register on signal <p1_x>.
+The following registers are absorbed into accumulator <p2_x>: 1 register on signal <p2_x>.
+The following registers are absorbed into accumulator <p3_x>: 1 register on signal <p3_x>.
+The following registers are absorbed into accumulator <p4_x>: 1 register on signal <p4_x>.
+The following registers are absorbed into accumulator <p5_x>: 1 register on signal <p5_x>.
+The following registers are absorbed into accumulator <p6_x>: 1 register on signal <p6_x>.
+The following registers are absorbed into accumulator <p7_x>: 1 register on signal <p7_x>.
+The following registers are absorbed into counter <speed>: 1 register on signal <speed>.
+	Multiplier <Mmult_n1465> in block <Top> and adder/subtractor <Madd_bg_addr> in block <Top> are combined into a MAC<Maddsub_n1465>.
+	The following registers are also absorbed by the MAC: <VGA_DRI/col_addr> in block <Top>.
+Unit <Top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <bird_con>.
+The following registers are absorbed into accumulator <bird_y>: 1 register on signal <bird_y>.
+The following registers are absorbed into counter <flyct>: 1 register on signal <flyct>.
+	Multiplier <Mmult_n0063> in block <bird_con> and adder/subtractor <Madd_n0038_Madd> in block <bird_con> are combined into a MAC<Maddsub_n0063>.
+Unit <bird_con> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pillar_down>.
+	Multiplier <Mmult_n0029> in block <pillar_down> and adder/subtractor <Madd_address> in block <pillar_down> are combined into a MAC<Maddsub_n0029>.
+Unit <pillar_down> synthesized (advanced).
+
+Synthesizing (advanced) Unit <pillar_up>.
+	Multiplier <Mmult_n0024> in block <pillar_up> and adder/subtractor <Madd_address> in block <pillar_up> are combined into a MAC<Maddsub_n0024>.
+Unit <pillar_up> synthesized (advanced).
+
+Synthesizing (advanced) Unit <vgac>.
+The following registers are absorbed into counter <h_count>: 1 register on signal <h_count>.
+The following registers are absorbed into counter <v_count>: 1 register on signal <v_count>.
+Unit <vgac> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# MACs                                                 : 18
+ 10x9-to-19-bit MAC                                    : 1
+ 9x6-to-12-bit MAC                                     : 1
+ 9x6-to-15-bit MAC                                     : 16
+# Multipliers                                          : 5
+ 32x7-bit multiplier                                   : 1
+ 32x8-bit multiplier                                   : 4
+# Adders/Subtractors                                   : 129
+ 10-bit adder                                          : 19
+ 10-bit subtractor                                     : 22
+ 11-bit adder                                          : 10
+ 11-bit subtractor                                     : 5
+ 12-bit adder                                          : 8
+ 13-bit adder                                          : 10
+ 14-bit adder                                          : 3
+ 18-bit adder                                          : 1
+ 4-bit adder                                           : 8
+ 8-bit adder                                           : 1
+ 9-bit addsub                                          : 15
+ 9-bit subtractor                                      : 27
+# Counters                                             : 5
+ 10-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 2
+# Accumulators                                         : 9
+ 12-bit down loadable accumulator                      : 8
+ 9-bit updown loadable accumulator                     : 1
+# Registers                                            : 483
+ Flip-Flops                                            : 483
+# Comparators                                          : 127
+ 10-bit comparator greater                             : 7
+ 10-bit comparator lessequal                           : 36
+ 11-bit comparator lessequal                           : 9
+ 12-bit comparator lessequal                           : 8
+ 13-bit comparator lessequal                           : 8
+ 32-bit comparator greater                             : 16
+ 32-bit comparator lessequal                           : 18
+ 9-bit comparator lessequal                            : 25
+# Multiplexers                                         : 166
+ 1-bit 2-to-1 multiplexer                              : 108
+ 12-bit 2-to-1 multiplexer                             : 25
+ 12-bit 4-to-1 multiplexer                             : 1
+ 16-bit 2-to-1 multiplexer                             : 3
+ 18-bit 2-to-1 multiplexer                             : 4
+ 32-bit 2-to-1 multiplexer                             : 1
+ 64-bit 2-to-1 multiplexer                             : 1
+ 8-bit 2-to-1 multiplexer                              : 8
+ 8-bit 4-to-1 multiplexer                              : 1
+ 9-bit 2-to-1 multiplexer                              : 14
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <BIRD/bird_x_0> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BIRD/bird_x_1> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BIRD/bird_x_2> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BIRD/bird_x_3> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BIRD/bird_x_4> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <BIRD/bird_x_5> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <LED_12> in Unit <Top> is equivalent to the following 14 FFs/Latches, which will be removed : <LED_14> <LED_13> <LED_11> <LED_10> <LED_9> <LED_8> <LED_7> <LED_6> <LED_5> <LED_4> <LED_3> <LED_2> <LED_1> <LED_0> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <M9/PS2/FSM_0> on signal <num[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000
+ 0001  | 0001
+ 0011  | 0011
+ 0110  | 0110
+ 0010  | 0010
+ 0111  | 0111
+ 1111  | 1111
+ 1010  | 1010
+ 1000  | 1000
+ 1100  | 1100
+ 1110  | 1110
+-------------------
+WARNING:Xst:2677 - Node <Mmult_n10451> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Mmult_n10531> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Mmult_n10551> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Mmult_n10421> of sequential type is unconnected in block <Top>.
+WARNING:Xst:2677 - Node <Mmult_n10481> of sequential type is unconnected in block <Top>.
+WARNING:Xst:1710 - FF/Latch <p3_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <Maddsub_n14651_0> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p4_uy_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p2_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p5_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p6_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p2_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <p2_dy_6> in Unit <Top> is equivalent to the following 3 FFs/Latches, which will be removed : <p2_dy_7> <p2_uy_6> <p2_uy_8> 
+INFO:Xst:2261 - The FF/Latch <p4_dy_6> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <p4_dy_7> <p4_uy_8> 
+INFO:Xst:2261 - The FF/Latch <p3_dy_5> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p3_dy_6> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_0> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_10> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_1> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_9> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_2> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_8> 
+INFO:Xst:2261 - The FF/Latch <p6_uy_2> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p6_uy_3> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_3> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_7> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_4> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_6> 
+INFO:Xst:2261 - The FF/Latch <p7_dy_0> in Unit <Top> is equivalent to the following 2 FFs/Latches, which will be removed : <p7_uy_0> <p7_uy_6> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_5> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_5> 
+INFO:Xst:2261 - The FF/Latch <p3_uy_6> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p3_uy_7> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_6> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_4> 
+INFO:Xst:2261 - The FF/Latch <p6_uy_6> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p6_uy_8> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_7> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_3> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_8> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_2> 
+INFO:Xst:2261 - The FF/Latch <VGA_DRI/col_addr_9> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <Maddsub_n14651_1> 
+INFO:Xst:2261 - The FF/Latch <p7_dy_6> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p7_dy_7> 
+INFO:Xst:2261 - The FF/Latch <p0_uy_0> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p0_dy_0> 
+
+Optimizing unit <MC14495_ZJU> ...
+
+Optimizing unit <Multi_8CH32> ...
+
+Optimizing unit <MUX8T1_8_MUSER_MUX8T1_32> ...
+
+Optimizing unit <MUX4T1_4> ...
+
+Optimizing unit <MUX8T1_8> ...
+
+Optimizing unit <ScanSync> ...
+
+Optimizing unit <Top_frame> ...
+
+Optimizing unit <Hex827Seg> ...
+
+Optimizing unit <GPIO> ...
+
+Optimizing unit <PIO> ...
+
+Optimizing unit <Top> ...
+WARNING:Xst:1710 - FF/Latch <p2_dy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p4_dy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p5_dy_7> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p6_uy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p7_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <p6_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p6_dy_7> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p5_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p5_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_5> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_4> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_dy_7> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_6> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <p7_dy_0> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p7_uy_5> 
+WARNING:Xst:1710 - FF/Latch <p7_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p7_dy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p6_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p6_dy_7> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p5_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p5_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_5> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_uy_4> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p1_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_dy_7> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_7> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p0_uy_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_8> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_6> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_4> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <p7_dy_0> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p7_uy_5> 
+INFO:Xst:2261 - The FF/Latch <p5_uy_4> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p5_uy_5> 
+INFO:Xst:2261 - The FF/Latch <LED_15> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <LED_12> 
+WARNING:Xst:1710 - FF/Latch <p3_uy_4> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p7_dy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p7_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <p5_uy_4> in Unit <Top> is equivalent to the following FF/Latch, which will be removed : <p5_uy_5> 
+
+Optimizing unit <ps2_keyboard_driver> ...
+
+Optimizing unit <pbdebounce_Once> ...
+WARNING:Xst:1710 - FF/Latch <p3_uy_4> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p3_uy_5> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p7_dy_6> (without init value) has a constant value of 1 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <p7_dy_8> (without init value) has a constant value of 0 in block <Top>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_14> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_13> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_12> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_11> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_10> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_9> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_8> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <M9/keyascii_7> (without init value) has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <M6/GPIOf0_31> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_30> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_29> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_28> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_27> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_26> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_25> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_24> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_23> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_22> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_21> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_20> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_19> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_18> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_17> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M6/GPIOf0_16> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_31> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_30> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_29> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_28> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_27> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_26> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_25> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_24> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_23> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_22> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_21> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_20> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_19> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_18> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_17> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_16> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_15> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_14> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_13> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_12> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_11> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_10> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_9> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:2677 - Node <M8/GPIOf0_8> of sequential type is unconnected in block <Top_frame>.
+WARNING:Xst:1293 - FF/Latch <M9/BIRD/flyct_3> has a constant value of 0 in block <Top_frame>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <M9/p5_uy_5> in Unit <Top_frame> is equivalent to the following FF/Latch, which will be removed : <M9/p5_uy_4> 
+INFO:Xst:2261 - The FF/Latch <M9/LED_12> in Unit <Top_frame> is equivalent to the following FF/Latch, which will be removed : <M9/LED_15> 
+INFO:Xst:3203 - The FF/Latch <M9/p0_dy_1> in Unit <Top_frame> is the opposite to the following FF/Latch, which will be removed : <M9/p0_uy_1> 
+INFO:Xst:2261 - The FF/Latch <M8/GPIOf0_7> in Unit <Top_frame> is equivalent to the following 7 FFs/Latches, which will be removed : <M8/GPIOf0_6> <M8/GPIOf0_5> <M8/GPIOf0_4> <M8/GPIOf0_3> <M8/GPIOf0_2> <M8/GPIOf0_1> <M8/GPIOf0_0> 
+INFO:Xst:2261 - The FF/Latch <M6/GPIOf0_14> in Unit <Top_frame> is equivalent to the following 14 FFs/Latches, which will be removed : <M6/GPIOf0_13> <M6/GPIOf0_12> <M6/GPIOf0_11> <M6/GPIOf0_10> <M6/GPIOf0_9> <M6/GPIOf0_8> <M6/GPIOf0_7> <M6/GPIOf0_6> <M6/GPIOf0_5> <M6/GPIOf0_4> <M6/GPIOf0_3> <M6/GPIOf0_2> <M6/GPIOf0_1> <M6/GPIOf0_0> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <M6/GPIOf0_15> in Unit <Top_frame> is equivalent to the following FF/Latch, which will be removed : <M6/GPIOf0_14> 
+Found area constraint ratio of 100 (+ 5) on block Top_frame, actual ratio is 4.
+
+Final Macro Processing ...
+
+Processing Unit <Top_frame> :
+	Found 2-bit shift register for signal <M9/PS2/ps2k_clk_r1>.
+Unit <Top_frame> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 509
+ Flip-Flops                                            : 509
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Top_frame.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 7715
+#      AND2                        : 778
+#      AND3                        : 99
+#      AND4                        : 81
+#      BUF                         : 10
+#      GND                         : 27
+#      INV                         : 209
+#      LUT1                        : 226
+#      LUT2                        : 698
+#      LUT3                        : 562
+#      LUT4                        : 694
+#      LUT5                        : 503
+#      LUT6                        : 1205
+#      MUXCY                       : 1231
+#      MUXF7                       : 19
+#      OR2                         : 127
+#      OR3                         : 27
+#      OR4                         : 164
+#      VCC                         : 29
+#      XORCY                       : 1026
+# FlipFlops/Latches                : 889
+#      FD                          : 331
+#      FD_1                        : 1
+#      FDC                         : 63
+#      FDC_1                       : 1
+#      FDCE                        : 17
+#      FDE                         : 262
+#      FDPE                        : 1
+#      FDR                         : 89
+#      FDRE                        : 77
+#      FDS                         : 42
+#      FDSE                        : 5
+# RAMS                             : 356
+#      RAMB18E1                    : 235
+#      RAMB36E1                    : 121
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 6
+#      BUFG                        : 5
+#      BUFGP                       : 1
+# IO Buffers                       : 73
+#      IBUF                        : 23
+#      OBUF                        : 50
+# DSPs                             : 6
+#      DSP48E1                     : 6
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             889  out of  202800     0%  
+ Number of Slice LUTs:                 4098  out of  101400     4%  
+    Number used as Logic:              4097  out of  101400     4%  
+    Number used as Memory:                1  out of  35000     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   4385
+   Number with an unused Flip Flop:    3496  out of   4385    79%  
+   Number with an unused LUT:           287  out of   4385     6%  
+   Number of fully used LUT-FF pairs:   602  out of   4385    13%  
+   Number of unique control sets:        74
+
+IO Utilization: 
+ Number of IOs:                          74
+ Number of bonded IOBs:                  74  out of    400    18%  
+
+Specific Feature Utilization:
+ Number of Block RAM/FIFO:              239  out of    325    73%  
+    Number using Block RAM only:        239
+ Number of BUFG/BUFGCTRLs:                6  out of     32    18%  
+ Number of DSP48E1s:                      6  out of    600     1%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+clk                                | BUFGP                       | 337   |
+M1/clkdiv_20                       | BUFG                        | 206   |
+M1/clkdiv_1                        | BUFG                        | 515   |
+M1/clkdiv_27                       | NONE(M9/speed_3)            | 4     |
+M1/clkdiv_10                       | BUFG                        | 87    |
+M1/clkdiv_0                        | BUFG                        | 37    |
+M1/clkdiv_5                        | NONE(M9/PS2/Once/pbshift_15)| 17    |
+M2/clk1                            | BUFG                        | 41    |
+M4/push(M4/push1:O)                | NONE(*)(M4/state_0)         | 3     |
+-----------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+Control Signal                                                                                                                                                                                                                                                               | Buffer(FF name)                                                                                                                                      | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/Mmux_dout_mux_1212(M9/BG/XST_GND:G)                                                                                                                                                      | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[84].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)         | 182   |
+M9/GAMEOVER/N1(M9/GAMEOVER/XST_GND:G)                                                                                                                                                                                                                                        | NONE(M9/GAMEOVER/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)    | 8     |
+M9/READY/N1(M9/READY/XST_GND:G)                                                                                                                                                                                                                                              | NONE(M9/READY/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)       | 8     |
+M9/BUTTON/N1(M9/BUTTON/XST_GND:G)                                                                                                                                                                                                                                            | NONE(M9/BUTTON/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)      | 6     |
+M9/TITLE/N1(M9/TITLE/XST_GND:G)                                                                                                                                                                                                                                              | NONE(M9/TITLE/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)       | 6     |
+M9/BIRD/ANIDOWN/N1(M9/BIRD/ANIDOWN/XST_GND:G)                                                                                                                                                                                                                                | NONE(M9/BIRD/ANIDOWN/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)| 2     |
+M9/BIRD/ANIHOR/N1(M9/BIRD/ANIHOR/XST_GND:G)                                                                                                                                                                                                                                  | NONE(M9/BIRD/ANIHOR/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram) | 2     |
+M9/BIRD/ANIUP/N1(M9/BIRD/ANIUP/XST_GND:G)                                                                                                                                                                                                                                    | NONE(M9/BIRD/ANIUP/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)  | 2     |
+M9/NAME/N1(M9/NAME/XST_GND:G)                                                                                                                                                                                                                                                | NONE(M9/NAME/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram)        | 2     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[0].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[12].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[13].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[14].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)| NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[15].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)     | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[1].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[7].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[8].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelata_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTA)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/cascadelatb_tmp(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B:CASCADEOUTB)  | NONE(M9/BG/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[9].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T)      | 1     |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 9.805ns (Maximum Frequency: 101.987MHz)
+   Minimum input arrival time before clock: 2.542ns
+   Maximum output required time after clock: 13.427ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 9.805ns (frequency: 101.987MHz)
+  Total number of paths / destination ports: 25164 / 388
+-------------------------------------------------------------------------
+Delay:               9.805ns (Levels of Logic = 13)
+  Source:            M2/SW_OK_6 (FF)
+  Destination:       M3/XLXI_4/buffer_2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: M2/SW_OK_6 to M3/XLXI_4/buffer_2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             85   0.282   0.563  SW_OK_6 (SW_OK<6>)
+     end scope: 'M2:SW_OK<6>'
+     INV:I->O              2   0.393   0.731  M5/MUX1_DispData/XLXI_4/M3/XLXI_5 (M5/MUX1_DispData/XLXI_4/M3/XLXN_5)
+     AND2:I1->O            4   0.067   0.745  M5/MUX1_DispData/XLXI_4/M3/XLXI_2 (M5/MUX1_DispData/XLXI_4/M3/XLXN_51)
+     AND2:I1->O            1   0.067   0.635  M5/MUX1_DispData/XLXI_4/M3/XLXI_13 (M5/MUX1_DispData/XLXI_4/M3/XLXN_23)
+     OR4:I2->O             1   0.157   0.739  M5/MUX1_DispData/XLXI_4/M3/XLXI_16 (M5/MUX1_DispData/XLXI_4/o3<1>)
+     AND2:I0->O            1   0.053   0.739  M5/MUX1_DispData/XLXI_4/XLXI_21 (M5/MUX1_DispData/XLXI_4/XLXN_12)
+     OR2:I0->O            15   0.053   0.491  M5/MUX1_DispData/XLXI_4/XLXI_22 (Disp_num<29>)
+     INV:I->O              8   0.393   0.771  M3/XLXI_1/HTS0/MSEG/XLXI_108 (M3/XLXI_1/HTS0/MSEG/XLXN_7)
+     AND4:I1->O            2   0.067   0.608  M3/XLXI_1/HTS0/MSEG/A18 (M3/XLXI_1/HTS0/MSEG/XLXN_16)
+     OR4:I3->O             1   0.190   0.725  M3/XLXI_1/HTS0/MSEG/fo (M3/XLXI_1/HTS0/MSEG/XLXN_43)
+     OR2:I1->O             1   0.067   0.413  M3/XLXI_1/HTS0/MSEG/XLXI_118 (M3/XLXN_15<2>)
+     LUT3:I2->O            1   0.053   0.739  M3/XLXI_3/Mmux_o231 (M3/XLXN_9<2>)
+     begin scope: 'M3/XLXI_4:P_Data<2>'
+     LUT6:I0->O            1   0.053   0.000  buffer_2_rstpot (buffer_2_rstpot)
+     FD:D                      0.011          buffer_2
+    ----------------------------------------
+    Total                      9.805ns (1.906ns logic, 7.899ns route)
+                                       (19.4% logic, 80.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_20'
+  Clock period: 3.330ns (frequency: 300.300MHz)
+  Total number of paths / destination ports: 17435 / 208
+-------------------------------------------------------------------------
+Delay:               3.330ns (Levels of Logic = 13)
+  Source:            M9/p0_x_4 (FF)
+  Destination:       M9/p0_x_11 (FF)
+  Source Clock:      M1/clkdiv_20 rising
+  Destination Clock: M1/clkdiv_20 rising
+
+  Data Path: M9/p0_x_4 to M9/p0_x_11
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             20   0.282   0.850  M9/p0_x_4 (M9/p0_x_4)
+     LUT5:I0->O            7   0.053   0.453  M9/p0_x[11]_GND_34_o_AND_2327_o111 (M9/p0_x[11]_GND_34_o_AND_2327_o11)
+     LUT6:I5->O           19   0.053   0.844  M9/p0_x[11]_PWR_34_o_LessThan_39_o_inv11 (M9/p0_x[11]_PWR_34_o_LessThan_39_o_inv)
+     LUT5:I0->O            1   0.053   0.000  M9/Maccum_p0_x_lut<2> (M9/Maccum_p0_x_lut<2>)
+     MUXCY:S->O            1   0.291   0.000  M9/Maccum_p0_x_cy<2> (M9/Maccum_p0_x_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<3> (M9/Maccum_p0_x_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<4> (M9/Maccum_p0_x_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<5> (M9/Maccum_p0_x_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<6> (M9/Maccum_p0_x_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<7> (M9/Maccum_p0_x_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<8> (M9/Maccum_p0_x_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Maccum_p0_x_cy<9> (M9/Maccum_p0_x_cy<9>)
+     MUXCY:CI->O           0   0.015   0.000  M9/Maccum_p0_x_cy<10> (M9/Maccum_p0_x_cy<10>)
+     XORCY:CI->O           1   0.320   0.000  M9/Maccum_p0_x_xor<11> (M9/Result<11>7)
+     FDR:D                     0.011          M9/p0_x_11
+    ----------------------------------------
+    Total                      3.330ns (1.183ns logic, 2.147ns route)
+                                       (35.5% logic, 64.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_1'
+  Clock period: 8.127ns (frequency: 123.046MHz)
+  Total number of paths / destination ports: 5070703 / 3614
+-------------------------------------------------------------------------
+Delay:               8.127ns (Levels of Logic = 19)
+  Source:            M9/VGA_DRI/row_addr_4 (FF)
+  Destination:       M9/TITLE/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram (RAM)
+  Source Clock:      M1/clkdiv_1 rising
+  Destination Clock: M1/clkdiv_1 rising
+
+  Data Path: M9/VGA_DRI/row_addr_4 to M9/TITLE/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              80   0.282   0.902  M9/VGA_DRI/row_addr_4 (M9/VGA_DRI/row_addr_4)
+     LUT6:I0->O            4   0.053   0.433  M9/Msub_GND_34_o_GND_34_o_sub_16_OUT_cy<6>11 (M9/Msub_GND_34_o_GND_34_o_sub_16_OUT_cy<6>)
+     LUT3:I2->O            8   0.053   0.445  M9/Msub_GND_34_o_GND_34_o_sub_16_OUT_xor<9>11 (M9/GND_34_o_GND_34_o_sub_16_OUT<9>)
+     DSP48E1:A9->P0        1   3.255   0.413  M9/Mmult_n1045 (M9/n1045<0>)
+     LUT2:I1->O            1   0.053   0.000  M9/Madd_n1008_Madd_lut<0> (M9/Madd_n1008_Madd_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  M9/Madd_n1008_Madd_cy<0> (M9/Madd_n1008_Madd_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<1> (M9/Madd_n1008_Madd_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<2> (M9/Madd_n1008_Madd_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<3> (M9/Madd_n1008_Madd_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<4> (M9/Madd_n1008_Madd_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<5> (M9/Madd_n1008_Madd_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<6> (M9/Madd_n1008_Madd_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<7> (M9/Madd_n1008_Madd_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<8> (M9/Madd_n1008_Madd_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<9> (M9/Madd_n1008_Madd_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<10> (M9/Madd_n1008_Madd_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  M9/Madd_n1008_Madd_cy<11> (M9/Madd_n1008_Madd_cy<11>)
+     XORCY:CI->O           6   0.320   0.635  M9/Madd_n1008_Madd_xor<12> (M9/n1008<12>)
+     begin scope: 'M9/TITLE:addra<12>'
+     LUT3:I0->O            1   0.053   0.399  U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[2]_PWR_16_o_equal_5_o<2>1 (U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<4>)
+     RAMB18E1:ENARDEN          0.375          U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[3].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM18.ram
+    ----------------------------------------
+    Total                      8.127ns (4.900ns logic, 3.227ns route)
+                                       (60.3% logic, 39.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_27'
+  Clock period: 1.669ns (frequency: 599.161MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               1.669ns (Levels of Logic = 1)
+  Source:            M9/speed_0 (FF)
+  Destination:       M9/speed_3 (FF)
+  Source Clock:      M1/clkdiv_27 rising
+  Destination Clock: M1/clkdiv_27 rising
+
+  Data Path: M9/speed_0 to M9/speed_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q            13   0.282   0.715  M9/speed_0 (M9/speed_0)
+     LUT4:I0->O            4   0.053   0.419  M9/n0006_inv1 (M9/n0006_inv)
+     FDCE:CE                   0.200          M9/speed_0
+    ----------------------------------------
+    Total                      1.669ns (0.535ns logic, 1.134ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_10'
+  Clock period: 5.183ns (frequency: 192.938MHz)
+  Total number of paths / destination ports: 6005 / 189
+-------------------------------------------------------------------------
+Delay:               5.183ns (Levels of Logic = 7)
+  Source:            M9/score_0 (FF)
+  Destination:       M9/score_27 (FF)
+  Source Clock:      M1/clkdiv_10 rising
+  Destination Clock: M1/clkdiv_10 rising
+
+  Data Path: M9/score_0 to M9/score_27
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            10   0.282   0.694  M9/score_0 (M9/score_0)
+     LUT4:I0->O            6   0.053   0.518  M9/score[27]_PWR_34_o_equal_340_o<27>1111 (M9/score[27]_PWR_34_o_equal_340_o<27>111)
+     LUT5:I3->O           11   0.053   0.551  M9/score[27]_PWR_34_o_equal_340_o<27>112 (M9/score[11]_PWR_34_o_equal_348_o<11>1)
+     LUT6:I4->O            7   0.053   0.525  M9/score[27]_PWR_34_o_equal_340_o<27>11 (M9/score[27]_PWR_34_o_equal_340_o<27>1)
+     LUT5:I3->O           22   0.053   0.771  M9/score[27]_PWR_34_o_equal_340_o<27>211 (M9/score[27]_PWR_34_o_equal_340_o<27>21)
+     LUT5:I1->O            9   0.053   0.688  M9/score[27]_PWR_34_o_equal_340_o<27>21 (M9/score[27]_PWR_34_o_equal_340_o<27>2)
+     LUT5:I1->O            6   0.053   0.772  M9/score[27]_PWR_34_o_equal_340_o<27>3 (M9/score[27]_PWR_34_o_equal_340_o)
+     LUT6:I0->O            1   0.053   0.000  M9/Mmux_score[31]_score[31]_mux_354_OUT201 (M9/score[31]_score[31]_mux_354_OUT<27>)
+     FDRE:D                    0.011          M9/score_27
+    ----------------------------------------
+    Total                      5.183ns (0.664ns logic, 4.519ns route)
+                                       (12.8% logic, 87.2% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_0'
+  Clock period: 3.046ns (frequency: 328.313MHz)
+  Total number of paths / destination ports: 717 / 66
+-------------------------------------------------------------------------
+Delay:               3.046ns (Levels of Logic = 4)
+  Source:            M9/PS2/ps2_byte_r_0 (FF)
+  Destination:       M9/keyascii_4 (FF)
+  Source Clock:      M1/clkdiv_0 rising
+  Destination Clock: M1/clkdiv_0 rising
+
+  Data Path: M9/PS2/ps2_byte_r_0 to M9/keyascii_4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             29   0.282   0.891  M9/PS2/ps2_byte_r_0 (M9/PS2/ps2_byte_r_0)
+     LUT6:I0->O            1   0.053   0.635  M9/PS2/Mmux_data_out62 (M9/PS2/Mmux_data_out61)
+     LUT5:I1->O            1   0.053   0.602  M9/PS2/Mmux_data_out64 (M9/PS2/Mmux_data_out63)
+     LUT6:I3->O            1   0.053   0.413  M9/PS2/Mmux_data_out66 (M9/PS2/Mmux_data_out65)
+     LUT3:I2->O            1   0.053   0.000  M9/PS2/Mmux_data_out67 (M9/ascii<4>)
+     FDRE:D                    0.011          M9/keyascii_4
+    ----------------------------------------
+    Total                      3.046ns (0.505ns logic, 2.541ns route)
+                                       (16.6% logic, 83.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_5'
+  Clock period: 2.453ns (frequency: 407.664MHz)
+  Total number of paths / destination ports: 287 / 17
+-------------------------------------------------------------------------
+Delay:               2.453ns (Levels of Logic = 3)
+  Source:            M9/PS2/Once/pbshift_11 (FF)
+  Destination:       M9/PS2/Once/pbshift_15 (FF)
+  Source Clock:      M1/clkdiv_5 rising
+  Destination Clock: M1/clkdiv_5 rising
+
+  Data Path: M9/PS2/Once/pbshift_11 to M9/PS2/Once/pbshift_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.282   0.745  M9/PS2/Once/pbshift_11 (M9/PS2/Once/pbshift_11)
+     LUT6:I0->O            2   0.053   0.745  M9/PS2/Once/pbshift[15]_PWR_43_o_equal_2_o<15>1 (M9/PS2/Once/pbshift[15]_PWR_43_o_equal_2_o<15>)
+     LUT6:I0->O           16   0.053   0.511  M9/PS2/Once/pbshift[15]_PWR_43_o_equal_2_o<15>3 (M9/PS2/Once/pbshift[15]_PWR_43_o_equal_2_o)
+     LUT2:I1->O            1   0.053   0.000  M9/PS2/Once/Mmux_pbshift[14]_GND_44_o_mux_2_OUT21 (M9/PS2/Once/pbshift[14]_GND_44_o_mux_2_OUT<10>)
+     FDC:D                     0.011          M9/PS2/Once/pbshift_10
+    ----------------------------------------
+    Total                      2.453ns (0.452ns logic, 2.001ns route)
+                                       (18.4% logic, 81.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M2/clk1'
+  Clock period: 2.576ns (frequency: 388.199MHz)
+  Total number of paths / destination ports: 1454 / 90
+-------------------------------------------------------------------------
+Delay:               2.576ns (Levels of Logic = 7)
+  Source:            M2/counter_8 (FF)
+  Destination:       M2/Key_x_0 (FF)
+  Source Clock:      M2/clk1 rising
+  Destination Clock: M2/clk1 rising
+
+  Data Path: M2/counter_8 to M2/Key_x_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.282   0.739  counter_8 (counter<8>)
+     LUT5:I0->O            1   0.053   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<3>)
+     MUXCY:CI->O           8   0.015   0.445  Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4> (Mcompar_counter[31]_GND_1_o_LessThan_5_o_cy<4>)
+     INV:I->O              7   0.067   0.439  _n0225_inv1_cepot_INV_0 (_n0225_inv1_cepot)
+     FDE:CE                    0.200          Key_x_0
+    ----------------------------------------
+    Total                      2.576ns (0.953ns logic, 1.623ns route)
+                                       (37.0% logic, 63.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M4/push'
+  Clock period: 1.277ns (frequency: 783.085MHz)
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Delay:               1.277ns (Levels of Logic = 1)
+  Source:            M4/state_0 (FF)
+  Destination:       M4/state_0 (FF)
+  Source Clock:      M4/push rising
+  Destination Clock: M4/push rising
+
+  Data Path: M4/state_0 to M4/state_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.282   0.518  state_0 (state<0>)
+     INV:I->O              1   0.067   0.399  Result<0>1_INV_0 (Result<0>)
+     FDE:D                     0.011          state_0
+    ----------------------------------------
+    Total                      1.277ns (0.360ns logic, 0.917ns route)
+                                       (28.2% logic, 71.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M1/clkdiv_0'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              0.523ns (Levels of Logic = 2)
+  Source:            PS2D (PAD)
+  Destination:       M9/PS2/temp_data_7 (FF)
+  Destination Clock: M1/clkdiv_0 rising
+
+  Data Path: PS2D to M9/PS2/temp_data_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   0.000   0.459  PS2D_IBUF (PS2D_IBUF)
+     LUT6:I5->O            1   0.053   0.000  M9/PS2/Mmux_num[3]_temp_data[7]_wide_mux_1_OUT31 (M9/PS2/num[3]_temp_data[7]_wide_mux_1_OUT<2>)
+     FDE:D                     0.011          M9/PS2/temp_data_2
+    ----------------------------------------
+    Total                      0.523ns (0.064ns logic, 0.459ns route)
+                                       (12.2% logic, 87.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1195 / 100
+-------------------------------------------------------------------------
+Offset:              2.498ns (Levels of Logic = 10)
+  Source:            SW<2> (PAD)
+  Destination:       M2/SW_OK_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: SW<2> to M2/SW_OK_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.753  SW_2_IBUF (SW_2_IBUF)
+     begin scope: 'M2:SW<2>'
+     LUT6:I0->O            1   0.053   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4> (Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<4>)
+     MUXCY:CI->O          43   0.015   0.554  Mcompar_sw_temp[15]_SW[15]_not_equal_100_o_cy<5> (sw_temp[15]_SW[15]_not_equal_100_o)
+     INV:I->O             17   0.067   0.505  _n0243_inv1_cepot_cepot_INV_0 (_n0243_inv1_cepot_cepot)
+     FDE:CE                    0.200          SW_OK_0
+    ----------------------------------------
+    Total                      2.498ns (0.686ns logic, 1.812ns route)
+                                       (27.5% logic, 72.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M2/clk1'
+  Total number of paths / destination ports: 176 / 41
+-------------------------------------------------------------------------
+Offset:              2.542ns (Levels of Logic = 6)
+  Source:            K_COL<3> (PAD)
+  Destination:       M2/Key_x_1 (FF)
+  Destination Clock: M2/clk1 rising
+
+  Data Path: K_COL<3> to M2/Key_x_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   0.000   0.668  K_COL_3_IBUF (K_COL_3_IBUF)
+     begin scope: 'M2:Key_y<3>'
+     LUT4:I0->O           12   0.053   0.811  out1 (n0016)
+     LUT6:I0->O            3   0.053   0.427  _n0295<0>1 (_n0295<0>)
+     LUT6:I5->O            1   0.053   0.413  Key_x[4]_PWR_1_o_select_74_OUT<1>1 (Key_x[4]_PWR_1_o_select_74_OUT<4>)
+     LUT3:I2->O            1   0.053   0.000  Key_x_4_dpot (Key_x_4_dpot)
+     FDE:D                     0.011          Key_x_4
+    ----------------------------------------
+    Total                      2.542ns (0.223ns logic, 2.319ns route)
+                                       (8.8% logic, 91.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M2/clk1'
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Offset:              0.779ns (Levels of Logic = 2)
+  Source:            M2/Key_x_4 (FF)
+  Destination:       K_ROW<4> (PAD)
+  Source Clock:      M2/clk1 rising
+
+  Data Path: M2/Key_x_4 to K_ROW<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             16   0.282   0.497  Key_x_4 (Key_x<4>)
+     end scope: 'M2:Key_x<4>'
+     OBUF:I->O                 0.000          K_ROW_4_OBUF (K_ROW<4>)
+    ----------------------------------------
+    Total                      0.779ns (0.282ns logic, 0.497ns route)
+                                       (36.2% logic, 63.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 18371 / 28
+-------------------------------------------------------------------------
+Offset:              13.427ns (Levels of Logic = 18)
+  Source:            M2/SW_OK_6 (FF)
+  Destination:       SEGMENT<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: M2/SW_OK_6 to SEGMENT<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             85   0.282   0.563  SW_OK_6 (SW_OK<6>)
+     end scope: 'M2:SW_OK<6>'
+     INV:I->O              2   0.393   0.731  M5/MUX1_DispData/XLXI_4/M3/XLXI_5 (M5/MUX1_DispData/XLXI_4/M3/XLXN_5)
+     AND2:I1->O            4   0.067   0.745  M5/MUX1_DispData/XLXI_4/M3/XLXI_2 (M5/MUX1_DispData/XLXI_4/M3/XLXN_51)
+     AND2:I1->O            1   0.067   0.635  M5/MUX1_DispData/XLXI_4/M3/XLXI_13 (M5/MUX1_DispData/XLXI_4/M3/XLXN_23)
+     OR4:I2->O             1   0.157   0.739  M5/MUX1_DispData/XLXI_4/M3/XLXI_16 (M5/MUX1_DispData/XLXI_4/o3<1>)
+     AND2:I0->O            1   0.053   0.739  M5/MUX1_DispData/XLXI_4/XLXI_21 (M5/MUX1_DispData/XLXI_4/XLXN_12)
+     OR2:I0->O            15   0.053   0.831  M5/MUX1_DispData/XLXI_4/XLXI_22 (Disp_num<29>)
+     AND2:I0->O            1   0.053   0.739  M7/SSC/XLXI_1/M3/XLXI_15 (M7/SSC/XLXI_1/M3/XLXN_22)
+     OR4:I0->O             1   0.053   0.739  M7/SSC/XLXI_1/M3/XLXI_16 (M7/SSC/XLXI_1/o3<1>)
+     AND2:I0->O            1   0.053   0.739  M7/SSC/XLXI_1/XLXI_21 (M7/SSC/XLXI_1/XLXN_12)
+     OR2:I0->O             1   0.053   0.399  M7/SSC/XLXI_1/XLXI_22 (M7/SSC/Hex<5>)
+     BUF:I->O             11   0.393   0.465  M7/SSC/XLXI_14 (M7/Hex<1>)
+     INV:I->O              8   0.393   0.771  M7/MC/XLXI_108 (M7/MC/XLXN_7)
+     AND4:I1->O            2   0.067   0.608  M7/MC/A18 (M7/MC/XLXN_16)
+     OR4:I3->O             1   0.190   0.725  M7/MC/fo (M7/MC/XLXN_43)
+     OR2:I1->O             1   0.067   0.413  M7/MC/XLXI_118 (M7/I1<5>)
+     LUT3:I2->O            1   0.053   0.399  M7/MUXA/Mmux_o6 (SEGMENT_5_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
+    ----------------------------------------
+    Total                     13.427ns (2.447ns logic, 10.980ns route)
+                                       (18.2% logic, 81.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/clkdiv_10'
+  Total number of paths / destination ports: 720 / 8
+-------------------------------------------------------------------------
+Offset:              11.667ns (Levels of Logic = 15)
+  Source:            M9/maxscore_29 (FF)
+  Destination:       SEGMENT<0> (PAD)
+  Source Clock:      M1/clkdiv_10 rising
+
+  Data Path: M9/maxscore_29 to SEGMENT<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.282   0.753  M9/maxscore_29 (M9/maxscore_29)
+     AND2:I0->O            1   0.053   0.635  M5/MUX1_DispData/XLXI_4/M2/XLXI_13 (M5/MUX1_DispData/XLXI_4/M2/XLXN_23)
+     OR4:I2->O             1   0.157   0.739  M5/MUX1_DispData/XLXI_4/M2/XLXI_16 (M5/MUX1_DispData/XLXI_4/o2<1>)
+     AND2:I0->O            1   0.053   0.725  M5/MUX1_DispData/XLXI_4/XLXI_20 (M5/MUX1_DispData/XLXI_4/XLXN_11)
+     OR2:I1->O            15   0.067   0.831  M5/MUX1_DispData/XLXI_4/XLXI_22 (Disp_num<29>)
+     AND2:I0->O            1   0.053   0.739  M7/SSC/XLXI_1/M3/XLXI_15 (M7/SSC/XLXI_1/M3/XLXN_22)
+     OR4:I0->O             1   0.053   0.739  M7/SSC/XLXI_1/M3/XLXI_16 (M7/SSC/XLXI_1/o3<1>)
+     AND2:I0->O            1   0.053   0.739  M7/SSC/XLXI_1/XLXI_21 (M7/SSC/XLXI_1/XLXN_12)
+     OR2:I0->O             1   0.053   0.399  M7/SSC/XLXI_1/XLXI_22 (M7/SSC/Hex<5>)
+     BUF:I->O             11   0.393   0.465  M7/SSC/XLXI_14 (M7/Hex<1>)
+     INV:I->O              8   0.393   0.771  M7/MC/XLXI_108 (M7/MC/XLXN_7)
+     AND4:I1->O            2   0.067   0.608  M7/MC/A18 (M7/MC/XLXN_16)
+     OR4:I3->O             1   0.190   0.725  M7/MC/fo (M7/MC/XLXN_43)
+     OR2:I1->O             1   0.067   0.413  M7/MC/XLXI_118 (M7/I1<5>)
+     LUT3:I2->O            1   0.053   0.399  M7/MUXA/Mmux_o6 (SEGMENT_5_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
+    ----------------------------------------
+    Total                     11.667ns (1.987ns logic, 9.680ns route)
+                                       (17.0% logic, 83.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M4/push'
+  Total number of paths / destination ports: 168 / 7
+-------------------------------------------------------------------------
+Offset:              10.822ns (Levels of Logic = 15)
+  Source:            M4/state_0 (FF)
+  Destination:       SEGMENT<6> (PAD)
+  Source Clock:      M4/push rising
+
+  Data Path: M4/state_0 to SEGMENT<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             19   0.282   0.858  state_0 (state<0>)
+     LUT6:I0->O            2   0.053   0.745  Mmux_blink71 (blink<6>)
+     end scope: 'M4:blink<6>'
+     AND2:I0->O            1   0.053   0.635  M5/MUX2_Blink/M2/XLXI_18 (M5/MUX2_Blink/M2/XLXN_28)
+     OR4:I2->O             1   0.157   0.739  M5/MUX2_Blink/M2/XLXI_21 (M5/MUX2_Blink/o2<2>)
+     AND2:I0->O            1   0.053   0.725  M5/MUX2_Blink/XLXI_23 (M5/MUX2_Blink/XLXN_13)
+     OR2:I1->O             2   0.067   0.745  M5/MUX2_Blink/XLXI_25 (LE_out<6>)
+     AND2:I0->O            1   0.053   0.725  M7/SSC/XLXI_2/M3/XLXI_29 (M7/SSC/XLXI_2/M3/XLXN_40)
+     OR4:I1->O             1   0.067   0.739  M7/SSC/XLXI_2/M3/XLXI_31 (M7/SSC/XLXI_2/o3<3>)
+     AND2:I0->O            1   0.053   0.739  M7/SSC/XLXI_2/XLXI_27 (M7/SSC/XLXI_2/XLXN_16)
+     OR2:I0->O             1   0.053   0.399  M7/SSC/XLXI_2/XLXI_28 (M7/SSC/COM<7>)
+     BUF:I->O              1   0.393   0.725  M7/SSC/XLXI_17 (M7/LE)
+     AND2:I1->O            7   0.067   0.779  M7/ANDG (M7/LEo)
+     OR2:I0->O             1   0.053   0.413  M7/MC/XLXI_117 (M7/I1<6>)
+     LUT3:I2->O            1   0.053   0.399  M7/MUXA/Mmux_o7 (SEGMENT_6_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_6_OBUF (SEGMENT<6>)
+    ----------------------------------------
+    Total                     10.822ns (1.457ns logic, 9.365ns route)
+                                       (13.5% logic, 86.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/clkdiv_1'
+  Total number of paths / destination ports: 14 / 14
+-------------------------------------------------------------------------
+Offset:              0.681ns (Levels of Logic = 1)
+  Source:            M9/VGA_DRI/r_3 (FF)
+  Destination:       R<3> (PAD)
+  Source Clock:      M1/clkdiv_1 rising
+
+  Data Path: M9/VGA_DRI/r_3 to R<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.282   0.399  M9/VGA_DRI/r_3 (M9/VGA_DRI/r_3)
+     OBUF:I->O                 0.000          R_3_OBUF (R<3>)
+    ----------------------------------------
+    Total                      0.681ns (0.282ns logic, 0.399ns route)
+                                       (41.4% logic, 58.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M1/clkdiv_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_0    |    3.046|         |         |         |
+M1/clkdiv_20   |    1.052|         |         |         |
+M1/clkdiv_5    |    1.550|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M1/clkdiv_1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_1    |    8.127|         |         |         |
+M1/clkdiv_10   |    2.274|         |         |         |
+M1/clkdiv_20   |    8.446|         |         |         |
+clk            |    1.694|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M1/clkdiv_10
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_1    |    4.473|         |         |         |
+M1/clkdiv_10   |    5.183|         |         |         |
+M1/clkdiv_20   |    7.484|         |         |         |
+M2/clk1        |    3.418|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M1/clkdiv_20
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_0    |    1.793|         |         |         |
+M1/clkdiv_10   |    2.976|         |         |         |
+M1/clkdiv_20   |    3.330|         |         |         |
+M1/clkdiv_27   |    1.600|         |         |         |
+M2/clk1        |    3.130|         |         |         |
+clk            |    1.331|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M1/clkdiv_27
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_10   |    1.793|         |         |         |
+M1/clkdiv_27   |    1.669|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M1/clkdiv_5
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_0    |    1.598|         |         |         |
+M1/clkdiv_5    |    2.453|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M2/clk1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    2.576|         |         |         |
+clk            |    1.557|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock M4/push
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M2/clk1        |    1.008|         |         |         |
+M4/push        |    1.277|         |         |         |
+clk            |    1.597|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_10   |    8.045|         |    0.698|         |
+M2/clk1        |    1.330|         |         |         |
+M4/push        |    6.940|         |         |         |
+clk            |    9.805|    1.656|    1.164|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 56.00 secs
+Total CPU time to Xst completion: 56.23 secs
+ 
+--> 
+
+Total memory usage is 4704460 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  286 (   0 filtered)
+Number of infos    :   40 (   0 filtered)
+

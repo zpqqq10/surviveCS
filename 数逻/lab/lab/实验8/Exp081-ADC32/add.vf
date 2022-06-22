@@ -1,0 +1,60 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : add.vf
+// /___/   /\     Timestamp : 11/11/2020 16:50:00
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/fundamentallogic/Exp081-ADC32/add.vf -w D:/fundamentallogic/Exp081-ADC32/add.sch
+//Design Name: add
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module add(ai, 
+           bi, 
+           ci, 
+           CO, 
+           Gi, 
+           Pi, 
+           si);
+
+    input ai;
+    input bi;
+    input ci;
+   output CO;
+   output Gi;
+   output Pi;
+   output si;
+   
+   wire XLXN_9;
+   wire Pi_DUMMY;
+   wire Gi_DUMMY;
+   
+   assign Gi = Gi_DUMMY;
+   assign Pi = Pi_DUMMY;
+   XOR2  XLXI_1 (.I0(bi), 
+                .I1(ai), 
+                .O(Pi_DUMMY));
+   XOR2  XLXI_2 (.I0(ci), 
+                .I1(Pi_DUMMY), 
+                .O(si));
+   AND2  XLXI_3 (.I0(ai), 
+                .I1(bi), 
+                .O(Gi_DUMMY));
+   AND2  XLXI_4 (.I0(ci), 
+                .I1(Pi_DUMMY), 
+                .O(XLXN_9));
+   OR2  XLXI_5 (.I0(Gi_DUMMY), 
+               .I1(XLXN_9), 
+               .O(CO));
+endmodule

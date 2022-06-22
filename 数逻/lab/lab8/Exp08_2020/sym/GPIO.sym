@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="GPIO">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2016-8-16T17:45:38</timestamp>
+    <attr value="GPIO" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-224" name="clk" />
+    <pin polarity="Input" x="0" y="-32" name="P_Data(31:0)" />
+    <pin polarity="Input" x="0" y="-176" name="rst" />
+    <pin polarity="Input" x="0" y="-128" name="EN" />
+    <pin polarity="Input" x="0" y="-80" name="Start" />
+    <pin polarity="Output" x="432" y="-32" name="led_clrn" />
+    <pin polarity="Output" x="432" y="-224" name="GPIOf0(31:0)" />
+    <pin polarity="Output" x="432" y="-176" name="led_clk" />
+    <pin polarity="Output" x="432" y="-128" name="led_sout" />
+    <pin polarity="Output" x="432" y="-80" name="LED_PEN" />
+    <graph>
+        <line x2="0" y1="-224" y2="-224" x1="32" />
+        <line x2="0" y1="-32" y2="-32" style="linewidth:W" x1="32" />
+        <line x2="0" y1="-176" y2="-176" x1="32" />
+        <line x2="0" y1="-128" y2="-128" x1="32" />
+        <line x2="0" y1="-80" y2="-80" x1="32" />
+        <line x2="416" y1="-32" y2="-32" x1="432" />
+        <rect style="fillcolor:rgb(149,160,255);fillstyle:Solid" width="384" x="32" y="-260" height="256" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-224" type="pin clk" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-32" type="pin P_Data(31:0)" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-176" type="pin rst" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="40" y="-128" type="pin EN" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="36" y="-80" type="pin Start" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="412" y="-32" type="pin led_clrn" />
+        <line x2="432" y1="-224" y2="-224" style="linewidth:W" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-224" type="pin GPIOf0(31:0)" />
+        <line x2="416" y1="-176" y2="-176" x1="432" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="416" y="-176" type="pin led_clk" />
+        <line x2="432" y1="-128" y2="-128" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="416" y="-128" type="pin led_sout" />
+        <line x2="432" y1="-80" y2="-80" x1="416" />
+        <attrtext style="alignment:RIGHT" attrname="PinName" x="408" y="-80" type="pin LED_PEN" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial;textcolor:rgb(255,0,0)" attrname="SymbolName" x="204" y="-48" type="symbol" />
+    </graph>
+</symbol>

@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Hex827Seg_sch_drc.vf -w D:/Hex827Seg/Hex827Seg_sch.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Hex827Seg_sch D:/Hex827Seg/Hex827Seg_sch.sch D:/Hex827Seg/Hex827Seg_sch.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Hex827Seg_sch.vf -w D:/Hex827Seg/Hex827Seg_sch.sch 

@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/RTL/Timer.v -lang verilog -prj RTL -o Timer.spl -module Timer -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w Timer.spl D:/fundamentallogic/RTL/Timer.sym 

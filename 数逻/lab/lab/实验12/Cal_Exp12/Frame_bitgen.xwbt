@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\fundamentallogic\Cal_Exp12\Frame.ncd
+OUTFILE=D:\fundamentallogic\Cal_Exp12\Frame.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=D:\fundamentallogic\Cal_Exp12
+LICENSE=WebPack
+USER_INFO=__0_0_0

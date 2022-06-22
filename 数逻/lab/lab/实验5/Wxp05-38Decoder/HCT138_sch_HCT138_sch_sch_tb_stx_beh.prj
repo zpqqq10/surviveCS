@@ -1,0 +1,4 @@
+verilog isim_temp "Decoder_38_sch.vf"
+verilog isim_temp "HCT138_sch.vf"
+verilog isim_temp "Decoder_test.v"
+verilog isim_temp "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

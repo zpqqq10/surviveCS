@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RS_NAND.vf
+// /___/   /\     Timestamp : 11/25/2020 13:25:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/fundamentallogic/Locker/RS_NAND.vf -w D:/fundamentallogic/Locker/RS_NAND.sch
+//Design Name: RS_NAND
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RS_NAND(Rn, 
+               Sn, 
+               Q, 
+               Qn);
+
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND2  XLXI_1 (.I0(Qn_DUMMY), 
+                 .I1(Sn), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_2 (.I0(Rn), 
+                 .I1(Q_DUMMY), 
+                 .O(Qn_DUMMY));
+endmodule

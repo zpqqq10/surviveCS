@@ -1,0 +1,3 @@
+sch2hdl -intstyle ise -family kintex7 -verilog add_drc.vf -w D:/fundamentallogic/Exp081-ADC32/add.sch 
+sch2sym -intstyle ise -family kintex7 -refsym add D:/fundamentallogic/Exp081-ADC32/add.sch D:/fundamentallogic/Exp081-ADC32/add.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog add.vf -w D:/fundamentallogic/Exp081-ADC32/add.sch 

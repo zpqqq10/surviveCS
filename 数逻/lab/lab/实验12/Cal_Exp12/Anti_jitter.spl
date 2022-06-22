@@ -1,0 +1,16 @@
+[Inputs]
+clk
+RSTN
+=K_COL[3:0]=
+=SW[15:0]=
+[Outputs]
+CR
+rst
+=K_ROW[4:0]=
+=button_out[3:0]=
+=button_pulse[3:0]=
+=SW_OK[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Anti_jitter
+

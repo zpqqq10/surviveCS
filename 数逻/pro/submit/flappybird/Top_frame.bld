@@ -1,0 +1,496 @@
+Release 14.7 ngdbuild P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\ngdbuild.exe
+-intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc frame_con.ucf -p
+xc7k160t-ffg676-1 Top_frame.ngc Top_frame.ngd
+
+Reading NGO file "D:/fundamentallogic/flappybird/Top_frame.ngc" ...
+Loading design module "D:\fundamentallogic\flappybird/SAnti_jitter.ngc"...
+Loading design module "D:\fundamentallogic\flappybird/SEnter_2_32.ngc"...
+Loading design module "D:\fundamentallogic\flappybird/P2S.ngc"...
+Loading design module "D:\fundamentallogic\flappybird/LED_P2S.ngc"...
+Loading design module "ipcore_dir/background.ngc"...
+Loading design module "ipcore_dir/button_play.ngc"...
+Loading design module "ipcore_dir/title.ngc"...
+Loading design module "ipcore_dir/name.ngc"...
+Loading design module "ipcore_dir/text_game_over.ngc"...
+Loading design module "ipcore_dir/text_ready.ngc"...
+Loading design module "ipcore_dir/bird_up.ngc"...
+Loading design module "ipcore_dir/bird_hor.ngc"...
+Loading design module "ipcore_dir/bird_down.ngc"...
+Loading design module "ipcore_dir/pipe_down.ngc"...
+Loading design module "ipcore_dir/pipe_up.ngc"...
+Gathering constraint information from source properties...
+Done.
+
+Annotating constraints to design from ucf file "frame_con.ucf" ...
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+
+Checking expanded design ...
+WARNING:NgdBuild:452 - logical net 'M9/BG/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BG/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BUTTON/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/TITLE/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/NAME/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/GAMEOVER/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/READY/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIHOR/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<11>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<10>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/BIRD/ANIDOWN/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN0/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN1/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN2/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN3/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN4/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN5/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN6/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/wea<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<9>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<8>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<7>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<6>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<5>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<4>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<3>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<2>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<1>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARDOWN7/PILLARDOWN/dina<0>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP0/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP1/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP2/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP3/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP4/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP5/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP6/PILLARUP/dina<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/wea<0>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<11>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<10>' has no
+   driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<9>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<8>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<7>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<6>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<5>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<4>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<3>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<2>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<1>' has no driver
+WARNING:NgdBuild:452 - logical net 'M9/PILLARUP7/PILLARUP/dina<0>' has no driver
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings: 325
+
+Total memory usage is 4537424 kilobytes
+
+Writing NGD file "Top_frame.ngd" ...
+Total REAL time to NGDBUILD completion:  45 sec
+Total CPU time to NGDBUILD completion:   43 sec
+
+Writing NGDBUILD log file "Top_frame.bld"...

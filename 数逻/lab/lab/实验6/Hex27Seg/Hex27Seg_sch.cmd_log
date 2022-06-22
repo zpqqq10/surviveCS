@@ -1,0 +1,9 @@
+sch2hdl -intstyle ise -family kintex7 -verilog Hex27Seg_sch_drc.vf -w D:/Hex27Seg/Hex27Seg_sch.sch 
+sch2sym -intstyle ise -family kintex7 -refsym Hex27Seg_sch D:/Hex27Seg/Hex27Seg_sch.sch D:/Hex27Seg/Hex27Seg_sch.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog Hex27Seg_sch.vf -w D:/Hex27Seg/Hex27Seg_sch.sch 
+xst -intstyle ise -ifn "D:/Hex27Seg/Hex27Seg_sch.xst" -ofn "D:/Hex27Seg/Hex27Seg_sch.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Hex27Seg.ucf -p xc7k160t-ffg676-1 Hex27Seg_sch.ngc Hex27Seg_sch.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Hex27Seg_sch_map.ncd Hex27Seg_sch.ngd Hex27Seg_sch.pcf 
+par -w -intstyle ise -ol high -mt off Hex27Seg_sch_map.ncd Hex27Seg_sch.ncd Hex27Seg_sch.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Hex27Seg_sch.twx Hex27Seg_sch.ncd -o Hex27Seg_sch.twr Hex27Seg_sch.pcf -ucf Hex27Seg.ucf 
+bitgen -intstyle ise -f Hex27Seg_sch.ut Hex27Seg_sch.ncd 

@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/Top_HTC138.xst" -ofn "D:/Wxp05-38Decoder/Top_HTC138.syr" 
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/Top_HTC138.xst" -ofn "D:/Wxp05-38Decoder/Top_HTC138.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HCT138.ucf -p xc7k160t-ffg676-1 Top_HTC138.ngc Top_HTC138.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_HTC138_map.ncd Top_HTC138.ngd Top_HTC138.pcf 
+par -w -intstyle ise -ol high -mt off Top_HTC138_map.ncd Top_HTC138.ncd Top_HTC138.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_HTC138.twx Top_HTC138.ncd -o Top_HTC138.twr Top_HTC138.pcf -ucf HCT138.ucf 
+bitgen -intstyle ise -f Top_HTC138.ut Top_HTC138.ncd 
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/Top_HTC138.xst" -ofn "D:/Wxp05-38Decoder/Top_HTC138.syr" 
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/Top_HTC138.xst" -ofn "D:/Wxp05-38Decoder/Top_HTC138.syr" 
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/Top_HTC138.xst" -ofn "D:/Wxp05-38Decoder/Top_HTC138.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HCT138.ucf -p xc7k160t-ffg676-1 Top_HTC138.ngc Top_HTC138.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_HTC138_map.ncd Top_HTC138.ngd Top_HTC138.pcf 
+par -w -intstyle ise -ol high -mt off Top_HTC138_map.ncd Top_HTC138.ncd Top_HTC138.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_HTC138.twx Top_HTC138.ncd -o Top_HTC138.twr Top_HTC138.pcf -ucf HCT138.ucf 
+bitgen -intstyle ise -f Top_HTC138.ut Top_HTC138.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc HCT138.ucf -p xc7k160t-ffg676-1 Top_HTC138.ngc Top_HTC138.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o Top_HTC138_map.ncd Top_HTC138.ngd Top_HTC138.pcf 
+par -w -intstyle ise -ol high -mt off Top_HTC138_map.ncd Top_HTC138.ncd Top_HTC138.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml Top_HTC138.twx Top_HTC138.ncd -o Top_HTC138.twr Top_HTC138.pcf -ucf HCT138.ucf 
+bitgen -intstyle ise -f Top_HTC138.ut Top_HTC138.ncd 
+xst -intstyle ise -ifn "D:/Wxp05-38Decoder/Top_HTC138.xst" -ofn "D:/Wxp05-38Decoder/Top_HTC138.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Top_HTC138.ngc Top_HTC138_synthesis.v 

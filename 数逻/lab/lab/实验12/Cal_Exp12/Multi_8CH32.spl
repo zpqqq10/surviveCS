@@ -1,0 +1,23 @@
+[Inputs]
+clk
+rst
+EN
+=Test[2:0]=
+=point_in[63:0]=
+=LES[63:0]=
+=data0[31:0]=
+=data1[31:0]=
+=data2[31:0]=
+=data3[31:0]=
+=data4[31:0]=
+=data5[31:0]=
+=data6[31:0]=
+=data7[31:0]=
+[Outputs]
+=point_out[7:0]=
+=LE_out[7:0]=
+=Disp_num[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel Multi_8CH32
+

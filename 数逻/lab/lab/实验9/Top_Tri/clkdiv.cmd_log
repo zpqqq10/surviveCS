@@ -1,0 +1,2 @@
+vhdtdtfi -lib work D:/fundamentallogic/Top_Tri/clkdiv.v -lang verilog -prj Top_Tri -o clkdiv.spl -module clkdiv -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 clkdiv.spl D:/fundamentallogic/Top_Tri/clkdiv.sym 

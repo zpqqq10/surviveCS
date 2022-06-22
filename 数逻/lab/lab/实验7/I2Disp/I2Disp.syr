@@ -1,0 +1,878 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: I2Disp.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "I2Disp.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "I2Disp"
+Output Format                      : NGC
+Target Device                      : xc7k160t-1-ffg676
+
+---- Source Options
+Top Module Name                    : I2Disp
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\MUX4T1_4.vf" into library work
+Parsing module <MUX4T1_4>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\ScanSync_sch.vf" into library work
+Parsing module <ScanSync_sch>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\MC14495_ZJU.vf" into library work
+Parsing module <MC14495_ZJU>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\Seg7_Dev16.vf" into library work
+Parsing module <ScanSync_sch_MUSER_Seg7_Dev16>.
+Parsing module <Seg7_Dev16>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\InputT32.v" into library work
+Parsing module <InputT32>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\clkdiv.v" into library work
+Parsing module <clkdiv>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\Anti_jitter.v" into library work
+Parsing module <Anti_jitter>.
+Analyzing Verilog file "D:\fundamentallogic\I2Disp\I2Disp.vf" into library work
+Parsing module <ScanSync_sch_MUSER_I2Disp>.
+Parsing module <Seg7_Dev16_MUSER_I2Disp>.
+Parsing module <I2Disp>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <I2Disp>.
+
+Elaborating module <clkdiv>.
+
+Elaborating module <Anti_jitter>.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\Anti_jitter.v" Line 56: Result of 5-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <InputT32>.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 42: Result of 4-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 43: Result of 32-bit expression is truncated to fit in 3-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 66: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 67: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 68: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 69: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 70: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 71: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 72: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 73: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 74: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 75: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 76: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 77: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 78: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 79: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 80: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 81: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 86: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 87: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 88: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 89: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 90: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 91: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 92: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 93: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 94: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 95: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 96: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 97: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 98: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 99: Result of 32-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 100: Result of 5-bit expression is truncated to fit in 4-bit target.
+WARNING:HDLCompiler:413 - "D:\fundamentallogic\I2Disp\InputT32.v" Line 101: Result of 32-bit expression is truncated to fit in 4-bit target.
+
+Elaborating module <Seg7_Dev16_MUSER_I2Disp>.
+
+Elaborating module <MC14495_ZJU>.
+
+Elaborating module <OR4>.
+
+Elaborating module <AND4>.
+
+Elaborating module <AND3>.
+
+Elaborating module <AND2>.
+
+Elaborating module <OR3>.
+
+Elaborating module <INV>.
+
+Elaborating module <OR2>.
+
+Elaborating module <ScanSync_sch_MUSER_I2Disp>.
+
+Elaborating module <MUX4T1_4>.
+
+Elaborating module <VCC>.
+
+Elaborating module <GND>.
+
+Elaborating module <BUF>.
+WARNING:HDLCompiler:1127 - "D:\fundamentallogic\I2Disp\I2Disp.vf" Line 180: Assignment to G0 ignored, since the identifier is never used
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <I2Disp>.
+    Related source file is "D:\fundamentallogic\I2Disp\I2Disp.vf".
+INFO:Xst:3210 - "D:\fundamentallogic\I2Disp\I2Disp.vf" line 153: Output port <button_pulse> of the instance <M2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\fundamentallogic\I2Disp\I2Disp.vf" line 153: Output port <CR> of the instance <M2> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\fundamentallogic\I2Disp\I2Disp.vf" line 163: Output port <Bi> of the instance <M4> is unconnected or connected to loadless signal.
+    Summary:
+	no macro.
+Unit <I2Disp> synthesized.
+
+Synthesizing Unit <clkdiv>.
+    Related source file is "D:\fundamentallogic\I2Disp\clkdiv.v".
+    Found 32-bit register for signal <clkdiv>.
+    Found 32-bit adder for signal <clkdiv[31]_GND_2_o_add_0_OUT> created at line 28.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  32 D-type flip-flop(s).
+Unit <clkdiv> synthesized.
+
+Synthesizing Unit <Anti_jitter>.
+    Related source file is "D:\fundamentallogic\I2Disp\Anti_jitter.v".
+    Found 16-bit register for signal <sw_temp>.
+    Found 32-bit register for signal <counter>.
+    Found 32-bit register for signal <rst_counter>.
+    Found 1-bit register for signal <pulse>.
+    Found 4-bit register for signal <button_out>.
+    Found 1-bit register for signal <CR>.
+    Found 16-bit register for signal <SW_OK>.
+    Found 5-bit register for signal <K_ROW>.
+    Found 4-bit register for signal <button_pulse>.
+    Found 1-bit register for signal <rst>.
+    Found 5-bit register for signal <btn_temp>.
+    Found 32-bit adder for signal <counter[31]_GND_3_o_add_5_OUT> created at line 49.
+    Found 32-bit adder for signal <rst_counter[31]_GND_3_o_add_8_OUT> created at line 59.
+    Found 5-bit comparator not equal for signal <n0002> created at line 43
+    Found 16-bit comparator not equal for signal <n0004> created at line 43
+    Found 32-bit comparator greater for signal <counter[31]_GND_3_o_LessThan_5_o> created at line 48
+    Found 32-bit comparator greater for signal <rst_counter[31]_GND_3_o_LessThan_8_o> created at line 58
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 117 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+Unit <Anti_jitter> synthesized.
+
+Synthesizing Unit <InputT32>.
+    Related source file is "D:\fundamentallogic\I2Disp\InputT32.v".
+WARNING:Xst:647 - Input <Dctr<1:0>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 2-bit register for signal <get_23>.
+    Found 3-bit register for signal <state>.
+    Found 8-bit register for signal <blink>.
+    Found 32-bit register for signal <Ai>.
+    Found 32-bit register for signal <Bi>.
+    Found 2-bit register for signal <get_01>.
+    Found 3-bit adder for signal <state[2]_GND_4_o_add_6_OUT> created at line 42.
+    Found 4-bit adder for signal <Ai[3]_GND_4_o_add_19_OUT> created at line 66.
+    Found 4-bit adder for signal <Ai[7]_GND_4_o_add_21_OUT> created at line 68.
+    Found 4-bit adder for signal <Ai[11]_GND_4_o_add_23_OUT> created at line 70.
+    Found 4-bit adder for signal <Ai[15]_GND_4_o_add_25_OUT> created at line 72.
+    Found 4-bit adder for signal <Ai[19]_GND_4_o_add_27_OUT> created at line 74.
+    Found 4-bit adder for signal <Ai[23]_GND_4_o_add_29_OUT> created at line 76.
+    Found 4-bit adder for signal <Ai[27]_GND_4_o_add_31_OUT> created at line 78.
+    Found 4-bit adder for signal <Ai[31]_GND_4_o_add_33_OUT> created at line 80.
+    Found 4-bit adder for signal <Bi[3]_GND_4_o_add_38_OUT> created at line 86.
+    Found 4-bit adder for signal <Bi[7]_GND_4_o_add_40_OUT> created at line 88.
+    Found 4-bit adder for signal <Bi[11]_GND_4_o_add_42_OUT> created at line 90.
+    Found 4-bit adder for signal <Bi[15]_GND_4_o_add_44_OUT> created at line 92.
+    Found 4-bit adder for signal <Bi[19]_GND_4_o_add_46_OUT> created at line 94.
+    Found 4-bit adder for signal <Bi[23]_GND_4_o_add_48_OUT> created at line 96.
+    Found 4-bit adder for signal <Bi[27]_GND_4_o_add_50_OUT> created at line 98.
+    Found 4-bit adder for signal <Bi[31]_GND_4_o_add_52_OUT> created at line 100.
+    Found 3-bit subtractor for signal <GND_4_o_GND_4_o_sub_8_OUT<2:0>> created at line 43.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_21_OUT<3:0>> created at line 67.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_23_OUT<3:0>> created at line 69.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_25_OUT<3:0>> created at line 71.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_27_OUT<3:0>> created at line 73.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_29_OUT<3:0>> created at line 75.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_31_OUT<3:0>> created at line 77.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_33_OUT<3:0>> created at line 79.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_35_OUT<3:0>> created at line 81.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_40_OUT<3:0>> created at line 87.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_42_OUT<3:0>> created at line 89.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_44_OUT<3:0>> created at line 91.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_46_OUT<3:0>> created at line 93.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_48_OUT<3:0>> created at line 95.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_50_OUT<3:0>> created at line 97.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_52_OUT<3:0>> created at line 99.
+    Found 4-bit subtractor for signal <GND_4_o_GND_4_o_sub_54_OUT<3:0>> created at line 101.
+    Found 8x8-bit Read Only RAM for signal <HexUP16_PWR_4_o_wide_mux_13_OUT>
+    Found 32-bit 8-to-1 multiplexer for signal <HexUP16_GND_4_o_wide_mux_35_OUT> created at line 65.
+    Found 32-bit 8-to-1 multiplexer for signal <HexUP16_GND_4_o_wide_mux_54_OUT> created at line 85.
+    Found 3-bit comparator lessequal for signal <n0004> created at line 41
+    Found 3-bit comparator greater for signal <Dctr[4]_GND_4_o_LessThan_13_o> created at line 49
+    Summary:
+	inferred   1 RAM(s).
+	inferred  33 Adder/Subtractor(s).
+	inferred  79 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  66 Multiplexer(s).
+Unit <InputT32> synthesized.
+
+Synthesizing Unit <Seg7_Dev16_MUSER_I2Disp>.
+    Related source file is "D:\fundamentallogic\I2Disp\I2Disp.vf".
+    Summary:
+	no macro.
+Unit <Seg7_Dev16_MUSER_I2Disp> synthesized.
+
+Synthesizing Unit <MC14495_ZJU>.
+    Related source file is "D:\fundamentallogic\I2Disp\MC14495_ZJU.vf".
+    Summary:
+	no macro.
+Unit <MC14495_ZJU> synthesized.
+
+Synthesizing Unit <ScanSync_sch_MUSER_I2Disp>.
+    Related source file is "D:\fundamentallogic\I2Disp\I2Disp.vf".
+    Summary:
+	no macro.
+Unit <ScanSync_sch_MUSER_I2Disp> synthesized.
+
+Synthesizing Unit <MUX4T1_4>.
+    Related source file is "D:\fundamentallogic\I2Disp\MUX4T1_4.vf".
+    Summary:
+	no macro.
+Unit <MUX4T1_4> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 36
+ 3-bit addsub                                          : 1
+ 32-bit adder                                          : 3
+ 4-bit adder                                           : 16
+ 4-bit subtractor                                      : 16
+# Registers                                            : 18
+ 1-bit register                                        : 3
+ 16-bit register                                       : 2
+ 2-bit register                                        : 2
+ 3-bit register                                        : 1
+ 32-bit register                                       : 5
+ 4-bit register                                        : 2
+ 5-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 6
+ 16-bit comparator not equal                           : 1
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 32-bit comparator greater                             : 2
+ 5-bit comparator not equal                            : 1
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 64
+ 32-bit 8-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+INFO:Xst:2261 - The FF/Latch <SW_OK_11> in Unit <M2> is equivalent to the following FF/Latch, which will be removed : <K_ROW_0> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_12> in Unit <M2> is equivalent to the following FF/Latch, which will be removed : <K_ROW_1> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_13> in Unit <M2> is equivalent to the following FF/Latch, which will be removed : <K_ROW_2> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_14> in Unit <M2> is equivalent to the following FF/Latch, which will be removed : <K_ROW_3> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_15> in Unit <M2> is equivalent to the following FF/Latch, which will be removed : <K_ROW_4> 
+WARNING:Xst:2677 - Node <SW_OK_4> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <SW_OK_5> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <SW_OK_6> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <SW_OK_7> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <SW_OK_8> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <SW_OK_9> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <SW_OK_10> of sequential type is unconnected in block <M2>.
+WARNING:Xst:2677 - Node <blink_4> of sequential type is unconnected in block <M4>.
+WARNING:Xst:2677 - Node <blink_5> of sequential type is unconnected in block <M4>.
+WARNING:Xst:2677 - Node <blink_6> of sequential type is unconnected in block <M4>.
+WARNING:Xst:2677 - Node <blink_7> of sequential type is unconnected in block <M4>.
+
+Synthesizing (advanced) Unit <Anti_jitter>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+The following registers are absorbed into counter <rst_counter>: 1 register on signal <rst_counter>.
+Unit <Anti_jitter> synthesized (advanced).
+
+Synthesizing (advanced) Unit <InputT32>.
+The following registers are absorbed into counter <state>: 1 register on signal <state>.
+INFO:Xst:3231 - The small RAM <Mram_HexUP16_PWR_4_o_wide_mux_13_OUT> will be implemented on LUTs in order to maximize performance and save block RAM resources. If you want to force its implementation on block, use option/constraint ram_style.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <("0",state<1:0>)> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <InputT32> synthesized (advanced).
+
+Synthesizing (advanced) Unit <clkdiv>.
+The following registers are absorbed into counter <clkdiv>: 1 register on signal <clkdiv>.
+Unit <clkdiv> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# Adders/Subtractors                                   : 32
+ 4-bit adder                                           : 16
+ 4-bit subtractor                                      : 16
+# Counters                                             : 4
+ 3-bit updown counter                                  : 1
+ 32-bit up counter                                     : 3
+# Registers                                            : 129
+ Flip-Flops                                            : 129
+# Comparators                                          : 6
+ 16-bit comparator not equal                           : 1
+ 3-bit comparator greater                              : 1
+ 3-bit comparator lessequal                            : 1
+ 32-bit comparator greater                             : 2
+ 5-bit comparator not equal                            : 1
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 64
+ 32-bit 8-to-1 multiplexer                             : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <SW_OK_11> in Unit <Anti_jitter> is equivalent to the following FF/Latch, which will be removed : <K_ROW_0> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_12> in Unit <Anti_jitter> is equivalent to the following FF/Latch, which will be removed : <K_ROW_1> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_13> in Unit <Anti_jitter> is equivalent to the following FF/Latch, which will be removed : <K_ROW_2> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_14> in Unit <Anti_jitter> is equivalent to the following FF/Latch, which will be removed : <K_ROW_3> 
+INFO:Xst:2261 - The FF/Latch <SW_OK_15> in Unit <Anti_jitter> is equivalent to the following FF/Latch, which will be removed : <K_ROW_4> 
+WARNING:Xst:1293 - FF/Latch <blink_4> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <blink_5> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <blink_6> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <blink_7> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <Bi_31> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_30> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_29> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_28> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_27> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_26> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_25> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_24> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_23> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_22> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_21> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_20> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_19> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_18> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_17> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Bi_16> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_31> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_30> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_29> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_28> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_27> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_26> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_25> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_24> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_23> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_22> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_21> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_20> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_19> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_18> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_17> has a constant value of 0 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <Ai_16> has a constant value of 1 in block <InputT32>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <M1/clkdiv_26> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M1/clkdiv_27> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M1/clkdiv_28> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M1/clkdiv_29> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M1/clkdiv_30> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M1/clkdiv_31> of sequential type is unconnected in block <I2Disp>.
+
+Optimizing unit <I2Disp> ...
+
+Optimizing unit <MUX4T1_4> ...
+
+Optimizing unit <MC14495_ZJU> ...
+
+Optimizing unit <Anti_jitter> ...
+
+Optimizing unit <InputT32> ...
+WARNING:Xst:2677 - Node <M2/pulse> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/button_pulse_3> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/button_pulse_2> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/button_pulse_1> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/button_pulse_0> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/CR> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_10> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_9> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_8> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_7> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_6> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_5> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M2/SW_OK_4> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_15> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_14> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_13> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_12> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_11> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_10> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_9> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_8> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_7> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_6> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_5> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_4> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_3> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_2> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_1> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:2677 - Node <M4/Bi_0> of sequential type is unconnected in block <I2Disp>.
+WARNING:Xst:1710 - FF/Latch <M2/rst_counter_28> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/rst_counter_29> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/rst_counter_30> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/rst_counter_31> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_17> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_18> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_19> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_20> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_21> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_22> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_23> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_24> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_25> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_26> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_27> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_28> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_29> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_30> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <M2/counter_31> (without init value) has a constant value of 0 in block <I2Disp>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block I2Disp, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 133
+ Flip-Flops                                            : 133
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : I2Disp.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 526
+#      AND2                        : 62
+#      AND3                        : 11
+#      AND4                        : 9
+#      BUF                         : 3
+#      GND                         : 1
+#      INV                         : 21
+#      LUT1                        : 68
+#      LUT2                        : 13
+#      LUT3                        : 6
+#      LUT4                        : 20
+#      LUT5                        : 41
+#      LUT6                        : 86
+#      MUXCY                       : 87
+#      OR2                         : 7
+#      OR3                         : 3
+#      OR4                         : 16
+#      VCC                         : 1
+#      XORCY                       : 71
+# FlipFlops/Latches                : 133
+#      FD                          : 69
+#      FDC                         : 26
+#      FDE                         : 32
+#      FDR                         : 4
+#      FDRE                        : 2
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 42
+#      IBUF                        : 21
+#      OBUF                        : 21
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7k160tffg676-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             133  out of  202800     0%  
+ Number of Slice LUTs:                  255  out of  101400     0%  
+    Number used as Logic:               255  out of  101400     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    267
+   Number with an unused Flip Flop:     134  out of    267    50%  
+   Number with an unused LUT:            12  out of    267     4%  
+   Number of fully used LUT-FF pairs:   121  out of    267    45%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          43
+ Number of bonded IOBs:                  43  out of    400    10%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk_100mhz                         | BUFGP                  | 106   |
+M1/clkdiv_0                        | BUFG                   | 27    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.691ns (Maximum Frequency: 371.609MHz)
+   Minimum input arrival time before clock: 2.496ns
+   Maximum output required time after clock: 7.220ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk_100mhz'
+  Clock period: 2.691ns (frequency: 371.609MHz)
+  Total number of paths / destination ports: 4363 / 128
+-------------------------------------------------------------------------
+Delay:               2.691ns (Levels of Logic = 30)
+  Source:            M2/rst_counter_0 (FF)
+  Destination:       M2/rst_counter_26 (FF)
+  Source Clock:      clk_100mhz rising
+  Destination Clock: clk_100mhz rising
+
+  Data Path: M2/rst_counter_0 to M2/rst_counter_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.282   0.413  M2/rst_counter_0 (M2/rst_counter_0)
+     INV:I->O              1   0.067   0.000  M2/Mcount_rst_counter_lut<0>_INV_0 (M2/Mcount_rst_counter_lut<0>)
+     MUXCY:S->O            1   0.291   0.000  M2/Mcount_rst_counter_cy<0> (M2/Mcount_rst_counter_cy<0>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<1> (M2/Mcount_rst_counter_cy<1>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<2> (M2/Mcount_rst_counter_cy<2>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<3> (M2/Mcount_rst_counter_cy<3>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<4> (M2/Mcount_rst_counter_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<5> (M2/Mcount_rst_counter_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<6> (M2/Mcount_rst_counter_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<7> (M2/Mcount_rst_counter_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<8> (M2/Mcount_rst_counter_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<9> (M2/Mcount_rst_counter_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<10> (M2/Mcount_rst_counter_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<11> (M2/Mcount_rst_counter_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<12> (M2/Mcount_rst_counter_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<13> (M2/Mcount_rst_counter_cy<13>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<14> (M2/Mcount_rst_counter_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<15> (M2/Mcount_rst_counter_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<16> (M2/Mcount_rst_counter_cy<16>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<17> (M2/Mcount_rst_counter_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<18> (M2/Mcount_rst_counter_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<19> (M2/Mcount_rst_counter_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<20> (M2/Mcount_rst_counter_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<21> (M2/Mcount_rst_counter_cy<21>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<22> (M2/Mcount_rst_counter_cy<22>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<23> (M2/Mcount_rst_counter_cy<23>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<24> (M2/Mcount_rst_counter_cy<24>)
+     MUXCY:CI->O           1   0.015   0.000  M2/Mcount_rst_counter_cy<25> (M2/Mcount_rst_counter_cy<25>)
+     XORCY:CI->O           1   0.320   0.413  M2/Mcount_rst_counter_xor<26> (M2/Result<26>)
+     LUT6:I5->O            1   0.053   0.413  M2/btn_temp[4]_sw_temp[15]_OR_20_o_SW2 (N89)
+     LUT6:I5->O            1   0.053   0.000  M2/rst_counter_26_rstpot (M2/rst_counter_26_rstpot)
+     FD:D                      0.011          M2/rst_counter_26
+    ----------------------------------------
+    Total                      2.691ns (1.452ns logic, 1.239ns route)
+                                       (54.0% logic, 46.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'M1/clkdiv_0'
+  Clock period: 1.667ns (frequency: 599.880MHz)
+  Total number of paths / destination ports: 126 / 44
+-------------------------------------------------------------------------
+Delay:               1.667ns (Levels of Logic = 1)
+  Source:            M4/get_23_1 (FF)
+  Destination:       M4/Ai_15 (FF)
+  Source Clock:      M1/clkdiv_0 rising
+  Destination Clock: M1/clkdiv_0 rising
+
+  Data Path: M4/get_23_1 to M4/Ai_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               1   0.282   0.635  M4/get_23_1 (M4/get_23_1)
+     LUT5:I1->O           16   0.053   0.497  M4/Dctr[4]_get_23[1]_AND_3_o21 (M4/Dctr[4]_get_23[1]_AND_3_o)
+     FDE:CE                    0.200          M4/Ai_0
+    ----------------------------------------
+    Total                      1.667ns (0.535ns logic, 1.132ns route)
+                                       (32.1% logic, 67.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 1329 / 93
+-------------------------------------------------------------------------
+Offset:              2.496ns (Levels of Logic = 4)
+  Source:            K_COL<2> (PAD)
+  Destination:       M2/counter_16 (FF)
+  Destination Clock: clk_100mhz rising
+
+  Data Path: K_COL<2> to M2/counter_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   0.000   0.759  K_COL_2_IBUF (K_COL_2_IBUF)
+     LUT6:I0->O            1   0.053   0.413  M2/btn_temp[4]_sw_temp[15]_OR_20_o_SW0_1 (M2/btn_temp[4]_sw_temp[15]_OR_20_o_SW0)
+     LUT5:I4->O            1   0.053   0.000  M2/btn_temp[4]_sw_temp[15]_OR_20_o_lut (M2/btn_temp[4]_sw_temp[15]_OR_20_o_lut)
+     MUXCY:S->O            3   0.480   0.413  M2/btn_temp[4]_sw_temp[15]_OR_20_o_cy (M2/btn_temp[4]_sw_temp[15]_OR_20_o)
+     FDRE:R                    0.325          M2/counter_15
+    ----------------------------------------
+    Total                      2.496ns (0.911ns logic, 1.585ns route)
+                                       (36.5% logic, 63.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'M1/clkdiv_0'
+  Total number of paths / destination ports: 62 / 23
+-------------------------------------------------------------------------
+Offset:              1.489ns (Levels of Logic = 2)
+  Source:            SW<5> (PAD)
+  Destination:       M4/Ai_15 (FF)
+  Destination Clock: M1/clkdiv_0 rising
+
+  Data Path: SW<5> to M4/Ai_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.000   0.739  SW_5_IBUF (SW_5_IBUF)
+     LUT5:I0->O           16   0.053   0.497  M4/Dctr[4]_get_23[1]_AND_3_o21 (M4/Dctr[4]_get_23[1]_AND_3_o)
+     FDE:CE                    0.200          M4/Ai_0
+    ----------------------------------------
+    Total                      1.489ns (0.253ns logic, 1.236ns route)
+                                       (17.0% logic, 83.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk_100mhz'
+  Total number of paths / destination ports: 800 / 17
+-------------------------------------------------------------------------
+Offset:              7.220ns (Levels of Logic = 9)
+  Source:            M1/clkdiv_17 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      clk_100mhz rising
+
+  Data Path: M1/clkdiv_17 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.282   0.458  M1/clkdiv_17 (M1/clkdiv_17)
+     INV:I->O              2   0.393   0.745  XLXI_4/M2/MUX2/XLXI_6 (XLXI_4/M2/MUX2/XLXN_9)
+     AND2:I0->O            4   0.053   0.745  XLXI_4/M2/MUX2/XLXI_3 (XLXI_4/M2/MUX2/XLXN_54)
+     AND2:I1->O            1   0.067   0.725  XLXI_4/M2/MUX2/XLXI_14 (XLXI_4/M2/MUX2/XLXN_25)
+     OR4:I1->O            11   0.067   0.465  XLXI_4/M2/MUX2/XLXI_16 (XLXI_4/Hex<1>)
+     INV:I->O              8   0.393   0.771  XLXI_4/M1/XLXI_108 (XLXI_4/M1/XLXN_7)
+     AND4:I1->O            2   0.067   0.608  XLXI_4/M1/A18 (XLXI_4/M1/XLXN_16)
+     OR4:I3->O             1   0.190   0.725  XLXI_4/M1/fo (XLXI_4/M1/XLXN_43)
+     OR2:I1->O             1   0.067   0.399  XLXI_4/M1/XLXI_118 (SEGMENT_5_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_5_OBUF (SEGMENT<5>)
+    ----------------------------------------
+    Total                      7.220ns (1.579ns logic, 5.641ns route)
+                                       (21.9% logic, 78.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'M1/clkdiv_0'
+  Total number of paths / destination ports: 375 / 10
+-------------------------------------------------------------------------
+Offset:              5.571ns (Levels of Logic = 7)
+  Source:            M4/Ai_12 (FF)
+  Destination:       SEGMENT<3> (PAD)
+  Source Clock:      M1/clkdiv_0 rising
+
+  Data Path: M4/Ai_12 to SEGMENT<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              5   0.282   0.766  M4/Ai_12 (M4/Ai_12)
+     AND2:I0->O            1   0.053   0.739  XLXI_4/M2/MUX2/XLXI_10 (XLXI_4/M2/MUX2/XLXN_16)
+     OR4:I0->O            12   0.053   0.471  XLXI_4/M2/MUX2/XLXI_11 (XLXI_4/Hex<0>)
+     INV:I->O              6   0.393   0.772  XLXI_4/M1/XLXI_109 (XLXI_4/M1/XLXN_8)
+     AND3:I0->O            2   0.053   0.731  XLXI_4/M1/A14 (XLXI_4/M1/XLXN_22)
+     OR4:I1->O             1   0.067   0.725  XLXI_4/M1/bo (XLXI_4/M1/XLXN_34)
+     OR2:I1->O             1   0.067   0.399  XLXI_4/M1/XLXI_122 (SEGMENT_1_OBUF)
+     OBUF:I->O                 0.000          SEGMENT_1_OBUF (SEGMENT<1>)
+    ----------------------------------------
+    Total                      5.571ns (0.968ns logic, 4.603ns route)
+                                       (17.4% logic, 82.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock M1/clkdiv_0
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+M1/clkdiv_0    |    1.667|         |         |         |
+clk_100mhz     |    1.066|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    2.691|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 12.00 secs
+Total CPU time to Xst completion: 12.65 secs
+ 
+--> 
+
+Total memory usage is 4626164 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  138 (   0 filtered)
+Number of infos    :   14 (   0 filtered)
+

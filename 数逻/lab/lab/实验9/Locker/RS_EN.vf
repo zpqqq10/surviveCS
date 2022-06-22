@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RS_EN.vf
+// /___/   /\     Timestamp : 11/25/2020 13:25:36
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family kintex7 -verilog D:/fundamentallogic/Locker/RS_EN.vf -w D:/fundamentallogic/Locker/RS_EN.sch
+//Design Name: RS_EN
+//Device: kintex7
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module RS_NAND_MUSER_RS_EN(Rn, 
+                           Sn, 
+                           Q, 
+                           Qn);
+
+    input Rn;
+    input Sn;
+   output Q;
+   output Qn;
+   
+   wire Q_DUMMY;
+   wire Qn_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   assign Qn = Qn_DUMMY;
+   NAND2  XLXI_1 (.I0(Qn_DUMMY), 
+                 .I1(Sn), 
+                 .O(Q_DUMMY));
+   NAND2  XLXI_2 (.I0(Rn), 
+                 .I1(Q_DUMMY), 
+                 .O(Qn_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module RS_EN(C, 
+             R, 
+             S, 
+             Q, 
+             Qn);
+
+    input C;
+    input R;
+    input S;
+   output Q;
+   output Qn;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   
+   RS_NAND_MUSER_RS_EN  XLXI_1 (.Rn(XLXN_2), 
+                               .Sn(XLXN_1), 
+                               .Q(Q), 
+                               .Qn(Qn));
+   NAND2  XLXI_2 (.I0(C), 
+                 .I1(S), 
+                 .O(XLXN_1));
+   NAND2  XLXI_3 (.I0(R), 
+                 .I1(C), 
+                 .O(XLXN_2));
+endmodule

@@ -1,0 +1,7 @@
+vhdtdtfi -lib work D:/fundamentallogic/I2Disp/Anti_jitter.v -lang verilog -prj I2Disp -o Anti_jitter.spl -module Anti_jitter -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Anti_jitter.spl D:/fundamentallogic/I2Disp/Anti_jitter.sym 
+vhdtdtfi -lang verilog -prj I2Disp -o D:/fundamentallogic/I2Disp/Anti_jitter.tfi -lib work D:/fundamentallogic/I2Disp//Anti_jitter.v -module Anti_jitter -template D:/Xilinx/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 
+vhdtdtfi -lib work D:/fundamentallogic/I2Disp/Anti_jitter.v -lang verilog -prj I2Disp -o Anti_jitter.spl -module Anti_jitter -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Anti_jitter.spl D:/fundamentallogic/I2Disp/Anti_jitter.sym 
+vhdtdtfi -lib work D:/fundamentallogic/I2Disp/Anti_jitter.v -lang verilog -prj I2Disp -o Anti_jitter.spl -module Anti_jitter -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 Anti_jitter.spl D:/fundamentallogic/I2Disp/Anti_jitter.sym 

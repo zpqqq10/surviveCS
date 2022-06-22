@@ -1,0 +1,2 @@
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/Hex827Seg/Hex827Seg_sch.vf,-w,D:/Hex827Seg/Hex827Seg_sch.sch
+sch2hdl,-intstyle,ise,-family,kintex7,-verilog,D:/Hex827Seg/Hex827_test.vf,-w,D:/Hex827Seg/Hex827_test.sch

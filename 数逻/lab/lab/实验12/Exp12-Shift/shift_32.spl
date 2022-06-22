@@ -1,0 +1,14 @@
+[Inputs]
+clk
+clear
+S1
+S0
+SL
+SR
+=PData[31:0]=
+[Outputs]
+=Q[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel shift_32
+

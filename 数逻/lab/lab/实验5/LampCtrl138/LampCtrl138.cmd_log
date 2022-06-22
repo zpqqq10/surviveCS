@@ -1,0 +1,8 @@
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl138_drc.vf -w D:/LampCtrl138/LampCtrl138.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog LampCtrl138.vf -w D:/LampCtrl138/LampCtrl138.sch 
+xst -intstyle ise -ifn "D:/LampCtrl138/LampCtrl138.xst" -ofn "D:/LampCtrl138/LampCtrl138.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 LampCtrl138.ngc LampCtrl138.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o LampCtrl138_map.ncd LampCtrl138.ngd LampCtrl138.pcf 
+par -w -intstyle ise -ol high -mt off LampCtrl138_map.ncd LampCtrl138.ncd LampCtrl138.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml LampCtrl138.twx LampCtrl138.ncd -o LampCtrl138.twr LampCtrl138.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f LampCtrl138.ut LampCtrl138.ncd 

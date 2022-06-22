@@ -1,0 +1,77 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 27 15:29:18 2020
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SW<1>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "SW<2>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "SW<3>" LOCATE = SITE "AA12" LEVEL 1;
+COMP "SW<4>" LOCATE = SITE "Y13" LEVEL 1;
+COMP "Buzzer" LOCATE = SITE "AF24" LEVEL 1;
+COMP "SW<5>" LOCATE = SITE "Y12" LEVEL 1;
+COMP "SW<6>" LOCATE = SITE "AD11" LEVEL 1;
+COMP "SW<7>" LOCATE = SITE "AD10" LEVEL 1;
+COMP "SW<8>" LOCATE = SITE "AE10" LEVEL 1;
+COMP "SW<9>" LOCATE = SITE "AE12" LEVEL 1;
+COMP "RSTN" LOCATE = SITE "W13" LEVEL 1;
+COMP "SW<10>" LOCATE = SITE "AF12" LEVEL 1;
+COMP "SW<11>" LOCATE = SITE "AE8" LEVEL 1;
+COMP "SW<12>" LOCATE = SITE "AF8" LEVEL 1;
+COMP "seg_sout" LOCATE = SITE "L24" LEVEL 1;
+COMP "SW<13>" LOCATE = SITE "AE13" LEVEL 1;
+COMP "SW<14>" LOCATE = SITE "AF13" LEVEL 1;
+COMP "SW<15>" LOCATE = SITE "AF10" LEVEL 1;
+COMP "SEG_PEN" LOCATE = SITE "R18" LEVEL 1;
+COMP "seg_clk" LOCATE = SITE "M24" LEVEL 1;
+COMP "seg_clrn" LOCATE = SITE "M20" LEVEL 1;
+COMP "clk_100mhz" LOCATE = SITE "AC18" LEVEL 1;
+COMP "SW<0>" LOCATE = SITE "AA10" LEVEL 1;
+TIMEGRP TM_CLK = BEL "XLXI_2/clkdiv_0" BEL "XLXI_2/clkdiv_1" BEL
+        "XLXI_2/clkdiv_2" BEL "XLXI_2/clkdiv_3" BEL "XLXI_2/clkdiv_4" BEL
+        "XLXI_2/clkdiv_5" BEL "XLXI_2/clkdiv_6" BEL "XLXI_2/clkdiv_7" BEL
+        "XLXI_2/clkdiv_8" BEL "XLXI_2/clkdiv_9" BEL "XLXI_2/clkdiv_10" BEL
+        "XLXI_2/clkdiv_11" BEL "XLXI_2/clkdiv_12" BEL "XLXI_2/clkdiv_13" BEL
+        "XLXI_2/clkdiv_14" BEL "XLXI_2/clkdiv_15" BEL "XLXI_2/clkdiv_16" BEL
+        "XLXI_2/clkdiv_17" BEL "XLXI_2/clkdiv_18" BEL "XLXI_2/clkdiv_19" BEL
+        "XLXI_2/clkdiv_20" BEL "XLXI_2/clkdiv_21" BEL "XLXI_2/clkdiv_22" BEL
+        "XLXI_2/clkdiv_23" BEL "XLXI_2/clkdiv_24" BEL "XLXI_2/clkdiv_25" BEL
+        "clk_100mhz_BUFGP/BUFG" BEL "XLXI_1/M2/start_0" BEL
+        "XLXI_1/M2/start_1" BEL "XLXI_1/M2/state_FSM_FFd2" BEL
+        "XLXI_1/M2/state_FSM_FFd1" BEL "XLXI_1/M2/EN" BEL "XLXI_1/M2/s_clk"
+        BEL "XLXI_1/M2/buffer_0" BEL "XLXI_1/M2/buffer_1" BEL
+        "XLXI_1/M2/buffer_2" BEL "XLXI_1/M2/buffer_3" BEL "XLXI_1/M2/buffer_4"
+        BEL "XLXI_1/M2/buffer_5" BEL "XLXI_1/M2/buffer_6" BEL
+        "XLXI_1/M2/buffer_7" BEL "XLXI_1/M2/buffer_8" BEL "XLXI_1/M2/buffer_9"
+        BEL "XLXI_1/M2/buffer_10" BEL "XLXI_1/M2/buffer_11" BEL
+        "XLXI_1/M2/buffer_12" BEL "XLXI_1/M2/buffer_13" BEL
+        "XLXI_1/M2/buffer_14" BEL "XLXI_1/M2/buffer_15" BEL
+        "XLXI_1/M2/buffer_16" BEL "XLXI_1/M2/buffer_17" BEL
+        "XLXI_1/M2/buffer_18" BEL "XLXI_1/M2/buffer_19" BEL
+        "XLXI_1/M2/buffer_20" BEL "XLXI_1/M2/buffer_21" BEL
+        "XLXI_1/M2/buffer_22" BEL "XLXI_1/M2/buffer_23" BEL
+        "XLXI_1/M2/buffer_24" BEL "XLXI_1/M2/buffer_25" BEL
+        "XLXI_1/M2/buffer_26" BEL "XLXI_1/M2/buffer_27" BEL
+        "XLXI_1/M2/buffer_28" BEL "XLXI_1/M2/buffer_29" BEL
+        "XLXI_1/M2/buffer_30" BEL "XLXI_1/M2/buffer_31" BEL
+        "XLXI_1/M2/buffer_32" BEL "XLXI_1/M2/buffer_33" BEL
+        "XLXI_1/M2/buffer_34" BEL "XLXI_1/M2/buffer_35" BEL
+        "XLXI_1/M2/buffer_36" BEL "XLXI_1/M2/buffer_37" BEL
+        "XLXI_1/M2/buffer_38" BEL "XLXI_1/M2/buffer_39" BEL
+        "XLXI_1/M2/buffer_40" BEL "XLXI_1/M2/buffer_41" BEL
+        "XLXI_1/M2/buffer_42" BEL "XLXI_1/M2/buffer_43" BEL
+        "XLXI_1/M2/buffer_44" BEL "XLXI_1/M2/buffer_45" BEL
+        "XLXI_1/M2/buffer_46" BEL "XLXI_1/M2/buffer_47" BEL
+        "XLXI_1/M2/buffer_48" BEL "XLXI_1/M2/buffer_49" BEL
+        "XLXI_1/M2/buffer_50" BEL "XLXI_1/M2/buffer_51" BEL
+        "XLXI_1/M2/buffer_52" BEL "XLXI_1/M2/buffer_53" BEL
+        "XLXI_1/M2/buffer_54" BEL "XLXI_1/M2/buffer_55" BEL
+        "XLXI_1/M2/buffer_56" BEL "XLXI_1/M2/buffer_57" BEL
+        "XLXI_1/M2/buffer_58" BEL "XLXI_1/M2/buffer_59" BEL
+        "XLXI_1/M2/buffer_60" BEL "XLXI_1/M2/buffer_61" BEL
+        "XLXI_1/M2/buffer_62" BEL "XLXI_1/M2/buffer_63" BEL
+        "XLXI_1/M2/shift_count_0" BEL "XLXI_1/M2/shift_count_1" BEL
+        "XLXI_1/M2/shift_count_2" BEL "XLXI_1/M2/shift_count_3" BEL
+        "XLXI_1/M2/shift_count_4" BEL "XLXI_1/M2/shift_count_5";
+TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+SCHEMATIC END;
+

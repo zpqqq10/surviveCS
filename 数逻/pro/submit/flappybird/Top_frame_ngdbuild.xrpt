@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt64" product="ISE" version="14.7">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Tue Jan 12 16:01:52 2021">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="Path"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64;D:\Xilinx\14.7\ISE_DS\ISE\lib\nt64;D:\Xilinx\14.7\ISE_DS\ISE\..\..\..\DocNav;D:\Xilinx\14.7\ISE_DS\PlanAhead\bin;D:\Xilinx\14.7\ISE_DS\EDK\bin\nt64;D:\Xilinx\14.7\ISE_DS\EDK\lib\nt64;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\powerpc-eabi\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnuwin\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\arm\nt\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_be\bin;D:\Xilinx\14.7\ISE_DS\EDK\gnu\microblaze\linux_toolchain\nt64_le\bin;D:\Xilinx\14.7\ISE_DS\common\bin\nt64;D:\Xilinx\14.7\ISE_DS\common\lib\nt64;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\MATLAB2019\bin;C:\mingw64\bin;C:\WINDOWS\System32\Wbem;D:\mySQL\mysql\bin;C:\Users\lenovo\AppData\Local\Programs\Python\Python38\Scripts\;C:\Users\lenovo\AppData\Local\Programs\Python\Python38\;C:\Users\lenovo\AppData\Local\Microsoft\WindowsApps;C:\Users\lenovo\AppData\Local\Programs\Microsoft VS Code\bin"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC"/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE\"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\ISE"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_EDK"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\EDK"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="D:\Xilinx\14.7\ISE_DS\PlanAhead"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Microsoft , 64-bit"/>
+        <item stringID="User_EnvOsrelease" value="major release  (build 9200)"/>
+      </item>
+      <item stringID="User_EnvHost" value="LAPTOP-JSV7HJ63"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM) i5-8250U CPU @ 1.60GHz"/>
+          <item stringID="speed" value="1800 MHz"/>
+        </row>
+      </table>
+    </section>
+    <task stringID="NGDBUILD_OPTION_SUMMARY">
+      <section stringID="NGDBUILD_OPTION_SUMMARY">
+        <item DEFAULT="None" label="-intstyle" stringID="NGDBUILD_intstyle" value="ise"/>
+        <item DEFAULT="None" label="-dd" stringID="NGDBUILD_output_dir" value="_ngo"/>
+        <item DEFAULT="None" label="-p" stringID="NGDBUILD_partname" value="xc7k160t-ffg676-1"/>
+        <item DEFAULT="None" label="-sd" stringID="NGDBUILD_search_path" value="ipcore_dir"/>
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="frame_con.ucf"/>
+      </section>
+    </task>
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="325"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="0"/>
+      </section>
+      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="778"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="99"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="81"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="10"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFGP" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DSP48E1" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="331"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="63"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="17"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC_1" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="262"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="89"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="77"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDS" value="42"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD_1" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="27"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="23"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="209"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="226"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="698"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="562"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="694"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="503"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="1205"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="1231"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="19"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="50"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="127"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="27"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR4" value="164"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB18E1" value="235"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB36E1" value="121"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="29"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="1026"/>
+      </section>
+      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_AND2" value="778"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND3" value="99"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_AND4" value="81"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUF" value="10"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DSP48E1" value="6"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD" value="331"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="63"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="17"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC_1" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDE" value="262"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDR" value="89"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDRE" value="77"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDS" value="42"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDSE" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FD_1" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="27"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="23"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="209"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="226"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="698"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="562"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="694"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT5" value="503"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT6" value="1205"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="1231"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF7" value="19"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="50"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR2" value="127"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR3" value="27"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OR4" value="164"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB18E1" value="235"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_RAMB36E1" value="121"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_SRLC16E" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="29"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="1026"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_SUMMARY">
+        <item COUNT="1" stringID="NGDBUILD_CORE" value="blk_mem_gen_v7_3, Xilinx CORE Generator 14.7"/>
+        <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+          <section stringID="NGDBUILD_CORE_INSTANCES">
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="background">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="background"/>
+              <item c_addra_width="19" c_addrb_width="19" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="307200" c_read_depth_b="307200" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="307200" c_write_depth_b="307200" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="background"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="bird_down">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="bird_down"/>
+              <item c_addra_width="12" c_addrb_width="12" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="2304" c_read_depth_b="2304" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="2304" c_write_depth_b="2304" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="bird_down"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="bird_hor">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="bird_hor"/>
+              <item c_addra_width="12" c_addrb_width="12" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="2304" c_read_depth_b="2304" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="2304" c_write_depth_b="2304" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="bird_hor"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="bird_up">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="bird_up"/>
+              <item c_addra_width="12" c_addrb_width="12" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="2304" c_read_depth_b="2304" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="2304" c_write_depth_b="2304" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="bird_up"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="button_play">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="button_play"/>
+              <item c_addra_width="13" c_addrb_width="13" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="8120" c_read_depth_b="8120" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="8120" c_write_depth_b="8120" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="button_play"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="name">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="name"/>
+              <item c_addra_width="13" c_addrb_width="13" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="5626" c_read_depth_b="5626" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="5626" c_write_depth_b="5626" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="name"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="pipe_down">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="pipe_down"/>
+              <item c_addra_width="15" c_addrb_width="15" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="16640" c_read_depth_b="16640" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="16640" c_write_depth_b="16640" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="pipe_down"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="pipe_up">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="pipe_up"/>
+              <item c_addra_width="15" c_addrb_width="15" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="16640" c_read_depth_b="16640" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="16640" c_write_depth_b="16640" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="pipe_up"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="text_game_over">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="text_game_over"/>
+              <item c_addra_width="14" c_addrb_width="14" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="11016" c_read_depth_b="11016" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="11016" c_write_depth_b="11016" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="text_game_over"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="text_ready">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="text_ready"/>
+              <item c_addra_width="14" c_addrb_width="14" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="12152" c_read_depth_b="12152" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="12152" c_write_depth_b="12152" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="text_ready"/>
+            </scope>
+            <scope stringID="NGDBUILD_CORE_INSTANCE" value="title">
+              <item stringID="NGDBUILD_CORE_INFO" type="blk_mem_gen_v7_3" value="title"/>
+              <item c_addra_width="14" c_addrb_width="14" c_algorithm="1" c_axi_id_width="4" c_axi_slave_type="0" c_axi_type="1" c_byte_size="9" c_common_clk="0" c_default_data="0" c_disable_warn_bhv_coll="0" c_disable_warn_bhv_range="0" c_elaboration_dir="masked_value" c_enable_32bit_address="0" c_family="kintex7" c_has_axi_id="0" c_has_ena="0" c_has_enb="0" c_has_injecterr="0" c_has_mem_output_regs_a="0" c_has_mem_output_regs_b="0" c_has_mux_output_regs_a="0" c_has_mux_output_regs_b="0" c_has_regcea="0" c_has_regceb="0" c_has_rsta="0" c_has_rstb="0" c_has_softecc_input_regs_a="0" c_has_softecc_output_regs_b="0" c_init_file="BlankString" c_init_file_name="fname.mif" c_inita_val="0" c_initb_val="0" c_interface_type="0" c_load_init_file="1" c_mem_type="0" c_mux_pipeline_stages="0" c_prim_type="1" c_read_depth_a="8544" c_read_depth_b="8544" c_read_width_a="12" c_read_width_b="12" c_rst_priority_a="CE" c_rst_priority_b="CE" c_rst_type="SYNC" c_rstram_a="0" c_rstram_b="0" c_sim_collision_check="ALL" c_use_bram_block="0" c_use_byte_wea="0" c_use_byte_web="0" c_use_default_data="0" c_use_ecc="0" c_use_softecc="0" c_wea_width="1" c_web_width="1" c_write_depth_a="8544" c_write_depth_b="8544" c_write_mode_a="WRITE_FIRST" c_write_mode_b="WRITE_FIRST" c_write_width_a="12" c_write_width_b="12" c_xdevicefamily="kintex7" stringID="NGDBUILD_CORE_PARAMETERS" value="title"/>
+            </scope>
+          </section>
+        </section>
+      </section>
+    </task>
+  </application>
+
+</document>

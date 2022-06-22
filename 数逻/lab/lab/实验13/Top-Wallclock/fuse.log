@@ -1,0 +1,19 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/fundamentallogic/Top-Wallclock/martest_isim_beh.exe -prj D:/fundamentallogic/Top-Wallclock/martest_beh.prj work.martest work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/fundamentallogic/Top-Wallclock/marquee.v" into library work
+Analyzing Verilog file "D:/fundamentallogic/Top-Wallclock/martest.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module marquee
+Compiling module martest
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 3 Verilog Units
+Built simulation executable D:/fundamentallogic/Top-Wallclock/martest_isim_beh.exe
+Fuse Memory Usage: 28524 KB
+Fuse CPU Usage: 343 ms

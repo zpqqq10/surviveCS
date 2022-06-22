@@ -1,0 +1,7 @@
+sch2hdl -intstyle ise -family kintex7 -verilog DM74LS194_drc.vf -w D:/fundamentallogic/Exp12-Shift/DM74LS194.sch 
+sch2sym -intstyle ise -family kintex7 -refsym DM74LS194 D:/fundamentallogic/Exp12-Shift/DM74LS194.sch D:/fundamentallogic/Exp12-Shift/DM74LS194.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog DM74LS194.vf -w D:/fundamentallogic/Exp12-Shift/DM74LS194.sch 
+sch2hdl -intstyle ise -family kintex7 -verilog DM74LS194_drc.vf -w D:/fundamentallogic/Exp12-Shift/DM74LS194.sch 
+sch2sym -intstyle ise -family kintex7 -refsym DM74LS194 D:/fundamentallogic/Exp12-Shift/DM74LS194.sch D:/fundamentallogic/Exp12-Shift/DM74LS194.sym 
+sch2sym -intstyle ise -family kintex7 -w -refsym DM74LS194 D:/fundamentallogic/Exp12-Shift/DM74LS194.sch D:/fundamentallogic/Exp12-Shift/DM74LS194.sym 
+sch2hdl -intstyle ise -family kintex7 -verilog DM74LS194.vf -w D:/fundamentallogic/Exp12-Shift/DM74LS194.sch 

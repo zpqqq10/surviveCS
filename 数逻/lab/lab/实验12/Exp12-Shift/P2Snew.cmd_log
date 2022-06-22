@@ -1,0 +1,4 @@
+vhdtdtfi -lib work D:/fundamentallogic/Exp12-Shift/P2Snew.v -lang verilog -prj Exp12-Shift -o P2Snew.spl -module P2Snew -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w P2Snew.spl D:/fundamentallogic/Exp12-Shift/P2Snew.sym 
+vhdtdtfi -lib work D:/fundamentallogic/Exp12-Shift/P2Snew.v -lang verilog -prj Exp12-Shift -o P2Snew.spl -module P2Snew -template D:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family kintex7 -w P2Snew.spl D:/fundamentallogic/Exp12-Shift/P2Snew.sym 

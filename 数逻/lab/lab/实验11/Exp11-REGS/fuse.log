@@ -1,0 +1,41 @@
+Running: D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/fundamentallogic/Exp11-REGS/reg832_test_isim_beh.exe -prj D:/fundamentallogic/Exp11-REGS/reg832_test_beh.prj work.reg832_test work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/MB_DFF.vf" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/Regs_8bit.v" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/MUX4T1_4.vf" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/Reg32.v" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/MUX8T1_32.vf" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/HCT138_sch.vf" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/Regs_8_32.v" into library work
+Analyzing Verilog file "D:/fundamentallogic/Exp11-REGS/reg832_test.v" into library work
+Analyzing Verilog file "D:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module BUFG
+Compiling module NAND3
+Compiling module MB_DFF
+Compiling module Regs_8bit
+Compiling module Reg32
+Compiling module INV
+Compiling module AND2
+Compiling module Decoder_38_sch_MUSER_HCT138_sch
+Compiling module NAND2
+Compiling module AND3
+Compiling module HCT138_sch
+Compiling module OR4
+Compiling module MUX4T1_4
+Compiling module OR2
+Compiling module MUX8T1_8_MUSER_MUX8T1_32
+Compiling module MUX8T1_32
+Compiling module Regs_8_32
+Compiling module reg832_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 4 sub-compilation(s) to finish...
+Compiled 19 Verilog Units
+Built simulation executable D:/fundamentallogic/Exp11-REGS/reg832_test_isim_beh.exe
+Fuse Memory Usage: 28328 KB
+Fuse CPU Usage: 1578 ms

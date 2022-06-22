@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/fundamentallogic/FSM/counter_32_test_isim_beh.exe" -prj "D:/fundamentallogic/FSM/counter_32_test_beh.prj" "work.counter_32_test" "work.glbl" 

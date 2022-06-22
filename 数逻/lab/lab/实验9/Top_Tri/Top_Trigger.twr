@@ -1,0 +1,613 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 1
+-n 3 -fastpaths -xml Top_Trigger.twx Top_Trigger.ncd -o Top_Trigger.twr
+Top_Trigger.pcf -ucf TOP_Tri_con.ucf
+
+Design file:              Top_Trigger.ncd
+Physical constraint file: Top_Trigger.pcf
+Device,package,speed:     xc7k160t,ffg676,C,-1 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+7 logic loops found and disabled.
+
+  ----------------------------------------------------------------------
+ ! Warning: The following connections close logic loops, and some paths !
+ !          through these connections may not be analyzed. To better    !
+ !          understand the logic associated with these loops, run a     !
+ !          Analyze Against User-Defined End-Point Analysis inside      !
+ !          Timing Analyzer (timingan) with the listed signal as a      !
+ !          source NET (*signal_name). The Timing Report will display   !
+ !          all the paths associated with this signal and the logic     !
+ !          loop will be reported.                                      !
+ !                                                                      !
+ ! Signal                            Driver            Load             !
+ ! --------------------------------  ----------------  ---------------- !
+ ! PD<0>                             SLICE_X35Y39.A    SLICE_X34Y39.A3  !
+ ! M1/Yn                             SLICE_X43Y40.A    SLICE_X42Y40.A3  !
+ ! PD<4>                             SLICE_X37Y38.D    SLICE_X37Y38.A1  !
+ ! M2/Y                              SLICE_X46Y40.A    SLICE_X47Y40.D2  !
+ ! M3/XLXN_7                         SLICE_X60Y43.B    SLICE_X60Y43.D4  !
+ ! M3/XLXN_18                        SLICE_X61Y43.D    SLICE_X61Y43.D2  !
+ ! PD<5>                             SLICE_X49Y39.D    SLICE_X49Y39.C5  !
+  ---------------------------------------------------------------------- 
+
+
+================================================================================
+Timing constraint: TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 4856 paths analyzed, 556 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   8.104ns.
+--------------------------------------------------------------------------------
+
+Paths for end point U7/LED_6 (SLICE_X49Y39.C5), 15 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     0.948ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_4 (FF)
+  Destination:          U7/LED_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.861ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.156ns (1.166 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_4 to U7/LED_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y49.AQ      Tcko                  0.269   SW_OK<6>
+                                                       U8/SW_OK_4
+    SLICE_X60Y43.D5      net (fanout=2)        1.223   SW_OK<4>
+    SLICE_X60Y43.D       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_1
+    SLICE_X61Y43.D6      net (fanout=2)        0.246   M3/XLXN_25
+    SLICE_X61Y43.D       Tilo                  0.053   M3/XLXN_18
+                                                       M3/XLXI_4
+    SLICE_X60Y43.B2      net (fanout=3)        0.585   M3/XLXN_18
+    SLICE_X60Y43.B       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_3
+    SLICE_X49Y39.C3      net (fanout=2)        0.757   M3/XLXN_7
+    SLICE_X49Y39.C       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_5
+    SLICE_X49Y39.D4      net (fanout=1)        0.306   PD<6>
+    SLICE_X49Y39.D       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_6
+    SLICE_X49Y39.C5      net (fanout=1)        0.194   PD<5>
+    SLICE_X49Y39.CLK     Tas                   0.016   LED_5_OBUF
+                                                       M3/XLXI_5
+                                                       U7/LED_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.861ns (0.550ns logic, 3.311ns route)
+                                                       (14.2% logic, 85.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.104ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_6 (FF)
+  Destination:          U7/LED_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.705ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.156ns (1.166 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_6 to U7/LED_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y49.CQ      Tcko                  0.269   SW_OK<6>
+                                                       U8/SW_OK_6
+    SLICE_X60Y43.D6      net (fanout=4)        1.067   SW_OK<6>
+    SLICE_X60Y43.D       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_1
+    SLICE_X61Y43.D6      net (fanout=2)        0.246   M3/XLXN_25
+    SLICE_X61Y43.D       Tilo                  0.053   M3/XLXN_18
+                                                       M3/XLXI_4
+    SLICE_X60Y43.B2      net (fanout=3)        0.585   M3/XLXN_18
+    SLICE_X60Y43.B       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_3
+    SLICE_X49Y39.C3      net (fanout=2)        0.757   M3/XLXN_7
+    SLICE_X49Y39.C       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_5
+    SLICE_X49Y39.D4      net (fanout=1)        0.306   PD<6>
+    SLICE_X49Y39.D       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_6
+    SLICE_X49Y39.C5      net (fanout=1)        0.194   PD<5>
+    SLICE_X49Y39.CLK     Tas                   0.016   LED_5_OBUF
+                                                       M3/XLXI_5
+                                                       U7/LED_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.705ns (0.550ns logic, 3.155ns route)
+                                                       (14.8% logic, 85.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.287ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_5 (FF)
+  Destination:          U7/LED_6 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.522ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.156ns (1.166 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_5 to U7/LED_6
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y49.BQ      Tcko                  0.269   SW_OK<6>
+                                                       U8/SW_OK_5
+    SLICE_X61Y43.D4      net (fanout=3)        1.183   SW_OK<5>
+    SLICE_X61Y43.D       Tilo                  0.053   M3/XLXN_18
+                                                       M3/XLXI_4
+    SLICE_X60Y43.B2      net (fanout=3)        0.585   M3/XLXN_18
+    SLICE_X60Y43.B       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_3
+    SLICE_X49Y39.C3      net (fanout=2)        0.757   M3/XLXN_7
+    SLICE_X49Y39.C       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_5
+    SLICE_X49Y39.D4      net (fanout=1)        0.306   PD<6>
+    SLICE_X49Y39.D       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_6
+    SLICE_X49Y39.C5      net (fanout=1)        0.194   PD<5>
+    SLICE_X49Y39.CLK     Tas                   0.016   LED_5_OBUF
+                                                       M3/XLXI_5
+                                                       U7/LED_6
+    -------------------------------------------------  ---------------------------
+    Total                                      3.522ns (0.497ns logic, 3.025ns route)
+                                                       (14.1% logic, 85.9% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U7/LED_5 (SLICE_X49Y39.D4), 9 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.195ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_4 (FF)
+  Destination:          U7/LED_5 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.614ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.156ns (1.166 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_4 to U7/LED_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y49.AQ      Tcko                  0.269   SW_OK<6>
+                                                       U8/SW_OK_4
+    SLICE_X60Y43.D5      net (fanout=2)        1.223   SW_OK<4>
+    SLICE_X60Y43.D       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_1
+    SLICE_X61Y43.D6      net (fanout=2)        0.246   M3/XLXN_25
+    SLICE_X61Y43.D       Tilo                  0.053   M3/XLXN_18
+                                                       M3/XLXI_4
+    SLICE_X60Y43.B2      net (fanout=3)        0.585   M3/XLXN_18
+    SLICE_X60Y43.B       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_3
+    SLICE_X49Y39.C3      net (fanout=2)        0.757   M3/XLXN_7
+    SLICE_X49Y39.C       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_5
+    SLICE_X49Y39.D4      net (fanout=1)        0.306   PD<6>
+    SLICE_X49Y39.CLK     Tas                   0.016   LED_5_OBUF
+                                                       M3/XLXI_6
+                                                       U7/LED_5
+    -------------------------------------------------  ---------------------------
+    Total                                      3.614ns (0.497ns logic, 3.117ns route)
+                                                       (13.8% logic, 86.2% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.351ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_6 (FF)
+  Destination:          U7/LED_5 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.458ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.156ns (1.166 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_6 to U7/LED_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y49.CQ      Tcko                  0.269   SW_OK<6>
+                                                       U8/SW_OK_6
+    SLICE_X60Y43.D6      net (fanout=4)        1.067   SW_OK<6>
+    SLICE_X60Y43.D       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_1
+    SLICE_X61Y43.D6      net (fanout=2)        0.246   M3/XLXN_25
+    SLICE_X61Y43.D       Tilo                  0.053   M3/XLXN_18
+                                                       M3/XLXI_4
+    SLICE_X60Y43.B2      net (fanout=3)        0.585   M3/XLXN_18
+    SLICE_X60Y43.B       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_3
+    SLICE_X49Y39.C3      net (fanout=2)        0.757   M3/XLXN_7
+    SLICE_X49Y39.C       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_5
+    SLICE_X49Y39.D4      net (fanout=1)        0.306   PD<6>
+    SLICE_X49Y39.CLK     Tas                   0.016   LED_5_OBUF
+                                                       M3/XLXI_6
+                                                       U7/LED_5
+    -------------------------------------------------  ---------------------------
+    Total                                      3.458ns (0.497ns logic, 2.961ns route)
+                                                       (14.4% logic, 85.6% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.534ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_5 (FF)
+  Destination:          U7/LED_5 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.275ns (Levels of Logic = 4)
+  Clock Path Skew:      -0.156ns (1.166 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_5 to U7/LED_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X80Y49.BQ      Tcko                  0.269   SW_OK<6>
+                                                       U8/SW_OK_5
+    SLICE_X61Y43.D4      net (fanout=3)        1.183   SW_OK<5>
+    SLICE_X61Y43.D       Tilo                  0.053   M3/XLXN_18
+                                                       M3/XLXI_4
+    SLICE_X60Y43.B2      net (fanout=3)        0.585   M3/XLXN_18
+    SLICE_X60Y43.B       Tilo                  0.053   M3/XLXN_25
+                                                       M3/XLXI_3
+    SLICE_X49Y39.C3      net (fanout=2)        0.757   M3/XLXN_7
+    SLICE_X49Y39.C       Tilo                  0.053   LED_5_OBUF
+                                                       M3/XLXI_5
+    SLICE_X49Y39.D4      net (fanout=1)        0.306   PD<6>
+    SLICE_X49Y39.CLK     Tas                   0.016   LED_5_OBUF
+                                                       M3/XLXI_6
+                                                       U7/LED_5
+    -------------------------------------------------  ---------------------------
+    Total                                      3.275ns (0.444ns logic, 2.831ns route)
+                                                       (13.6% logic, 86.4% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U7/LED_1 (SLICE_X34Y39.A3), 8 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     1.247ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_0 (FF)
+  Destination:          U7/LED_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.571ns (Levels of Logic = 5)
+  Clock Path Skew:      -0.147ns (1.175 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_0 to U7/LED_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X81Y49.AQ      Tcko                  0.269   SW_OK<3>
+                                                       U8/SW_OK_0
+    SLICE_X42Y40.A5      net (fanout=2)        1.752   SW_OK<0>
+    SLICE_X42Y40.A       Tilo                  0.053   LED_2_OBUF
+                                                       M1/RS3/XLXI_1/XLXI_1
+    SLICE_X43Y40.A6      net (fanout=2)        0.244   PD<2>
+    SLICE_X43Y40.A       Tilo                  0.053   M1/Yn
+                                                       M1/RS3/XLXI_1/XLXI_2
+    SLICE_X34Y39.A6      net (fanout=2)        0.501   M1/Yn
+    SLICE_X34Y39.A       Tilo                  0.053   LED_1_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_2
+    SLICE_X35Y39.A6      net (fanout=1)        0.233   PD<1>
+    SLICE_X35Y39.A       Tilo                  0.053   LED_0_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_1
+    SLICE_X34Y39.A3      net (fanout=1)        0.344   PD<0>
+    SLICE_X34Y39.CLK     Tas                   0.016   LED_1_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_2
+                                                       U7/LED_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.571ns (0.497ns logic, 3.074ns route)
+                                                       (13.9% logic, 86.1% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.498ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U9/clkdiv_26 (FF)
+  Destination:          U7/LED_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.447ns (Levels of Logic = 6)
+  Clock Path Skew:      -0.020ns (0.664 - 0.684)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U9/clkdiv_26 to U7/LED_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X48Y42.CQ      Tcko                  0.269   U9/clkdiv<26>
+                                                       U9/clkdiv_26
+    SLICE_X61Y42.D6      net (fanout=2)        0.505   U9/clkdiv<26>
+    SLICE_X61Y42.D       Tilo                  0.053   CK
+                                                       U9/Mmux_CK11
+    SLICE_X42Y40.A6      net (fanout=10)       1.070   CK
+    SLICE_X42Y40.A       Tilo                  0.053   LED_2_OBUF
+                                                       M1/RS3/XLXI_1/XLXI_1
+    SLICE_X43Y40.A6      net (fanout=2)        0.244   PD<2>
+    SLICE_X43Y40.A       Tilo                  0.053   M1/Yn
+                                                       M1/RS3/XLXI_1/XLXI_2
+    SLICE_X34Y39.A6      net (fanout=2)        0.501   M1/Yn
+    SLICE_X34Y39.A       Tilo                  0.053   LED_1_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_2
+    SLICE_X35Y39.A6      net (fanout=1)        0.233   PD<1>
+    SLICE_X35Y39.A       Tilo                  0.053   LED_0_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_1
+    SLICE_X34Y39.A3      net (fanout=1)        0.344   PD<0>
+    SLICE_X34Y39.CLK     Tas                   0.016   LED_1_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_2
+                                                       U7/LED_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.447ns (0.550ns logic, 2.897ns route)
+                                                       (16.0% logic, 84.0% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     1.769ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               U8/SW_OK_0 (FF)
+  Destination:          U7/LED_1 (FF)
+  Requirement:          5.000ns
+  Data Path Delay:      3.049ns (Levels of Logic = 3)
+  Clock Path Skew:      -0.147ns (1.175 - 1.322)
+  Source Clock:         clk_100mhz_BUFGP rising at 0.000ns
+  Destination Clock:    clk_100mhz_BUFGP falling at 5.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: U8/SW_OK_0 to U7/LED_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X81Y49.AQ      Tcko                  0.269   SW_OK<3>
+                                                       U8/SW_OK_0
+    SLICE_X42Y40.A5      net (fanout=2)        1.752   SW_OK<0>
+    SLICE_X42Y40.A       Tilo                  0.053   LED_2_OBUF
+                                                       M1/RS3/XLXI_1/XLXI_1
+    SLICE_X35Y39.A5      net (fanout=2)        0.562   PD<2>
+    SLICE_X35Y39.A       Tilo                  0.053   LED_0_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_1
+    SLICE_X34Y39.A3      net (fanout=1)        0.344   PD<0>
+    SLICE_X34Y39.CLK     Tas                   0.016   LED_1_OBUF
+                                                       M1/RS4/XLXI_1/XLXI_2
+                                                       U7/LED_1
+    -------------------------------------------------  ---------------------------
+    Total                                      3.049ns (0.391ns logic, 2.658ns route)
+                                                       (12.8% logic, 87.2% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point U7/LED_P2S/state_FSM_FFd1 (SLICE_X12Y49.A4), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.036ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U7/LED_P2S/shift_count_3 (FF)
+  Destination:          U7/LED_P2S/state_FSM_FFd1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.300ns (Levels of Logic = 1)
+  Clock Path Skew:      0.264ns (0.786 - 0.522)
+  Source Clock:         clk_100mhz_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100mhz_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: U7/LED_P2S/shift_count_3 to U7/LED_P2S/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y50.BQ      Tcko                  0.118   U7/LED_P2S/shift_count<3>
+                                                       U7/LED_P2S/shift_count_3
+    SLICE_X12Y49.A4      net (fanout=4)        0.241   U7/LED_P2S/shift_count<3>
+    SLICE_X12Y49.CLK     Tah         (-Th)     0.059   U7/LED_P2S/state_FSM_FFd2
+                                                       U7/LED_P2S/state_FSM_FFd1-In1
+                                                       U7/LED_P2S/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.300ns (0.059ns logic, 0.241ns route)
+                                                       (19.7% logic, 80.3% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U7/LED_P2S/buffer_14 (SLICE_X14Y36.B6), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.138ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U7/LED_P2S/buffer_15 (FF)
+  Destination:          U7/LED_P2S/buffer_14 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.138ns (Levels of Logic = 1)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_100mhz_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100mhz_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: U7/LED_P2S/buffer_15 to U7/LED_P2S/buffer_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X14Y36.AMUX    Tshcko                0.143   U7/LED_P2S/buffer<14>
+                                                       U7/LED_P2S/buffer_15
+    SLICE_X14Y36.B6      net (fanout=1)        0.054   U7/LED_P2S/buffer<15>
+    SLICE_X14Y36.CLK     Tah         (-Th)     0.059   U7/LED_P2S/buffer<14>
+                                                       U7/LED_P2S/mux2111
+                                                       U7/LED_P2S/buffer_14
+    -------------------------------------------------  ---------------------------
+    Total                                      0.138ns (0.084ns logic, 0.054ns route)
+                                                       (60.9% logic, 39.1% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point U7/LED_P2S/state_FSM_FFd1 (SLICE_X12Y49.A1), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.140ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               U7/LED_P2S/shift_count_0 (FF)
+  Destination:          U7/LED_P2S/state_FSM_FFd1 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.404ns (Levels of Logic = 1)
+  Clock Path Skew:      0.264ns (0.786 - 0.522)
+  Source Clock:         clk_100mhz_BUFGP rising at 10.000ns
+  Destination Clock:    clk_100mhz_BUFGP rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: U7/LED_P2S/shift_count_0 to U7/LED_P2S/state_FSM_FFd1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X12Y50.AMUX    Tshcko                0.143   U7/LED_P2S/shift_count<3>
+                                                       U7/LED_P2S/shift_count_0
+    SLICE_X12Y49.A1      net (fanout=5)        0.320   U7/LED_P2S/shift_count<0>
+    SLICE_X12Y49.CLK     Tah         (-Th)     0.059   U7/LED_P2S/state_FSM_FFd2
+                                                       U7/LED_P2S/state_FSM_FFd1-In1
+                                                       U7/LED_P2S/state_FSM_FFd1
+    -------------------------------------------------  ---------------------------
+    Total                                      0.404ns (0.084ns logic, 0.320ns route)
+                                                       (20.8% logic, 79.2% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_CLK_100M = PERIOD TIMEGRP "TM_CLK" 10 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 8.400ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 1.600ns (625.000MHz) (Tbcper_I(Fmax))
+  Physical resource: clk_100mhz_BUFGP/BUFG/I0
+  Logical resource: clk_100mhz_BUFGP/BUFG/I0
+  Location pin: BUFGCTRL_X0Y0.I0
+  Clock network: clk_100mhz_BUFGP/IBUFG
+--------------------------------------------------------------------------------
+Slack: 9.200ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.400ns (Trpw)
+  Physical resource: U9/clkdiv<3>/SR
+  Logical resource: U9/clkdiv_0/SR
+  Location pin: SLICE_X48Y36.SR
+  Clock network: rst
+--------------------------------------------------------------------------------
+Slack: 9.200ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 10.000ns
+  High pulse: 5.000ns
+  High pulse limit: 0.400ns (Trpw)
+  Physical resource: U9/clkdiv<3>/SR
+  Logical resource: U9/clkdiv_1/SR
+  Location pin: SLICE_X48Y36.SR
+  Clock network: rst
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock clk_100mhz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_100mhz     |    4.542|    1.773|    4.052|         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 4856 paths, 0 nets, and 731 connections
+
+Design statistics:
+   Minimum period:   8.104ns{1}   (Maximum frequency: 123.396MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Tue Nov 24 14:40:20 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5104 MB
+
+
+
