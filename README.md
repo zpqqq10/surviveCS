@@ -1,5 +1,7 @@
 # 从ZJU CS活下来！
 * 在浙大cs存活下来的一点痕迹
+* 已尽量删除[icicles](https://github.com/QSCTech/zju-icicles)的内容
+* 善用 + 慎用
 
 # 一些有用的东西
 * 下载电子教材网站：http://libgen.rs/
