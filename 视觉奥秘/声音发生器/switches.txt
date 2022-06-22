@@ -1,0 +1,20 @@
+Switches
+
+Format: "SineGen"{ <Setting>[<Value>]}
+
+Settings:
+
+S - Sine
+Q - Square
+T - Triangle
+H - Sawtooth
+W - White noise
+P - Pink noise
+L<dB> - Level
+F<Hz> - Frequency
+D<Deg> - Phase difference
+
+Exapmles:
+
+SineGen T L-40 F123.45
+SineGen P L-50.5

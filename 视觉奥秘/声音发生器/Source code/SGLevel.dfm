@@ -1,0 +1,209 @@
+object fmLevel: TfmLevel
+  Left = 425
+  Top = 118
+  Width = 127
+  Height = 200
+  BorderIcons = []
+  BorderStyle = bsSizeToolWin
+  BorderWidth = 3
+  Caption = 'Level (-dB)'
+  Color = clBtnFace
+  ParentFont = True
+  FormStyle = fsMDIChild
+  OldCreateOrder = False
+  Position = poDefault
+  ScreenSnap = True
+  Visible = True
+  OnCreate = FormCreate
+  OnResize = FormResize
+  PixelsPerInch = 100
+  TextHeight = 13
+  object Label1: TLabel
+    Tag = 24
+    Left = 47
+    Top = 23
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '12'
+    Transparent = True
+  end
+  object Label2: TLabel
+    Tag = 48
+    Left = 47
+    Top = 36
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '24'
+    Transparent = True
+  end
+  object Label3: TLabel
+    Tag = 72
+    Left = 47
+    Top = 49
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '36'
+    Transparent = True
+  end
+  object Label4: TLabel
+    Tag = 96
+    Left = 47
+    Top = 62
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '48'
+    Transparent = True
+  end
+  object Label5: TLabel
+    Tag = 120
+    Left = 47
+    Top = 75
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '60'
+    Transparent = True
+  end
+  object Label6: TLabel
+    Tag = 144
+    Left = 47
+    Top = 88
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '72'
+    Transparent = True
+  end
+  object Label7: TLabel
+    Tag = 168
+    Left = 47
+    Top = 101
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '84'
+    Transparent = True
+  end
+  object Label8: TLabel
+    Tag = 192
+    Left = 47
+    Top = 114
+    Width = 12
+    Height = 13
+    Align = alCustom
+    Caption = '96'
+    Transparent = True
+  end
+  object spLeft: TBevel
+    Left = 0
+    Top = 23
+    Width = 3
+    Height = 120
+    Align = alLeft
+    Shape = bsSpacer
+  end
+  object labelLowest: TLabel
+    Tag = 216
+    Left = 47
+    Top = 127
+    Width = 18
+    Height = 13
+    Align = alCustom
+    Caption = '108'
+    Transparent = True
+  end
+  object spRight: TBevel
+    Left = 110
+    Top = 23
+    Width = 3
+    Height = 120
+    Align = alRight
+    Shape = bsSpacer
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 0
+    Width = 113
+    Height = 23
+    Align = alTop
+    BevelOuter = bvNone
+    TabOrder = 0
+    object editLevel_1: TEdit
+      Tag = 2
+      Left = 52
+      Top = 0
+      Width = 49
+      Height = 21
+      MaxLength = 15
+      TabOrder = 1
+      OnChange = editLevelChange
+      OnExit = editLevelExit
+    end
+    object editLevel_0: TEdit
+      Tag = 1
+      Left = 0
+      Top = 0
+      Width = 49
+      Height = 21
+      MaxLength = 15
+      TabOrder = 0
+      OnChange = editLevelChange
+      OnExit = editLevelExit
+    end
+  end
+  object slLevel_1: TTrackBar
+    Tag = 2
+    Left = 77
+    Top = 23
+    Width = 33
+    Height = 120
+    Align = alRight
+    Max = 228
+    Orientation = trVertical
+    PageSize = 12
+    Frequency = 12
+    TabOrder = 2
+    TickMarks = tmTopLeft
+    OnChange = slLevelChange
+  end
+  object slLevel_0: TTrackBar
+    Tag = 1
+    Left = 3
+    Top = 23
+    Width = 33
+    Height = 120
+    Align = alLeft
+    Max = 228
+    Orientation = trVertical
+    PageSize = 12
+    Frequency = 12
+    TabOrder = 1
+    OnChange = slLevelChange
+  end
+  object Panel2: TPanel
+    Left = 0
+    Top = 143
+    Width = 113
+    Height = 23
+    Align = alBottom
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    BorderWidth = 2
+    TabOrder = 3
+    object cbLevelLinked: TCheckBox
+      Left = 26
+      Top = 3
+      Width = 64
+      Height = 17
+      Caption = '&Linked'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+      OnClick = cbLevelLinkedClick
+    end
+  end
+end
