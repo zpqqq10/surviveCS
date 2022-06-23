@@ -1,0 +1,72 @@
+<view class="nav">
+  <view id="0" class="{{currentTab == 0?'select':'normal'}}" bindtap="switchNav">介绍</view>
+  <view class="line">|</view>
+  <view id="1" class="{{currentTab == 1?'select':'normal'}}" bindtap="switchNav">图片</view>
+  <view class="line">|</view>
+  <view id="2" class="{{currentTab == 2?'select':'normal'}}" bindtap="switchNav">短评</view>
+  <view class="line">|</view>
+  <view id="3" class="{{currentTab == 3?'select':'normal'}}" bindtap="switchNav">影评</view>
+</view>
+<swiper current="{{currentTab}}" style="height:1200px;background-color:#F9F9F9;">
+  <swiper-item>
+    <view class="movieInfo">
+      <view>
+        <image src="{{movie.images.medium}}" style="width:100px;height:150px"></image>
+      </view>
+      <view class="detail">
+        <view>
+          <text class="score">评分：{{movie.rating.average}}</text>（{{movie.ratings_count}}人评分）</view>
+        <view>
+          <text>{{movie.year}}年上映</text>
+        </view>
+        <view>
+          <text class="desc">{{movie.genres[0]}}</text>
+        </view>
+        <view>
+          <text class="desc">{{movie.countries[0]}}</text>
+        </view>
+        <view class="buy">选座购票</view>
+      </view>
+    </view>
+    <view class="opr">
+      <view>我想看</view>
+      <view>看过了</view>
+    </view>
+    <view class="intro">
+      <text>{{movie.summary}}</text>
+    </view>
+    <block wx:for="{{directors}}">
+      <view class="personInfo">
+        <view>
+          <image src="{{item.avatars.small}}" style="width:70px;height:100px"></image>
+        </view>
+        <view class="name">
+          <view>
+            <text>{{item.name}} [导演]</text>
+          </view>
+        </view>
+      </view>
+    </block>
+    <block wx:for="{{casts}}">
+      <view class="personInfo">
+        <view>
+          <image src="{{item.avatars.small}}" style="width:70px;height:100px"></image>
+        </view>
+        <view class="name">
+          <view>
+            <text>{{item.name}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </swiper-item>
+  <swiper-item>
+    <view>图片内容</view>
+  </swiper-item>
+  <swiper-item>
+    <view>短评内容</view>
+  </swiper-item>
+  <swiper-item>
+    <view>影评内容</view>
+  </swiper-item>
+</swiper>

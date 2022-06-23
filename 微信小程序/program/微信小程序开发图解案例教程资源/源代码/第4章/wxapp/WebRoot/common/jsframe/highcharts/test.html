@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="js/jquery-1.8.2.js"></script>
+  <script type="text/javascript" src="js/highcharts.js"></script>
+  <script type="text/javascript" src="js/themes/grid.js"></script>
+  <!--
+  <script type="text/javascript" src="js/modules/exporting.js"></script>
+  -->
+  <script>
+  $(document).ready(function(){
+	  alert(1)});
+    $(function () {
+    $('#container').highcharts({
+        chart: {
+			backgroundColor: {
+                linearGradient: [0, 0, 500, 500],
+                stops: [
+                    [0, 'rgb(255, 255, 255)'],
+                    [1, 'rgb(200, 200, 255)']
+                ]
+            },
+            type: 'line'
+        },
+        title: {
+            text: '海淀2015-09-11 15：00到2015-09-12 15：00 逐时风速（米/秒）'
+        },
+        subtitle: {
+            text: ''
+        },
+        xAxis: {
+            categories: ['15', '16', '17', '18', '19', '20', '21', '22', '23', '00', '01', '02','03', '04','05'],
+			tickmarkPlacement: 'on',
+			 title: {
+                text: '时间（小时）'
+            }
+        },
+        yAxis: {
+			categories: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
+			
+            title: {
+                text: '风速（米/秒）'
+            }
+        },
+        tooltip: {
+            enabled: true,
+            formatter: function() {
+                return '<b>'+ this.series.name +'</b><br>'+this.x +'点: '+ this.y +'°米/秒';
+            }
+        },
+        plotOptions: {
+            line: {
+                dataLabels: {
+                    enabled: true
+                },
+                enableMouseTracking: true
+            }
+        },
+        series: [{
+            name: '2小时平均风速',
+            data: [7.0, 6.9, 9.5, 14.5, 18.4, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6,26.5, 23.3]
+        }, {
+            name: '极大风速',
+            data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8,26.5, 23.3]
+        },{
+            name: '10分钟平均风速',
+            data: [2.9, 5.2, 7.7, 3.5, 4.9, 8.2, 1.0, 2.6, 11.2, 8.3, 9.6, 6.8,2.5, 3.3]
+        }]
+    });
+});
+
+  </script>
+</head>
+<body>
+  <div id="container" style="min-width:700px;height:400px"></div>
+</body>
+</html>

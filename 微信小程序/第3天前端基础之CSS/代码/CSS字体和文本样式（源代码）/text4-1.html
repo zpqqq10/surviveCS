@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>文本样式</title>
+	<style type="text/css">
+		p{background-color: #ececec; height: 80px;font-size: 20px;}
+		span{color:red;font-size: 14px;}    
+        .sub{vertical-align: sub;}
+        .super{vertical-align: super;}
+		img{width: 130px;height:40px;}
+
+
+		.baseLine{vertical-align: baseline;}
+		.top{vertical-align: top;}
+		.textTop{vertical-align: text-top;}
+		.middle{vertical-align: middle;}
+		.textBottom{vertical-align: text-bottom;}
+		.bottom{vertical-align: bottom;}
+        
+        td{height:80px; width:100px;} 
+	</style>
+</head>
+<body>
+	<b>----sub和super值----</b>
+	<p>CSS层叠样式表<span class="sub">sub</span></p>
+    <p class="sub">CSS层叠样式表<span >sub</span></p>
+	<p>CSS层叠样式表<span class="super">super</span></p>
+
+
+	<b>----baseline、top、text-top、middle、bottom、text-bottom值----</b>
+	<p>
+		CSS层叠样式表			
+		<span>（Cascading Style Sheets）</span>
+		<img src="img/logo.png"/>
+	</p>
+	<p>
+		CSS层叠样式表		
+		<span class="baseLine">基线baseline</span>
+		<img src="img/logo.png" class="baseLine"/>	
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="top">顶端对齐top</span>
+		<img src="img/logo.png"/>				
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="textTop">文本的顶端对齐textTop</span>
+		<img src="img/logo.png"/>		
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="middle">中部对齐middle</span>
+		<img src="img/logo.png" class="middle"/>			
+	</p>	
+	
+	<p>
+		CSS层叠样式表
+		<span class="textBottom">文字底端对齐textBottom</span>
+		<img src="img/logo.png"/>		
+	</p>
+	<p>
+		CSS层叠样式表
+		<span class="bottom">底端对齐bottom</span>
+		<img src="img/logo.png" class="bottom"/>		
+	</p>
+
+	<b>----长度和百分比的值----</b>    
+	<p>
+		CSS层叠样式表
+		<span style="vertical-align:-15px;">长度值</span>
+		<img src="img/logo.png"/>			
+	</p>
+
+	<p style="line-height: 1.5em;">
+		CSS层叠样式表
+		<span style="vertical-align:-100%;">百分比值</span>
+		<img src="img/logo.png"/>			
+	</p>
+
+	<b>----应用于单元格元素----</b>
+	<table border="1px" class="one" cellspacing="0" >
+		<tr>
+			<td class="top"><span>top</span></td>
+			<td class="middle"><span>middle</span></td>
+			<td class="bottom"><span>bottom</span></td>
+		</tr>		
+	</table>
+	
+</body>
+</html>

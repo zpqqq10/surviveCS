@@ -1,0 +1,61 @@
+<view class="amountBg">
+   <view class="bg">
+       <view class="icon">攻略</view>
+       <view class="tip">抢票成功后以电话或短信通知，收到后请及时支付！</view>
+       <view class="right">></view>
+   </view>
+</view>
+<view class="content">
+<view class="hr"></view>
+   <view class="item">
+      <view class="ticket">
+         <view class="station">哈尔滨→北京</view>
+         <view class="desc1">02月03日</view>
+         <view class="desc2">已取消</view>
+      </view>
+      <view class="opr">
+         查看
+      </view>
+   </view>
+   <view class="hr"></view>
+   <view class="item">
+      <view class="ticket">
+         <view class="station">北京→佳木斯</view>
+         <view class="desc1">02月07日</view>
+         <view class="desc2">已取消</view>
+      </view>
+      <view class="opr">
+         查看
+      </view>
+   </view>
+   <view class="hr"></view>
+   <view class="item">
+      <view class="ticket">
+         <view class="station">北京→南京</view>
+         <view class="desc1">02月06日</view>
+         <view class="desc2">已取消</view>
+      </view>
+      <view class="start">
+         开始
+      </view>
+   </view>
+   <view class="hr"></view>
+   <view class="item">
+      <view class="ticket">
+         <view class="station">合肥→北京</view>
+         <view class="desc1">02月07日</view>
+         <view class="desc2">抢票终止</view>
+      </view>
+      <view class="start">
+         开始
+      </view>
+   </view>
+</view>
+<view class="share">
+       <view class="speed">加速</view>
+       <view class="tipShare">
+          <view>分享赢加速包</view>
+          <view class="jsb">分享给好友，可随机赢取最多10个加速包</view>
+       </view>
+       <view class="detail">></view>
+   </view>

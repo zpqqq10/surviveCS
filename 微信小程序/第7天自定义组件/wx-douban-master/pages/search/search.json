@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "电影搜索",
+  "usingComponents": {
+    "movies": "../../component/movies/movies"
+  }
+}

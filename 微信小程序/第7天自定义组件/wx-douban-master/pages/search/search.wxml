@@ -1,0 +1,4 @@
+<view class="container">
+    <!--以下是对一个自定义组件的引用 -->
+    <movies movie-type="search"></movies>
+</view>

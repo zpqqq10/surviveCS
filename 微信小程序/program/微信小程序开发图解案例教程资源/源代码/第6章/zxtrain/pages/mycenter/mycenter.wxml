@@ -1,0 +1,79 @@
+<view class="amountBg">
+  <view class="img">
+    <image src="../../images/icon/grzx/tx.jpg" style="width:49px;height:47px;"></image>
+  </view>
+  <view class="account">
+    <view>{{userInfo.nickName}}</view>
+    <view>账号管理</view>
+  </view>
+  <view class="nav">></view>
+</view>
+<view class="content">
+    <view class="order">
+        <view class="desc">
+           <view><image src="../../images/icon/grzx/hcpdd.jpg" style="width:22px;height:25px;"></image></view>
+           <view>火车票订单</view>
+        </view>
+        <view class="desc">
+           <view><image src="../../images/icon/grzx/qpdd.jpg" style="width:22px;height:25px;"></image></view>
+           <view>抢票订单</view>
+        </view>
+        <view class="desc">
+           <view><image src="../../images/icon/grzx/jpdd.jpg" style="width:22px;height:25px;"></image></view>
+           <view>机票订单</view>
+        </view>
+        <view class="desc">
+           <view><image src="../../images/icon/grzx/qbdd.jpg" style="width:22px;height:25px;"></image></view>
+           <view>全部订单</view>
+        </view>
+    </view>
+    <view class="clear"></view>
+ <view class="item">
+<view class="icon"><image src="../../images/icon/grzx/wdcf.jpg" style="width:22px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>我的财富</view>
+        <view class="remark">0个加速币</view>
+    </view>
+    <view class="right"><text class="opr">领取加速包</text>></view>
+  </view>
+  <view class="line"></view>
+   <view class="item">
+<view class="icon"><image src="../../images/icon/grzx/cxfw.jpg" style="width:22px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>出行服务</view>
+    </view>
+    <view class="right"><text class="opr">正晚点/时刻表</text>></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="../../images/icon/grzx/yqhy.jpg" style="width:22px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>邀请好友</view>
+    </view>
+    <view class="right" bindtap="grabTicket"><text class="opr">一起来抢票</text>></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="../../images/icon/grzx/xxzx.jpg" style="width:22px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>消息中心</view>
+    </view>
+    <view class="right"><text class="opr">在线服务</text>></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="../../images/icon/grzx/cpyj.jpg" style="width:22px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>产品意见</view>
+    </view>
+    <view class="right">></view>
+  </view>
+  <view class="hr"></view>
+     <view class="item">
+<view class="icon"><image src="../../images/icon/grzx/gd.jpg" style="width:22px;height:21px;"></image></view>
+    <view class="itemName">
+        <view>更多</view>
+    </view>
+    <view class="right">></view>
+  </view>
+</view>

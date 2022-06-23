@@ -1,0 +1,49 @@
+
+什么是HTML
+
+<!--段落标签-->
+
+HTML 指的是超文本标记语言 (Hyper Text Markup Language),
+HTML 不是一种编程语言，而是一种标记语言 (markup language),
+标记语言是一套标记标签 (markup tag),
+
+
+
+
+<!--段落标签和换行-->
+
+HTML 指的是超文本标记语言 (Hyper Text Markup Language) 
+HTML 不是一种编程语言，而是一种标记语言 (markup language)
+标记语言是一套标记标签 (markup tag) 
+HTML 使用标记标签来描述网页
+
+
+
+
+<!--预格式化标签-->
+
+HTML标签
+
+HTML 标记标签通常被称为 HTML 标签 
+HTML 标签是由尖括号包围的关键词
+HTML 标签通常是成对出现,比如 &lt;b&gt; 和 &lt;/b&gt;
+标签对中的第一个标签是开始标签，第二个标签是结束标签
+开始和结束标签也被称为开放标签和闭合标签
+
+
+<hr width="80%" color="#666666" noshade align="left"/>
+
+
+<!-- 样式标签-->
+
+
+
+
+<!-- 特殊符号-->
+
+
+关于我们 招聘信息  联系我们 意见反馈
+
+
+
+<p>Copyright  2016 imooc.com All Rights Reserved

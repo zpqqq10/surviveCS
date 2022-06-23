@@ -1,0 +1,8 @@
+<template name="head">
+    <view class="page-head">
+        <form class="head-form" bindsubmit="formSubmit">
+            <input placeholder="输入电影名称" class='head-input' name="searchKey" />
+            <button formType="submit" class='head-button'>搜索</button>
+        </form>
+    </view>
+</template>

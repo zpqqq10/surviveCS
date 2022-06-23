@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/login/login",
+    "pages/mobile/mobile",
+    "pages/company/company"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle":"black"
+  }
+}

@@ -1,0 +1,32 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+<view class="content">
+  <view class="hr"></view>
+  <view class="item">
+     <input type="text" name="loginName" placeholder="请设置4-20位用户名" placeholder-class="holder" bindblur="accountblur"/>
+  </view>
+  <view class="item flex">
+     <input type="text" password name="password"  placeholder="请设置6-20位登录密码" placeholder-class="holder"/>
+     <switch type="switch" name="switch"/>
+  </view>
+  <view class="item">
+     <input type="text" name="company" placeholder="请填写工商局注册名称" placeholder-class="holder" />
+  </view>
+  <view class="item">
+     <input type="text" name="userName" placeholder="联系人姓名" placeholder-class="holder" />
+  </view>
+  <view class="mobileInfo">
+    <view class="mobile">
+      <input type="text" name="mobile" placeholder="请输入手机号" placeholder-class="holder" />
+    </view>
+     <view class="code">发送验证码</view>
+  </view>
+  <view class="item">
+     <input type="text" name="code" placeholder="短信验证码" placeholder-class="holder" />
+  </view>
+  <button class="btn" disabled="{{disabled}}" type="{{btnstate}}" form-type="submit">注册</button>
+  <view class="xieyi">
+     <text class="agree">注册即视为同意</text><text class="opinion">《京东用户注册协议》</text>
+  </view>
+</view>
+
+</form>

@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/movie/movie",
+    "pages/cinema/cinema",
+    "pages/me/me",
+    "pages/movieDetail/movieDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1A1A1A",
+    "navigationBarTitleText": "豆瓣电影",
+    "navigationBarTextStyle": "white"
+  }
+}

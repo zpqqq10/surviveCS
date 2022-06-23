@@ -1,0 +1,24 @@
+/* pages/my/my.wxss */
+/* 登陆面板 */
+#myLogin{
+  background-color: #328EEB;
+  height: 400rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+/* 1-1 头像图片 */
+#myIcon{
+  width: 200rpx;
+  height: 200rpx;
+  border-radius: 50%;
+}
+/* 1-2 微信昵称 */
+#nickName{
+  color: white;
+}
+/* 我的收藏 */
+#myFavorites{
+  padding: 20rpx;
+}

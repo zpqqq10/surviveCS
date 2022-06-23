@@ -1,0 +1,15 @@
+// 不支持ES6语法
+var filter = {
+    joinName: function (arrObj) {
+        var _arrName = [];
+        if (!arrObj)return '';
+        for (var i = 0; i < arrObj.length; i++) {
+            _arrName.push(arrObj[i].name)
+        }
+        return _arrName.join('、')
+    }
+}
+
+module.exports = {
+    joinName: filter.joinName
+}

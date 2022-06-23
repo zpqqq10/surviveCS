@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css优先级</title>
+	<style type="text/css">
+		p{color:red;} /*标签，权值为1*/
+
+		p span{color:green;} /*两个标签，权值为1+1=2*/
+
+		p>span{color:purple;}/*权值与上面的相同，因此采取就近原则*/
+
+		.warning{color:white;} /*类选择符，权值为10*/
+
+		p span.warning{color:purple;} /*权值为1+1+10=12*/
+
+		#footer .note p{color:yellow;} /*权值为100+10+1=111*/
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

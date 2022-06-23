@@ -1,0 +1,110 @@
+  <dl class="menu">
+     <dt data-index="0" bindtap="tapMainMenu" class="{{currentTab==0?'select':'defalut'}}">全部</dt>
+     <dd class="{{subMenuDispaly[0]}}">
+         <ul>
+           <li class="select">全部</li>
+           <li>定喜宴</li>
+           <li>拍婚照</li>
+           <li>找婚庆</li>
+           <li>订婚戒</li>
+           <li>选婚纱</li>
+           <li>淘婚品</li>
+           <li>度蜜月</li>
+           <li>美新娘</li>
+           <li>拍写真</li>
+         </ul>
+     </dd>
+     <dt data-index="1" bindtap="tapMainMenu" class="{{currentTab==1?'select':'defalut'}}">默认</dt>
+     <dd class="{{subMenuDispaly[1]}}">
+         <ul>
+           <li class="select">默认</li>
+           <li>最新</li>
+           <li>最热</li>
+         </ul>
+     </dd>
+  </dl>
+  <view class="items">
+     <view class="item">
+        <view><image src="../../images/cash/shl.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+               施华洛婚纱摄影<text class="apply">已有4人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥200-300</view>
+        </view>
+     </view>
+     <view class="line"></view>
+
+     <view class="item">
+        <view><image src="../../images/cash/fsl.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+               枫树林高端婚礼<text class="apply">已有14人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥100</view>
+        </view>
+     </view>
+     <view class="line"></view>
+
+     <view class="item">
+        <view><image src="../../images/cash/hjls.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+            花嫁丽舍一站式<text class="apply">已有129人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥1000</view>
+        </view>
+     </view>
+     <view class="line"></view>
+
+     <view class="item">
+        <view><image src="../../images/cash/sese.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+               SeSe婚礼国王<text class="apply">已有117人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥100</view>
+        </view>
+     </view>
+     <view class="line"></view>
+
+     <view class="item">
+        <view><image src="../../images/cash/wly.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+               婚宴定制酒<text class="apply">已有4人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥100</view>
+        </view>
+     </view>
+     <view class="line"></view>
+
+     <view class="item">
+        <view><image src="../../images/cash/spl.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+               诗普琳珠宝<text class="apply">已有45人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥100</view>
+        </view>
+     </view>
+     <view class="line"></view>
+
+     <view class="item">
+        <view><image src="../../images/cash/cym.jpg" style="width:93px;height:73px;"></image></view>
+        <view class="des">
+           <view class="title">
+               朝阳门私属婚礼空间<text class="apply">已有3人申请</text>
+           </view>
+           <view class="hr"></view>
+           <view class="price">￥800</view>
+        </view>
+     </view>
+     <view class="line"></view>
+  </view>

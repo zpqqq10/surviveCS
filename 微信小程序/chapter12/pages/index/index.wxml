@@ -1,0 +1,16 @@
+<!--pages/index/index.wxml-->
+<!--幻灯片滚动-->
+<swiper indicator-dots="true" autoplay="true" interval="5000" duration="500">
+  <block wx:for="{{swiperImg}}" wx:key='swiper{{index}}'>
+    <swiper-item>
+      <image src="{{item.src}}" class="slide-image" />
+    </swiper-item>
+  </block>
+</swiper>
+<!--新闻列表-->
+<view id='news-list'>
+  <view class='list-item' wx:for="{{newsList}}" wx:for-item="news" wx:key="{{news.id}}">
+    <image src='{{news.poster}}'></image>
+    <text class='news-title' bindtap='goToDetail' data-id='{{news.id}}'>◇{{news.title}}——{{news.add_date}}</text>
+  </view>
+</view>

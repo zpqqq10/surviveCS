@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>表单select</title>
+</head>
+<body>
+ <h1 align="center">注册信息</h1> 
+ <hr color="#336699"/> 
+ <form action="action.php" method="post" target="_blank">
+  <table width="600px" bgcolor="#f2f2f2" align="center" >
+       <tr>
+       	   <td align="right">姓名：</td>
+       	   <td align="left"><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"/></td>
+       </tr>
+       <tr>
+       	   <td align="right">邮箱：</td>
+       	   <td align="left"><input type="text" name="email" value="@163.com"/></td>
+       </tr>
+       <tr>
+       	   <td align="right">密码：</td>
+       	   <td align="left"><input type="password" name="paw" size="25" maxlength="6" placeholder="请输入密码"/></td>
+       </tr>
+       <tr>
+       	   <td align="right">确认密码：</td>
+       	   <td align="left"><input type="password" name="paw_confirm" size="25" maxlength="6" placeholder="请再输入密码"/></td>
+       </tr>
+       <tr>
+       	   <td align="right">上传照片：</td>
+       	   <td align="left"><input type="file" name="file"/></td>
+       </tr>
+       <tr>
+       	   <td align="right">性别：</td>
+       	   <td align="left">男<input type="radio" name="sex" value="man"/>
+               女<input type="radio" name="sex" value="woman"/>
+               保密<input type="radio" name="sex" value="bm" checked/>
+       	   </td>
+       </tr>
+       <tr>
+       	   <td align="right">爱好：</td>
+       	   <td align="left">读书<input type="checkbox" name="dx1" value="read" checked/>
+       	       跳舞<input type="checkbox" name="dx1" value="dance"/>
+       	       唱歌<input type="checkbox" name="dx1" value="sing"/></td>
+       </tr>
+       <tr>
+       	   <td align="right">爱好的运动：</td>
+       	   <td align="left">跑步<input type="checkbox" name="dx2" value="1" checked/>
+       	       篮球<input type="checkbox" name="dx2" value="2"/>
+       	       跳绳<input type="checkbox" name="dx2" value="3"/></td>
+       </tr>
+         <tr>
+       	   <td align="right">城市：</td>
+       	   <td align="left">
+       	   	   <select name="city">
+       	   	      <option value="xz">--请选择--</option>
+       	   	   	  <option value="bj" selected>北京</option>
+       	   	   	  <option value="tj">天津</option>
+       	   	   	  <option value="hb">河北</option>
+       	   	   	  <option value="sh">上海</option>
+       	   	   	  <option value="fj">福建</option>
+       	   	   	  <option value="xm">厦门</option>
+
+       	   	   </select>
+
+       	   	   <select name="city" size="6" multiple>
+       	   	   	  <option value="bj">北京</option>
+       	   	   	  <option value="tj">天津</option>
+       	   	   	  <option value="hb">河北</option>
+       	   	   	  <option value="sh">上海</option>
+       	   	   	  <option value="fj">福建</option>
+       	   	   	  <option value="xm">厦门</option>
+
+       	   	   </select>
+
+       	   	    <select name="city">
+       	   	      <option>--请选择--</option>
+       	   	      <optgroup label="华北">
+       	   	   	  <option value="bj" selected>北京</option>
+       	   	   	  <option value="tj">天津</option>
+       	   	   	  <option value="hb">河北</option>
+                  </optgroup>
+                  <optgroup label="华东">
+       	   	   	  <option value="sh">上海</option>
+       	   	   	  <option value="fj">福建</option>
+       	   	   	  <option value="xm">厦门</option>
+                  </optgroup>
+       	   	   </select>
+
+       	   	    <select name="city" size="5" multiple>
+       	   	      <option>--请选择--</option>
+       	   	      <optgroup label="华北">
+       	   	   	  <option value="bj" selected>北京</option>
+       	   	   	  <option value="tj">天津</option>
+       	   	   	  <option value="hb">河北</option>
+                  </optgroup>
+                  <optgroup label="华东">
+       	   	   	  <option value="sh">上海</option>
+       	   	   	  <option value="fj">福建</option>
+       	   	   	  <option value="xm">厦门</option>
+                  </optgroup>
+       	   	   </select>
+
+       	   </td>
+       </tr> 
+       <tr>
+       	  <td align="right">简介:</td>
+       	  <td align="left"><textarea name="jj" rows="6" cols="50" placeholder="请输入个人介绍"></textarea></td>
+       </tr>          
+       <tr >
+       	   <td colspan="2" align="center"><input type="button" value="来点我" name="button"/>
+       	   <input type="submit" value="submit" name="submit"/>
+       	   <input type="reset" value="reset" name="reset"/>
+       	   <input type="image" name="image_button" src="image/image-button.png"/>
+       	   </td>
+       	   
+       	   
+       </tr>
+       <tr>
+       	  <td><input type="hidden" name="hidden" value="这是一个用户注册信息"/></td>
+       	  <td></td>
+       </tr>       
+
+  </table>
+ </form>   	
+</body>
+</html>

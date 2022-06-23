@@ -1,0 +1,61 @@
+<view class="line"></view>
+<view class="item">
+   <view class="head">
+     <view><image src="../../images/icon/head.jpg" style="width:45px;height:45px;"></image></view>
+     <view class="title">东临天下</view>
+     <view class="hot"><image src="../../images/icon/hot.jpg" style="width:14px;height:16px;"></image>热门</view>
+   </view>
+   
+   <view class="content">
+      昨天下班坐公交车回家，白天上班坐着坐多了想站一会儿，\r\n就把座位让给了一个阿姨，阿姨道谢一番开始和我聊天，聊了挺多的。\r\n后来我要下车了，阿姨热情的和我道别。\r\n下车的一瞬间我回头看了一眼，只见那阿姨对着手机说：“儿子，\r\n刚才遇见一个姑娘特不错，可惜长得不好看，不然我肯定帮你要号码！”
+   </view>
+    <view class="sta">好笑9362 · 评论320 · 分享 136</view>
+     <view class="icon">
+     <view><image src="../../images/icon/xiao.jpg" style="width:23px;height:23px;"></image></view>
+      <view><image src="../../images/icon/ku.jpg" style="width:23px;height:23px;"></image></view>
+       <view><image src="../../images/icon/pinglun.jpg" style="width:23px;height:23px;"></image></view>
+        <view class="last"><image src="../../images/icon/fenxiang.jpg" style="width:23px;height:23px;"></image></view>
+  </view>
+</view>
+
+<view class="line"></view>
+
+<view class="item">
+   <view class="head">
+     <view><image src="../../images/icon/head.jpg" style="width:45px;height:45px;"></image></view>
+     <view class="title">东临天下</view>
+     <view class="hot"><image src="../../images/icon/hot.jpg" style="width:14px;height:16px;"></image>热门</view>
+   </view>
+  
+   <view class="content">
+      昨天下班坐公交车回家，白天上班坐着坐多了想站一会儿，\r\n就把座位让给了一个阿姨，阿姨道谢一番开始和我聊天，聊了挺多的。\r\n后来我要下车了，阿姨热情的和我道别。\r\n下车的一瞬间我回头看了一眼，只见那阿姨对着手机说：“儿子，\r\n刚才遇见一个姑娘特不错，可惜长得不好看，不然我肯定帮你要号码！”\r\n靠，阿姨你下车，我保证不打死你!
+   </view>
+    <view class="sta">好笑9362 · 评论320 · 分享 136</view>
+  <view class="icon">
+     <view><image src="../../images/icon/xiao.jpg" style="width:23px;height:23px;"></image></view>
+      <view><image src="../../images/icon/ku.jpg" style="width:23px;height:23px;"></image></view>
+       <view><image src="../../images/icon/pinglun.jpg" style="width:23px;height:23px;"></image></view>
+        <view class="last"><image src="../../images/icon/fenxiang.jpg" style="width:23px;height:23px;"></image></view>
+  </view>
+</view>
+<view class="line"></view>
+
+<view class="item">
+   <view class="head">
+     <view><image src="../../images/icon/head.jpg" style="width:45px;height:45px;"></image></view>
+     <view class="title">东临填写</view>
+     <view class="hot"><image src="../../images/icon/hot.jpg" style="width:14px;height:16px;"></image>热门</view>
+   </view>
+  
+   <view class="content">
+      昨天下班坐公交车回家，白天上班坐着坐多了想站一会儿，\r\n就把座位让给了一个阿姨，阿姨道谢一番开始和我聊天，聊了挺多的。\r\n后来我要下车了，阿姨热情的和我道别。\r\n下车的一瞬间我回头看了一眼，只见那阿姨对着手机说：“儿子，\r\n刚才遇见一个姑娘特不错，可惜长得不好看，不然我肯定帮你要号码！”\r\n靠，阿姨你下车，我保证不打死你!
+   </view>
+    <view class="sta">好笑9362 · 评论320 · 分享 136</view>
+  <view class="icon">
+     <view><image src="../../images/icon/xiao.jpg" style="width:23px;height:23px;"></image></view>
+      <view><image src="../../images/icon/ku.jpg" style="width:23px;height:23px;"></image></view>
+       <view><image src="../../images/icon/pinglun.jpg" style="width:23px;height:23px;"></image></view>
+        <view class="last"><image src="../../images/icon/fenxiang.jpg" style="width:23px;height:23px;"></image></view>
+  </view>
+</view>
+<view class="line"></view>

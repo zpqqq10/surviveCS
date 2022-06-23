@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/navigator/navigator",
+    "pages/redirect/redirect"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "导航",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "red",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    },{
+      "pagePath": "pages/redirect/redirect",
+      "text": "关闭当前页打开导航",
+      "iconPath": "iconPath",
+      "selectedIconPath": "selectedIconPath"
+    }]
+  }
+}

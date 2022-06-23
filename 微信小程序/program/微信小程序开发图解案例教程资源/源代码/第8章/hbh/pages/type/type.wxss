@@ -1,0 +1,34 @@
+.content{
+     font-family: "Microsoft YaHei";
+     background-color: #F0F0F0;
+}
+.line{
+    height: 10px;
+}
+.item{
+    border: 1px solid #cccccc;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 5px;
+}
+.hr{
+    height: 1px;
+    background-color: #cccccc;
+    opacity: 0.2;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.navs{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 13px;
+    margin-bottom:10px;
+    padding-top:10px;
+}
+.nav{
+    margin: 0 auto;
+    width:70px;
+}

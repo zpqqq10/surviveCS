@@ -1,0 +1,61 @@
+.nav{
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+.nav-item{
+  width: 25%;
+  margin-top:20px;
+  font-size: 12px; 
+}
+.hr{
+    height: 15px;
+    background-color: #cccccc;
+    margin-top:15px;
+    opacity: 0.2; 
+}
+.head{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    font-size: 13px;
+    color: #999999;
+}
+.right{
+    position: absolute;
+    right: 10px;
+    color: #cccccc;
+}
+.hr2{
+    height: 2px;
+    background-color: #cccccc;
+    opacity: 0.2;  
+}
+.item{
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    margin-bottom:5px; 
+    margin-top:5px;
+}
+.desc{
+    margin-left: 20px;
+    line-height: 30px;
+}
+.title{
+    font-weight: bold;
+}
+.count{
+    display: flex;
+    flex-direction: row;
+    font-size: 12px;
+    color: #999999;
+}
+.liulan{
+    position: absolute;
+    right: 70px;
+}
+.pinglun{
+    position: absolute;
+    right: 10px;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>css使用方法优先级</title>
+    <link rel="stylesheet" type="text/css" href="css3.css">	<!--color:yellow-->
+	<style type="text/css">
+		@import url("css1.css"); /*color:green*/
+    	p{color:blue;}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css2.css"> <!--color:gray-->
+	<style type="text/css">
+    	p{color:orange;}
+	</style>
+
+</head>
+<body>
+
+	<p style="color:red;"><b>css使用方法</b></p>
+
+</body>
+</html>

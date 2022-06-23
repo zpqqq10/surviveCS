@@ -1,0 +1,42 @@
+<view class="bg">
+   <view class="nav">
+       <scroll-view class="scroll-view_H" scroll-x="true" >
+       <view class="scroll-view_H">
+          <view><view class="{{flag==0?'select':'normal'}}" id="0" bindtap="switchNav">专享</view></view>
+          <view><view class="{{flag==1?'select':'normal'}}" id="1" bindtap="switchNav">视频</view></view>
+          <view><view class="{{flag==2?'select':'normal'}}" id="2" bindtap="switchNav">糗闻</view></view>
+          <view><view class="{{flag==3?'select':'normal'}}" id="3" bindtap="switchNav">纯文</view></view>
+          <view><view class="{{flag==4?'select':'normal'}}" id="4" bindtap="switchNav">纯图</view></view>
+          <view><view class="{{flag==5?'select':'normal'}}" id="5" bindtap="switchNav">精华</view></view>
+          <view><view class="{{flag==6?'select':'normal'}}" id="6" bindtap="switchNav">穿越</view></view>
+       </view>
+  </scroll-view>
+   </view>
+   <view class="opr">
+     审
+   </view>
+   <view class="add">+</view>
+</view>
+<swiper current="{{currentTab}}"style="height:1500px">
+  <swiper-item>
+      <include src="vip.wxml"/>
+  </swiper-item>
+  <swiper-item>
+      <include src="video.wxml"/>
+  </swiper-item>
+  <swiper-item>
+      我是糗闻内容
+  </swiper-item>
+  <swiper-item>
+      我是纯文内容
+  </swiper-item>
+  <swiper-item>
+      我是纯图内容
+  </swiper-item>
+  <swiper-item>
+      我是精华内容
+  </swiper-item>
+  <swiper-item>
+      我是穿越内容
+  </swiper-item>
+</swiper>

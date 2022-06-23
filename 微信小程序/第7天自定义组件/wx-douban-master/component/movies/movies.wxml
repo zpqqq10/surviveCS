@@ -1,0 +1,18 @@
+<!-- 组件模板 -->
+<view>
+    <text class="padding-10">{{movieTitle}}</text>
+</view>
+<view class='movie-list'>
+    <view class='movie-item' wx:for="{{movieList}}" wx:for-item="movie">
+        <navigator url="/pages/detail/detail?id={{movie.id}}">
+            <view class='item-inner'>
+                <image mode="scaleToFill" src="{{movie.images.medium}}" class='movie-image'/>
+                <view>
+                    <text class="movie-name">{{movie.title}}</text>
+                </view>
+                <image src="../../common/images/rating{{movie.rating.stars}}.png" class="bigstar"/>
+                {{movie.rating.average}}
+            </view>
+        </navigator>
+    </view>
+</view>

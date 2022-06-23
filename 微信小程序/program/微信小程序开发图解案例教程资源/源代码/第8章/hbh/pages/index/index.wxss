@@ -1,0 +1,18 @@
+.nav{
+  text-align: center;
+}
+.item{
+   margin-top:15px; 
+   text-align: center;
+   font-family: "Microsoft YaHei";
+   font-size: 13px;
+   width: 60px;
+   display: inline-block;
+   margin-right:10px; 
+}
+.hr{
+  height: 1px;
+  background-color: #cccccc;
+  opacity: 0.2;
+  margin-top:10px; 
+}

@@ -1,0 +1,101 @@
+.bg{
+  background-color: #FFBA1E;
+  height: 50px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nav{
+  width: 70%;
+  height: 40px;
+}
+.opr{
+  width: 20px;
+  height: 20px;
+  border-radius:50%; 
+  font-size: 13px;
+  line-height: 20px;
+  text-align: center;
+  color: #FFBA1E;
+  background-color: #ffffff;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.add{
+  width: 20%;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  margin-right:10px;
+  font-size: 50px; 
+}
+.scroll-view_H{
+  margin-left: 10px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+}
+.normal{
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding-left:10px;
+  padding-right: 10px;
+  font-size: 14px;
+}
+.select{
+   width: 40px;
+  height: 40px;
+  line-height: 40px;
+  padding-left:20px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.line{
+  height: 10px;
+  background-color: #F2F2F2;
+}
+.item{
+  margin: 10px;
+}
+.head{
+  display: flex;
+  flex-direction: row;
+  height: 77px;
+  align-items: center;
+}
+.title{
+  width: 60%;
+  margin-left:10px;
+  font-weight: bold; 
+}
+.hot{
+  text-align: right;
+  width: 30%;
+}
+.content{
+  padding: 10px;
+  line-height: 25px;
+}
+.sta{
+  padding: 10px;
+  color: #999999;
+  font-size: 16px;
+}
+.icon{
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.icon view{
+   margin: 0 auto;
+   width: 25%;
+}
+.last{
+  text-align: right;
+}
+.section{
+  text-align: center;
+}

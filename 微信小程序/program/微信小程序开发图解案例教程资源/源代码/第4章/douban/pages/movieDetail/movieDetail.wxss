@@ -1,0 +1,87 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+}
+.select{
+    width: 32%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    border-bottom: 8px solid #777777;
+}
+.normal{
+    width: 32%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+}
+.line{
+    height: 30px;
+    line-height: 30px;
+    font-size:15px; 
+    color: #666666;
+}
+.movieInfo{
+    display: flex;
+    flex-direction:row;
+    margin: 15px; 
+}
+.detail{
+    margin-left:15px;
+    font-size: 13px;
+}
+.detail view{
+    margin-bottom: 7px;
+}
+.score{
+   color:#FC7F60;
+}
+.desc{
+    font-weight: bold;
+}
+.buy{
+    width: 155px;
+    height:40px;
+    line-height: 40px;
+    background-color: #2DADDC;
+    text-align: center;
+    color: #ffffff;
+}
+.opr{
+    display: flex;
+    flex-direction: row;
+}
+.opr view{
+    width: 45%;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    background-color: #EEEEEE;
+    font-size: 13px;
+    text-align: center;
+    border-radius: 3px;
+}
+.intro{
+    background-color: #F1F1F1;
+    margin: 10px;
+    font-size: 13px;
+    padding: 10px;
+    line-height: 15px;
+}
+.personInfo{
+    display: flex;
+    flex-direction:row;
+    margin: 15px;
+    background-color: #F1F1F1;
+}
+.name{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-left: 10px;
+}

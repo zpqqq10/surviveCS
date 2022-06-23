@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+encoding//WebRoot/css/back_layout.css=UTF-8
+encoding//src/application.properties=UTF-8
+encoding//src/com/xiaogang/app/domain/ResponseForm.java=UTF-8
+encoding//src/com/xiaogang/app/util/HttpUtil.java=UTF-8
+encoding//src/com/xiaogang/app/util/PayUtil.java=UTF-8
+encoding//src/com/xiaogang/wxpay/WxNotifyServelt.java=UTF-8

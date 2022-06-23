@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>表单input</title>
+</head>
+<body>
+ <h1 align="center">注册信息</h1> 
+ <hr color="#336699"/> 
+ <form>
+  <table width="600px" bgcolor="#f2f2f2" align="center">
+       <tr>
+       	   <td>姓名：</td>
+       	   <td><input type="text" name="username" size="25" maxlength="6" placeholder="请输入姓名"/></td>
+       </tr>
+       <tr>
+       	   <td>邮箱：</td>
+       	   <td><input type="text" name="email" value="@163.com"/></td>
+       </tr>
+       <tr>
+       	   <td>密码：</td>
+       	   <td><input type="password" name="paw" size="25" maxlength="6" placeholder="请输入密码"/></td>
+       </tr>
+       <tr>
+       	   <td>确认密码：</td>
+       	   <td><input type="password" name="paw_confirm" size="25" maxlength="6" placeholder="请再输入密码"/></td>
+       </tr>
+       <tr>
+       	   <td>上传照片：</td>
+       	   <td><input type="file" name="file"/></td>
+       </tr>
+       <tr>
+       	   <td>性别：</td>
+       	   <td>男<input type="radio" name="sex" value="man"/>
+               女<input type="radio" name="sex" value="woman"/>
+               保密<input type="radio" name="sex" value="bm" checked/>
+       	   </td>
+       </tr>
+       <tr>
+       	   <td>爱好：</td>
+       	   <td>读书<input type="checkbox" name="dx1" value="read" checked/>
+       	       跳舞<input type="checkbox" name="dx1" value="dance"/>
+       	       唱歌<input type="checkbox" name="dx1" value="sing"/></td>
+       </tr>
+       <tr>
+       	   <td>爱好的运动：</td>
+       	   <td>跑步<input type="checkbox" name="dx2" value="1" checked/>
+       	       篮球<input type="checkbox" name="dx2" value="2"/>
+       	       跳绳<input type="checkbox" name="dx2" value="3"/></td>
+       </tr>
+       <tr >
+       	   <td><input type="button" value="来点我" name="button"/>
+       	   <input type="submit" value="submit" name="submit"/>
+       	   <input type="reset" value="reset" name="reset"/>
+       	   <input type="image" name="image_button" src="image/image-button.png"/>
+       	   </td>
+       	   <td></td>
+       </tr>
+       <tr>
+       	  <td><input type="hidden" name="hidden" value="这是一个用户注册信息"/></td>
+       	  <td></td>
+       </tr>       
+
+  </table>
+ </form>   	
+</body>
+</html>

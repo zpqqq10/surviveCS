@@ -1,0 +1,9 @@
+<!-- 模板引入 -->
+<import src="../../common/head.wxml"/>
+
+<view class="container">
+    <!-- 使用模板 -->
+    <template is="head"/>
+    <!-- 以下是一个自定义组件的引用 -->
+    <movies movie-type="in_theaters"></movies>
+</view>

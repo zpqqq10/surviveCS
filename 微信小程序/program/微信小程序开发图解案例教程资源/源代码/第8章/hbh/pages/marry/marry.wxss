@@ -1,0 +1,104 @@
+.ticket{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.first{
+    border:1px solid red;
+    width: 45%;
+    margin: 0 auto;
+    background-color: #D60210;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    color: #ffffff;
+}
+.second{
+    border:1px solid red;
+    width: 45%;
+    margin: 0 auto;
+    background-color: #FDA6AE;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.item{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.name{
+    width: 100px;
+    text-align: right;
+    height: 28px;
+    line-height: 28px;
+    font-size: 15px;
+}
+.val{
+    width: 230px;
+    height: 28px;
+    border:1px solid #cccccc;
+    border-radius: 5px;
+    font-size:13px;
+}
+.holder{
+    font-size: 13px;
+    margin-left: 5px;
+    color: #999999;
+}
+.box{
+    font-size: 13px;
+    width: 300px;
+    margin-left: 10px;
+}
+.box checkbox{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.btn{
+    width:220px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #D50310;
+    color: #ffffff;
+    border-radius: 50px;
+}
+.way{
+    width: 230px;
+    height: 30px;
+    font-size: 13px;
+    text-align: left;
+}
+.bg{
+     display: block;
+    background-color: #cccccc;
+    width: 100%;
+    height: 750px;
+    position: absolute;
+    top:0px;
+    left:0px;
+    z-index: 999;
+    opacity: 0.9;
+}
+.radioBg{
+    background-color: #ffffff;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+    margin-top:20px;
+}
+.radioItem{
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+    border-bottom: 1px solid #cccccc;
+}
+.radioName{
+    width: 90%;
+}
+.hideBg{
+    display: none;
+}

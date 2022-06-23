@@ -1,0 +1,12 @@
+<wxs module="filter" src="../../common/filter.wxs"></wxs>
+
+<view>
+    <image class="movie-image" mode="scaleToFill" src="{{movieInfo.images.large}}"/>
+</view>
+<view class="padding-10">
+    <view class="movie-title">{{movieInfo.title}}</view>
+    <view>导演：{{filter.joinName(movieInfo.directors)}}</view>
+    <view>主演：{{filter.joinName(movieInfo.casts)}}</view>
+    <view class="movie-summary">简介{{utils.formatTime()}}</view>
+    <view>{{movieInfo.summary}}</view>
+</view>

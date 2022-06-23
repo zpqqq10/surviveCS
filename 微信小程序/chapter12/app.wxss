@@ -1,0 +1,25 @@
+/*新闻列表区域样式*/
+/*2-1新闻列表容器*/
+#news-list {
+  min-height: 600rpx;
+  padding: 15rpx;
+}
+/*2-2列表项目*/
+.list-item{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid gray;
+}
+/*2-3新闻图片*/
+.list-item image{
+  width:230rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+/*2-4新闻标题*/
+.news-title{
+  width: 100%;
+  display: block;
+  line-height: 60rpx;
+  font-size: 10pt;
+}

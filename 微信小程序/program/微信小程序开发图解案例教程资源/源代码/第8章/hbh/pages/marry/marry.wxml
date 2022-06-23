@@ -1,0 +1,103 @@
+<view class="content">
+  <view>
+     <image src="../../images/marry/xuanchuan.jpg" style="width:100%;height:220px;"></image>
+  </view>
+  <view class="ticket">
+      <view class="first"><icon type="success"></icon>我第一次索票</view>
+      <view class="second"><icon type="success"></icon>我以前索过票</view>
+  </view>
+
+<form bindsubmit="formSubmit">
+      <view class="item">
+         <view class="name">姓名：</view>
+         <view class="val"><input name="name" type="text"/></view>
+      </view>
+      <view class="item">
+         <view class="name">手机号：</view>
+         <view class="val"><input name="mobile" type="text"/></view>
+      </view>
+      <view class="item">
+         <view class="name">爱人姓名：</view>
+         <view class="val"><input name="lovename" type="text"/></view>
+      </view>
+      <view class="item">
+         <view class="name">爱人手机：</view>
+         <view class="val"><input name="lovemobile" type="text"/></view>
+      </view>
+      <view class="item">
+         <view class="name">快递地址：</view>
+         <view class="val"><input name="address" type="text" placeholder="情侣套票免费快递到家" placeholder-class="holder"/></view>
+      </view>
+      <view class="item">
+         <view class="name">婚期：</view>
+         <view class="val"><input name="date" type="text" placeholder="请输入日期" placeholder-class="holder"/></view>
+      </view>
+      <view class="item">
+         <view class="name">需要筹备：</view>
+         <view class="box">
+           <checkbox-group name="box">
+              <checkbox value="订喜宴">订喜宴</checkbox>
+              <checkbox value="找婚庆">找婚庆</checkbox>
+              <checkbox value="拍婚照">拍婚照</checkbox>
+              <checkbox value="订婚戒">订婚戒</checkbox>
+              <checkbox value="选婚纱">选婚纱</checkbox>
+              <checkbox value="度蜜月">度蜜月</checkbox>
+              <checkbox value="淘婚品">淘婚品</checkbox>
+              <checkbox value="美新娘">美新娘</checkbox>
+              <checkbox value="租婚车">租婚车</checkbox>
+           </checkbox-group>
+         </view>
+      </view>
+       <view class="item">
+         <view class="name">获知渠道：</view>
+         <view><button class="way" bindtap="selectWay">{{way}}</button></view>
+      </view>
+      <button class="btn" form-type="submit">免费索票</button>
+  </form>
+</view>
+<view class="{{flag=='0'?'bg':'hideBg'}}">
+   <view class="radioBg">
+     <radio-group bindchange="radioChange">
+        <view class="radioItem">
+           <view class="radioName">请选择获知渠道</view>
+           <view class="radioVal"><radio value="请选择获知渠道" checked/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">大厅落地液晶屏广告</view>
+           <view class="radioVal"><radio value="大厅落地液晶屏广告"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">其他</view>
+           <view class="radioVal"><radio value="其他"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">报纸</view>
+           <view class="radioVal"><radio value="报纸"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">商场超市电视广告</view>
+           <view class="radioVal"><radio value="商场超市电视广告"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">公交-电视</view>
+           <view class="radioVal"><radio value="公交-电视"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">餐厅LED屏</view>
+           <view class="radioVal"><radio value="餐厅LED屏"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">网站</view>
+           <view class="radioVal"><radio value="网站"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">电梯液晶看板</view>
+           <view class="radioVal"><radio value="电梯液晶看板"/></view>
+        </view>
+        <view class="radioItem">
+           <view class="radioName">地铁-电视</view>
+           <view class="radioVal"><radio value="地铁-电视"/></view>
+        </view>
+     </radio-group>
+   </view>
+</view>

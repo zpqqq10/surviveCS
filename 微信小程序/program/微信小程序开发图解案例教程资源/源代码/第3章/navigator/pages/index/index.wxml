@@ -1,0 +1,8 @@
+<view class="btn-area">
+  <navigator url="../navigator/navigator?title=navigator11" open-type="navigate" hover-class="navigator-hover">wx.navigateTo保留当前页跳转</navigator>
+  <navigator url="../redirect/redirect?title=redirect" open-type="redirect" hover-class="other-navigator-hover">wx.redirectTo关闭当前页跳转</navigator>
+  <navigator url="../redirect/redirect" open-type="switchTab" hover-class="other-navigator-hover">wx.switchTab跳转到tabBar页面</navigator>
+  <button type="primary" bindtap="navigateBtn">保留当前页跳转</button>
+  <button type="primary" bindtap="redirectBtn">关闭当前页跳转</button>
+  <button type="primary" bindtap="switchBtn">跳转到tabBar页面</button>
+</view>

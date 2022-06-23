@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/cash/cash",
+    "pages/marry/marry",
+    "pages/community/community",
+    "pages/me/me",
+    "pages/type/type"
+  ],
+  "window": {
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#D73E3E",
+    "navigationBarTitleText": "中国婚博会",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar": {
+    "selectedColor": "#D73E3E",
+    "backgroundColor": "#F3F1EF",
+    "borderStyle": "white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "images/bar/index-0.jpg",
+      "selectedIconPath": "images/bar/index-1.jpg"
+    },{
+      "pagePath": "pages/cash/cash",
+      "text": "现金券",
+      "iconPath": "images/bar/cash-0.jpg",
+      "selectedIconPath": "images/bar/cash-1.jpg"
+    },{
+      "pagePath": "pages/marry/marry",
+      "text": "婚博会",
+      "iconPath": "images/bar/marry-0.jpg",
+      "selectedIconPath": "images/bar/marry-1.jpg"
+    },{
+      "pagePath": "pages/community/community",
+      "text": "社区",
+      "iconPath": "images/bar/community-0.jpg",
+      "selectedIconPath": "images/bar/community-1.jpg"
+    },{
+      "pagePath": "pages/me/me",
+      "text": "我的",
+      "iconPath": "images/bar/me-0.jpg",
+      "selectedIconPath": "images/bar/me-1.jpg"
+    }]
+  }
+}

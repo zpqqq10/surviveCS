@@ -1,0 +1,48 @@
+.content{
+  margin-top: 40px;
+}
+.account{
+   display: flex;
+   flex-direction: row;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 10px;
+   width: 90%;
+}
+.title{
+   margin-right: 30px;
+   font-weight: bold;
+}
+.hr{
+  border: 1px solid #cccccc;
+  opacity: 0.2;
+  width: 90%;
+  margin: 0 auto;
+}
+.see{
+  position: absolute;
+  right: 20px;
+}
+.btn{
+  width: 90%;
+  margin-top:40px;
+  color: #999999;
+}
+.operate{
+   display: flex;
+   flex-direction: row;
+}
+.operate view{
+  margin: 0 auto;
+  margin-top:40px;
+  font-size: 14px;
+  color: #333333;
+}
+.login{
+  display: flex;
+  flex-direction: row;
+  margin-top:150px;
+}
+.login view{
+  margin: 0 auto;
+}

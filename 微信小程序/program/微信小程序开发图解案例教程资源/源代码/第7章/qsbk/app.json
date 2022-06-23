@@ -1,0 +1,12 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FFBA1E",
+    "navigationBarTitleText": "糗事百科",
+    "navigationBarTextStyle":"white"
+  }
+}

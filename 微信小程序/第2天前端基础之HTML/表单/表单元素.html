@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>表单元素</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+
+<h1 align="center">注册信息</h1>
+<hr color="#336699" />
+
+	<form action="action.php" method="get">
+		
+	<table  cellspacing="0" align="center" width="600px" bgcolor="#f2f2f2" >
+		
+       
+       <tr>
+           <td align="right" height="50px" width="200px">姓名：</td>
+           <td align="left" width="400px"><input type="text" name="username" maxlength="5" size="15"  placeholder="请输入姓名"/></td>
+       </tr>
+       <tr>
+           <td align="right" height="50px">邮箱：</td>
+           <td align="left"><input type="text" name="email" maxlength="15" size="25" value="@163.com" /></td>
+       </tr>
+        <tr>
+           <td align="right" height="50px">密码：</td>
+           <td align="left"><input type="password" name="pwd" maxlength="8" size="15"  placeholder="请输入密码"/></td>
+       </tr>
+        <tr>
+           <td align="right" height="50px">确认密码：</td>
+           <td align="left"><input type="password" name="pwd" maxlength="8" size="15" placeholder="请再输入密码"/></td>
+       </tr>
+        <tr>
+           <td align="right" height="50px">上传照片：</td>
+           <td align="left"><input type="file" name="pic" /></td>
+       </tr>
+        <tr>
+          <td align="right" height="50px">性别：</td>
+           <td align="left">男<input type="radio" name="sex" value="man" checked/>
+               女<input type="radio" name="sex" value="woman"/>
+           </td>
+       </tr>
+       <tr>
+           <td align="right"  height="50px">爱好：</td>
+           <td align="left">读书<input type="checkbox" name="hobby" value="read" checked/>
+               跳舞<input type="checkbox" name="hobby" value="dance"/>
+               唱歌<input type="checkbox" name="hobby" value="sing"/>  
+           </td>
+       </tr>
+       <tr >
+           <td colspan="2" align="center" height="30px">
+           	    <input type="button" name="button" value="来点我"/> 
+				<input type="submit" name="submit" value="提交"/>
+				<input type="reset" name="reset" value="重置"/>  </td>
+          
+       </tr>
+
+        <tr >
+           
+           <td>城市</td>
+           <td>
+              <select name="hie" >  
+                  <option value="shanghai" >北京</option>
+                  <option value="shanghai" >上海</option>
+                  <option value="shanghai" >河北</option>
+                  <option value="shanghai" >天津</option>
+                  <option value="shanghai" >河南</option> 
+              </select>
+
+           </td>
+          
+       </tr>
+
+
+
+       <tr >
+           
+           <td>城市</td>
+           <td>
+             <select name="city" size="6" multiple>
+              <option value="123" >--请选择--</option>
+              <optgroup label="1">    
+                  <option value="bj1" selected>北京</option>
+                  <option value="sh1" >上海</option>
+                  <option value="hb1" >河北</option>
+                  <option value="tj1" >天津</option>
+                  <option value="hn1" >河南</option> 
+              
+              </optgroup>
+
+
+              <optgroup  label="2">    
+                  <option value="bj2" >北京</option>
+                  <option value="sh2" >上海</option>
+                  <option value="hb2" >河北</option>
+                  <option value="tj2" >天津</option>
+                  <option value="hn2" >河南</option>  
+              
+              </optgroup>
+            </select>
+
+
+            <textarea  name="" >
+                 kdsjlkfjsdlfjlsfjdlksajflsjflsjflkjfjsadlfjasdlfjsldfjlsflsdjflsdjflsdjflsdflsdfjlsdfjlsjfsjflsdjfksdjflsdfljsdlfjsdljflsdjflsjdflasjflsjdfjasdlfjlsdjflsdjfsdlfjlsdjflsdjfwsdl   
+            </textarea>
+           </td>
+          
+       </tr>
+
+
+      
+	</table>
+</form>
+</body>
+</html>

@@ -1,0 +1,117 @@
+.content{
+    height:500px;
+    background-color: #F4F4F4; 
+}
+.navbg{
+    width: 92%;
+    background-color: #898989;
+    height: 40px;
+    margin: 0 auto;
+    border-top-left-radius:5px;
+    border-top-right-radius:5px;
+    display: flex;
+    flex-direction: row;
+}
+.select{
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #000000;
+    font-size: 15px;
+    margin: 0 auto;
+    background-color: #ffffff;
+}
+.normal{
+    width: 40%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 15px;
+    margin: 0 auto;
+}
+.formbg{
+    width: 92%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding-top:20px;
+    padding-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.station{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.station view{
+    height: 45px;
+    line-height: 45px;
+    font-size: 20px;
+    width: 33%;
+}
+.station input{
+   height: 45px;
+   line-height: 45px;
+}
+.hr{
+    height: 1px;
+    background-color: #cccccc;
+    opacity: 0.2;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.type{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
+.type view{
+    height: 45px;
+    line-height: 45px;
+    font-size: 14px;
+    width: 50%;
+}
+.type switch{
+    margin-left:10px; 
+}
+.btn{
+    width: 90%;
+    height: 45px;
+    line-height: 45px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 20px;
+    background-color: #5495E6;
+    margin: 0 auto;
+    margin-top:10px; 
+    border-radius: 5px;
+}
+.record{
+    text-align: center;
+    margin-top:10px;
+    font-size: 15px;
+    color: #999999;
+}
+.record text{
+    margin-right: 20px;
+}
+.icon{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+.item{
+    width: 25%;
+    text-align: center;
+    margin: 0 auto;
+}
+.menu{
+    font-size: 11px;
+    width:100px;
+}

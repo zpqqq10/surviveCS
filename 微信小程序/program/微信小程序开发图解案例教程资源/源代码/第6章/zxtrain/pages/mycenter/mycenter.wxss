@@ -1,0 +1,81 @@
+.amountBg{
+    height:100px;
+    background-color: #5495E6; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img{
+    margin-left: 20px;
+}
+.account{
+    width: 70%;
+    color: #ffffff;
+    margin-left: 10px;
+}
+.nav{
+   width:15px;
+   color: #ffffff;
+}
+.content{
+    background-color: #F4F4F4;
+    height: 500px;
+}
+.order{
+    width: 94%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    top:90px;
+    margin-left: 3%;
+}
+.desc{
+    width: 25%;
+    font-size: 13px;
+}
+.clear{
+    padding-top: 70px;
+}
+.item{
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    align-items: center;
+}
+.icon{
+    width: 50px;
+    text-align: center;
+}
+.itemName{
+    width: 40%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.line{
+    height: 10px;
+}
+.hr{
+    height: 1px;
+    background-color: #cccccc;
+    opacity: 0.2;
+}
+.remark{
+    font-weight: normal;
+    margin-top:5px;
+}
+.right{
+    width: 40%;
+    text-align: right;
+}
+.opr{
+    color: #5495E6;
+    font-size: 13px;
+    font-weight: bold;
+    margin-right: 10px;
+}

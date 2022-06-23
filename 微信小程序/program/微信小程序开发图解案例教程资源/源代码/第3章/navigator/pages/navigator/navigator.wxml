@@ -1,0 +1,2 @@
+<view>保留当前页进行跳转，单击左上角可以返回到当前页</view>
+<button type="primary" bindtap="backBtn">返回上一页</button>

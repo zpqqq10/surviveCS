@@ -1,0 +1,39 @@
+<view class="line"></view>
+<view class="item">
+   <view class="head">
+     <view><image src="../../images/icon/head.jpg" style="width:45px;height:45px;"></image></view>
+     <view class="title">东临天下</view>
+   </view>
+
+      <view class="section">
+  <video style="width:320px" id="myVideo"  src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  controls></video>
+</view>
+<view class="sta">好笑9362 · 评论320 · 分享 136</view>
+  <view class="icon">
+     <view><image src="../../images/icon/xiao.jpg" style="width:23px;height:23px;"></image></view>
+      <view><image src="../../images/icon/ku.jpg" style="width:23px;height:23px;"></image></view>
+       <view><image src="../../images/icon/pinglun.jpg" style="width:23px;height:23px;"></image></view>
+        <view class="last"><image src="../../images/icon/fenxiang.jpg" style="width:23px;height:23px;"></image></view>
+  </view>
+
+</view>
+
+<view class="line"></view>
+<view class="item">
+   <view class="head">
+     <view><image src="../../images/icon/head.jpg" style="width:45px;height:45px;"></image></view>
+     <view class="title">人生有太多的遗憾</view>
+   </view>
+
+      <view class="section">
+  <video style="width:320px" id="myVideo1"  src="http://wxsnsdy.tc.qq.com/105/20210/snsdyvideodownload?filekey=30280201010421301f0201690402534804102ca905ce620b1241b726bc41dcff44e00204012882540400&bizid=1023&hy=SH&fileparam=302c020101042530230204136ffd93020457e3c4ff02024ef202031e8d7f02030f42400204045a320a0201000400"  controls></video>
+</view>
+<view class="sta">好笑9362 · 评论320 · 分享 136</view>
+  <view class="icon">
+     <view><image src="../../images/icon/xiao.jpg" style="width:23px;height:23px;"></image></view>
+      <view><image src="../../images/icon/ku.jpg" style="width:23px;height:23px;"></image></view>
+       <view><image src="../../images/icon/pinglun.jpg" style="width:23px;height:23px;"></image></view>
+        <view class="last"><image src="../../images/icon/fenxiang.jpg" style="width:23px;height:23px;"></image></view>
+  </view>
+
+</view>

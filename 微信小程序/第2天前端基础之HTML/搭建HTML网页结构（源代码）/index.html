@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+  <!--div标签-->
+  <div><img src="img\html.jpg"/>html课程</div>
+  <div><img src="img\js1.jpg"/>JS入门课程</div>
+  <div><img src="img\js2.jpg"/>JS进阶课程</div>
+  <!--span标签-->
+  <span><img src="img\html.jpg"/>html课程</span>
+  <span><img src="img\js1.jpg"/>JS入门课程</span>
+  <span><img src="img\js2.jpg"/>JS进阶课程</span>
+  <!--标签嵌套规则-->
+  <!--块级元素可包含行内元素和某些块级元素-->
+  <div><h1></h1><a href=""></a></div>
+  <!--行内元素不能包含块元素，只能包含其他行内元素-->
+  <a href=""><h1></h1><div></div></a><!--错误-->
+  <span><em></em></span><!--正确-->
+  <!--块级元素不能放在<p>标签内-->
+  <p><div>1111</div><h1>2222</h1></p><!--错误-->
+  <!--特殊块级元素只能包含行内元素，不能再包含块级元素
+  如：h1、h2、h3、h4、h5、h6、p、dt-->
+  <!--块级元素与块元素并列，行内元素和行内元素并列-->
+  <div><h1></h1><p></p></div><!--正确-->
+  <div><span></span><a href=""></a></div><!--正确-->
+  <div><h1>666</h1><span>888</span></div><!--错误-->
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<view class="content">
+<view class="line"></view>
+<view class="item">
+   <view class="title">玩转婚博会</view>
+   <view class="hr"></view>
+   <view class="navs">
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/dxy.jpg" style="width:38px;height:38px;"></image></view>
+         <view>订喜宴</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/phz.jpg" style="width:38px;height:38px;"></image></view>
+         <view>拍婚照</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/zhq.jpg" style="width:38px;height:38px;"></image></view>
+         <view>找婚庆</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/dhj.jpg" style="width:38px;height:38px;"></image></view>
+         <view>订婚戒</view>
+      </view>
+   </view>
+    <view class="navs">
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/xhs.jpg" style="width:38px;height:38px;"></image></view>
+         <view>选婚纱</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/thp.jpg" style="width:38px;height:38px;"></image></view>
+         <view>淘婚品</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/dmy.jpg" style="width:38px;height:38px;"></image></view>
+         <view>度蜜月</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wzhbh/zhc.jpg" style="width:38px;height:38px;"></image></view>
+         <view>租婚车</view>
+      </view>
+   </view>
+</view>
+
+<view class="line"></view>
+<view class="item">
+   <view class="title">特色分类</view>
+   <view class="hr"></view>
+   <view class="navs">
+      <view class="nav">
+         <view><image src="../../images/type/tsfl/pxz.jpg" style="width:38px;height:38px;"></image></view>
+         <view>拍写真</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/tsfl/mxn.jpg" style="width:38px;height:38px;"></image></view>
+         <view>美新娘</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/tsfl/zxj.jpg" style="width:38px;height:38px;"></image></view>
+         <view>装新家</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/tsfl/yyt.jpg" style="width:38px;height:38px;"></image></view>
+         <view>孕婴童</view>
+      </view>
+   </view>
+</view>
+
+<view class="line"></view>
+<view class="item">
+   <view class="title">我的婚博会</view>
+   <view class="hr"></view>
+   <view class="navs">
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/xjq.jpg" style="width:38px;height:38px;"></image></view>
+         <view>现金券</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/yqh.jpg" style="width:38px;height:38px;"></image></view>
+         <view>邀请函</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/qdl.jpg" style="width:38px;height:38px;"></image></view>
+         <view>签到礼</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/dhl.jpg" style="width:38px;height:38px;"></image></view>
+         <view>兑好礼</view>
+      </view>
+   </view>
+    <view class="navs">
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/wdsq.jpg" style="width:38px;height:38px;"></image></view>
+         <view>我的社区</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/yy.jpg" style="width:38px;height:38px;"></image></view>
+         <view>预约到婚博会</view>
+      </view>
+      <view class="nav">
+         <view><image src="../../images/type/wdhbh/tj.jpg" style="width:38px;height:38px;"></image></view>
+         <view>推荐好友送现金</view>
+      </view>
+      <view class="nav">
+      </view>
+   </view>
+</view>
+<view class="line"></view>
+
+</view>

@@ -1,0 +1,45 @@
+.nav{
+    display: flex;
+    flex-direction: row;
+    background-color: #222222;
+}
+.select{
+    width: 32%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+    border-bottom: 10px solid #777777;
+}
+.normal{
+    width: 32%;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #ffffff;
+    font-size: 13px;
+}
+.line{
+    height: 45px;
+    line-height: 45px;
+    font-size:25px; 
+    color: #666666;
+}
+.items{
+    background-color: #f2f2f2;
+    height:1000px;
+    align-items: center;
+}
+.item{
+    width:32%;
+    height: 200px;
+    margin-top:10px;
+    text-align: center;
+    float: left;
+}
+.name{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 5px;
+}

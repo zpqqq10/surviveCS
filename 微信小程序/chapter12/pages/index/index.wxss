@@ -1,0 +1,14 @@
+/* pages/index/index.wxss */
+/*swiper区域样式*/
+/*1-1 swiper组件*/
+swiper {
+  height: 400rpx;
+}
+/*1-2 swiper中的图片*/
+swiper image {
+  width: 100%;
+  height: 100%;
+}
+
+
+
