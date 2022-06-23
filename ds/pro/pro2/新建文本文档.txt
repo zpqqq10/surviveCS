@@ -1,0 +1,84 @@
+sample
+5 6
+1 2 50
+2 3 100
+2 4 150
+3 4 130
+3 5 70
+4 5 40
+# 240 1 2 4 5
+
+abandoned
+5 5
+1 2 10
+2 3 20
+3 2 20
+3 4 40
+4 5 10
+# 120 1 2 3 2 3 4 5
+
+a sample including a bidirectional railway and a loop
+5 6
+1 2 10
+2 3 20
+3 2 20
+3 4 40
+4 2 10
+4 5 10
+# 120 1 2 3 2 3 4 5
+
+traveling from the last station and going back to the last station form the second shortest path
+3 3
+1 2 10
+2 3 20
+3 2 20
+# 70 1 2 3 2 3
+
+there is a loop incorporating the first vertex
+4 4
+1 2 20
+2 3 30
+3 1 10
+2 4 10
+# 90 1 2 3 1 2 4
+
+part of several loops are overlapped
+6 7
+1 2 10
+2 3 20
+3 4 10
+3 5 30
+4 5 5
+4 6 5
+5 2 10
+# 90 1 2 3 4 5 2 3 4 6
+
+a bidirectional case
+6 12
+1 2 30
+2 1 30
+1 3 35
+3 1 35
+2 4 40
+4 2 40
+3 5 40
+5 3 40
+4 6 50
+6 4 50
+5 6 50
+6 5 50
+# 125 1 3 5 6
+
+a case inspired from the railway map of China, Lisa is going from Shenzhen to Beijing
+5 10
+1 2 161
+1 3 1512
+1 4 1814
+2 1 161
+2 3 1440
+2 5 2478
+3 1 1512
+3 2 1440
+3 5 1493
+4 5 1490
+# 2961 1 2 1 2 5
