@@ -1,4 +1,4 @@
-# 从ZJU CS活下来！
+# 从浙大CS活下来！
 * 在浙大cs存活下来的一点痕迹
 * 已尽量删除[icicles](https://github.com/QSCTech/zju-icicles)的内容
 * 善用 + 慎用
