@@ -6,10 +6,13 @@
 # 一些有用的东西
 * 下载电子教材网站：http://libgen.rs/
 * 暴算网站：https://www.wolframalpha.com/
+* 数学工具：https://zh.numberempire.com/derivativecalculator.php
 * 下载、查文献的插件：[Endnote Click](https://chrome.google.com/webstore/detail/endnote-click-formerly-ko/fjgncogppolhfdpijihbpfmeohpaadpc?hl=zh-CN)
 * 控制视频速度的插件：[Global Speed](https://chrome.google.com/webstore/detail/global-speed/jpbjcnkcffbooppibceonlgknpkniiff?hl=zh-CN)
 * 广告屏蔽插件：[Adblock Plus](https://chrome.google.com/webstore/detail/adblock-plus-free-ad-bloc/cfhdojbkjhnklbpkdaibdccddilifddb?hl=zh-CN)
 * 从仓库下载特定文件的插件：[GitZip for github](https://chrome.google.com/webstore/detail/gitzip-for-github/ffabmkklhbepgcgfonabamgnfafbdlkn)
+* 运行脚本的插件：[Tampermonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
+  * 配合[Greasy Fork](https://greasyfork.org/zh-CN)使用
 * Windows下的截图、编辑、贴图软件：[Snipaste](https://www.snipaste.com/)
 * Linux下的截图、编辑、贴图软件：[Flameshot](https://github.com/flameshot-org/flameshot)
 * Windows下的文件全局搜索的软件：[Everything](https://www.voidtools.com/)
@@ -85,3 +88,11 @@
 * 选了的就竭尽全力认真上，除了思政课和软工
 * 不选认为没价值或者自己会水过去的课
 * 按个人体验来看，挑老师似乎不是一件很必要的事
+
+# 一些网站
+
+* [太鼓达人模拟器](https://taiko.bui.pm/)
+* [上海交通大学生存手册](https://survivesjtu.gitbook.io/survivesjtumanual/)
+* 数据结构可视化：[Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+* 看文章的：[Standard - Turbulence](https://turbulence.nei.st/publication/standard/)
+* ...
