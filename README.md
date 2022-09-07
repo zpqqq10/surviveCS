@@ -149,6 +149,9 @@
 
 * [太鼓达人模拟器](https://taiko.bui.pm/)
 * [上海交通大学生存手册](https://survivesjtu.gitbook.io/survivesjtumanual/)
-* 数据结构可视化：[Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
-* 看文章的：[Standard - Turbulence](https://turbulence.nei.st/publication/standard/)
+* [Data Structure Visualizations](https://www.cs.usfca.edu/~galles/visualization/Algorithms.html)
+* [Standard - Turbulence](https://turbulence.nei.st/publication/standard/)
+* [iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
+* [CS-Notes (cyc2018.github.io)](https://cyc2018.github.io/CS-Notes/#/)
+* [IEEE-754 Floating Point Converter (h-schmidt.net)](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 * ...
