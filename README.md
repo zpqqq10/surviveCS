@@ -87,7 +87,27 @@
 * 配置shell: oh-my-zsh
 
   * [玩转WSL(3)之安装并配置oh-my-zsh - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/199798102)
+
   * [玩转WSL(5)之zsh常用配置和插件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/242199299)
+
+  * 解决代理问题
+
+    * [Windows WSL 2 网络配置_mingh24的博客-CSDN博客](https://blog.csdn.net/Yiang0/article/details/127401243)
+
+    * [WSL2网络代理配置（apt与git) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/108927713)
+
+    * 我用的是v2ray，需要在`proxy_on`里面使用sock5：
+      ```sh
+      function proxy_on() {
+          export HTTP_PROXY="socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}" # http 或 socks5，取决于代理的协议
+          export HTTPS_PROXY="socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}" # http 或 socks5，取决于代理的协议
+          export ALL_PROXY="socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}" # http 或 socks5，取决于代理的协议
+          echo -e "Acquire::http::Proxy \"socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}\";" | sudo tee -a /etc/apt/apt.conf.d/proxy.conf > /dev/null
+          echo -e "Acquire::https::Proxy \"socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}\";" | sudo tee -a /etc/apt/apt.conf.d/proxy.conf > /dev/null
+          proxy_status
+      }
+      ```
+
   * 使用主题ys，安装的plugins有：
     ```
     plugins=(git
