@@ -49,7 +49,6 @@
   * 上述配置教程不一定可用……因为自己用过的教程找不到了……使用订阅链接则可以不买服务器
   * [v2rayfree](https://github.com/aiboboxx/v2rayfree)
   * [free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss)
-  * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
   
 * *Typora*值得花一花钱，支持正版、用钱支持开发者是一件大好事
 
@@ -74,7 +73,7 @@
 
   * 装了PowerShell7.2后想卸载预装的5.1，但是好像没办法卸载……
 
-  * 我的`$PROFILE`配置如下：
+  * 我的`$PROFILE`配置如下（最后一行配置代理）：
 
     ```
     oh-my-posh init pwsh --config C:\Users\Lenovo\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json | Invoke-Expression
@@ -83,6 +82,7 @@
     Set-PSReadLineOption -Colors @{ "InlinePrediction"="`e[36m" }
     Set-PSReadLineKeyHandler -Chord "Ctrl+RightArrow" -Function ForwardWord
     Set-PSReadLineOption -ShowToolTips
+    $env:all_proxy="socks5://127.0.0.1:10808"
     ```
 
 * 配置shell: oh-my-zsh
@@ -93,21 +93,7 @@
 
   * 解决代理问题
 
-    * [Windows WSL 2 网络配置_mingh24的博客-CSDN博客](https://blog.csdn.net/Yiang0/article/details/127401243)
-
-    * [WSL2网络代理配置（apt与git) - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/108927713)
-
-    * 我用的是v2ray，需要在`proxy_on`里面使用sock5：
-      ```sh
-      function proxy_on() {
-          export HTTP_PROXY="socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}" # http 或 socks5，取决于代理的协议
-          export HTTPS_PROXY="socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}" # http 或 socks5，取决于代理的协议
-          export ALL_PROXY="socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}" # http 或 socks5，取决于代理的协议
-          echo -e "Acquire::http::Proxy \"socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}\";" | sudo tee -a /etc/apt/apt.conf.d/proxy.conf > /dev/null
-          echo -e "Acquire::https::Proxy \"socks5://${WINDOWS_IP}:${WINDOWS_PROXY_PORT}\";" | sudo tee -a /etc/apt/apt.conf.d/proxy.conf > /dev/null
-          proxy_status
-      }
-      ```
+    * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
 
   * 使用主题ys，安装的plugins有：
     ```
@@ -117,7 +103,7 @@
              extract
     )
     ```
-
+  
 * ...
 
 
