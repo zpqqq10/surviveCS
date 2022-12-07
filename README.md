@@ -49,6 +49,7 @@
   * 上述配置教程不一定可用……因为自己用过的教程找不到了……使用订阅链接则可以不买服务器
   * [v2rayfree](https://github.com/aiboboxx/v2rayfree)
   * [free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss)
+  * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
   
 * *Typora*值得花一花钱，支持正版、用钱支持开发者是一件大好事
 
