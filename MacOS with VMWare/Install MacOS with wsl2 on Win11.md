@@ -217,6 +217,12 @@ mouse.vusb.enable = "TRUE"
 
 - [yanue/V2rayU: V2rayU,基于v2ray核心的mac版客户端,用于科学上网,使用swift编写,支持vmess,shadowsocks,socks5等服务协议,支持订阅, 支持二维码,剪贴板导入,手动配置,二维码分享等 (github.com)](https://github.com/yanue/V2rayU)
 
+- 终端使用代理，在`~/.zprofile`加入（这里是使用虚拟机内部的v2rayU的端口）
+  ```bash
+  alias proxy="export ALL_PROXY=socks5://127.0.0.1:1080" 
+  alias unproxy="unset ALL_PROXY "
+  ```
+
 
 
 ## brew
@@ -268,7 +274,8 @@ optional: 如果安装完毕后输入`brew help`提示命令没找到，则根�
 
 ## XCode
 
-升级到MacOS 12.5以上系统，在App Store直接下载即可。
+- 升级到MacOS 12.5以上系统，在App Store直接下载即可
+- 运行的时候遇到的，optional：`sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
 
 
 
@@ -276,7 +283,20 @@ optional: 如果安装完毕后输入`brew help`提示命令没找到，则根�
 
 - [Mac虚拟机一——扩大磁盘_joey小天使的博客-CSDN博客_虚拟机扩充磁盘大小100g](https://blog.csdn.net/joey_ro/article/details/106470070)
 - [用Mac终端打开python3而不是python2（一文详细解决）_西瓜6的博客-CSDN博客](https://blog.csdn.net/qq_37924224/article/details/109642307)
+  - 有些代码是直接指定bin的路径，对于这种情况，简单地在终端写入一个alias是不够的，需要一个软链接
+  - 在`Monterey 12.6`，自带的python已经是python3而不是python2，通过`which python3`可以找到内建python3的位置`/usr/bin/python3`（没有python）
+  - 按照Linux的思路，通过`sudo ln -s /usr/bin/python3 /usr/bin/python `即可，但是会报一个`operation not permitted`的错
+  - 改变软链接的路径，将代码变成`sudo ln -s /usr/bin/python3 /usr/local/bin/python`，此时可以创建软链接，但是在终端运行`python`会提示需要XCode的命令行工具（此时是已经安装过了的）
+  - 最终解决方案：
+    - 手动从[python官网](https://www.python.org/)下载安装一个3.10的python，此时在终端输入`python3`可以运行3.10，系统内依然找不到`python`
+    - 在终端输入```sudo ln -s ` which python3` /usr/local/bin/python```，即可解决此类问题
+
 - [VSCode官网](https://code.visualstudio.com/)下载安装VSCode
+  - 运行后会有显示问题，使用老版本（如1.68解决）
+
+- [手把手教你MacOS上如何美化原生命令行Terminal（2022年年初版） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/460076507)
+- [如何调节MAC 命令行终端字体大小_一棵栗子树的博客-CSDN博客_mac设置终端字体大小](https://blog.csdn.net/flyconley/article/details/116608428)
+- [MacOS如何显示文件完整路径？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/80063888)
 
 
 
