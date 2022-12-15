@@ -94,6 +94,9 @@ $ wsl -l -v
 <img src="assets/webp-1670944446498-3.png" alt="img" style="zoom:80%;" />
 
 4. 在unlocker文件夹中找到`win-install.cmd`，右键**以管理员身份运行**
+4. 每次更新版本后，重新进行一次该步骤
+
+> 如果使用NAT模式的虚拟机无法上网，可能是这一步关闭的服务没有重新启动，手动开启运行即可
 
 
 
@@ -200,22 +203,80 @@ mouse.vusb.enable = "TRUE"
 
 ## Update MacOS
 
+- 版本比较新的MacOS才能安装使用XCode，因此要更新系统
 - [苹果电脑老系统怎么更新到最新？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/356324207)
+  - 在我这里升到13.1会崩……目前使用12.6.2一切稳定
+
 - [在 Mac 上更新 macOS - 官方 Apple 支持 (中国)](https://support.apple.com/zh-cn/HT201541)
 
 
 
 # Configuration
 
+## v2rayU
+
+- [yanue/V2rayU: V2rayU,基于v2ray核心的mac版客户端,用于科学上网,使用swift编写,支持vmess,shadowsocks,socks5等服务协议,支持订阅, 支持二维码,剪贴板导入,手动配置,二维码分享等 (github.com)](https://github.com/yanue/V2rayU)
+
+
+
 ## brew
+
+使用命令即可（国内源）：
+
+```bash
+/bin/bash -c "$(curl -fsSL https://cdn.jsdelivr.net/gh/ineo6/homebrew-install/install.sh)"
+```
+
+optional: 如果安装完毕后输入`brew help`提示命令没找到，则根据自己的芯片和shell使用：
+
+- M1
+
+  - zsh
+
+    ```bash
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    ```
+
+  - bash
+    ```bash
+    echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+    ```
+
+- Intel
+
+  - zsh
+    ```bash
+    echo 'eval "$(/usr/local/Homebrew/bin/brew shellenv)"' >> ~/.zprofile
+    eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+    ```
+
+  - bash
+    ```bash
+    echo 'eval "$(/usr/local/Homebrew/bin/brew shellenv)"' >> ~/.bash_profile
+    eval "$(/usr/local/Homebrew/bin/brew shellenv)"
+    ```
 
 
 
 ## git
 
+- [Mac安装Git_rockvine的博客-CSDN博客_mac安装git](https://blog.csdn.net/rockvine/article/details/122898165)
+
 
 
 ## XCode
+
+升级到MacOS 12.5以上系统，在App Store直接下载即可。
+
+
+
+## Others
+
+- [Mac虚拟机一——扩大磁盘_joey小天使的博客-CSDN博客_虚拟机扩充磁盘大小100g](https://blog.csdn.net/joey_ro/article/details/106470070)
+- [用Mac终端打开python3而不是python2（一文详细解决）_西瓜6的博客-CSDN博客](https://blog.csdn.net/qq_37924224/article/details/109642307)
+- [VSCode官网](https://code.visualstudio.com/)下载安装VSCode
 
 
 
