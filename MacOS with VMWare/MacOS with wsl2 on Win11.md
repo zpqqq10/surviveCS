@@ -203,7 +203,7 @@ mouse.vusb.enable = "TRUE"
 
 ## Update MacOS
 
-- 版本比较新的MacOS才能安装使用XCode，因此要更新系统
+- 版本比较新的MacOS才能安装使用Xcode，因此要更新系统
 - [苹果电脑老系统怎么更新到最新？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/356324207)
   - 在我这里升到13.1会崩……目前使用12.6.2一切稳定
 
@@ -272,7 +272,7 @@ optional: 如果安装完毕后输入`brew help`提示命令没找到，则根�
 
 
 
-## XCode
+## Xcode
 
 - 升级到MacOS 12.5以上系统，在App Store直接下载即可
 - 运行的时候遇到的，optional：`sudo xcode-select -s /Applications/Xcode.app/Contents/Developer`
@@ -286,7 +286,7 @@ optional: 如果安装完毕后输入`brew help`提示命令没找到，则根�
   - 有些代码是直接指定bin的路径，对于这种情况，简单地在终端写入一个alias是不够的，需要一个软链接
   - 在`Monterey 12.6`，自带的python已经是python3而不是python2，通过`which python3`可以找到内建python3的位置`/usr/bin/python3`（没有python）
   - 按照Linux的思路，通过`sudo ln -s /usr/bin/python3 /usr/bin/python `即可，但是会报一个`operation not permitted`的错
-  - 改变软链接的路径，将代码变成`sudo ln -s /usr/bin/python3 /usr/local/bin/python`，此时可以创建软链接，但是在终端运行`python`会提示需要XCode的命令行工具（此时是已经安装过了的）
+  - 改变软链接的路径，将代码变成`sudo ln -s /usr/bin/python3 /usr/local/bin/python`，此时可以创建软链接，但是在终端运行`python`会提示需要Xcode的命令行工具（此时是已经安装过了的）
   - 最终解决方案：
     - 手动从[python官网](https://www.python.org/)下载安装一个3.10的python，此时在终端输入`python3`可以运行3.10，系统内依然找不到`python`
     - 在终端输入```sudo ln -s ` which python3` /usr/local/bin/python```，即可解决此类问题
@@ -297,6 +297,130 @@ optional: 如果安装完毕后输入`brew help`提示命令没找到，则根�
 - [手把手教你MacOS上如何美化原生命令行Terminal（2022年年初版） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/460076507)
 - [如何调节MAC 命令行终端字体大小_一棵栗子树的博客-CSDN博客_mac设置终端字体大小](https://blog.csdn.net/flyconley/article/details/116608428)
 - [MacOS如何显示文件完整路径？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/80063888)
+- [开发者账号和TeamId如何查看_ezreal_tao的博客-CSDN博客](https://blog.csdn.net/ezreal_tao/article/details/104106356)
+- [2021年Apple Developer 开发者账号申请&实名认证超详细教程 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/340651153)
+
+
+
+# An example of running XRSlam with Xcode
+
+- 一个来自实验室的任务，在iphone上把xrslam跑起来
+
+- 准备
+
+  - 需要的仓库
+
+    - [openxrlab/xrprimer: OpenXRLab foundational library for XR-related algorithms (github.com)](https://github.com/openxrlab/xrprimer)
+
+    - [openxrlab/xrslam: OpenXRLab Visual-inertial SLAM Toolbox and Benchmark (github.com)](https://github.com/openxrlab/xrslam)
+
+    - ```bash
+      xr
+      ├── xrprimer
+      │   ├── CITATION.cff
+      │   ├── CMakeLists.txt
+      │   ├── Dockerfile
+      │   ├── LICENSE
+      │   ├── README.md
+      │   ├── README_CN.md
+      │   ├── build-ios.sh
+      │   ├── cmake
+      │   ├── conanfile.txt
+      │   ├── cpp
+      │   ├── docs
+      │   ├── install
+      │   ├── python
+      │   │   └── xrprimer
+      │   ├── requirements
+      │   ├── setup.cfg
+      │   ├── setup.py
+      │   ├── utils
+      │   └── version.txt
+      └── xrslam
+          ├── CITATION.cff
+          ├── CMakeLists.txt
+          ├── Dockerfile
+          ├── LICENSE
+          ├── README.md
+          ├── build
+          ├── build-ios.conf
+          ├── build-ios.conf.defaults
+          ├── build-ios.sh
+          ├── cmake
+          ├── configs
+          ├── data
+          │   └── EuRoC
+          ├── docs
+          ├── resources
+          ├── trajectory.tum
+          ├── xrslam
+          ├── xrslam-extra
+          ├── xrslam-ios
+          ├── xrslam-pc
+          └── xrslam-test
+      ```
+
+  - EuRoC data (according to [the data preparation documents](https://github.com/openxrlab/xrslam/blob/main/docs/en/dataset_preparation.md))
+
+  - apple ID
+
+  - python
+
+  - cmake
+
+  - ...
+
+
+
+1. 成为开发者：在[开发者官网的帐户页面](https://developer.apple.com/account)登录，然后同意开发者协议即可
+
+![img](assets/v2-b6b397ef303632872cfd6b69372abd9e_1440w.webp)
+
+2. 打开Xcode，打开设置，进入账号选项。如果左侧列表没有出现apple id，则点击黄色框内的加号添加自己的苹果id；有的话，点击自己的苹果id，选中Personal Team后点击蓝色框内的Manage Certificates
+
+<img src="assets/image-20221220213445219-1671543288422-5.png" alt="image-20221220213445219" style="zoom:80%;" />
+
+3. 点击加号添加一个代表本机的Apple Development凭证
+
+<img src="assets/image-20221220213735321-1671543458830-7.png" alt="image-20221220213735321" style="zoom:80%;" />
+
+4. 打开一个终端，根据仓库的文档指导，输入命令
+
+```bash
+cd xr
+cd xrprimer
+git checkout xrslam-opencv3.4.7
+cmake -S. -Bbuild -DBUILD_EXTERNAL=ON -DCMAKE_BUILD_TYPE=Release -DENABLE_PRECOMPILED_HEADERS=OFF && cmake --build build --target install -j8
+cd ../xrslam && cmake -B build && cmake --build build -j8
+cd ..
+xrprimer/build-ios.sh
+xrslam/build-ios.sh
+```
+
+5. 此时`xr/xrslam`下会出现`build-ios.conf`，其中需要填入`IOS_DEVELOPMENT_TEAM`，通过如下命令查询并填入（括号内的十位字符串）
+
+```bash
+$ security find-identity -v -p codesigning
+  1) ... "Apple Development: xxxxxxxxxx@xx.com (XXXXXXXXXX)"
+     1 valid identities found
+```
+
+6. 再次运行`xrslam/build-ios.sh`，在我的虚拟机上，最后会报错提示`No account for team "XXXXXXXXXX"`；但是此时已经出现了Xcode工程，用Xcode打开工程`xr/xrslam/build/iOS/xrslam-superbuild.xcodeproj`
+7. 打开工程，由左向右依次点击红框内容，部署要求的最低版本设为16.2，这个是仓库要求的iOS版本（默认即为16.2，同时这意味着真机的iOS版本也要为16.2及以上）
+
+<img src="assets/image-20221220215303638-1671544386483-9.png" alt="image-20221220215303638" style="zoom:80%;" />
+
+8. 点击蓝色框，可以查看到刚才的报错信息。点击红色框，可以看到红字提示了报错信息，点击选择第二步中出现过的Personal Team
+
+<img src="assets/image-20221220215831658-1671544714300-11.png" alt="image-20221220215831658" style="zoom:80%;" />
+
+9. 再次点击运行按钮，可以看到报错变了，这个是因为bundle identifier不可用，简单加个0即可，即改为`com.company.xrslam.visualizer0`（或者别的）
+
+<img src="assets/image-20221220220128101-1671544890128-13.png" alt="image-20221220220128101" style="zoom:80%;" />
+
+10. 编译通过后，可以看到出现了`Products/xrslam-ios-visualizer`，点击红框选择`xrslam-ios-visualizer`，点击蓝色框选择真机。真机上开启开发者模式后，点击运行键，真机上的设备管理会出现来自Mac的安装请求。信任该Mac后再次点击运行，即可在真机运行。
+
+<img src="assets/image-20221220220616742-1671545178976-15.png" alt="image-20221220220616742" style="zoom:80%;" />
 
 
 
