@@ -82,12 +82,8 @@
     Set-PSReadLineOption -Colors @{ "InlinePrediction"="`e[36m" }
     Set-PSReadLineKeyHandler -Chord "Ctrl+RightArrow" -Function ForwardWord
     Set-PSReadLineOption -ShowToolTips
-    $env:all_proxy="socks5://127.0.0.1:10808"
-    ```
-    
-  * PowerShell取消代理（代理导致pip报错安装`pysocks`即可）：
-    ```
-    $env:all_proxy=''
+    function proxy {$env:all_proxy="socks5://127.0.0.1:10808"}
+    function unproxy {$env:all_proxy = ''}
     ```
 
 * 配置shell: oh-my-zsh
