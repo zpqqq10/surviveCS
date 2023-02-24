@@ -35,6 +35,10 @@
   * [hexdump for VSCode](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-hexdump)
   * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
   * [vscode-random](https://marketplace.visualstudio.com/items?itemName=jrebocho.vscode-random)
+  * [ChatGPT](https://marketplace.visualstudio.com/items?itemName=gencay.vscode-chatgpt)
+    * 注册时需要用的手机号可以在[SMS-Activate](https://sms-activate.org/)花点小钱解决，多试试几个号码就行了
+    * 如果验证失败的次数太多了，会被要求过一阵子再验证，搜了一下一阵子指48小时
+    * 登录后[获取api keys](https://platform.openai.com/account/api-keys)，在插件设置中保存即可
   * ……
   
 * *Linux*必须会用……
@@ -95,7 +99,8 @@
   * 解决代理问题
 
     * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
-
+    * [ubuntu系统下执行sudo apt-get update报错无法连接上 127.0.0.1:58591 (127.0.0.1)。- connect (111: 拒绝连接)的踩坑历程及解决方案总结_zeeq_的博客-CSDN博客](https://blog.csdn.net/weixin_44120025/article/details/120934224)（很怪的一个问题……不知道怎么就突然出现了……）
+  
   * 使用主题ys，安装的plugins有：
     ```
     plugins=(git
