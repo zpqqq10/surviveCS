@@ -39,6 +39,8 @@
 
 - root/sudo密码：即`sshpass`使用的密码
 
+  - windows没有`sshpass`，可以使用`ssh`之后再输入密码
+
 - 常用命令
 
   - ```bash
@@ -50,7 +52,7 @@
     scp -P 10022 .\cudnn-11.3-linux-x64-v8.2.1.32.tgz xx@xxx.xxx.xxx.xxx:~/REFNeRF/
     # 监视显卡状态
     watch -n 1 nvidia-smi
-    # 多版本cuda管理
+    # 多版本cuda管理 或update-alternatives
     cd /usr/local
     sudo rm -rf cuda
     sudo ln -s /usr/local/cuda-11.2 /usr/local/cuda
@@ -66,6 +68,8 @@
   - [Anaconda-- conda 创建、激活、退出、删除虚拟环境_hejp_123的博客-CSDN博客_conda删除虚拟环境](https://blog.csdn.net/hejp_123/article/details/92151293)
 
 - 指定使用哪张显卡，在命令行或者脚本输入`CUDA_VISIBLE_DEVICES=0,1,2,3`（卡的数量最好是2的n次幂）
+
+- 多版本管理工具[Linux命令之update-alternatives - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/20797436)，可以用来管理gcc、java、cuda等工具的版本（python的版本管理已经通过conda/miniconda实现了）
 
 
 

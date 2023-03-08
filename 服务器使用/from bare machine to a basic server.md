@@ -59,9 +59,11 @@ $ nvidia-smi -L
 GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-77860e35-a99c-0a9f-f154-58b97f45f3ba)
 ```
 
+> 清楚配置的目的：作为一台高性能的服务器进行训练，而不是用于网络或者数据库等其他用途
 
 
-## 安装Ubuntu
+
+# 安装Ubuntu
 
 - 根据[博客](https://blog.csdn.net/Mud_Bodhisattva/article/details/113922922)在裸机上通过u盘安装Ubuntu
 
@@ -84,7 +86,7 @@ GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-77860e35-a99c-0a9f-f154-58b97f45f3ba)
 
 
 
-## 配置Ubuntu 22.04
+# 配置Ubuntu 22.04
 
 ```bash
 # zsh git flameshot
