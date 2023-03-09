@@ -3,6 +3,8 @@
 * 已尽量删除[icicles](https://github.com/QSCTech/zju-icicles)的内容
 * 善用 + 慎用
 
+
+
 # 一些有用的东西
 * 下载电子教材网站：http://libgen.rs/
 
@@ -157,6 +159,26 @@
 * 选了的就竭尽全力认真上，除了思政课和软工
 * 不选认为没价值或者自己会水过去的课
 * 按个人体验来看，挑老师似乎不是一件很必要的事
+
+
+
+# 代码工具
+
+- python
+  - 命令行调试工具[pdb](https://www.jianshu.com/p/8e5fb5fe0931)
+    - 使用`breakpoint()`也可以
+  - 用于输出的调试工具[ic](https://blog.csdn.net/CoderPai/article/details/113784550)
+  - 进度条库[tqdm](https://zhuanlan.zhihu.com/p/163613814)
+  - 为脚本传递命令参数的包[argparse](https://blog.csdn.net/RudeTomatoes/article/details/117003291)
+  - 可替换argparse的[ConfigArgParse](https://blog.csdn.net/fengbingchun/article/details/129333101)
+    - Python’s command line parsing modules such as *argparse* have very limited support for config files and environment variables, so this module extends argparse to add these features.
+  - 读取配置文件的包[ConfigParser](https://www.cnblogs.com/ming5218/p/7965973.html)
+  - 日志模块[Logging](https://zhuanlan.zhihu.com/p/166671955)
+- c++
+  - 命令行调试工具[GDB](https://zhuanlan.zhihu.com/p/297925056)
+  - C/C++ 代码缺陷静态检查工具[CppCheck](https://www.cnblogs.com/lvdongjie/p/9549254.html)
+
+
 
 # 一些网站
 
