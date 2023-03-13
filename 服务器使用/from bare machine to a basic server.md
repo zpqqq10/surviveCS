@@ -221,5 +221,12 @@ sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-12.0 120
   - [ubuntu安装cmake的三种方法（超方便！）-CSDN博客](https://blog.csdn.net/Man_1man/article/details/126467371)
   - 用第二个方法
 
+- colmap
+
+  - 安装的依赖参照了[Installation](https://colmap.github.io/install.html)，其中colmap的cmake命令使用的是`cmake .. -GNinja -DCMAKE_CUDA_ARCHITECTURES=native
+`
+  - 参照了重命名anaconda的步骤[Ubuntu20.04安装Colmap](https://blog.csdn.net/weixin_44172157/article/details/122203759)
+  - 安装ceres-solver参照了[Ubuntu18.04系统安装和使用colmap](https://www.cnblogs.com/littlebirdicy/p/13200112.html)
+
 
 
