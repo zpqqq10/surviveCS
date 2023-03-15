@@ -57,9 +57,78 @@ Mem:           31946        2440       23292         106        6213       28945
 Swap:           2047           0        2047
 $ nvidia-smi -L
 GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-77860e35-a99c-0a9f-f154-58b97f45f3ba)
+$ sudo fdisk -l       
+Disk /dev/loop0: 4 KiB, 4096 bytes, 8 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop1: 63.28 MiB, 66355200 bytes, 129600 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop2: 63.29 MiB, 66359296 bytes, 129608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop3: 346.33 MiB, 363151360 bytes, 709280 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop4: 91.69 MiB, 96141312 bytes, 187776 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop5: 45.93 MiB, 48160768 bytes, 94064 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop6: 49.84 MiB, 52260864 bytes, 102072 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/loop7: 304 KiB, 311296 bytes, 608 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+
+Disk /dev/nvme0n1: 931.51 GiB, 1000204886016 bytes, 1953525168 sectors
+Disk model: WD Blue SN570 1TB SSD                   
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disklabel type: gpt
+Disk identifier: 0D439098-A524-497C-ABD4-30EF14967C57
+
+Device           Start        End    Sectors  Size Type
+/dev/nvme0n1p1    2048    1050623    1048576  512M EFI System
+/dev/nvme0n1p2 1050624 1953523711 1952473088  931G Linux filesystem
+
+
+Disk /dev/sda: 1.82 TiB, 2000398934016 bytes, 3907029168 sectors
+Disk model: WDC WD20EZAZ-00L
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 4096 bytes
+I/O size (minimum/optimal): 4096 bytes / 4096 bytes
+Disklabel type: dos
+Disk identifier: 0x479d2f96
 ```
 
-> 清楚配置的目的：作为一台高性能的服务器进行训练，而不是用于网络或者数据库等其他用途
+> 清楚配置的目的：作为一台高性能的服务器进行训练计算，而不是用于网络或者数据库等其他用途
 
 
 
@@ -89,7 +158,7 @@ GPU 0: NVIDIA GeForce RTX 4090 (UUID: GPU-77860e35-a99c-0a9f-f154-58b97f45f3ba)
 # 配置Ubuntu 22.04
 
 ```bash
-# zsh git flameshot
+do# zsh git flameshot
 sudo apt install zsh git flameshot make curl
 chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://gitee.com/shmhlsy/oh-my-zsh-install.sh/raw/master/install.sh)"
@@ -149,6 +218,13 @@ sudo cp cudnn-linux-x86_64-8.8.0.121_cuda12-archive/lib/libcudnn* /usr/local/cud
 sudo chmod a+r /usr/local/cuda/include/cudnn*   /usr/local/cuda/lib64/libcudnn*
 sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-11.2 112
 sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-12.0 120
+
+# docker
+curl -fsSL get.docker.com -o get-docker.sh
+sudo sh get-docker.sh --mirror Aliyun
+sudo groupadd docker
+sudo usermod -aG docker $USER
+sudo reboot
 ```
 
 - 网络
@@ -221,10 +297,14 @@ sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-12.0 120
   - [ubuntu安装cmake的三种方法（超方便！）-CSDN博客](https://blog.csdn.net/Man_1man/article/details/126467371)
   - 用第二个方法
 
+- docker
+
+  - [Ubuntu安装 Docker_ubuntu安装docker_胡八一 的博客-CSDN博客](https://blog.csdn.net/qq_44732146/article/details/121207737)
+  
 - colmap
 
   - 安装的依赖参照了[Installation](https://colmap.github.io/install.html)，其中colmap的cmake命令使用的是`cmake .. -GNinja -DCMAKE_CUDA_ARCHITECTURES=native
-`
+  `
   - 参照了重命名anaconda的步骤[Ubuntu20.04安装Colmap](https://blog.csdn.net/weixin_44172157/article/details/122203759)
   - 安装ceres-solver参照了[Ubuntu18.04系统安装和使用colmap](https://www.cnblogs.com/littlebirdicy/p/13200112.html)
 
