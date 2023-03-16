@@ -225,6 +225,9 @@ sudo sh get-docker.sh --mirror Aliyun
 sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo reboot
+
+# meshlab
+sudo apt-get install meshlab
 ```
 
 - 网络
