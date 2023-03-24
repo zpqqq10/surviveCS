@@ -283,6 +283,7 @@ sudo reboot
 
   - [Ubuntu 系列学习（五）ubuntu22.04安装flameshot火焰截图（图文）_ubuntu火焰截图_毅博明喆的博客-CSDN博客](https://blog.csdn.net/weixin_38493195/article/details/124874330)
   - [Ubuntu开机自启动的两种方法总结_ubuntu 自启动_苏源流的博客-CSDN博客](https://blog.csdn.net/KYJL888/article/details/103687876)
+  - wayland的桌面系统会屏蔽掉该类第三方软件，如果无法使用flameshot可以考虑是桌面系统的问题
 
 - vpn
 
@@ -307,6 +308,17 @@ sudo reboot
   `
   - 参照了重命名anaconda的步骤[Ubuntu20.04安装Colmap](https://blog.csdn.net/weixin_44172157/article/details/122203759)
   - 安装ceres-solver参照了[Ubuntu18.04系统安装和使用colmap](https://www.cnblogs.com/littlebirdicy/p/13200112.html)
+  
+- 多硬盘挂载
+
+  - [Ubuntu下挂载第二块硬盘 - 简书 (jianshu.com)](https://www.jianshu.com/p/d426171e882d)
+  - 完成后可以用`chown`命令修改挂载目录的所属用户/用户组，参考[Ubuntu/Linux用户管理与权限管理（超详细解析）_ubuntu 用户管理_AI大龙虾的博客-CSDN博客](https://blog.csdn.net/yl19870518/article/details/100776136)
+
+- 远程桌面
+
+  - windows的xrdp实在蛋疼，还卡，向日葵的体验不错
+  - [Linux 个人版（图形版本）使用手册-贝锐官网 (oray.com)](https://service.oray.com/question/8364.html)
+  - [Windows个人版使用手册-贝锐官网 (oray.com)](https://service.oray.com/question/10549.html)
 
 
 
