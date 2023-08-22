@@ -69,9 +69,40 @@
 ## 其他
 
 - azure好像把`ping`给禁了，所以不能`ping`节点来测试
-- 这个方法速度比较快但似乎容易g，如果g了应该换个端口继续开又可以用
+- 这个方法速度比较快但似乎容易g，~~如果g了应该换个端口继续开又可以用~~ g了就是双向被墙，国内连不上节点，节点也ping不到国内网站
 - 更安全的方法是在上述方法的基础上配置tls，但是我懒得搞了，参考[TLS · V2Ray 配置指南|V2Ray 白话文教程 (selierlin.github.io)](https://selierlin.github.io/v2ray/advanced/tls.html)
+- [V2Ray搭建详细图文教程 · 233boy/v2ray Wiki (github.com)](https://github.com/233boy/v2ray/wiki/V2Ray搭建详细图文教程#哪个传输协议好)
 - azure的学生认证似乎非常松，毕业了也可以用
+
+
+
+# 延年益寿
+
+## ss+aes
+
+v2ray服务端安装好之后的默认配置是搞一个无加密的vmess，我到处发了一下链接然后没两天就挂了
+
+> 参考某个机场的做法，我决定尝试一下使用shadowsocks协议+aes-128-gcm加密（也有我懒得折腾一个免费域名的原因在）
+
+- 重新创建一个vm，安装后输入`v2ray`根据中文指引把默认生成的vmess配置给删了
+
+![image-20230822154715632](azure2node.assets/image-20230822154715632.png)
+
+- 输入`v2ray add ss`添加一个ss配置
+
+<img src="azure2node.assets/image-20230822154800308.png" alt="image-20230822154800308" style="zoom:80%;" />
+
+- 输入`v2ray`，根据指引把加密方式改成aes-128-gcm
+
+<img src="azure2node.assets/image-20230822154908102.png" alt="image-20230822154908102" style="zoom:80%;" />
+
+- 最后别忘了把这个端口给开放了
+
+
+
+## others
+
+希望不会再更了
 
 
 
