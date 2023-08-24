@@ -30,6 +30,7 @@
 * Windows下的文件全局搜索的软件：[Everything](https://www.voidtools.com/)
 
 * *VS Code*必须会用……本人使用的一些觉得很好的插件：
+  
   * [Beautify](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify)
   * [Better C++ Syntax](https://marketplace.visualstudio.com/items?itemName=jeff-hykin.better-cpp-syntax)
   * [Better Comments](https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments)
@@ -112,6 +113,8 @@
     )
     ```
   
+* 利用github搭建自己的网站：[我是如何利用Github Pages搭建起我的博客，细数一路的坑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/334815426)
+
 * ...
 
 

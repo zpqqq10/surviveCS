@@ -50,7 +50,10 @@
     <img src="azure2node.assets/image-20230812103801957.png" alt="image-20230812103801957" style="zoom:80%;" />
   - putty
 - 输入`sudo -i`
-- 输入`bash <(curl -s -L https://git.io/v2ray.sh)`
+- 安装脚本，二选一
+  - `bash <(curl -s -L https://git.io/v2ray.sh)`
+  - `source <(curl -sL https://multi.netlify.app/v2ray.sh) --zh`，见[这一章](#vless+tls+cdn)
+
 - 输出信息即包括了订阅链接和端口号
   - 可以通过`v2ray i`查看服务端信息
   - 可以通过`v2ray status`查看服务端状态
@@ -72,17 +75,22 @@
 - 这个方法速度比较快但似乎容易g，~~如果g了应该换个端口继续开又可以用~~ g了就是双向被墙，国内连不上节点，节点也ping不到国内网站
 - 更安全的方法是在上述方法的基础上配置tls，但是我懒得搞了，参考[TLS · V2Ray 配置指南|V2Ray 白话文教程 (selierlin.github.io)](https://selierlin.github.io/v2ray/advanced/tls.html)
 - [V2Ray搭建详细图文教程 · 233boy/v2ray Wiki (github.com)](https://github.com/233boy/v2ray/wiki/V2Ray搭建详细图文教程#哪个传输协议好)
+- [fanqiang/v2ss/V2Ray之TLS+WebSocket翻墙方法.md at master · bannedbook/fanqiang (github.com)](https://github.com/bannedbook/fanqiang/blob/master/v2ss/V2Ray之TLS%2BWebSocket翻墙方法.md)
 - azure的学生认证似乎非常松，毕业了也可以用
+- [Socks、shadowsocks、VMess协议的差异对比 | Silence潇湘夜雨 (muyishuangfeng.github.io)](https://muyishuangfeng.github.io/2019/09/23/Socks、shadowsocks、vmess协议的差异/)
+- [Trojan和V2Ray哪个好？V2Ray自研VMess/VLESS协议跟Trojan-GFW/Trojan-Go协议的区别和优缺点对比 - 一灯不是和尚 (iyideng.vip)](https://iyideng.vip/black-technology/cgfw/which-protocol-is-faster-vmess-vless-trojan-gfw-trojan-go.html)
 
 
 
 # 延年益寿
 
-## ss+aes
+## ~~ss+aes~~
 
 v2ray服务端安装好之后的默认配置是搞一个无加密的vmess，我到处发了一下链接然后没两天就挂了
 
 > 参考某个机场的做法，我决定尝试一下使用shadowsocks协议+aes-128-gcm加密（也有我懒得折腾一个免费域名的原因在）
+>
+> 和机场的唯一区别是机场的节点是有域名的，我这个没有
 
 - 重新创建一个vm，安装后输入`v2ray`根据中文指引把默认生成的vmess配置给删了
 
@@ -100,9 +108,62 @@ v2ray服务端安装好之后的默认配置是搞一个无加密的vmess，我�
 
 
 
+## vless+tls+cdn
+
+> 捏妈ss+aes在被墙之前，先被azure抓到，直接给我账号都ban了
+
+- 给我的学校邮箱取了个别名，然后又可以重新注册账号使用了
+  - 好像因为我用的是我已经毕业的本科邮箱，被azure发现了……新号啥也没干就被封了，要我变成使用付费订阅
+  - 小事
+
+- 问了一下我朋友，用的是vless+tls+cdn
+
+> 域名提供商
+>
+> 如freenom.com，在这里购买域名、续约、管理域名（如添加A record指向节点ip）
+>
+> 用tls就得要域名，前两年还能白嫖的www.freenom.com或者便宜买到.xyz域名的www.name.com好像搞起来都有点蛋疼。这个环节想白嫖难度颇大，网上有很多教程但我没有一一尝试
+
+> CDN 加速服务商
+>
+> 如cloudflare，Cloudflare 是一家全球最著名的 CDN 加速服务商，提供了免费和付费的网站加速和保护服务。在这里也可以对域名进行管理（如添加A record指向节点ip）
+>
+> 也可以在cloudflare购买域名
+
+- 新搞了两个虚拟机，一个跑gitio的安装脚本，一个跑netlify的脚本
+- 想办法搞到一个域名（免费的或者超低价的有很多教程，我这里是直接让我朋友分了个域名给我，他在曾经很好白嫖的时候弄到手的）
+- 使用couldflare或者国内的CDN服务商，给域名添加A record指向自己的节点ip，同时开启cdn服务
+  - 这里我分配了两个子域名分别给两台虚拟机，分别添加两个A record
+  - 参考[Cloudflare 入门教程：使用 Cloudflare 免费 CDN 加速 & 保护自己的网站 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/97389072)
+
+<img src="azure2node.assets/image-20230823131539963.png" alt="image-20230823131539963" style="zoom:80%;" />
+
+- 换了dns之后等啊等……
+- `sudo timedatectl set-timezone Asia/Shanghai`校准时间
+- gitio的脚本
+  - `v2ray add vh2`，这里要输入域名开启tls
+  - `v2ray`跟随指示更改配置，把配置改成VLESS-WS-TLS
+  - 端口改成8443
+  - optional: 通过`v2ray bbr`打开bbr（这个不知有没有用，似乎azure是默认开启bbr的）
+
+<img src="azure2node.assets/image-20230824143228742.png" alt="image-20230824143228742" style="zoom:80%;" />
+
+- netlify的脚本
+  - `v2ray`跟随指示修改配置为VLESS_WS，使用Let’s Encrypt 证书
+  - 端口改成8443
+
+
+<img src="azure2node.assets/image-20230824143555252.png" alt="image-20230824143555252" style="zoom:80%;" />
+
+<img src="azure2node.assets/image-20230824143634823.png" alt="image-20230824143634823" style="zoom:80%;" />
+
+- 中间有点曲折，一直连不上，应该和端口是有关系的，见[Cloudflare 常规端口 - 个人文章 - SegmentFault 思否](https://segmentfault.com/a/1190000039852533)
+
+
+
 ## others
 
-希望不会再更了
+希望我别再更了，妈的
 
 
 
