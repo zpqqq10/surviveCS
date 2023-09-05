@@ -322,6 +322,33 @@ sudo apt-get install meshlab
   - windows的xrdp实在蛋疼，还卡，向日葵的体验不错
   - [Linux 个人版（图形版本）使用手册-贝锐官网 (oray.com)](https://service.oray.com/question/8364.html)
   - [Windows个人版使用手册-贝锐官网 (oray.com)](https://service.oray.com/question/10549.html)
+  
+- 建议把自动更新关了，内核更新后我的显卡驱动直接宕机了……
+
+  - ```
+    subscribed to: security and recommended updates
+    automatically check for updates: never
+    when there are security updates: display immediately
+    when there are other updates: display every two weeks
+    notify me of a new ubuntu version: for LTS versions
+    ```
+
+  - GRUB还负责加载操作系统的**内核**和必要的初始化文件系统，以便系统能够正常启动。so我的solution：先把内核从6.2.0-31降级回6.2.0-26，删除多余的内核（每次对内核做操作或者修改grub配置后都要`sudo update-grub`）；再重新安装显卡驱动
+
+  - [Ubuntu 显卡NVIDIA-smi提示错误_DoubleImage的博客-CSDN博客](https://blog.csdn.net/u010361236/article/details/107670464)
+
+  - [ubuntu 开机引导文件说明(/etc/default/grub)_vi /etc/default/grub_都是弯弯绕的博客-CSDN博客](https://blog.csdn.net/baidu_40808339/article/details/108295497)
+
+  - 修改回老版本的内核后，重新安装显卡驱动
+
+    - `sudo apt-get purge nvidia*`
+    - `ubuntu-driver devices`
+    - `sudo apt-get install nvidia-xxxx` / software&updates里面选择安装
+    - 安装第三方驱动（`ubuntu-drivers devices`推荐的可能是第三方驱动）时，如果系统开启了secure boot，则需要设置一个password。命令行安装时有解释为什么需要这个东西。设置password后，重启会出现四个选项，选择enroll MOK，注册刚刚安装的第三方驱动即可。
+
+  - [删除Ubuntu中不用的内核_ubuntu卸载多余内核_bless_forever的博客-CSDN博客](https://blog.csdn.net/bless_forever/article/details/79630315)
+  
+  - 最后看到流畅的过渡动画，意识到显卡回来了的时候真是要哭了…………
 
 
 

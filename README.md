@@ -194,4 +194,6 @@
 * [iconfont-阿里巴巴矢量图标库](https://www.iconfont.cn/)
 * [CS-Notes (cyc2018.github.io)](https://cyc2018.github.io/CS-Notes/#/)
 * [IEEE-754 Floating Point Converter (h-schmidt.net)](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
+* [nazo.one-story.cn](https://nazo.one-story.cn/)
+* https://harrynull.tech/cipher/
 * ...
