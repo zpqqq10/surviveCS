@@ -97,10 +97,12 @@
 
   * [玩转WSL(3)之安装并配置oh-my-zsh - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/199798102)
 
+    * [oh-my-zsh 国内安装及配置](https://blog.csdn.net/qwe641259875/article/details/107201760)
+
   * [玩转WSL(5)之zsh常用配置和插件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/242199299)
 
   * 解决代理问题
-
+  
     * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
     * [ubuntu系统下执行sudo apt-get update报错无法连接上 127.0.0.1:58591 (127.0.0.1)。- connect (111: 拒绝连接)的踩坑历程及解决方案总结_zeeq_的博客-CSDN博客](https://blog.csdn.net/weixin_44120025/article/details/120934224)（很怪的一个问题……不知道怎么就突然出现了……）
   
@@ -114,6 +116,8 @@
     ```
   
 * 利用github搭建自己的网站：[我是如何利用Github Pages搭建起我的博客，细数一路的坑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/334815426)
+
+* [Inigo Quilez :: computer graphics, mathematics, shaders, fractals, demoscene and more (iquilezles.org)](https://iquilezles.org/)
 
 * ...
 
@@ -196,4 +200,5 @@
 * [IEEE-754 Floating Point Converter (h-schmidt.net)](https://www.h-schmidt.net/FloatConverter/IEEE754.html)
 * [nazo.one-story.cn](https://nazo.one-story.cn/)
 * https://harrynull.tech/cipher/
+* [tldraw](https://www.tldraw.com/)
 * ...
