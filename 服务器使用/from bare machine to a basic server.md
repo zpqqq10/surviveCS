@@ -349,6 +349,12 @@ sudo apt-get install meshlab
   - [删除Ubuntu中不用的内核_ubuntu卸载多余内核_bless_forever的博客-CSDN博客](https://blog.csdn.net/bless_forever/article/details/79630315)
   
   - 最后看到流畅的过渡动画，意识到显卡回来了的时候真是要哭了…………
+  
+- swapfile扩容
+
+  - [How to Change Swap File Size in Ubuntu – TecAdmin](https://tecadmin.net/change-swap-file-size-in-ubuntu/)
+  - [How To Add Swap Space on Ubuntu 20.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04)
+
 
 
 
