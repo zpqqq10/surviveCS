@@ -76,6 +76,8 @@
 
   * [关于终端：ANSI颜色转义序列列表 | 码农家园 (codenong.com)](https://www.codenong.com/4842424/)
 
+  * 似乎现在更新了，使用官方的winget即可：[Windows | Oh My Posh](https://ohmyposh.dev/docs/installation/windows)
+
   * win11自带terminal（最好手动更新一下），win10要先去microsoft store安装，我的配置是默认启动PowerShell7.2（手动安装），安装了命令补全和高亮，使用主题ys
 
   * 装了PowerShell7.2后想卸载预装的5.1，但是好像没办法卸载……
