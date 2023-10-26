@@ -110,11 +110,14 @@
   
   * 使用主题ys，安装的plugins有：
     ```
+    ZSH_THEME="ys"
+    COMPLETION_WAITING_DOTS="true"
     plugins=(git
              zsh-autosuggestions
              zsh-syntax-highlighting
              extract
     )
+    setopt no_nomatch
     ```
   
 * 利用github搭建自己的网站：[我是如何利用Github Pages搭建起我的博客，细数一路的坑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/334815426)

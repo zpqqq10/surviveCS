@@ -241,6 +241,8 @@ sudo apt-get install meshlab
 
   - [Ubuntu下安装ZSH - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/514636147)
 
+  - [oh-my-zsh 国内安装及配置](https://blog.csdn.net/qwe641259875/article/details/107201760)
+
   - 这一步就把git给安装了
 
   - ```
