@@ -42,9 +42,23 @@
     * 注册时需要用的手机号可以在[SMS-Activate](https://sms-activate.org/)花点小钱解决，多试试几个号码就行了
     * 如果验证失败的次数太多了，会被要求过一阵子再验证，搜了一下一阵子指48小时
     * 登录后[获取api keys](https://platform.openai.com/account/api-keys)，在插件设置中保存即可
+  * [clangd]([marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
+  
+    * 用来配置c/c++环境，配了之后我直接把c/c++插件卸载了，感觉比那个好用多了
+    * ```json
+      "clangd.arguments": [
+              "--compile-commands-dir=${workspaceFolder}/build",
+              "--header-insertion=never",  // 不加这个可能会乱加头文件，很烦
+              "--query-driver=/usr/bin/g++*", // 不加这个会找不到系统库头文件，但可以编译
+              "--completion-style=detailed",
+              "--clang-tidy",
+              "--background-index",
+          ],
+      ```
   * ……
   
 * *Linux*必须会用……
+  
   * 双系统
   * 虚拟机
   * WSL

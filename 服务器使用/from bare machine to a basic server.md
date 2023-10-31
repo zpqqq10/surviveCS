@@ -226,8 +226,11 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo reboot
 
-# meshlab
-sudo apt-get install meshlab
+# meshlab，用apt的会打不开obj
+sudo snap install meshlab
+
+# opengl
+sudo apt-get install build-essential libgl1-mesa-dev libglfw3 libglfw3-dev libglew2.2 libglew-dev libglm-dev
 ```
 
 - 网络
@@ -356,7 +359,6 @@ sudo apt-get install meshlab
 
   - [How to Change Swap File Size in Ubuntu – TecAdmin](https://tecadmin.net/change-swap-file-size-in-ubuntu/)
   - [How To Add Swap Space on Ubuntu 20.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04)
-
 
 
 
