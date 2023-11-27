@@ -284,7 +284,7 @@ sudo apt-get install build-essential libgl1-mesa-dev libglfw3 libglfw3-dev libgl
 
   - 考虑到refnerf的配置要求和最新配置，安装cuda12.0.0+cudnn8.8.0以及cuda11.2.0+cudnn8.1.1
   - [Ubuntu 安装 CUDA 和 cuDNN 详细步骤_wohu1104的博客-CSDN博客](https://blog.csdn.net/wohu1104/article/details/107041387)
-  - [Linux下安装cuda和对应版本的cudnn_linux安装cuda和cudnn_水哥很水的博客-CSDN博客](https://blog.csdn.net/qq_44961869/article/details/115954258)
+  - 把cudnn的所有头文件都拷了：[Ubuntu20.04下CUDA、cuDNN的详细安装与配置过程（图文）_ubuntu cudnn安装-CSDN博客](https://blog.csdn.net/weixin_37926734/article/details/123033286)
   - 我使用了`update-alternatives`：[Linux下的CUDA多版本管理_linux 多cuda版本_Adenialzz的博客-CSDN博客](https://blog.csdn.net/weixin_44966641/article/details/120818015)
 
 - flameshot
