@@ -42,7 +42,7 @@
     * 注册时需要用的手机号可以在[SMS-Activate](https://sms-activate.org/)花点小钱解决，多试试几个号码就行了
     * 如果验证失败的次数太多了，会被要求过一阵子再验证，搜了一下一阵子指48小时
     * 登录后[获取api keys](https://platform.openai.com/account/api-keys)，在插件设置中保存即可
-  * [clangd]([marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd))
+  * [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
   
     * 用来配置c/c++环境，配了之后我直接把c/c++插件卸载了，感觉比那个好用多了
     * ```json
@@ -185,24 +185,6 @@
 * 选了的就竭尽全力认真上，除了思政课和软工
 * 不选认为没价值或者自己会水过去的课
 * 按个人体验来看，挑老师似乎不是一件很必要的事
-
-
-
-# 代码工具
-
-- python
-  - 命令行调试工具[pdb](https://www.jianshu.com/p/8e5fb5fe0931)
-    - 使用`breakpoint()`也可以
-  - 用于输出的调试工具[ic](https://blog.csdn.net/CoderPai/article/details/113784550)
-  - 进度条库[tqdm](https://zhuanlan.zhihu.com/p/163613814)
-  - 为脚本传递命令参数的包[argparse](https://blog.csdn.net/RudeTomatoes/article/details/117003291)
-  - 可替换argparse的[ConfigArgParse](https://blog.csdn.net/fengbingchun/article/details/129333101)
-    - Python’s command line parsing modules such as *argparse* have very limited support for config files and environment variables, so this module extends argparse to add these features.
-  - 读取配置文件的包[ConfigParser](https://www.cnblogs.com/ming5218/p/7965973.html)
-  - 日志模块[Logging](https://zhuanlan.zhihu.com/p/166671955)
-- c++
-  - 命令行调试工具[GDB](https://zhuanlan.zhihu.com/p/297925056)
-  - C/C++ 代码缺陷静态检查工具[CppCheck](https://www.cnblogs.com/lvdongjie/p/9549254.html)
 
 
 
