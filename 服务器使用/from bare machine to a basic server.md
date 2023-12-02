@@ -359,6 +359,12 @@ sudo apt-get install build-essential libgl1-mesa-dev libglfw3 libglfw3-dev libgl
 
   - [How to Change Swap File Size in Ubuntu – TecAdmin](https://tecadmin.net/change-swap-file-size-in-ubuntu/)
   - [How To Add Swap Space on Ubuntu 20.04 | DigitalOcean](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-20-04)
+  
+- 特别特别诡异的问题：`site-packages/pymeshlab/lib/libmeshlab-omon. so: undefined symbol: _ZdlPvm, version0t5`
+
+  - pymeshlab作者说建议不要用conda的pip安装
+  - solution：`apt-get install python3-opencv --fix-missing`
+
 
 
 
