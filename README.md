@@ -38,7 +38,9 @@
   * [hexdump for VSCode](https://marketplace.visualstudio.com/items?itemName=slevesque.vscode-hexdump)
   * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
   * [vscode-random](https://marketplace.visualstudio.com/items?itemName=jrebocho.vscode-random)
+  * 美化一下字体：[FiraCode font](https://marketplace.visualstudio.com/items?itemName=SeyyedKhandon.firacode)和[vscode - 修改字体 、 合并字符、 使用连体字（Fira Code）_vscode连体字](https://blog.csdn.net/LawssssCat/article/details/104304546)
   * [ChatGPT - Genie AI](https://marketplace.visualstudio.com/items?itemName=genieai.chatgpt-vscode)
+    
     * 注册时需要用的手机号可以在[SMS-Activate](https://sms-activate.org/)花点小钱解决，多试试几个号码就行了
     * 如果验证失败的次数太多了，会被要求过一阵子再验证，搜了一下一阵子指48小时
     * 登录后[获取api keys](https://platform.openai.com/account/api-keys)，在插件设置中保存即可
