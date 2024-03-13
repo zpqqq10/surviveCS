@@ -193,7 +193,7 @@
 # 一些网站
 
 * [蒋炎岩老师的读研劝退信](https://jyywiki.cn/Letter.md)
-* [太鼓达人模拟器](https://taiko.bui.pm/)
+* [太鼓达人模拟器]([太鼓ウェブ - Taiko Web (cjdgrevival.com)](https://cjdgrevival.com/))
 * [How To Ask Questions The Smart Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
 * [CS自学指南](https://csdiy.wiki/)
 * [上海交通大学生存手册](https://survivesjtu.gitbook.io/survivesjtumanual/)
