@@ -122,7 +122,13 @@
   * 解决代理问题
   
     * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
+  
     * [ubuntu系统下执行sudo apt-get update报错无法连接上 127.0.0.1:58591 (127.0.0.1)。- connect (111: 拒绝连接)的踩坑历程及解决方案总结_zeeq_的博客-CSDN博客](https://blog.csdn.net/weixin_44120025/article/details/120934224)（很怪的一个问题……不知道怎么就突然出现了……）
+  
+    * ```bash
+      alias proxy='export ALL_PROXY="socks5://${hostip}:10810";'
+      alias unproxy='unset ALL_PROXY;'
+      ```
   
   * 使用主题ys，安装的plugins有：
     ```
