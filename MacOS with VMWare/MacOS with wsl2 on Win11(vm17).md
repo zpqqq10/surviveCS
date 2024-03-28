@@ -20,7 +20,7 @@ OS 构建类型:      Multiprocessor Free
 系统型号:         82L5
 系统类型:         x64-based PC
 处理器:           安装了 1 个处理器。
-                  [01]: AMD64 Family 25 Model 80 Stepping 0 AuthenticAMD ~3201 Mhz
+                  [01]: AMD64 Family 25 Model 80 Stepping 0 AuthenticAMD ~3201 Mhz AMD Ryzen 7 5800H
 BIOS 版本:        LENOVO GSCN31WW, 2022/1/28
 ...
 $ wsl -l -v
@@ -30,17 +30,32 @@ $ wsl -l -v
 
 
 
+# 小丑了！看这些issues
+
+> [macOS Ventura Guests · DrDonk/unlocker Wiki (github.com)](https://github.com/DrDonk/unlocker/wiki/macOS-Ventura-Guests)
+>
+> [Vmware MacOS-BigSur in win10 - Stack Overflow](https://stackoverflow.com/questions/67025805/vmware-macos-bigsur-in-win10)
+>
+> [Test using AMD Ryzen CPU · Issue #33 · DrDonk/unlocker (github.com)](https://github.com/DrDonk/unlocker/issues/33)
+>
+> [macOS Ventura Testing · Issue #47 · DrDonk/unlocker (github.com)](https://github.com/DrDonk/unlocker/issues/47#issue-1440512657)
+
+应该是amd ryzen cpu的问题……没有easy fix……从macos13 ventura开始估计就不行了……
+
+
+
 # Tools
 
-* [VMWare 16.2.4](https://customerconnect.vmware.com/en/downloads/details?downloadGroup=WKST-1624-WIN&productId=1038&rPId=91434)
+* [VMWare 17.5.1](https://www.vmware.com/products/workstation-pro/workstation-pro-evaluation.html)
   * The version chosen is **very important**, since some older versions are not compatible with WSL2
   * Licenses are everywhere
-* [Unlocker 3.0.4](https://github.com/BDisp/unlocker/releases)
-* MacOS cdr
-  * [MacOS High Sierra 10.13.cdr](https://pan.baidu.com/s/1OvoNExb-sBPLQLwdJm63fA) (password: 1w43)
-  * Other versions may work too
+* Unlocker
+  * [Releases · DrDonk/unlocker 4..x.x](https://github.com/DrDonk/unlocker/releases)
+  * [Releases · BDisp/unlocker 3.x.x](https://github.com/BDisp/unlocker/releases)
+* MacOS cdr/iso
+  * [苹果系统之家 - mac软件,macOS镜像,macOS教程,黑苹果教程软件分享 (macoshome.com)](https://macoshome.com/)
   * [MacOS Images](https://www.apple114.com/pages/macos/)
-
+  * Other versions may work too
 * [VMWare Tools](https://blog.csdn.net/weixin_46324719/article/details/123281311)
   * iso can be found in this repo
 
@@ -49,22 +64,8 @@ $ wsl -l -v
 
 # IMPORTANT
 
-- 一定要关闭内核隔离
-  - **Windows安全中心-设备安全性-内核隔离**
-  - 不影响WSL2
-
-- 一定要关闭Hyper-V
-  - ```powershell
-    ###!!!!!! run the powershell terminal as an administrator !!!!!!###
-    bcdedit /enum | findstr -i hypervisorlaunchtype # check status
-    bcdedit /set hypervisorlaunchtype off	# disable
-    bcdedit /set hypervisorlaunchtype auto	# enable
-    ```
-
-  - 影响WSL2
-
-  - 重新开启即可正常继续使用WSL2
-
+- vmware17和wsl2兼容，不用操作内核隔离和hyper-v（虽然理论上vmware16应该也兼容，但我当时操作的时候确实报错了）
+  
 - 在**任务管理器-性能-CPU**中检查是否开启虚拟化，如果未开启则通过BIOS开启虚拟化
 
 <img src="assets/image-20221213113805778.png" alt="image-20221213113805778" style="zoom:67%;" />
@@ -75,25 +76,21 @@ $ wsl -l -v
 
 ## VMWare
 
-正常运行安装程序进行安装即可，需要注意的是：
-
-- 勾选增强型键盘驱动程序
-- 勾选安装WHP（WHP也可以在Windows的**设置-应用-可选功能**中安装）
-- 其他选项保持默认即可
+正常运行安装程序进行安装即可
 
 
 
 ## Unlocker
 
-1. 解压得到Unlocker 3.0.4
-2. 将解压得到的文件夹放到VMWare的安装路径下，如我的电脑中其路径为`D:\Programs\VMware\VMware Workstation\unlocker-3.0.4`
+1. 解压得到Unlocker 4.2.6
 3. 关闭VMWare的进程（VMWare开头）和**五个服务**（VM开头）
 
-<img src="assets/webp.png" alt="img" style="zoom:80%;" />
+<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328173632254.png" alt="image-20240328173632254" style="zoom:80%;" />
 
-<img src="assets/webp-1670944446498-3.png" alt="img" style="zoom:80%;" />
+<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328173708079.png" alt="image-20240328173708079" style="zoom:80%;" />
 
-4. 在unlocker文件夹中找到`win-install.cmd`，右键**以管理员身份运行**
+4. 在unlocker文件夹中找到`windows/unlock.exe`，运行即可
+4. 重启电脑
 4. 每次更新版本后，重新进行一次该步骤
 
 > 如果使用NAT模式的虚拟机无法上网，可能是这一步关闭的服务没有重新启动，手动开启运行即可
@@ -104,92 +101,75 @@ $ wsl -l -v
 
 1. 创建虚拟机并选择自定义
 
-<img src="assets/image-20221213231858984.png" alt="image-20221213231858984" style="zoom:80%;" />
+<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328184007219.png" alt="image-20240328184007219" style="zoom:80%;" />
 
-2. 硬件兼容性选择16.x（15.x也可以，16.2.x应该可以，决定了哪些版本的Workstation可以运行这个虚拟机）
+2. 硬件兼容性选择17.x（决定了哪些版本的Workstation可以运行这个虚拟机）
+   不能选低于17.x的，会报错vmware版本不支持14.4的macos（根据我之前在vm16直接升级到macos13 Ventura的经验，估计vm16也不支持macos13 Ventura）
 
-<img src="assets/image-20221213231940045.png" alt="image-20221213231940045" style="zoom:80%;" />
+![](MacOS with wsl2 on Win11(vm17).assets/image-20240328184223093.png)
 
 3. 选择使用下载好的镜像，要选择cdr文件需要在选择文件时将文件类型改为所有文件；不必理会这里的警告
 
-<img src="assets/image-20221213232148758.png" alt="image-20221213232148758" style="zoom:80%;" />
+<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328184057821.png" alt="image-20240328184057821"  />
 
 4. 选择与镜像对应的版本
 
-<img src="assets/image-20221213232312554.png" alt="image-20221213232312554" style="zoom:80%;" />
+![image-20240328184128799](MacOS with wsl2 on Win11(vm17).assets/image-20240328184128799.png)
 
 5. 随便取个名字
 
-<img src="assets/image-20221213232337867.png" alt="image-20221213232337867" style="zoom:80%;" />
+![image-20240328184443724](MacOS with wsl2 on Win11(vm17).assets/image-20240328184443724.png)
 
-6. 选择2个处理器各2个内核，默认的2个处理器各1个内核也可以
+6. 这个设置于取决于host的硬件水平了，对于R7 5800H来说，四核比较好
 
-<img src="assets/image-20221213232510791.png" alt="image-20221213232510791" style="zoom:80%;" />
+![image-20240328184528642](MacOS with wsl2 on Win11(vm17).assets/image-20240328184528642.png)
 
 7. 内存我配置了8G，根据实体机的内存来决定即可
 
-<img src="assets/image-20221213232903228.png" alt="image-20221213232903228" style="zoom:80%;" />
+![image-20240328184622787](MacOS with wsl2 on Win11(vm17).assets/image-20240328184622787.png)
 
 8. 后续的配置选择默认的 **使用网络地址转换（NAT）** - **LSI Logic(L)** - **SATA(A)** - **创建新虚拟磁盘(V)** 即可
 9. 磁盘大小不要小于推荐的即可，这里我分配了80G，建议选择**将虚拟磁盘拆分成多个文件**；下一步的磁盘文件名使用默认的即可
 
-<img src="assets/image-20221213233249339.png" alt="image-20221213233249339" style="zoom:80%;" />
+<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328184739550.png"  />
 
 10. 查看总结信息，点击完成即可
 
-<img src="assets/image-20221213233414250.png" alt="image-20221213233414250" style="zoom:80%;" />
+![image-20240328184808429](MacOS with wsl2 on Win11(vm17).assets/image-20240328184808429.png)
 
-11. 打开虚拟机保存的路径，用记事本或者VSCode修改虚拟机配置文件`.vmx`，在这里即为`D:\Lenovo\Documents\Virtual Machines\macOS\macOS.vmx`；在文件的末尾添加
+11. 打开虚拟机保存的路径，用记事本或者VSCode修改虚拟机配置文件`.vmx`，在这里即为`D:\Lenovo\Documents\Virtual Machines\macOS\macOS.vmx`；在文件的末尾添加配置。即[这里](https://blog.csdn.net/qq_17576885/article/details/121407125)的方法三提供的配置。
 
-```
-smc.version = "0"
-cpuid.0.eax = "0000:0000:0000:0000:0000:0000:0000:1011"
-cpuid.0.ebx = "0111:0101:0110:1110:0110:0101:0100:0111"
-cpuid.0.ecx = "0110:1100:0110:0101:0111:0100:0110:1110"
-cpuid.0.edx = "0100:1001:0110:0101:0110:1110:0110:1001"
-cpuid.1.eax = "0000:0000:0000:0001:0000:0110:0111:0001"
-cpuid.1.ebx = "0000:0010:0000:0001:0000:1000:0000:0000"
-cpuid.1.ecx = "1000:0010:1001:1000:0010:0010:0000:0011"
-cpuid.1.edx = "0000:0111:1000:1011:1111:1011:1111:1111"
-```
-
-或者我使用的追加配置为：
-
-```
-smc.version = "0"
-cpuid.0.eax = "0000:0000:0000:0000:0000:0000:0000:1011"
-cpuid.0.ebx = "0111:0101:0110:1110:0110:0101:0100:0111"
-cpuid.0.ecx = "0110:1100:0110:0101:0111:0100:0110:1110"
-cpuid.0.edx = "0100:1001:0110:0101:0110:1110:0110:1001"
-cpuid.1.eax = "0000:0000:0000:0001:0000:0110:0111:0001"
-cpuid.1.ebx = "0000:0010:0000:0001:0000:1000:0000:0000"
-cpuid.1.ecx = "1000:0010:1001:1000:0010:0010:0000:0011"
-cpuid.1.edx = "0000:0111:1000:1011:1111:1011:1111:1111"
-smbios.reflectHost = "TRUE"
-hw.model = "MacBookPro14,3"
-board-id = "Mac-551B86E5744E2388"
-keyboard.vusb.enable = "TRUE"
-mouse.vusb.enable = "TRUE"
-```
-
-12. 在虚拟机设置中点击处理器，确认虚拟化引擎所有项均未被勾选后，可以开启虚拟机（如果到这里还报其他的错，就需要靠搜索引擎解决了）
+12. 在虚拟机设置中点击处理器，确认虚拟化引擎所有项均未被勾选后，可以开启虚拟机。如果开启了，我的电脑会报不支持的错误。（如果到这里还报其他的错，就需要靠搜索引擎解决了）
 
 <img src="assets/image-20221213235406329.png" alt="image-20221213235406329" style="zoom:80%;" />
 
 13. 等待进度条拉满后，在语言选择页面选择简体中文。在设置安装页面，选择**实用工具**-**磁盘工具**
 
-<img src="assets/image-20221214000322769.png" alt="image-20221214000322769" style="zoom:80%;" />
+![image-20240328190556016](MacOS with wsl2 on Win11(vm17).assets/image-20240328190556016.png)
 
 在磁盘工具中依次进行操作，其中名称随意即可：
 
-<img src="assets/image-20221214000546776.png" alt="image-20221214000546776" style="zoom:80%;" />
+![image-20240328190831438](MacOS with wsl2 on Win11(vm17).assets/image-20240328190831438.png)
 
-14. 完成后，关闭磁盘工具，返回设置安装页面点击**继续**，阅读同意协议后，将系统安装到刚刚抹除过的磁盘上
+14. 完成后，关闭磁盘工具，返回设置安装页面点击**安装sonoma**和**继续**，阅读同意协议后，将系统安装到刚刚抹除过的磁盘上
 
-<img src="assets/image-20221214000728975.png" alt="image-20221214000728975" style="zoom:80%;" />
+![image-20240328190918980](MacOS with wsl2 on Win11(vm17).assets/image-20240328190918980.png)
 
 15. 安装完成后，系统自动重启。进入虚拟机，**选择国家地区** - **选择键盘布局** - **选择连接本地网络** - **选择现在不传输任何信息** - **同意软件协议** - **创建账号**
 16. 进入MacOS
+
+
+
+> [macOS Ventura Guests · DrDonk/unlocker Wiki (github.com)](https://github.com/DrDonk/unlocker/wiki/macOS-Ventura-Guests)
+>
+> 好像是cpu的问题……会出错
+>
+> fails:
+>
+> - vmx里面修改virtualHW.version为10
+> - 减少cpu数量
+> - [Vmware 17 goes in bootloop after Ventura install in AMD CPU (AVX2 IS SUPPORTED!) · Issue #106 · paolo-projects/auto-unlocker (github.com)](https://github.com/paolo-projects/auto-unlocker/issues/106) 
+>   - `Sonoma works with Ryzen 7 4800H. The problem is it works only with 4 cores`
 
 
 
@@ -426,8 +406,7 @@ $ security find-identity -v -p codesigning
 
 # Reference
 
-- [Win10安装MAC OS系统 - 简书 (jianshu.com)](https://www.jianshu.com/p/976eb30efff6)
-- [Windows下用VMware16虚拟机安装macOS Big Sur - 黑苹果屋 (imacos.top)](http://imacos.top/2021/04/12/1146-2/?)
+- [VMware WorkStation Pro 16安装MacOS12（或13）手把手图文教程（全流程详细图解） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/589965246 )
 - [VMware 安装 Mac OS 注意事项 - Abeam - 博客园 (cnblogs.com)](https://www.cnblogs.com/abeam/p/10699328.html)
 - [VMware Workstation 不可恢复错误: (vcpu-1) Exception 0xc0000005 (access violation) has occurred终极解决方案-网络知识 (tlcement.com)](http://www.tlcement.com/38379.html)
 - [解决VMware虚拟机安装 Mac os，安装VMware tools不成功或无法全屏的问题 - 简书 (jianshu.com)](https://www.jianshu.com/p/d7d4d7ba95a3)
