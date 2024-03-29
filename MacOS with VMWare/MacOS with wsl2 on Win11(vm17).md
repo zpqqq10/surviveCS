@@ -55,7 +55,7 @@ $ wsl -l -v
 * MacOS cdr/iso
   * [苹果系统之家 - mac软件,macOS镜像,macOS教程,黑苹果教程软件分享 (macoshome.com)](https://macoshome.com/)
   * [MacOS Images](https://www.apple114.com/pages/macos/)
-  * Other versions may work too
+  * **only works until macos 12 monterey**
 * [VMWare Tools](https://blog.csdn.net/weixin_46324719/article/details/123281311)
   * iso can be found in this repo
 
@@ -91,7 +91,7 @@ $ wsl -l -v
 
 4. 在unlocker文件夹中找到`windows/unlock.exe`，运行即可
 4. 重启电脑
-4. 每次更新版本后，重新进行一次该步骤
+4. 每次更新vmware版本后，重新进行一次该步骤
 
 > 如果使用NAT模式的虚拟机无法上网，可能是这一步关闭的服务没有重新启动，手动开启运行即可
 
@@ -106,19 +106,17 @@ $ wsl -l -v
 2. 硬件兼容性选择17.x（决定了哪些版本的Workstation可以运行这个虚拟机）
    不能选低于17.x的，会报错vmware版本不支持14.4的macos（根据我之前在vm16直接升级到macos13 Ventura的经验，估计vm16也不支持macos13 Ventura）
 
-![](MacOS with wsl2 on Win11(vm17).assets/image-20240328184223093.png)
-
 3. 选择使用下载好的镜像，要选择cdr文件需要在选择文件时将文件类型改为所有文件；不必理会这里的警告
 
-<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328184057821.png" alt="image-20240328184057821"  />
+![image-20240329112823477](MacOS with wsl2 on Win11(vm17).assets/image-20240329112823477.png)
 
 4. 选择与镜像对应的版本
 
-![image-20240328184128799](MacOS with wsl2 on Win11(vm17).assets/image-20240328184128799.png)
+![image-20240329112834202](MacOS with wsl2 on Win11(vm17).assets/image-20240329112834202.png)
 
 5. 随便取个名字
 
-![image-20240328184443724](MacOS with wsl2 on Win11(vm17).assets/image-20240328184443724.png)
+![image-20240329113056559](MacOS with wsl2 on Win11(vm17).assets/image-20240329113056559.png)
 
 6. 这个设置于取决于host的硬件水平了，对于R7 5800H来说，四核比较好
 
@@ -131,13 +129,30 @@ $ wsl -l -v
 8. 后续的配置选择默认的 **使用网络地址转换（NAT）** - **LSI Logic(L)** - **SATA(A)** - **创建新虚拟磁盘(V)** 即可
 9. 磁盘大小不要小于推荐的即可，这里我分配了80G，建议选择**将虚拟磁盘拆分成多个文件**；下一步的磁盘文件名使用默认的即可
 
-<img src="MacOS with wsl2 on Win11(vm17).assets/image-20240328184739550.png"  />
+![image-20240329113147307](MacOS with wsl2 on Win11(vm17).assets/image-20240329113147307.png)
 
 10. 查看总结信息，点击完成即可
 
-![image-20240328184808429](MacOS with wsl2 on Win11(vm17).assets/image-20240328184808429.png)
+![image-20240329113201979](MacOS with wsl2 on Win11(vm17).assets/image-20240329113201979.png)
 
 11. 打开虚拟机保存的路径，用记事本或者VSCode修改虚拟机配置文件`.vmx`，在这里即为`D:\Lenovo\Documents\Virtual Machines\macOS\macOS.vmx`；在文件的末尾添加配置。即[这里](https://blog.csdn.net/qq_17576885/article/details/121407125)的方法三提供的配置。
+
+    ```
+    smc.version = "0"
+    cpuid.0.eax = "0000:0000:0000:0000:0000:0000:0000:1011"
+    cpuid.0.ebx = "0111:0101:0110:1110:0110:0101:0100:0111"
+    cpuid.0.ecx = "0110:1100:0110:0101:0111:0100:0110:1110"
+    cpuid.0.edx = "0100:1001:0110:0101:0110:1110:0110:1001"
+    cpuid.1.eax = "0000:0000:0000:0001:0000:0110:0111:0001"
+    cpuid.1.ebx = "0000:0010:0000:0001:0000:1000:0000:0000"
+    cpuid.1.ecx = "1000:0010:1001:1000:0010:0010:0000:0011"
+    cpuid.1.edx = "0000:0111:1000:1011:1111:1011:1111:1111"
+    featureCompat.enable = "TRUE"
+    hw.model = "iMac20,2"
+    board-id = "Mac-AF89B6D9451A490B"
+    ```
+
+    > 事实上，这里要加配置也是因为macos虚拟机对amd cpu的支持不太友好
 
 12. 在虚拟机设置中点击处理器，确认虚拟化引擎所有项均未被勾选后，可以开启虚拟机。如果开启了，我的电脑会报不支持的错误。（如果到这里还报其他的错，就需要靠搜索引擎解决了）
 
@@ -145,15 +160,16 @@ $ wsl -l -v
 
 13. 等待进度条拉满后，在语言选择页面选择简体中文。在设置安装页面，选择**实用工具**-**磁盘工具**
 
-![image-20240328190556016](MacOS with wsl2 on Win11(vm17).assets/image-20240328190556016.png)
+![image-20240329113525112](MacOS with wsl2 on Win11(vm17).assets/image-20240329113525112.png)
 
 在磁盘工具中依次进行操作，其中名称随意即可：
 
 ![image-20240328190831438](MacOS with wsl2 on Win11(vm17).assets/image-20240328190831438.png)
 
-14. 完成后，关闭磁盘工具，返回设置安装页面点击**安装sonoma**和**继续**，阅读同意协议后，将系统安装到刚刚抹除过的磁盘上
+14. 完成后，关闭磁盘工具，根据[关闭csrutil](https://www.jianshu.com/p/d7d4d7ba95a3)教程，在实用工具这里打开终端关闭csrutil（后面有可能无法进入恢复模式，这似乎是一个bug：[Solved: Can't boot into recovery partition on macOS 11 (Bi... - VMware Technology Network VMTN](https://communities.vmware.com/t5/VMware-Fusion-Discussions/Can-t-boot-into-recovery-partition-on-macOS-11-Big-Sur/td-p/2298419)）
+14. 设置安装页面点击**安装monterey**和**继续**，阅读同意协议后，将系统安装到刚刚抹除过的磁盘上
 
-![image-20240328190918980](MacOS with wsl2 on Win11(vm17).assets/image-20240328190918980.png)
+![image-20240329113511321](MacOS with wsl2 on Win11(vm17).assets/image-20240329113511321.png)
 
 15. 安装完成后，系统自动重启。进入虚拟机，**选择国家地区** - **选择键盘布局** - **选择连接本地网络** - **选择现在不传输任何信息** - **同意软件协议** - **创建账号**
 16. 进入MacOS
@@ -175,17 +191,19 @@ $ wsl -l -v
 
 ## VMWare Tools
 
-1. 下载或者使用仓库中附带的`darwin.iso`
-2. [关闭csrutil](https://www.jianshu.com/p/d7d4d7ba95a3)
+1. 我直接安装macos12 monterey，在amd cpu上，使用的镜像是unlocker426携带的`darwin.iso`
 3. 跟随[教程](https://blog.csdn.net/weixin_46324719/article/details/123281311)走即可，安装之后虚拟机可以全屏
 
 
 
 ## Update MacOS
 
+> 最多到macos12
+
 - 版本比较新的MacOS才能安装使用Xcode，因此要更新系统
 - [苹果电脑老系统怎么更新到最新？ - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/356324207)
   - 在我这里升到13.1会崩……目前使用12.6.2一切稳定
+  - 原因如上述
 
 - [在 Mac 上更新 macOS - 官方 Apple 支持 (中国)](https://support.apple.com/zh-cn/HT201541)
 
