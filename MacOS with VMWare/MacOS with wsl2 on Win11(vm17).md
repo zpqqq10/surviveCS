@@ -42,6 +42,10 @@ $ wsl -l -v
 
 应该是amd ryzen cpu的问题……没有easy fix……从macos13 ventura开始估计就不行了……
 
+> 询问了学弟的复现情况，他在intel cpu上可以安装到macos13，理论上也成功到了macos14，但是到macos14后开机进桌面就直接黑屏了
+>
+> 因为cpu的兼容性问题，跑mac虚拟机比跑ubuntu虚拟机卡多了
+
 
 
 # Tools
