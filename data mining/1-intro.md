@@ -1,5 +1,7 @@
 # 1. Intro
 
+book: **Data Mining. Concepts and Techniques, 3rd Edition-Morgan Kaufmann (2011)**
+
 ## why
 
 - explosive growth of data
