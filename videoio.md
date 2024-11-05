@@ -218,7 +218,97 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 
 - 遇到了一个关于找不到mpi头文件的错，解决方式见[Make error when compling with opencv_contrib-3.4.16 · Issue #3216 · opencv/opencv_contrib](https://github.com/opencv/opencv_contrib/issues/3216)，我安装了`libhdf5-dev`也没有解决，最后选择关掉了编译这个模块
 - 完成安装后可以在`/usr/local/lib/pkgconfig/opencv4.pc`找到配置，pkg-config输出的版本也是对的，手动安装的优先级应该高于系统自带的4.5.0的版本
-- daunma
+- demo代码
+
+  - 需要事先准备好环境变量，`export OPENCV_FFMPEG_CAPTURE_OPTIONS="hw_decoders_any;cuda"`或`export OPENCV_FFMPEG_CAPTURE_OPTIONS="hw_decoders_any;vdpau"`+`export VDPAU_DRIVER=nvidia`
+
+  - ```cpp
+    #include <iostream>
+    #include <string>
+    #include <vector>
+    #include <algorithm>
+    #include <numeric>
+    #include "opencv2/opencv_modules.hpp"
+    #include <opencv2/core/utility.hpp>
+    #include <opencv2/core.hpp>
+    #include <opencv2/core/opengl.hpp>
+    #include <opencv2/cudacodec.hpp>
+    #include <opencv2/highgui.hpp>
+    #include <opencv2/videoio/registry.hpp>
+    
+    int main(int argc, const char* argv[])
+    {
+        // std::cout<<cv::getBuildInformation()<<std::endl;
+    
+       //将这个流改成你自己的
+       const std::string fname = "../assets/input1_444.mp4";
+        /// 没有使用opengl编译需要关闭
+        //cv::cuda::setGlDevice();
+        //cv::cuda::setGlDevice(1);
+        
+        cv::Mat frame;
+        cv::VideoCapture cpureader(fname, cv::CAP_FFMPEG, std::vector<int>{cv::CAP_PROP_HW_ACCELERATION, cv::VIDEO_ACCELERATION_NONE});
+        // hw
+        cv::VideoCapture hwreader(fname, cv::CAP_FFMPEG, std::vector<int>{cv::CAP_PROP_HW_ACCELERATION, cv::VIDEO_ACCELERATION_ANY});
+        cv::cuda::GpuMat d_frame;
+        // cv::Ptr<cv::cudacodec::VideoReader> d_reader = cv::cudacodec::createVideoReader(fname);
+        cv::TickMeter tm;
+        std::vector<double> cpu_times;
+        std::vector<double> hwa_times;
+        std::vector<double> gpu_times;
+    
+        // prevent first frame read time
+        cpureader.read(frame);
+        hwreader.read(frame);
+    
+        for (int i = 0;i<200;i++)
+        {
+            tm.reset(); tm.start();
+            if (!cpureader.read(frame)){
+                std::cout << "cpu read failed" << std::endl;
+                break;
+            }
+             tm.stop();
+             cpu_times.push_back(tm.getTimeMilli());
+    
+             tm.reset(); tm.start();
+            if (!hwreader.read(frame)){
+                std::cout << "hw read failed" << std::endl;
+                break;
+            }
+             tm.stop();
+             hwa_times.push_back(tm.getTimeMilli());
+    
+            //  tm.reset(); tm.start();
+            // if (!d_reader->nextFrame(d_frame))
+            //     break;
+            //  tm.stop();
+            //  gpu_times.push_back(tm.getTimeMilli());
+        }
+    
+    
+        if (!cpu_times.empty())
+        {
+            std::cout << std::endl << "Results:" << std::endl;
+    
+            std::sort(cpu_times.begin(), cpu_times.end());
+            std::sort(hwa_times.begin(), hwa_times.end());
+            std::sort(gpu_times.begin(), gpu_times.end());
+    
+            double cpu_avg = std::accumulate(cpu_times.begin(), cpu_times.end(), 0.0) / cpu_times.size();
+            double hwa_avg = std::accumulate(hwa_times.begin(), hwa_times.end(), 0.0) / hwa_times.size();
+            double gpu_avg = std::accumulate(gpu_times.begin(), gpu_times.end(), 0.0) / gpu_times.size();
+    
+            std::cout << "CPU : Avg : " << cpu_avg << " ms FPS : " << 1000.0 / cpu_avg << std::endl;
+            std::cout << "HWA : Avg : " << hwa_avg << " ms FPS : " << 1000.0 / hwa_avg << std::endl;
+            std::cout << "GPU : Avg : " << gpu_avg << " ms FPS : " << 1000.0 / gpu_avg << std::endl;
+        }
+    
+        return 0;
+    }
+    
+    ```
+
 
 
 
