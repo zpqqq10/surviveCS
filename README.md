@@ -56,6 +56,7 @@
               "--clang-tidy",
               "--background-index",
           ],
+      "clangd.fallbackFlags": ["-std=c++11"],  // 不加这个可能会找不到标准库，9/11/14取决于电脑上装了什么版本
       ```
   * ……
   
