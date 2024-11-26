@@ -67,6 +67,17 @@ ffmpeg -hide_banner -h encoder=libx264
   - [在ffmpeg中，网络视频流h264为什么默认的转为YUV而不是其他格式_ffmpeg 视频传输 yuv-CSDN博客](https://blog.csdn.net/weixin_40425640/article/details/134078975)
   - yuv空间更加适合压缩（人眼不易察觉的压缩）
   - yuv是一个比较广义的称呼，一般来说大家提到yuv说到的其实是经过矫正的[Y′UV](https://en.wikipedia.org/wiki/Y′UV)，opencv使用的转换是[经过gamma矫正的SDTV转换](https://segmentfault.com/a/1190000016443536)
+- gray
+  - 通过`ffmpeg -h encoder=libx264/libx265`可以查看支持的像素格式
+    - h264: `Supported pixel formats: yuv420p yuvj420p yuv422p yuvj422p yuv444p yuvj444p nv12 nv16 nv21 yuv420p10le yuv422p10le yuv444p10le nv20le gray gray10le`
+    - h265: `Supported pixel formats: yuv420p yuvj420p yuv422p yuvj422p yuv444p yuvj444p gbrp yuv420p10le yuv422p10le yuv444p10le gbrp10le yuv420p12le yuv422p12le yuv444p12le gbrp12le gray gray10le gray12le`
+    - 可以看到二者都不支持多于12-bit的灰度编码
+
+  - h264编码灰度视频时，得到的视频格式是yuvj420p/yuv420p10le（三通道视频），ffmpeg解压得到的图片格式会是16UC3，查看值可知三个通道的值都是一样的；而h265得到的视频则是单通道的
+  - 使用gray10le/gray12le时，需要确保有效位位于uint16的高位，至于为什么可能可以从ffmpeg h264的输出中找到`profile High 10, level 3.0, 4:0:0, 10-bit`
+  - opencv直接读取视频时，不支持读取宽度为10/12的视频，比如以ffmpeg为后端时，查看`cap_ffmpeg_impl.hpp: 1616`可以看到只支持BGR24 GRAY8和GRAY16LE
+  - 可以把mp4当作压缩包，压缩图片之后，通过ffmpeg解压得到图片，此时再通过opencv的VideoCapture来读取这一系列图片，查看源代码可知`modules/videoio/src/cap_images.cpp`，该形式的读取底层实现就是imread，并且加上了`IMREAD_UNCHANGED`
+
 - 质量控制
   - libx264的`crf`，h264_nvenc的`cq`（优先于`qp`）
   - `qp`
