@@ -218,6 +218,20 @@ sudo cp cudnn-linux-x86_64-8.8.0.121_cuda12-archive/lib/libcudnn* /usr/local/cud
 sudo chmod a+r /usr/local/cuda/include/cudnn*   /usr/local/cuda/lib64/libcudnn*
 sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-11.2 112
 sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-12.0 120
+# cuda12.1 + cudnn 9.2.0
+# 9.x版本的cudnn安装方式与之前不同了，基本可以参照https://docs.nvidia.com/deeplearning/cudnn/v9.2.0/installation/linux.html#ubuntu-debian-local-installation
+# 即下载一个local-repo然后通过apt-get安装
+wget https://developer.download.nvidia.com/compute/cuda/12.1.1/local_installers/cuda_12.1.1_530.30.02_linux.run
+sudo sh cuda_12.1.1_530.30.02_linux.run
+sudo update-alternatives --install /usr/local/cuda cuda /usr/local/cuda-12.1 121
+sudo update-alternatives --config cuda # remember to change to use cuda 121!!
+wget https://developer.download.nvidia.com/compute/cudnn/9.2.0/local_installers/cudnn-local-repo-ubuntu2204-9.2.0_1.0-1_amd64.deb
+sudo dpkg -i cudnn-local-repo-ubuntu2204-9.2.0_1.0-1_amd64.deb
+sudo cp /var/cudnn-local-repo-ubuntu2204-9.2.0/cudnn-*-keyring.gpg /usr/share/keyrings/
+sudo apt-get update
+sudo apt-get -y install cudnn
+sudo apt-get -y install cudnn-cuda-12 # sudo apt-get -y install cudnn-cuda-11
+# then check /usr/lib/x86_64-linux-gnu/libcudnn*
 
 # docker
 curl -fsSL get.docker.com -o get-docker.sh
@@ -364,7 +378,6 @@ sudo apt-get install build-essential libgl1-mesa-dev libglfw3 libglfw3-dev libgl
 
   - pymeshlab作者说建议不要用conda的pip安装
   - solution：`apt-get install python3-opencv --fix-missing`
-
 
 
 
