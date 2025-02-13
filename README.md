@@ -58,6 +58,12 @@
           ],
       "clangd.fallbackFlags": ["-std=c++11"],  // 不加这个可能会找不到标准库，9/11/14取决于电脑上装了什么版本
       ```
+    
+    * 如果需要新增自定义的路径，新建文件`.clangd`并加入如
+      ```
+      CompileFlags:
+        Add: [-I/some/include/path, -I/another/include/path]
+      ```
   * ……
   
 * *Linux*必须会用……
@@ -126,7 +132,11 @@
   
     * [ubuntu系统下执行sudo apt-get update报错无法连接上 127.0.0.1:58591 (127.0.0.1)。- connect (111: 拒绝连接)的踩坑历程及解决方案总结_zeeq_的博客-CSDN博客](https://blog.csdn.net/weixin_44120025/article/details/120934224)（很怪的一个问题……不知道怎么就突然出现了……）
   
+    * 用的是v2rayn，设置里面打开*允许来自局域网的连接*，下述设置的端口选择v2rayn窗口左下角的*局域网*端口
+  
     * ```bash
+      # add for proxy
+      export hostip=$(ip route | grep default | awk '{print $3}')
       alias proxy='export ALL_PROXY="socks5://${hostip}:10810";'
       alias unproxy='unset ALL_PROXY;'
       ```
