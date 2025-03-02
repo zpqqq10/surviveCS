@@ -47,6 +47,7 @@
   * [clangd](https://marketplace.visualstudio.com/items?itemName=llvm-vs-code-extensions.vscode-clangd)
   
     * 用来配置c/c++环境，配了之后我直接把c/c++插件卸载了，感觉比那个好用多了
+    * 启动问题见*服务器使用/clangd.md*
     * ```json
       "clangd.arguments": [
               "--compile-commands-dir=${workspaceFolder}/build",
