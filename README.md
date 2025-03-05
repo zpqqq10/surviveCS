@@ -127,11 +127,11 @@
 
   * [玩转WSL(5)之zsh常用配置和插件 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/242199299)
 
-  * 解决代理问题
+  * 解决代理问题（win11）
   
-    * [给WSL配置代理](https://zhuanlan.zhihu.com/p/414627975)，这里我采用了8.8.8.8作为nameserver，并且要注意的是v2ray最下面有行小字显示局域网连接的端口是多少，我这里显示的端口并不是本机端口10808……因为这个卡了很久
+    * v2rayn开启局域网连接，不需要修改`/etc/wsl.conf`
   
-    * [ubuntu系统下执行sudo apt-get update报错无法连接上 127.0.0.1:58591 (127.0.0.1)。- connect (111: 拒绝连接)的踩坑历程及解决方案总结_zeeq_的博客-CSDN博客](https://blog.csdn.net/weixin_44120025/article/details/120934224)（很怪的一个问题……不知道怎么就突然出现了……）
+    * [apt-get报错无法连接](https://www.cnblogs.com/chentiao/p/16968181.html)很怪的一个问题……不知道怎么就突然出现了……）
   
     * 用的是v2rayn，设置里面打开*允许来自局域网的连接*，下述设置的端口选择v2rayn窗口左下角的*局域网*端口
   
