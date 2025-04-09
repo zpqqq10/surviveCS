@@ -64,3 +64,11 @@ add_executable(test cc.cpp)
 - 如果安装了cmake插件，重启vsc即会自动编译出build文件夹，或者可以手动在终端内通过`cmake ..`来得到
   - 似乎终端调用的是GNU，而vsc调用的是ninja，如果在终端内手动启动了一次cmake，然后再重新打开vsc，可能会看到终端输出`CMake Error: Error: generator : Ninja Does not match the generator used previously: Unix Makefiles`等错误，删掉`build/CMakeCache.txt`即可
 - 如果最后得到了正确的`build/compile_commands.json`，那么理论上此时editor内的信息应该都是对的
+
+
+
+## windows
+
+[Windows系统中 CMAKE 选择vc编译器或者gnu编译器的解决方案](https://zhuanlan.zhihu.com/p/548235468)
+
+最后我还需要手动修改一下json里面的可执行文件路径，应该是编码的问题

@@ -311,6 +311,84 @@ sudo apt-get install build-essential libgl1-mesa-dev libglfw3 libglfw3-dev libgl
 
   - [V2rayA在linux 下安装使用教程 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/414998586)
   
+  - 失效了。。。而且idk why v2raya用我的节点特别慢，win和手机上用同样的节点都没毛病，换clash了
+  
+  - uninstall v2raya
+  
+    - `sudo systemctl stop v2raya.service`
+    - `sudo systemctl disable v2raya.service`
+    - `sudo systemctl status v2raya.service`
+    - `sudo apt purge v2raya`
+  
+  - refer
+  
+    - [如何在 ubuntu 上使用 Clash](https://zhuanlan.zhihu.com/p/693754050)
+    - [Clash-for-ubuntu](https://github.com/JXCrazy/Clash-for-ubuntu)
+    - [clash-releases](https://github.com/doreamon-design/clash/releases)
+  
+  - steps
+  
+    - win上下载clash，处理订阅链接，并且把订阅链接拷贝到ubuntu上，把`allow-lan`设为true。可以用该yaml直接替换`~/.config/clash/config.yaml`，也可以保存为`xx.yaml`
+  
+    - 解压得到`clash`，通过`./clash --config xxx.yaml`/`./clash`通过[前端](https://clash.razord.top/#/settings)可以直接设置clash
+  
+    - 为什么要采用网页的形式，最主要是因为**方便**。可以完全把ubuntu当作服务器使用，只需要vscode开一个9090端口转发，我就能通过终端和windows的浏览器去操控ubuntu的梯子，完全不需要ubuntu的gui
+  
+    - 如果需要在浏览器中使用代理，需要参考[如何在 ubuntu 上使用 Clash](https://zhuanlan.zhihu.com/p/693754050)设置manual proxy
+  
+    - 如果只需要在终端中使用代理，在终端配置文件`.zshrc`/`.bashrc`中添加
+      ```bash
+      alias proxy='export http_proxy=http://127.0.0.1:7890 && export https_proxy=http://127.0.0.1:7890'
+      alias unproxy='export http_proxy= && export https_proxy='
+      ```
+  
+      使用的使用`proxy`开启，不使用的时候`unproxy`关闭
+  
+    - 开机启动
+  
+      - 我直接把clash放到了`~/`下，然后`sudo nano /etc/systemd/system/clash.service` 输入
+        ```
+        [Unit]
+        
+        Description=Clash - A rule-based tunnel in Go
+        
+        Documentation=https://github.com/Dreamacro/clash/wiki
+        
+        [Service]
+        
+        OOMScoreAdjust=-1000
+        
+        ExecStart=/home/admini/clash/clash -d /home/admini/.config/clash
+        
+        Restart=on-failure
+        
+        RestartSec=5
+        
+        [Install]
+        
+        WantedBy=multi-user.target
+        ```
+  
+        这里的-d要加上，不知道它变成service之后的默认路径是什么，不加的话会找不到文件
+  
+      - `sudo systemctl enable clash`
+  
+      - `sudo systemctl start clash`
+  
+      - `sudo systemctl status clash`看状态为active，而且log显示成功启动即ok
+  
+      - `curl google.com.hk`失败
+  
+      - `proxy`
+  
+      - `curl google.com.hk`成功
+  
+      - `unproxy`
+  
+      - `curl google.com.hk`失败
+  
+      - 大功告成
+  
 - edge
 
   - [【Ubuntu 20.04 LTS】安装Edge浏览器通俗易懂 - 腾讯云开发者社区-腾讯云 (tencent.com)](https://cloud.tencent.com/developer/article/2104827)
