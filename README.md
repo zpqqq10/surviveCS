@@ -96,6 +96,8 @@
 * 配置Powershell: oh-my-posh
 
   * [Windows Terminal美化（oh-my-posh3） - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/354603010)
+ 
+  * [【保姆级教程】使用oh-my-posh美化Windows终端](https://blog.csdn.net/qq_62888264/article/details/132551059)
 
   * [powershell+oh-my-posh PSReadLine 代码提示配置 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/505023994)
 
