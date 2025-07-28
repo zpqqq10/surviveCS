@@ -289,6 +289,7 @@ sudo apt-get install build-essential libgl1-mesa-dev libglfw3 libglfw3-dev libgl
   - 服务器空间充裕我就装conda了，我的wsl装的是miniconda
   - [Ubuntu安装Anaconda详细步骤_ubuntu anaconda安装_旅途中的宽~的博客-CSDN博客](https://blog.csdn.net/wzk4869/article/details/128428977)
   - 这一步就把python和pip给装了
+  - [修复 Powershell 7.5 使用 Conda 异常和 Oh-My-Posh 不显示 Conda 环境问题](https://naiv.fun/Ops/118.html)
 
 - vscode
 
