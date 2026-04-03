@@ -122,6 +122,14 @@
     function unproxy {$env:all_proxy = ''}
     ```
 
+  * 不需要配置代理的话，先通过管理员权限安装`Install-Module PSReadLine -Repository PSGallery -Scope CurrentUser -Force`，然后好像可以比较简单地使用：
+
+    ```
+    oh-my-posh init pwsh --config C:\Users\Lenovo\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json | Invoke-Expression
+    Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
+    Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+    ```
+
 * 配置shell: oh-my-zsh
 
   * [玩转WSL(3)之安装并配置oh-my-zsh - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/199798102)
