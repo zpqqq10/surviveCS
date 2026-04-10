@@ -128,6 +128,10 @@
     oh-my-posh init pwsh --config C:\Users\Lenovo\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json | Invoke-Expression
     Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
     Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+    # Ctrl+→ 接受预测的下一个词（逐词采纳）
+    Set-PSReadLineKeyHandler -Key Ctrl+RightArrow -Function ForwardWord
+    # Ctrl+← 可选：向左按词移动光标（默认）
+    Set-PSReadLineKeyHandler -Key Ctrl+LeftArrow -Function BackwardWord
     ```
 
 * 配置shell: oh-my-zsh
