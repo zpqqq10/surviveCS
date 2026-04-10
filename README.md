@@ -168,6 +168,8 @@
     )
     setopt no_nomatch
     ```
+    
+  * 另一种方式是查看/etc/resolv.conf，根据其指示修改/etc/wsl.conf，然后通过`ip route | grep default`获取虚拟机的网关ip，把这个网关写到/etc/resolv.conf中作为nameserver
   
 * 利用github搭建自己的网站：[我是如何利用Github Pages搭建起我的博客，细数一路的坑 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/334815426)
 
