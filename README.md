@@ -122,10 +122,12 @@
     function unproxy {$env:all_proxy = ''}
     ```
 
+  * [本地不安装主题配置了](https://zhuanlan.zhihu.com/p/1980232499692070714)，得去[官网](https://ohmyposh.dev/docs/themes)找
+  
   * 不需要配置代理的话，先通过管理员权限安装`Install-Module PSReadLine -Repository PSGallery -Scope CurrentUser -Force`，然后好像可以比较简单地使用：
 
     ```
-    oh-my-posh init pwsh --config C:\Users\Lenovo\AppData\Local\Programs\oh-my-posh\themes\ys.omp.json | Invoke-Expression
+    oh-my-posh init pwsh --config 'ys' | Invoke-Expression
     Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
     Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
     # Ctrl+→ 接受预测的下一个词（逐词采纳）
