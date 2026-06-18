@@ -24,7 +24,7 @@
 
 
 
-## startup
+## startup with cmake
 
 > https://clangd.llvm.org/installation#project-setup
 
@@ -65,10 +65,26 @@ add_executable(test cc.cpp)
   - 似乎终端调用的是GNU，而vsc调用的是ninja，如果在终端内手动启动了一次cmake，然后再重新打开vsc，可能会看到终端输出`CMake Error: Error: generator : Ninja Does not match the generator used previously: Unix Makefiles`等错误，删掉`build/CMakeCache.txt`即可
 - 如果最后得到了正确的`build/compile_commands.json`，那么理论上此时editor内的信息应该都是对的
 
+### bazel
 
+对于使用bazel的代码环境，可以使用grailbio/bazel-compilation-database（老版本bazel）/Hedron bazel-compile-commands-extractor（新版本bazel）来生成compile_commands.json。生成的脚本可以让ai根据代码编译命令来生成，最后别忘了在vscode的clangd设置里设置clangd的可执行路径。
 
 ## windows
 
 [Windows系统中 CMAKE 选择vc编译器或者gnu编译器的解决方案](https://zhuanlan.zhihu.com/p/548235468)
 
 最后我还需要手动修改一下json里面的可执行文件路径，应该是编码的问题
+
+## 云服务器与容器
+
+这里采用vscode和dev containers插件来进行
+
+- 本地创建容器开发
+
+可以让ai准备.devcontainer，然后命令或者插件里选择open in container，vscode会自动创建容器进入环境
+
+- 云服务器创建容器开发
+  
+这个时候open in container失效，输出里面会有相关的报错信息，疑似是权限相关。
+
+解决方法是手动在服务器内创建启动一个容器，容器命令sleep infinity。然后attach to running container，在容器里面配置环境即可。
